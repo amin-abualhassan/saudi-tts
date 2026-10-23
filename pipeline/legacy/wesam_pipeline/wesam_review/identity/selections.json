@@ -1,0 +1,74 @@
+[
+  {
+    "id": "d59673b609ba4d039579fa479209296f",
+    "clip_id": "2366wqj7sw-1",
+    "source_id": "2366wqj7sw",
+    "start": 0.0,
+    "end": 9.0,
+    "duration": 9.0,
+    "source_start": 8.16,
+    "source_end": 17.16,
+    "role": "enrollment",
+    "audio_sha256": "c9e21161766bfe9ed2a55a9e5335af8d4e8f4ad3ebbb3b2b4fd643ec4a502346"
+  },
+  {
+    "id": "7794eb26327b46858bf9a2c78cb1aaa5",
+    "clip_id": "2366wqj7sw-6",
+    "source_id": "2366wqj7sw",
+    "start": 0.0,
+    "end": 2.5,
+    "duration": 2.5,
+    "source_start": 128.379,
+    "source_end": 130.879,
+    "role": "enrollment",
+    "audio_sha256": "f0a03043601c8e5922bcb9b9eeaf32124087e2df7848825db7b302ab425eab65"
+  },
+  {
+    "id": "ddbc301bb95d4edb99192c6d1c7cf6e9",
+    "clip_id": "2366wqj7sw-8",
+    "source_id": "2366wqj7sw",
+    "start": 2.2,
+    "end": 6.4,
+    "duration": 4.2,
+    "source_start": 158.77999999999997,
+    "source_end": 162.98,
+    "role": "enrollment",
+    "audio_sha256": "2cd0313eb0375e5dfcbfc5fecd2ae32bb1b6a17b055cf13fd95d08e15e5f99bd"
+  },
+  {
+    "id": "2926abb48af04d2482807a53c67dfd61",
+    "clip_id": "utrhqcji78-1",
+    "source_id": "utrhqcji78",
+    "start": 0.0,
+    "end": 5.5,
+    "duration": 5.5,
+    "source_start": 5.4,
+    "source_end": 10.9,
+    "role": "enrollment",
+    "audio_sha256": "443f3e532556d22204808baff8468c0cd963130215654f21593a8d5a4fc94dfa"
+  },
+  {
+    "id": "eafa64ba93c548089b0aaae2a5c54866",
+    "clip_id": "utrhqcji78-1",
+    "source_id": "utrhqcji78",
+    "start": 6.8,
+    "end": 12.2,
+    "duration": 5.3999999999999995,
+    "source_start": 12.2,
+    "source_end": 17.6,
+    "role": "enrollment",
+    "audio_sha256": "443f3e532556d22204808baff8468c0cd963130215654f21593a8d5a4fc94dfa"
+  },
+  {
+    "id": "eabe1ad2301249c4a0768c18fbcf4d99",
+    "clip_id": "utrhqcji78-4",
+    "source_id": "utrhqcji78",
+    "start": 5.1,
+    "end": 8.7,
+    "duration": 3.5999999999999996,
+    "source_start": 76.199,
+    "source_end": 79.799,
+    "role": "enrollment",
+    "audio_sha256": "dbd85885b18f4da6c7c7ff806493b581caa966d8d5afb381f8b6199ca7f936c2"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "clips_checked": 7102,
+  "episodes": 23,
+  "duration_range_seconds": [
+    3.0,
+    30.0
+  ],
+  "failures": [],
+  "comparison": {
+    "srt_clips": 4978,
+    "vtt_clips": 7102,
+    "srt_hours": 12.379671666666672,
+    "vtt_hours": 20.005102222222202,
+    "srt_wesam": {
+      "clips": 280,
+      "seconds": 1995.8999999999996,
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ]
+    },
+    "vtt_wesam": {
+      "clips": 1061,
+      "seconds": 7133.1570000000065,
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ]
+    }
+  },
+  "note": "These checks do not verify spoken text or voice identity. Listening review is pending."
+}

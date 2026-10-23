@@ -21,6 +21,7 @@ host hf.co
 host xethub.hf.co
 host amazonaws.com
 host ubuntu.com
+host aljawab.ai                 # our own dashboard (testing)
 
 # --- data hosts in the ledger
 host ieee-dataport.org          # SADA, MASC (permitted)

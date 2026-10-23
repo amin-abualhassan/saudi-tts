@@ -1,0 +1,38 @@
+{
+  "source_id": "utrhqcji78",
+  "requested_audio_seconds": 300.0,
+  "torch": "2.8.0+cu128",
+  "cuda_build": "12.8",
+  "cpu_threads": 4,
+  "runs": [
+    {
+      "device": "cpu",
+      "batch_size": 32,
+      "model_load_seconds": 0.662477054996998,
+      "diarization_seconds": 251.8199882820045,
+      "identity_seconds": 1.1522507820045575,
+      "inference_seconds": 252.97223906400905,
+      "real_time_factor": 0.8432407968800302,
+      "turns": 118,
+      "speakers": 2
+    },
+    {
+      "device": "cuda",
+      "batch_size": 64,
+      "model_load_seconds": 0.3885493289999431,
+      "diarization_seconds": 4.022225598004297,
+      "identity_seconds": 0.13239417599106673,
+      "inference_seconds": 4.154619773995364,
+      "real_time_factor": 0.013848732579984547,
+      "turns": 118,
+      "speakers": 2,
+      "peak_allocated_gpu_gib": 10.684465408325195
+    }
+  ],
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "audio_seconds": 300.0,
+  "status": "complete",
+  "inference_speedup": 60.88938406527964,
+  "estimated_full_corpus_inference_hours": 0.4352795137214943,
+  "note": "Single cold sample; estimates exclude full-corpus I/O, export and clustering scaling. CPU batch 32 versus configured GPU batch measures practical configuration speedup."
+}

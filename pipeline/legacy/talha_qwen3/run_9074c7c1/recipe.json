@@ -1,0 +1,26 @@
+{
+  "revision": 1,
+  "script": "6acf7dbb9a13b73a9498ca3bdd63f1a5faa10f248125a7b1cfe28f44db303ab3",
+  "upstream": "0c6a7cbb6c8421a46332f8c2434c7825c4c855ef",
+  "base": "f7a9298821573788f2d5f4a39b45fee096a0f660032af5f4a3cee7d9f5667b3c",
+  "codec": "9a2f27358eb44a06ffda643ea2cf0beb6b88bdddb643ed47af517875c0416b2d",
+  "data": {
+    "train": "2cd3ff5ff7bc7a463957f1eabd736c01a8e9caaeeb5860e43a86acebfc1c14f4",
+    "validation": "8ecaaa02cb37fb7f5fd48a36ec025524a9b1052ec3d527f5768a7c8e19c44c68",
+    "test": "46b502a3f727c51d20497f8242a0dc6628c3d38e18ba670c4fabc6bbc35b5e5c"
+  },
+  "controls": {
+    "batch_size": 1,
+    "accumulation": 4,
+    "lr": 2e-06,
+    "epochs": 3,
+    "steps": 2000,
+    "seed": 42,
+    "validation_steps": 100,
+    "validation_batches": 20,
+    "attention": "sdpa",
+    "balanced": false,
+    "max_length": 2048
+  },
+  "warm_start": null
+}

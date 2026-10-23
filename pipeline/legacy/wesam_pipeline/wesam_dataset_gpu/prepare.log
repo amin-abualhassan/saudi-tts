@@ -1,0 +1,43 @@
+/opt/dlami/nvme/training/wesam_review/.venv/lib/python3.10/site-packages/pyannote/audio/core/io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: libavutil.so.59: cannot open shared object file: No such file or directory
+FFmpeg version 6: libavutil.so.58: cannot open shared object file: No such file or directory
+FFmpeg version 5: libavutil.so.57: cannot open shared object file: No such file or directory
+FFmpeg version 4: libavutil.so.56: cannot open shared object file: No such file or directory
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+/opt/dlami/nvme/training/wesam_review/.venv/lib/python3.10/site-packages/speechbrain/utils/torch_audio_backend.py:64: UserWarning: torchaudio._backend.list_audio_backends has been deprecated. This deprecation is part of a large refactoring effort to transition TorchAudio into a maintenance phase. The decoding and encoding capabilities of PyTorch for both audio and video are being consolidated into TorchCodec. Please see https://github.com/pytorch/audio/issues/3902 for more information. It will be removed from the 2.9 release. 
+  available_backends = torchaudio.list_audio_backends()
+{"device": "cuda", "gpu": "NVIDIA H100 80GB HBM3", "segmentation_batch_size": 64, "embedding_batch_size": 64}
+Diarize 0j515zfr5l: 88.1 minutes on cuda
+/opt/dlami/nvme/training/wesam_review/.venv/lib/python3.10/site-packages/pyannote/audio/utils/reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+/opt/dlami/nvme/training/wesam_review/.venv/lib/python3.10/site-packages/pyannote/audio/models/blocks/pooling.py:103: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1839.)
+  std = sequences.std(dim=-1, correction=1)
+Export 0j515zfr5l: 210 clips / 34.5 min; total 210 clips
+Diarize 1zm10wn4u4: 20.9 minutes on cuda
+Export 1zm10wn4u4: 44 clips / 6.8 min; total 254 clips
+Diarize 2366wqj7sw: 75.8 minutes on cuda
+Export 2366wqj7sw: 205 clips / 32.1 min; total 459 clips
+Diarize 5flgspymra: 134.7 minutes on cuda
+Export 5flgspymra: 292 clips / 37.4 min; total 751 clips

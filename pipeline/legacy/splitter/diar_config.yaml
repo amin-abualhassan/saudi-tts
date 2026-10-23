@@ -1,0 +1,32 @@
+# diar_config.yaml
+diarizer:
+  manifest_filepath: "/workspace/Splitter/input_manifest.json"
+  out_dir: "/workspace/Splitter/output"
+  num_speakers: 2
+  
+  # Configuration for the MSDD model
+  msdd_model:
+    model_path: "diar_msdd_telephonic"
+    parameters:
+      sigmoid_threshold: [0.7, 1.0]
+      diar_window: 50
+      use_speaker_model_from_ckpt: True
+
+  # Configuration for VAD
+  vad:
+    model_path: "vad_multilingual_marblenet"
+    parameters:
+      window_length_in_sec: 0.15
+      shift_length_in_sec: 0.01
+
+  # Configuration for Speaker Embeddings
+  speaker_embeddings:
+    model_path: "titanet_large"
+    parameters:
+      window_length_in_sec: 1.5
+      shift_length_in_sec: 0.75
+
+  # Clustering parameters (Required by the class)
+  clustering:
+    parameters:
+      oracle_num_speakers: 2

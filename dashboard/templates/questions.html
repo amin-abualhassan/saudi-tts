@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+{% for q in qs|reverse %}
+<div class="card"><h2>{{ q.id }} · <span class="{{ 'PASS' if q.state=='RESOLVED' else 'RUNNING' }}">{{ q.state }}</span></h2>
+<p><b>{{ q.title }}</b></p><pre>{{ q.body }}</pre>
+{% if q.state == 'OPEN' %}
+<form method="post" action="/questions/{{ q.id }}"><p><textarea name="text" rows="2" placeholder="Your answer (written into QUESTIONS.md)"></textarea></p><button>Answer</button></form>
+{% endif %}
+</div>
+{% else %}<div class="card"><p class="mut">No questions.</p></div>{% endfor %}
+{% endblock %}

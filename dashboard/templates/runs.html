@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card"><h2>Checkpoint metrics (reports/metrics.jsonl, newest first)</h2>
+{% if metrics %}
+<table><tr>{% for k in metrics[0].keys() %}<th>{{ k }}</th>{% endfor %}</tr>
+{% for m in metrics %}<tr>{% for k in metrics[0].keys() %}<td>{{ m.get(k,'') }}</td>{% endfor %}</tr>{% endfor %}</table>
+{% else %}<p class="mut">No checkpoint evaluated yet.</p>{% endif %}
+</div>
+{% for r in runs %}
+<div class="card"><h2>{{ r.name }}</h2>
+{% if r.svg %}{{ r.svg|safe }}<p class="k">loss · last step {{ r.points[-1].get('step') }} · {{ r.points[-1] }}</p>{% else %}<p class="mut">no train_log.jsonl yet</p>{% endif %}
+</div>
+{% else %}<div class="card"><p class="mut">No training runs yet.</p></div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card" style="max-width:420px;margin:40px auto">
+<h2>Saudi TTS training</h2>
+{% if error %}<p class="err">{{ error }}</p>{% endif %}
+{% if qr %}
+<p>First login: scan this once with your authenticator app, then enter the 6-digit code. This QR is never shown again.</p>
+<img src="data:image/png;base64,{{ qr }}" alt="TOTP QR" style="width:220px;background:#fff;padding:8px;border-radius:8px">
+<form method="post" action="/login">
+<input type="hidden" name="password" value="{{ password }}">
+<p><input name="code" inputmode="numeric" autocomplete="one-time-code" placeholder="6-digit code" required></p>
+<p><input name="name" placeholder="your name (amin for Amin)" value="amin"></p>
+<button>Verify</button>
+</form>
+{% else %}
+<form method="post" action="/login">
+<p><input type="password" name="password" placeholder="password" autocomplete="current-password" required></p>
+{% if enrolled %}<p><input name="code" inputmode="numeric" autocomplete="one-time-code" placeholder="6-digit code" required></p>{% endif %}
+<p><input name="name" placeholder="your first name (Amin: amin)" required></p>
+<button>Log in</button>
+</form>
+<p class="mut" style="font-size:12px">Listeners: use your own first name so votes are counted per person.</p>
+{% endif %}
+</div>
+{% endblock %}

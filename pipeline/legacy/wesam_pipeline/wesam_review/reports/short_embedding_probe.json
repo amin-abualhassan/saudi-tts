@@ -1,0 +1,44 @@
+{
+  "backend": "wespeaker",
+  "model": "pyannote/wespeaker-voxceleb-resnet34-LM",
+  "device": "cpu",
+  "note": "Prefix crops of one manually selected enrollment excerpt at probe time; same-enrollment comparison, not independent accuracy validation. The probe did not record source identity or change enrollment.",
+  "results": [
+    {
+      "seconds": 0.25,
+      "actual_seconds": 0.25,
+      "finite": true,
+      "score": 0.3714217245578766
+    },
+    {
+      "seconds": 0.5,
+      "actual_seconds": 0.5,
+      "finite": true,
+      "score": 0.5612762570381165
+    },
+    {
+      "seconds": 0.75,
+      "actual_seconds": 0.75,
+      "finite": true,
+      "score": 0.5692548751831055
+    },
+    {
+      "seconds": 1.0,
+      "actual_seconds": 1.0,
+      "finite": true,
+      "score": 0.6346607208251953
+    },
+    {
+      "seconds": 1.5,
+      "actual_seconds": 1.5,
+      "finite": true,
+      "score": 0.7214016318321228
+    },
+    {
+      "seconds": 3.0,
+      "actual_seconds": 3.0,
+      "finite": true,
+      "score": 0.8306096792221069
+    }
+  ]
+}

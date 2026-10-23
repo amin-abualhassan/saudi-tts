@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/opt/dlami/nvme/training/talha_qwen3/runs/9074c7c19faa68bc3976472d/checkpoint-step-1863",
+  "test_loss": 3.3904655413354354,
+  "validation_loss": 3.596790413409625,
+  "test_clips": 141,
+  "language": "Auto",
+  "arabic_experimental": true
+}

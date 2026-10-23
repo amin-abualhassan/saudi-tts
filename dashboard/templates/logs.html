@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card"><form method="get" action="/logs"><select name="f" onchange="this.form.submit()">
+{% for f in files %}<option value="{{ f }}" {{ 'selected' if f==chosen }}>{{ f }}</option>{% endfor %}</select></form></div>
+<div class="card"><h2>{{ chosen }} (last 200 lines)</h2><pre>{{ text }}</pre></div>
+{% endblock %}

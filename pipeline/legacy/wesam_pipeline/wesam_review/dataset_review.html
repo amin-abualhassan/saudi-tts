@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wesam dataset listening review</title>
+<style>
+body{font:16px system-ui;background:#10151f;color:#edf1fa;max-width:1100px;margin:30px auto;padding:0 20px}h1{margin-bottom:8px}p{color:#b6c2d8;line-height:1.5}header{position:sticky;top:0;background:#10151f;padding:14px 0;z-index:1;display:flex;gap:10px;flex-wrap:wrap}select,input,button{font:inherit;border:1px solid #45546b;border-radius:6px;padding:8px;background:#1d2838;color:inherit}article{background:#192332;border:1px solid #35435b;border-radius:10px;margin:15px 0;padding:16px}small{color:#b6c2d8}audio{width:100%;margin:12px 0}.text{font-size:21px;line-height:1.65;text-align:right}footer{display:flex;gap:10px;align-items:center;margin:20px 0}
+</style>
+<h1>Single-speaker podcast clips</h1><p id="totals"></p>
+<p>Check the voice, matching words, clipped beginnings and endings, and cross-talk. Word starts come from captions; word ends are inferred. Listening review is pending.</p>
+<header><select id="speaker"><option value="">All speakers</option></select><select id="episode"><option value="">All episodes</option></select><select id="state"><option value="">All review states</option><option>pending</option><option>accept</option><option>reject</option><option>uncertain</option></select><input id="search" placeholder="Search transcript"><button id="download">Download review decisions</button></header>
+<div id="clips"></div><footer><button id="prev">Previous</button><span id="page"></span><button id="next">Next</button></footer>
+<script>
+const rows=__ROWS__;
+const $=id=>document.getElementById(id),storageKey='wesam-word-review-v1';
+let decisions={},page=0,filtered=[];
+try{decisions=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch{}
+const counts=rows.reduce((a,r)=>(a[r.speaker]=(a[r.speaker]||0)+1,a),{});
+for(const s of Object.keys(counts).sort())$('speaker').add(new Option(`${s} (${counts[s]})`,s));
+for(const s of [...new Set(rows.map(r=>r.source_id))].sort())$('episode').add(new Option(s,s));
+$('totals').textContent=`${rows.length.toLocaleString()} clips · ${(rows.reduce((s,r)=>s+r.duration,0)/3600).toFixed(2)} hours · ${counts.wesam_ali||0} Wesam clips`;
+function render(){
+  filtered=rows.filter(r=>(!$('speaker').value||r.speaker===$('speaker').value)&&(!$('episode').value||r.source_id===$('episode').value)&&(!$('state').value||$('state').value===(decisions[r.clip_id]?.decision||'pending'))&&r.text.includes($('search').value));
+  page=Math.max(0,Math.min(page,Math.ceil(filtered.length/12)-1));$('clips').replaceChildren();
+  for(const r of filtered.slice(page*12,page*12+12)){
+    const card=document.createElement('article'),meta=document.createElement('small'),text=document.createElement('div'),audio=document.createElement('audio'),choice=document.createElement('select');
+    meta.textContent=`${r.speaker} · ${r.source_id} · ${r.start.toFixed(2)}–${r.end.toFixed(2)} s · ${r.duration.toFixed(2)} s · ${r.split} · identity cosine ${r.identity_score?.toFixed(3)??'unknown'}`;
+    text.className='text';text.dir='rtl';text.lang='ar';text.textContent=r.text;
+    audio.controls=true;audio.preload='none';audio.src=location.pathname==='/dataset'?`/dataset-audio?id=${encodeURIComponent(r.clip_id)}`:`audio/${encodeURIComponent(r.speaker)}/${encodeURIComponent(r.clip_id)}.wav`;
+    for(const value of ['pending','accept','reject','uncertain'])choice.add(new Option(value,value));
+    choice.value=decisions[r.clip_id]?.decision||'pending';choice.onchange=()=>{decisions[r.clip_id]={clip_id:r.clip_id,speaker:r.speaker,source_id:r.source_id,decision:choice.value,updated_at:new Date().toISOString()};localStorage.setItem(storageKey,JSON.stringify(decisions));};
+    card.append(meta,text,audio,choice);$('clips').append(card);
+  }
+  $('page').textContent=`${filtered.length.toLocaleString()} matching clips · Page ${page+1} of ${Math.max(1,Math.ceil(filtered.length/12))}`;
+  $('prev').disabled=page===0;$('next').disabled=(page+1)*12>=filtered.length;
+}
+for(const id of ['speaker','episode','state','search'])$(id).oninput=()=>{page=0;render()};
+$('prev').onclick=()=>{page--;render()};$('next').onclick=()=>{page++;render()};
+$('download').onclick=()=>{const blob=new Blob([JSON.stringify({dataset:'wesam_dataset_words',decisions:Object.values(decisions)},null,2)],{type:'application/json'}),link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='wesam-review-decisions.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000)};
+render();
+</script></html>

@@ -1,0 +1,237 @@
+{
+  "status": "passed",
+  "clips_checked": 7102,
+  "episodes": 23,
+  "duration_range_seconds": [
+    3.0,
+    30.0
+  ],
+  "source_crop_checks": [
+    {
+      "clip_id": "0j515zfr5l_2426832_2605440",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "1zm10wn4u4_236160_619680",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "1zm10wn4u4_2037120_2828160",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "2366wqj7sw_385920_864000",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "2366wqj7sw_1856640_2807040",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "5flgspymra_650832_846720",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "5flgspymra_1776000_2031360",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "690bdx2a7x_871680_1524432",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "690bdx2a7x_1553280_1706352",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "690bdx2a7x_235136592_236540160",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "6n2esa018j_476160_1109232",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "6n2esa018j_61420800_61608960",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "8h7r4cs81s_186192_930720",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "c5bcjps40r_689280_883200",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "epabqc9ast_370560_746400",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "epabqc9ast_1908480_2357760",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "i2clnz70i8_341760_650832",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "i2clnz70i8_1042560_1248000",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "j27tmdq22g_174672_1387680",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "j27tmdq22g_4888320_6145872",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "j3bw52pgye_147840_497280",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "nzc21rdbcn_835200_1046400",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "nzc21rdbcn_1728000_2196480",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "omovwbnxb9_345600_805920",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "omovwbnxb9_1674192_2757120",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "piekf44qr0_153552_833232",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "qc67lna1qb_898560_1608960",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "qc67lna1qb_1833600_3048912",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "rikl276p9j_810240_1372752",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "rikl276p9j_2768640_4204320",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "utrhqcji78_418512_865872",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "utrhqcji78_1793280_3196800",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "vngwvadz85_182400_541440",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "vngwvadz85_1733760_2135040",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "w5ri83j0ly_174672_1608960",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "xs9hy6dwtn_554832_788592",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "xs9hy6dwtn_1979472_2407680",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "zmjh0hwrup_122880_775680",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "zsbp3t7j3m_101760_1113552",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    },
+    {
+      "clip_id": "zsbp3t7j3m_4665600_5916960",
+      "max_sample_error": 3.039836883544922e-05,
+      "passes_pcm16_tolerance": true
+    }
+  ],
+  "failures": [],
+  "comparison": {
+    "srt_clips": 4978,
+    "vtt_clips": 7102,
+    "srt_hours": 12.379671666666672,
+    "vtt_hours": 20.005102222222202,
+    "srt_wesam": {
+      "clips": 280,
+      "seconds": 1995.8999999999996,
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ]
+    },
+    "vtt_wesam": {
+      "clips": 1061,
+      "seconds": 7133.1570000000065,
+      "splits": [
+        "test",
+        "train",
+        "validation"
+      ]
+    }
+  },
+  "note": "These checks do not verify spoken text or voice identity. Listening review is pending."
+}

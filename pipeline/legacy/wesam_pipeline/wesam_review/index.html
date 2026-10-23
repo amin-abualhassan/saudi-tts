@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wesam · Speaker review</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#e9eef6;background:#101722;color-scheme:dark}body{max-width:1150px;margin:auto;padding:28px}h1{margin-bottom:8px}p{line-height:1.6;color:#adbacd}select,button,input{font:inherit;padding:10px;border-radius:8px;border:1px solid #46526a;background:#202d42;color:#fff}select{width:100%;margin:12px 0}.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:14px 0}article{border:1px solid #34425a;border-radius:12px;padding:20px;margin:16px 0;background:#172131}article h3{margin:0 0 12px}audio{width:100%;margin:12px 0}.text{font-size:20px;line-height:1.8;color:#edf2fc}.meta{color:#adbacd;font-size:14px}.timeline{position:relative;height:64px;background:#0c1220;border-radius:6px;margin:12px 0;overflow:hidden}.turn{position:absolute;height:27px;top:4px;cursor:pointer;opacity:.9;border:0;border-radius:3px;padding:0;font-size:11px;color:#07111e;overflow:hidden}.playhead{position:absolute;width:2px;height:100%;background:white;pointer-events:none}.status{margin:10px 0;color:#bcd4ef}.badge{display:inline-block;border-radius:20px;padding:4px 10px;background:#334158;font-size:13px}.mixed{background:#753e30}.single{background:#265943}.segments{display:flex;gap:6px;flex-wrap:wrap}.segments button{font-size:12px;padding:7px}.notice{border-left:3px solid #e5b76e;padding-left:16px}button{cursor:pointer}button:disabled{opacity:.5;cursor:default}#error{color:#ffc5ab}.counts{color:#adbacd}
+.reference{border:1px solid #496381;border-radius:12px;padding:20px;background:#17263a;margin:22px 0}.reference progress{width:100%;height:18px}.reference select{width:auto}.picker input{width:85px}.saved{padding:8px 0;border-bottom:1px solid #34425a}.saved button{font-size:12px;padding:5px;margin-left:8px}.identity-window{font-size:13px;margin:4px}.identity-results{margin-top:16px;border-top:1px solid #34425a;padding-top:12px}
+</style>
+<h1>Wesam · Speaker review</h1>
+<p>Listen to the existing clips and inspect whether a speaker changes inside a clip.</p>
+<p class="notice">These clips follow transcript boundaries. Speaker splitting has not been verified. Model results are predictions; “SPEAKER_00” does not establish Wesam’s identity and labels can change between analyses. The transcript below belongs to the whole original clip.</p>
+<section class="reference">
+<h2>Wesam reference · aim for 30 seconds</h2>
+<p>Mark clean, uninterrupted Wesam speech below. Use several 3–8 second excerpts, preferably from different episodes. Exclude guest speech, overlap and music. Times are seconds within the clip.</p>
+<progress id="referenceProgress" max="30" value="0"></progress><p id="referenceTotals"></p>
+<details><summary>Saved excerpts and validation examples</summary><div id="referenceList"></div></details>
+<div class="toolbar"><label>Embedding model <select id="backend"><option value="wespeaker">WeSpeaker ResNet34</option><option value="ecapa">SpeechBrain ECAPA-TDNN</option><option value="wavlm">WavLM Base Plus SV</option></select></label><button id="buildReference">Build reference embedding</button><a href="/reference.wav" target="_blank">Listen to compiled reference</a></div>
+<p class="meta">For threshold calibration, also mark at least three separate “Wesam validation” and three “Other-speaker validation” excerpts. Keep these out of enrollment. Scores are not probabilities; a low score does not confirm a guest’s identity.</p>
+<div class="toolbar"><label>Speech regions <select id="vad"><option value="silero">Silero VAD + short windows</option><option value="pyannote">Pyannote turns + overlap flags</option></select></label><button id="identifyTrial">Identify first 5 minutes</button><button id="identifyEpisode">Identify whole episode</button></div>
+<div class="toolbar"><label>Minimum speech (s) <input id="minSpeech" type="number" min="0.25" max="10" step="0.05" value="0.5" style="width:80px"></label><label>Window length (s) <input id="windowSeconds" type="number" min="0.25" max="10" step="0.25" value="3" style="width:80px"></label><label>Hop (s) <input id="hopSeconds" type="number" min="0.05" max="10" step="0.05" value="1.5" style="width:80px"></label></div>
+<p class="meta">The minimum controls which utterances get scored. Window length controls how much speech each embedding uses; hop controls how often it is computed. Scores below 1.5 seconds are marked as short estimates. Rerun identification after changing these settings.</p>
+<div class="toolbar"><label><input type="checkbox" id="useThreshold" checked> Label scored windows using my threshold</label><label>Threshold <input id="displayThreshold" type="number" min="-1" max="1" step="0.01" value="0.5" style="width:80px"></label></div>
+<p class="meta">Display rule: above the threshold = Wesam; below = other speaker; equal or no score = uncertain. This changes the labels on screen only; saved reports keep their original labels. Speech below the chosen minimum and detected overlap are not scored.</p>
+<div id="identityStatus" role="status"></div><p id="predictionSettings" class="notice" role="status"></p>
+</section>
+<label for="episode">Episode</label><select id="episode"></select>
+<div class="toolbar"><input id="search" placeholder="Search transcript or clip ID"><label><input type="checkbox" id="mixed"> Multiple speakers predicted only</label><button id="sample">Analyze 3 samples</button><span class="counts" id="counts"></span></div>
+<p class="meta">Analysis uses Community-1 on the original clip plus 30 seconds before and after it. Click a colored turn to listen to that interval. Overlapping turns occupy separate lanes. Sample analysis checks the beginning, middle and end of the selected episode.</p>
+<div id="error" role="alert"></div><main id="clips"></main>
+<div class="toolbar"><button id="prev">Previous</button><span id="page"></span><button id="next">Next</button></div>
+<script>
+let rows=[], page=0, predictions=[], identityPending=false; const pageSize=12, jobs=new Set();
+const $=id=>document.getElementById(id);
+const colors=['#7dd3fc','#fca5a5','#c4b5fd','#86efac','#fde68a','#fdba74'];
+function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n}
+async function api(path,opts){const r=await fetch(path,opts);if(!r.ok)throw Error(`${r.status}: ${await r.text()}`);return r.json()}
+function badge(result){return result?result.verdict:'Not analyzed'}
+function filtered(){const q=$('search').value.toLowerCase();return rows.filter(r=>(r.clip_id+' '+r.text).toLowerCase().includes(q)&&(!$('mixed').checked||r.analysis?.speaker_count>1))}
+function showAnalysis(r,area,audio,timeline){
+ area.replaceChildren();timeline.replaceChildren(); const a=r.analysis;
+ if(!a){area.append(node('span','Not analyzed','badge'));return}
+ area.append(node('span',badge(a),'badge '+(a.speaker_count>1?'mixed':'single')));
+ area.append(node('p',`Predicted overlap: ${a.overlap_seconds.toFixed(2)} s · Speaker count includes labels with at least ${a.speaker_threshold_seconds} s of speech.`, 'meta'));
+ const speakers=Object.keys(a.speaker_seconds).sort(), buttons=node('div',undefined,'segments');timeline.style.height=`${Math.max(64, speakers.length*29+8)}px`;
+ for(const s of a.segments){
+  const color=colors[speakers.indexOf(s.speaker)%colors.length];
+  const play=()=>{audio.currentTime=s.start;audio.dataset.stop=s.end;audio.play().catch(e=>$('error').textContent=e.message)};
+  const t=node('button',s.speaker,'turn');t.style.left=`${100*s.start/r.duration}%`;t.style.width=`${100*(s.end-s.start)/r.duration}%`;t.style.top=`${4+29*speakers.indexOf(s.speaker)}px`;t.style.background=color;t.title=`${s.speaker}: ${s.start.toFixed(2)}–${s.end.toFixed(2)} s`;t.onclick=play;timeline.append(t);
+  const b=node('button',`${s.speaker} ${s.start.toFixed(1)}–${s.end.toFixed(1)} s`);b.style.borderColor=color;b.onclick=play;buttons.append(b);
+ }
+ const head=node('div',undefined,'playhead');timeline.append(head);audio.addEventListener('timeupdate',()=>head.style.left=`${100*audio.currentTime/r.duration}%`);
+ area.append(buttons);
+}
+function addPicker(card,r,audio){
+ const picker=node('div',undefined,'toolbar picker');
+ const start=node('input');start.type='number';start.min=0;start.max=r.duration;start.step=.01;start.value=0;start.setAttribute('aria-label','Excerpt start seconds');
+ const end=node('input');end.type='number';end.min=0;end.max=r.duration;end.step=.01;end.value=Math.min(5,r.duration).toFixed(2);end.setAttribute('aria-label','Excerpt end seconds');
+ const markStart=node('button','Mark start now');markStart.onclick=()=>start.value=audio.currentTime.toFixed(2);
+ const markEnd=node('button','Mark end now');markEnd.onclick=()=>end.value=audio.currentTime.toFixed(2);
+ const preview=node('button','Play selection');preview.onclick=()=>{const a=Number(start.value),b=Number(end.value);if(!Number.isFinite(a)||!Number.isFinite(b)||a<0||b<=a||b>r.duration){$('error').textContent='Choose start and end inside the clip';return}audio.currentTime=a;audio.dataset.stop=b;audio.play().catch(e=>$('error').textContent=e.message)};
+ const role=node('select');for(const [value,label] of [['enrollment','Wesam enrollment'],['wesam_validation','Wesam validation'],['other_validation','Other-speaker validation']]){const option=node('option',label);option.value=value;role.append(option)}role.setAttribute('aria-label','Reference role');
+ const save=node('button','Save excerpt');save.onclick=async()=>{try{await api('/api/reference',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({clip_id:r.clip_id,start:Number(start.value),end:Number(end.value),role:role.value})});$('error').textContent='';await loadReference()}catch(e){$('error').textContent=e.message}};
+ picker.append(node('span','Start'),start,markStart,node('span','End'),end,markEnd,preview,role,save);card.append(picker);
+}
+function addIdentity(card,r,audio){
+ const spans=predictions.filter(w=>w.end>r.start&&w.start<r.end);
+ if(!spans.length)return;
+ const area=node('div',undefined,'identity-results');area.append(node('div','Speaker identification · short evidence windows','meta'));
+ for(const w of spans){
+  const a=Math.max(0,w.start-r.start),b=Math.min(r.duration,w.end-r.start);
+  const missing=w.cosine_similarity==null;
+  let reason='';
+  if(missing){const reasons=[];if(w.short_speech)reasons.push(`speech too short (${(w.end-w.start).toFixed(2)} s; minimum ${w.min_speech_seconds??1.5} s)`);if(w.overlap)reasons.push('overlapping speakers');if(w.no_score_reason==='embedding_failed')reasons.push(`embedding failed (${w.embedding_error||'model error'})`);reason=reasons.join('; ')||'score unavailable in saved report'}
+  const score=missing?`not scored: ${reason}`:`score ${w.cosine_similarity.toFixed(3)}${w.low_evidence?' (short estimate)':''}`;
+  let label=w.label;
+  const threshold=Number($('displayThreshold').value);
+  if($('useThreshold').checked&&Number.isFinite(threshold)&&threshold>=-1&&threshold<=1){
+   label=missing||w.short_speech||w.overlap||w.cosine_similarity===threshold?'uncertain':w.cosine_similarity>threshold?'wesam':'other_speaker';
+  }
+  const button=node('button',`${label} · ${a.toFixed(1)}–${b.toFixed(1)} s · ${score}`,'identity-window');
+  button.style.borderColor=label==='wesam'?'#86efac':label==='other_speaker'?'#fca5a5':'#fde68a';
+  button.title=missing?reason:'Similarity is not a probability. Window boundaries are not exact speaker changes.';
+  button.onclick=()=>{audio.currentTime=a;audio.dataset.stop=b;audio.play().catch(e=>$('error').textContent=e.message)};
+  area.append(button);
+ }
+ card.append(area);
+}
+$('useThreshold').onchange=()=>render();$('displayThreshold').onchange=()=>{const t=Number($('displayThreshold').value);if(!Number.isFinite(t)||t< -1||t>1){$('error').textContent='Threshold must be between -1 and 1';return}render()};
+
+async function loadReference(){const data=await api('/api/reference');const t=data.totals;$('referenceProgress').value=t.enrollment;$('referenceTotals').textContent=`Wesam enrollment: ${t.enrollment.toFixed(1)} / ~30 s · Wesam validation: ${t.wesam_validation.toFixed(1)} s · Other validation: ${t.other_validation.toFixed(1)} s`;$('referenceList').replaceChildren();for(const e of data.selections){const item=node('div',`${e.role} · ${e.clip_id} · ${e.start.toFixed(2)}–${e.end.toFixed(2)} s`,'saved');const remove=node('button','Remove');remove.onclick=async()=>{try{await api('/api/reference/remove',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:e.id})});await loadReference()}catch(err){$('error').textContent=err.message}};item.append(remove);$('referenceList').append(item)}}
+async function loadPredictions(){const source=$('episode').value;const data=await api(`/api/identity/predictions?source=${encodeURIComponent(source)}&backend=${$('backend').value}&vad=${$('vad').value}`);predictions=data.stale?[]:data.windows;if(data.stale)$('identityStatus').textContent='Saved predictions use an older reference profile. Build and identify again to refresh them.';if(data.windows.length){const minimum=data.min_speech_seconds??1.5;const wanted=Number($('minSpeech').value);$('predictionSettings').textContent=`Saved results: minimum ${minimum} s, window ${data.window_seconds??3} s, hop ${data.hop_seconds??1.5} s.${minimum!==wanted?' These results use a different minimum. Restart the Python server after a code update, then rerun identification to compute the missing scores.':''}`}else $('predictionSettings').textContent='';render()}
+async function identityTask(path,extra={}){try{await api(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({backend:$('backend').value,vad:$('vad').value,source:$('episode').value,min_speech_seconds:Number($('minSpeech').value),window_seconds:Number($('windowSeconds').value),hop_seconds:Number($('hopSeconds').value),...extra})});identityPending=true;$('identityStatus').textContent='Queued';}catch(e){$('error').textContent=e.message}}
+$('buildReference').onclick=()=>identityTask('/api/reference/build');$('identifyTrial').onclick=()=>identityTask('/api/identity/run',{limit_seconds:300});$('identifyEpisode').onclick=()=>identityTask('/api/identity/run');$('backend').onchange=()=>loadPredictions().catch(e=>$('error').textContent=e.message);$('vad').onchange=$('backend').onchange;
+setInterval(async()=>{try{const job=await api('/api/identity/status');const running=['running','queued'].includes(job.state);for(const id of ['buildReference','identifyTrial','identifyEpisode'])$(id).disabled=running;if(running){identityPending=true;$('identityStatus').textContent=job.message}if(identityPending&&!running){identityPending=false;$('identityStatus').textContent=job.message;if(job.state==='error')$('error').textContent=job.message;await loadPredictions();await loadReference()}}catch(e){$('identityStatus').textContent=e.message}},2500);
+function render(){
+ const list=filtered(), max=Math.max(0,Math.ceil(list.length/pageSize)-1);page=Math.min(page,max);
+ $('clips').replaceChildren();$('counts').textContent=`${rows.length} clips · ${rows.filter(r=>r.analysis).length} analyzed · ${rows.filter(r=>r.analysis?.speaker_count>1).length} with multiple predicted speakers`;
+ $('page').textContent=`${page+1} / ${max+1}`;$('prev').disabled=page===0;$('next').disabled=page===max;
+ for(const r of list.slice(page*pageSize,(page+1)*pageSize)){
+  const card=node('article');card.append(node('h3',r.clip_id));card.append(node('div',`Original recording ${r.start.toFixed(2)}–${r.end.toFixed(2)} s · ${r.duration.toFixed(2)} s clip`,'meta'));
+  const text=node('p',r.text,'text');text.dir='rtl';text.lang='ar';card.append(text);
+  const audio=node('audio');audio.controls=true;audio.preload='none';audio.src=`/audio?id=${encodeURIComponent(r.clip_id)}`;audio.onplay=()=>{document.querySelectorAll('audio').forEach(other=>{if(other!==audio)other.pause()})};audio.ontimeupdate=()=>{if(audio.dataset.stop&&audio.currentTime>=Number(audio.dataset.stop)){audio.pause();delete audio.dataset.stop}};audio.onseeking=()=>{if(audio.dataset.stop&&audio.currentTime>Number(audio.dataset.stop))delete audio.dataset.stop};card.append(audio);addPicker(card,r,audio);addIdentity(card,r,audio);
+  const timeline=node('div',undefined,'timeline'), area=node('div');card.append(timeline,area);showAnalysis(r,area,audio,timeline);
+  const b=node('button',jobs.has(r.clip_id)?'Analysis queued / running':'Analyze speaker turns');b.disabled=jobs.has(r.clip_id);b.onclick=()=>enqueue(r.clip_id);card.append(b);const status=node('div','','status');status.id='status-'+r.clip_id;card.append(status);$('clips').append(card);
+ }
+}
+async function enqueue(id){try{await api('/api/analyze?id='+encodeURIComponent(id),{method:'POST'});jobs.add(id);render()}catch(e){$('error').textContent=e.message}}
+async function loadEpisode(){try{rows=await api('/api/clips?source='+encodeURIComponent($('episode').value));page=0;await loadPredictions()}catch(e){$('error').textContent=e.message}}
+$('episode').onchange=loadEpisode;$('search').oninput=()=>{page=0;render()};$('mixed').onchange=()=>{page=0;render()};$('prev').onclick=()=>{page--;render()};$('next').onclick=()=>{page++;render()};
+$('sample').onclick=async()=>{for(const i of new Set([0,Math.floor(rows.length/2),rows.length-1]))if(rows[i])await enqueue(rows[i].clip_id)};
+setInterval(async()=>{for(const id of [...jobs]){try{const s=await api('/api/status?id='+encodeURIComponent(id));const label=$('status-'+id);if(label)label.textContent=s.job.message||s.job.state;if(['done','error'].includes(s.job.state)){jobs.delete(id);const r=rows.find(r=>r.clip_id===id);if(r)r.analysis=s.analysis;if(s.job.state==='error')$('error').textContent=`${id}: ${s.job.message}. Run the setup script in the server shell, then retry.`;render()}}catch(e){$('error').textContent=e.message}}},2500);
+(async()=>{try{for(const e of await api('/api/episodes')){const o=node('option',`${e.title} (${e.clips} clips)`);o.value=e.id;$('episode').append(o)}await loadReference();await loadEpisode()}catch(e){$('error').textContent=e.message}})();
+</script></html>

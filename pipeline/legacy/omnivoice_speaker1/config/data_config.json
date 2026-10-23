@@ -1,0 +1,20 @@
+{
+  "train": [
+    {
+      "language_id": "apc",
+      "manifest_path": [
+        "/opt/dlami/nvme/training/omnivoice/speaker1/tokens/train/data.lst"
+      ],
+      "repeat": 1
+    }
+  ],
+  "dev": [
+    {
+      "language_id": "apc",
+      "manifest_path": [
+        "/opt/dlami/nvme/training/omnivoice/speaker1/tokens/dev/data.lst"
+      ],
+      "repeat": 1
+    }
+  ]
+}

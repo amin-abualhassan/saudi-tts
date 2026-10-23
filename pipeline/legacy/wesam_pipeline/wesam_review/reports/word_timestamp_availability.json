@@ -1,0 +1,122 @@
+{
+  "episodes": 23,
+  "episodes_with_word_timestamps": 23,
+  "provenance": "Original YouTube WebVTT inline token timestamps; not verified CTC word alignment",
+  "episodes_checked": [
+    {
+      "source_id": "0j515zfr5l",
+      "vtt_exists": true,
+      "inline_word_timestamps": 9918
+    },
+    {
+      "source_id": "1zm10wn4u4",
+      "vtt_exists": true,
+      "inline_word_timestamps": 2021
+    },
+    {
+      "source_id": "2366wqj7sw",
+      "vtt_exists": true,
+      "inline_word_timestamps": 8394
+    },
+    {
+      "source_id": "5flgspymra",
+      "vtt_exists": true,
+      "inline_word_timestamps": 14897
+    },
+    {
+      "source_id": "690bdx2a7x",
+      "vtt_exists": true,
+      "inline_word_timestamps": 9726
+    },
+    {
+      "source_id": "6n2esa018j",
+      "vtt_exists": true,
+      "inline_word_timestamps": 6101
+    },
+    {
+      "source_id": "8h7r4cs81s",
+      "vtt_exists": true,
+      "inline_word_timestamps": 6773
+    },
+    {
+      "source_id": "c5bcjps40r",
+      "vtt_exists": true,
+      "inline_word_timestamps": 10398
+    },
+    {
+      "source_id": "epabqc9ast",
+      "vtt_exists": true,
+      "inline_word_timestamps": 8553
+    },
+    {
+      "source_id": "i2clnz70i8",
+      "vtt_exists": true,
+      "inline_word_timestamps": 8479
+    },
+    {
+      "source_id": "j27tmdq22g",
+      "vtt_exists": true,
+      "inline_word_timestamps": 4973
+    },
+    {
+      "source_id": "j3bw52pgye",
+      "vtt_exists": true,
+      "inline_word_timestamps": 3953
+    },
+    {
+      "source_id": "nzc21rdbcn",
+      "vtt_exists": true,
+      "inline_word_timestamps": 12672
+    },
+    {
+      "source_id": "omovwbnxb9",
+      "vtt_exists": true,
+      "inline_word_timestamps": 14977
+    },
+    {
+      "source_id": "piekf44qr0",
+      "vtt_exists": true,
+      "inline_word_timestamps": 4312
+    },
+    {
+      "source_id": "qc67lna1qb",
+      "vtt_exists": true,
+      "inline_word_timestamps": 10143
+    },
+    {
+      "source_id": "rikl276p9j",
+      "vtt_exists": true,
+      "inline_word_timestamps": 14965
+    },
+    {
+      "source_id": "utrhqcji78",
+      "vtt_exists": true,
+      "inline_word_timestamps": 11047
+    },
+    {
+      "source_id": "vngwvadz85",
+      "vtt_exists": true,
+      "inline_word_timestamps": 13570
+    },
+    {
+      "source_id": "w5ri83j0ly",
+      "vtt_exists": true,
+      "inline_word_timestamps": 3503
+    },
+    {
+      "source_id": "xs9hy6dwtn",
+      "vtt_exists": true,
+      "inline_word_timestamps": 7353
+    },
+    {
+      "source_id": "zmjh0hwrup",
+      "vtt_exists": true,
+      "inline_word_timestamps": 8187
+    },
+    {
+      "source_id": "zsbp3t7j3m",
+      "vtt_exists": true,
+      "inline_word_timestamps": 6943
+    }
+  ]
+}

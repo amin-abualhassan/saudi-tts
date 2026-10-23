@@ -1,0 +1,2177 @@
+{
+  "source": "wesamali.official (identified by README.md and first reference section)",
+  "reference_sections": {
+    "old_name - new_key": 23,
+    "talha-screenshot-2025": 274,
+    "talha-screenshot-2024": 155
+  },
+  "local_all_source_clip_counts": {
+    "talha-screenshot-2025": 24384,
+    "talha-screenshot-2024": 13547,
+    "old_name - new_key": 6365
+  },
+  "episodes": [
+    {
+      "source_id": "2366wqj7sw",
+      "title": "20241224_جلال ابو مويس： انا بتعمد إستفزاز الناس والغربة سرقت مني كثير ｜ برنامج تحت الضغط مع وسام علي (Part 1)",
+      "clips": 255,
+      "clip_hours": 0.8946919618055554,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.896,
+        "median": 10.62,
+        "p90": 23.052,
+        "max": 29.72
+      },
+      "structural_candidate_clips": 255,
+      "structural_candidate_hours": 0.8946919618055554,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 524,
+      "full_audio_hours": 1.2632010127314814
+    },
+    {
+      "source_id": "6n2esa018j",
+      "title": "20241227_جلال ابو مويس متأثراً： قدوتي بالحياة ما كان مليونير ｜ برنامج تحت الضغط مع وسام علي (Part 2)",
+      "clips": 187,
+      "clip_hours": 0.6668519849537038,
+      "duration_seconds": {
+        "min": 5.02,
+        "p10": 6.0080125,
+        "median": 11.36,
+        "p90": 22.324,
+        "max": 29.82
+      },
+      "structural_candidate_clips": 187,
+      "structural_candidate_hours": 0.6668519849537038,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 397,
+      "full_audio_hours": 0.9897795949074073
+    },
+    {
+      "source_id": "5flgspymra",
+      "title": "20250103_سلامة ： مظلوم بالسجن وبالحب وبالطلاق ｜ وهاي قصة زواجه بالسر ｜ برنامج تحت الضغط مع وسام علي",
+      "clips": 444,
+      "clip_hours": 1.4320611226851854,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.66,
+        "median": 9.980510416666666,
+        "p90": 20.125299999999996,
+        "max": 29.94
+      },
+      "structural_candidate_clips": 444,
+      "structural_candidate_hours": 1.4320611226851854,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 950,
+      "full_audio_hours": 2.2443247222222222
+    },
+    {
+      "source_id": "epabqc9ast",
+      "title": "20250109_ابن سوريا ： سبب اختفاؤه و موقفه من المعارضة و النظام  ｜ برنامج تحت الضغط مع وسام علي",
+      "clips": 254,
+      "clip_hours": 0.8956072222222219,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 6.186414583333333,
+        "median": 11.0705,
+        "p90": 21.525000000000002,
+        "max": 30.0
+      },
+      "structural_candidate_clips": 254,
+      "structural_candidate_hours": 0.8956072222222219,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 552,
+      "full_audio_hours": 1.356567800925926
+    },
+    {
+      "source_id": "utrhqcji78",
+      "title": "20250116_ابو الصادق ： ببكي بحُرقة ، و البشر طلعوا مش بشر ｜ برنامج تحت الضغط مع وسام علي",
+      "clips": 389,
+      "clip_hours": 1.2649183796296284,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.6,
+        "median": 9.821,
+        "p90": 21.316816666666664,
+        "max": 29.659
+      },
+      "structural_candidate_clips": 389,
+      "structural_candidate_hours": 1.2649183796296284,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 830,
+      "full_audio_hours": 1.9520693402777778
+    },
+    {
+      "source_id": "omovwbnxb9",
+      "title": "20250130_ماهركو： جربت المخدرات ، و هاي قصة اكتئابي ｜ برنامج تحت الضغط مع وسام علي",
+      "clips": 426,
+      "clip_hours": 1.497070515046296,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.77,
+        "median": 10.39,
+        "p90": 24.060000000000002,
+        "max": 29.979979166666666
+      },
+      "structural_candidate_clips": 424,
+      "structural_candidate_hours": 1.4833249594907405,
+      "audit_flags": {
+        "more_than_6_words_per_second": 2
+      },
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 721,
+      "full_audio_hours": 1.9977900752314814
+    },
+    {
+      "source_id": "i2clnz70i8",
+      "title": "20250206_معاذ العمري باكياً： ما في افضل من ابوي ، و ديانا كرزون افضل أُم في العالم ｜ تحت الضغط مع وسام علي",
+      "clips": 286,
+      "clip_hours": 1.016456116898149,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.739000000000001,
+        "median": 11.34,
+        "p90": 23.479989583333335,
+        "max": 29.779
+      },
+      "structural_candidate_clips": 286,
+      "structural_candidate_hours": 1.016456116898149,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 560,
+      "full_audio_hours": 1.4672463599537036
+    },
+    {
+      "source_id": "xs9hy6dwtn",
+      "title": "20250215_ضحّكني ، فَ بَكِّيته ｜ عبدالله صبيح في تحت الضغط مع وسام علي.",
+      "clips": 227,
+      "clip_hours": 0.8068449826388889,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.976,
+        "median": 11.159,
+        "p90": 22.9476,
+        "max": 29.42
+      },
+      "structural_candidate_clips": 227,
+      "structural_candidate_hours": 0.8068449826388889,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 417,
+      "full_audio_hours": 1.1094042881944444
+    },
+    {
+      "source_id": "vngwvadz85",
+      "title": "20250310_ممنوع تحب أكثر من الله ｜ الشيخ علاء جابر في تحت الضغط مع وسام علي.",
+      "clips": 459,
+      "clip_hours": 1.3527199768518525,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.3408,
+        "median": 8.84,
+        "p90": 20.0673875,
+        "max": 29.92
+      },
+      "structural_candidate_clips": 459,
+      "structural_candidate_hours": 1.3527199768518525,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 1214,
+      "full_audio_hours": 2.360592193287037
+    },
+    {
+      "source_id": "c5bcjps40r",
+      "title": "20250509_سيلاوي： امك بتعملك سندويشتك ، أنا امي رافعة علي ٧ قضايا ｜ #تحت_الضغط مع وسام علي",
+      "clips": 335,
+      "clip_hours": 1.0749462905092586,
+      "duration_seconds": {
+        "min": 5.04,
+        "p10": 5.568591666666666,
+        "median": 9.819,
+        "p90": 20.268600000000006,
+        "max": 29.441
+      },
+      "structural_candidate_clips": 335,
+      "structural_candidate_hours": 1.0749462905092586,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 715,
+      "full_audio_hours": 1.6753666666666667
+    },
+    {
+      "source_id": "qc67lna1qb",
+      "title": "20251111_عمار النجار： ضد الجنس بالكوميديا، والمجتمع ما بتقبل البنات الناصحين!",
+      "clips": 323,
+      "clip_hours": 1.0058263599537034,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.5438,
+        "median": 9.359,
+        "p90": 19.808204166666666,
+        "max": 29.5
+      },
+      "structural_candidate_clips": 323,
+      "structural_candidate_hours": 1.0058263599537034,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 808,
+      "full_audio_hours": 1.6255466666666667
+    },
+    {
+      "source_id": "690bdx2a7x",
+      "title": "20251120_أديب دعسان ｜ طردوني من المانيا، و صاحبي انقتل لهالسبب!",
+      "clips": 291,
+      "clip_hours": 0.9906328067129628,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.84,
+        "median": 9.92,
+        "p90": 23.26,
+        "max": 29.821
+      },
+      "structural_candidate_clips": 291,
+      "structural_candidate_hours": 0.9906328067129628,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 608,
+      "full_audio_hours": 1.4419792592592593
+    },
+    {
+      "source_id": "0j515zfr5l",
+      "title": "20251205_محمد نبيل ｜ الصحابة لا يُمثلون الدين، وما أظُن إنّي تخطّيت!",
+      "clips": 291,
+      "clip_hours": 1.0310358622685183,
+      "duration_seconds": {
+        "min": 5.019979166666666,
+        "p10": 6.0,
+        "median": 11.06,
+        "p90": 22.44,
+        "max": 29.92
+      },
+      "structural_candidate_clips": 291,
+      "structural_candidate_hours": 1.0310358622685183,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 570,
+      "full_audio_hours": 1.467768888888889
+    },
+    {
+      "source_id": "nzc21rdbcn",
+      "title": "20251220_فاديا الطويل ： حاولت انتحر لهذا السبب, وتمردي كان الحل.",
+      "clips": 409,
+      "clip_hours": 1.485264160879629,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 6.099795833333333,
+        "median": 11.179,
+        "p90": 23.244,
+        "max": 29.821
+      },
+      "structural_candidate_clips": 409,
+      "structural_candidate_hours": 1.485264160879629,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 763,
+      "full_audio_hours": 2.0008376967592594
+    },
+    {
+      "source_id": "rikl276p9j",
+      "title": "20260101_زيد المصري： تارك الصلاة ملعون ولا يزوج..واتحدى الجن على الهواء＂",
+      "clips": 525,
+      "clip_hours": 1.7137102951388905,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.9482,
+        "median": 10.34,
+        "p90": 20.312600000000003,
+        "max": 29.74
+      },
+      "structural_candidate_clips": 525,
+      "structural_candidate_hours": 1.7137102951388905,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 1049,
+      "full_audio_hours": 2.4687197800925924
+    },
+    {
+      "source_id": "w5ri83j0ly",
+      "title": "20260220_أدمن على ايذاء نفسه جسدياً ، و السبب كان صادم و مؤسف !",
+      "clips": 115,
+      "clip_hours": 0.3823183449074076,
+      "duration_seconds": {
+        "min": 5.02,
+        "p10": 6.1914,
+        "median": 10.319,
+        "p90": 21.640400000000007,
+        "max": 29.94002083333333
+      },
+      "structural_candidate_clips": 115,
+      "structural_candidate_hours": 0.3823183449074076,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 239,
+      "full_audio_hours": 0.5545125925925926
+    },
+    {
+      "source_id": "8h7r4cs81s",
+      "title": "20260224_ايمن يروي قصة ادمانه على الحب ، الأسباب و المشاكل و الحلول .",
+      "clips": 186,
+      "clip_hours": 0.6868822106481483,
+      "duration_seconds": {
+        "min": 5.02,
+        "p10": 6.139,
+        "median": 11.339,
+        "p90": 23.891,
+        "max": 29.541
+      },
+      "structural_candidate_clips": 186,
+      "structural_candidate_hours": 0.6868822106481483,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 347,
+      "full_audio_hours": 0.9212807291666666
+    },
+    {
+      "source_id": "1zm10wn4u4",
+      "title": "20260228_ادمان العادة السرية ، اولها دلع و آخرها ولع.",
+      "clips": 70,
+      "clip_hours": 0.24722166666666667,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.2701,
+        "median": 10.7895,
+        "p90": 22.990900000000003,
+        "max": 28.98
+      },
+      "structural_candidate_clips": 70,
+      "structural_candidate_hours": 0.24722166666666667,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 140,
+      "full_audio_hours": 0.3490903703703704
+    },
+    {
+      "source_id": "piekf44qr0",
+      "title": "20260303_ادمان المخدرات، بين رهن الأبناء و زنا المحارم و المجتمع .",
+      "clips": 151,
+      "clip_hours": 0.5184541898148145,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.461,
+        "median": 10.44,
+        "p90": 23.239,
+        "max": 28.319
+      },
+      "structural_candidate_clips": 151,
+      "structural_candidate_hours": 0.5184541898148145,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 279,
+      "full_audio_hours": 0.7289481481481481
+    },
+    {
+      "source_id": "j27tmdq22g",
+      "title": "20260313_إدمان إبر الهرمونات ، بين الضعف الجنسي والمنظر الخارجي ..",
+      "clips": 142,
+      "clip_hours": 0.49738664351851836,
+      "duration_seconds": {
+        "min": 5.019,
+        "p10": 5.7852,
+        "median": 10.4805,
+        "p90": 22.19011875,
+        "max": 30.0
+      },
+      "structural_candidate_clips": 142,
+      "structural_candidate_hours": 0.49738664351851836,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 291,
+      "full_audio_hours": 0.6867688599537037
+    },
+    {
+      "source_id": "j3bw52pgye",
+      "title": "20260315_إدمان القمار الإلكتروني：اللعبة اللتي يبيعها المشاهير لمتابعينهم!",
+      "clips": 128,
+      "clip_hours": 0.4103705439814813,
+      "duration_seconds": {
+        "min": 5.179,
+        "p10": 5.5033,
+        "median": 9.4205,
+        "p90": 23.226,
+        "max": 28.681
+      },
+      "structural_candidate_clips": 128,
+      "structural_candidate_hours": 0.4103705439814813,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 243,
+      "full_audio_hours": 0.5794346238425926
+    },
+    {
+      "source_id": "zmjh0hwrup",
+      "title": "20260317_هاي الحلقة ممكن تغير حياتك ، للأبد !",
+      "clips": 276,
+      "clip_hours": 0.9508322222222221,
+      "duration_seconds": {
+        "min": 5.0,
+        "p10": 5.8505,
+        "median": 10.6405,
+        "p90": 22.64,
+        "max": 29.439
+      },
+      "structural_candidate_clips": 276,
+      "structural_candidate_hours": 0.9508322222222221,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 496,
+      "full_audio_hours": 1.2531022222222221
+    },
+    {
+      "source_id": "zsbp3t7j3m",
+      "title": "20260318_وسام علي وغيـّاث محمد نوح القضاة ｜ بين الدنيا والدين !",
+      "clips": 196,
+      "clip_hours": 0.7398508275462962,
+      "duration_seconds": {
+        "min": 5.22,
+        "p10": 6.34,
+        "median": 11.64,
+        "p90": 24.180500000000002,
+        "max": 29.541
+      },
+      "structural_candidate_clips": 196,
+      "structural_candidate_hours": 0.7398508275462962,
+      "audit_flags": {},
+      "full_audio_exists": true,
+      "srt_exists": true,
+      "srt_cues": 355,
+      "full_audio_hours": 0.9364266666666666
+    }
+  ],
+  "summary": {
+    "reference_episodes": 23,
+    "episodes_with_clips": 23,
+    "clips": 6365,
+    "clip_hours": 21.561954687499963,
+    "full_audio_hours": 31.430758559027772,
+    "structural_candidate_clips": 6363,
+    "structural_candidate_hours": 21.548209131944407,
+    "duration_seconds": {
+      "min": 5.0,
+      "p10": 5.72,
+      "median": 10.299,
+      "p90": 22.14,
+      "max": 30.0
+    },
+    "words_per_second": {
+      "min": 0.07698229407236336,
+      "p10": 1.932656583856781,
+      "median": 2.5337837837837838,
+      "p90": 3.1731758807230506,
+      "max": 6.657630361983735
+    },
+    "formats": {
+      "48000 Hz / 1 channel(s)": 6365
+    },
+    "audit_flags": {
+      "more_than_6_words_per_second": 2
+    },
+    "repeated_transcript_strings": 1,
+    "clips_with_repeated_transcripts": 3,
+    "speaker_labels_available": false,
+    "acoustic_sample_clips": 69
+  },
+  "acoustic_samples": [
+    {
+      "clip_id": "2366wqj7sw-1",
+      "source_id": "2366wqj7sw",
+      "duration": 18.699,
+      "finite": true,
+      "peak": 0.599609375,
+      "rms": 0.061933401639039216,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "feb0511cb1a5dfe3a4ddf75f48c0a5fdb9f2e7d6fca67d953bde6e06dd1017c0",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 391680,
+        "source_end_frame": 1289232,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اليوم ضيفنا هو المليونير اللي بضيع وقته الثمين بصناعه المحتوى والريل والفيديوهات على اليوتيوب واللي يقال انه بلش مسيرته بجمع الاموال بغسيل الاموال جلال ابو مويس اهلا وسهلا فيك في برنامج تحت الضغط بتمنى بالمقابله يكون في الشي اللي يثبت غسيل اموال"
+    },
+    {
+      "clip_id": "2366wqj7sw-128",
+      "source_id": "2366wqj7sw",
+      "duration": 7.639,
+      "finite": true,
+      "peak": 0.45977783203125,
+      "rms": 0.03972633186659018,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "afc92538992157dd29db7d0667882c35f5fa8b3c59f880525e46efee9f8ed798",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 109149120,
+        "source_end_frame": 109515792,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "كم مائة واحد بشتغل من هال عشرة آلاف تخرجوا والباقيين شوفير فرشه"
+    },
+    {
+      "clip_id": "2366wqj7sw-255",
+      "source_id": "2366wqj7sw",
+      "duration": 22.320020833333334,
+      "finite": true,
+      "peak": 0.925872802734375,
+      "rms": 0.066670874225181,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "85f0e50cc6435403857b31602c955acedaccad416a9155256e5e7f88edfe5451",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 216343631,
+        "source_end_frame": 217414992,
+        "source_offset_samples": -1,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مين اللي حكى لك هيك العصفوره لا لا لا جد عندي عصافير لا لا في حدا قاعد بحكي هيك اسحب اسحب لا استنى استنى شوي ما راح اسحب ايش اسحب مين قاعد بكي في امي هيك هي معلومه متواجده تر مش من وين مش عيب مين حكاها بزط احكي لا بحكي جد تحكي والله تطفي الكاميرا بتقول لي مين قاعد بيحكي هيك بعد التصوير"
+    },
+    {
+      "clip_id": "6n2esa018j-1",
+      "source_id": "6n2esa018j",
+      "duration": 29.359,
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.1663950388339741,
+      "fullscale_fraction": 0.0008217241731666609,
+      "decoded_pcm_sha256": "50e3b80e0d9c48ae33d962eca287015c532f1fd1dff54b142c3eac7a2f69b904",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 213120,
+        "source_end_frame": 1622352,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "سفره سفره اللي انت مسميها سياحه بدون مالهاش طعم مالهاش قيمه فليش اسافر بدي اطلع مع اصحابي نكتشف ايطاليا مع بعض شو بدي فيك بطلع مع مرتي بنطلع من طش بشوف الدنيا بطلع دينر ديت وبتروح على بيتك وبالحلال يا قال سافر اصرف على سفره عشرة آلاف دولار ولا عشرون ألف دولار عشان انا واصحابي نروح ناكل بوظه في ايطاليا البس زهري"
+    },
+    {
+      "clip_id": "6n2esa018j-94",
+      "source_id": "6n2esa018j",
+      "duration": 14.5,
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.10953751052829953,
+      "fullscale_fraction": 0.00014080459770114941,
+      "decoded_pcm_sha256": "1eb346f2d281e94370f15422ad8342cca257fe8edd6fc8c3e15de901043e1d33",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 92373744,
+        "source_end_frame": 93069744,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "بتعمله كثير لفترات طويله بتنجح فيه راح اضل اعمل باسلوبي اعمل اسلوب اسمعني اسمعني اسلوبي الشخصي اسلوب جلال ابو قديش مكلفني هين حكيت قد كلفني"
+    },
+    {
+      "clip_id": "6n2esa018j-187",
+      "source_id": "6n2esa018j",
+      "duration": 5.34,
+      "finite": true,
+      "peak": 0.999969482421875,
+      "rms": 0.17499023938348185,
+      "fullscale_fraction": 3.901373283395755e-06,
+      "decoded_pcm_sha256": "765d042f06d0b350036acdba5e06f887c6b3c5c6919835d751eb5886bbea638b",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 170774064,
+        "source_end_frame": 171030384,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "موسيقى موسيقى"
+    },
+    {
+      "clip_id": "5flgspymra-1",
+      "source_id": "5flgspymra",
+      "duration": 27.82,
+      "finite": true,
+      "peak": 0.613861083984375,
+      "rms": 0.04640597076072034,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "955a43d012c9822cab490f778a635f2a0130c6b7fc8b25ddd1d44b09dc42af6a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 480000,
+        "source_end_frame": 1815360,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط اغلب المشاهير اللي اجوا على البرنامج اغلبهم جربوا كل انواع المحتويات بس مشهور اليوم غالبا جرب كل انواع القضايا مش كلجه سلامه خفيف اهلا وسهلا فيك في برنامج تحض حبيبي اخي تحياتي الك ولجميع الناس اللي بتحضر بدي تعرفني على حالك ب ثلاثون ثانيه احمد نادوني سلامه بغني راب ببلك فيجر"
+    },
+    {
+      "clip_id": "5flgspymra-223",
+      "source_id": "5flgspymra",
+      "duration": 5.899,
+      "finite": true,
+      "peak": 0.672149658203125,
+      "rms": 0.049093420853949334,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "2dae11866be9a26f4a80508d97ac4ecb2398b64ddd7b65c46f405943cdcb0b89",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 194679360,
+        "source_end_frame": 194962512,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "تعرفت على ناس لله مرتبه والدنيا جارت عليهم جابتهم على المكان هذا عادي اي واحد ممكن يصير معه ظرف قلت لك"
+    },
+    {
+      "clip_id": "5flgspymra-444",
+      "source_id": "5flgspymra",
+      "duration": 22.64,
+      "finite": true,
+      "peak": 0.111572265625,
+      "rms": 0.027964894997363165,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "e8ff63c35b1daa19223acc5d0fc2416af7c2c7e1b9aeadda2cd49716b1c0557a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 386732160,
+        "source_end_frame": 387818880,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "ملك المشاعر"
+    },
+    {
+      "clip_id": "epabqc9ast-1",
+      "source_id": "epabqc9ast",
+      "duration": 8.26,
+      "finite": true,
+      "peak": 0.999969482421875,
+      "rms": 0.09222163593480087,
+      "fullscale_fraction": 5.044390637610977e-06,
+      "decoded_pcm_sha256": "0b035c95606a93a74005ac8bcc0320c6f5b03187c16f87c07c3e5686a93403b7",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 283200,
+        "source_end_frame": 679680,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط ضيف اليوم هدم شهرته الكبيره وبنى حياه جديده بعيده عنها"
+    },
+    {
+      "clip_id": "epabqc9ast-128",
+      "source_id": "epabqc9ast",
+      "duration": 5.08,
+      "finite": true,
+      "peak": 0.26593017578125,
+      "rms": 0.0343456586047959,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "f792a8d00efefeb6e5f803ea036e95ddc3416afcc198bb7b9fb5357a6c584393",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 112491792,
+        "source_end_frame": 112735632,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "جزء ل واحد من اللي انا عشته واحد رقم كثير كبير لا ابدا مستحيل"
+    },
+    {
+      "clip_id": "epabqc9ast-254",
+      "source_id": "epabqc9ast",
+      "duration": 17.46,
+      "finite": true,
+      "peak": 0.427032470703125,
+      "rms": 0.05026001661051188,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "7c03379e99dd2beb1602032a66196adbd971ea590a7cb5d9873587b54643c0bc",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 231827471,
+        "source_end_frame": 232665551,
+        "source_offset_samples": -1,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "الله بذكرهم بهذا الكلام بعد كم سنه حتكون جايه ان شاء الله ان شاء الله وهاي هي الرساله اللي قلنا لهم انه في رساله من خلال ه الحلقه اللي هي القصه كامله والخلاصه اللي استخلصنا الله يبارك فيك شكرا شكرا وهيك بكون وصلنا لنهايه حلقتنا لليوم"
+    },
+    {
+      "clip_id": "utrhqcji78-1",
+      "source_id": "utrhqcji78",
+      "duration": 26.62,
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.08618458351158394,
+      "fullscale_fraction": 7.356624092161283e-05,
+      "decoded_pcm_sha256": "20c9659541354174c8fbbb897f8c9ac30f069f0e862cf64119b7c2a6b67c56a6",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 259200,
+        "source_end_frame": 1536960,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط اليوم ضيفنا احمد ابو الصادق اهلا وسهلا بحكي عن كل شيء غريب وغامض ومثير بروي قصص الجميع الا قصصه صحيح محتواك غامض وانت غامض صح بس انت وقعت مع اعداد تحت الضغط خلينا نشوف قد بدكم تضغطو اليوم يمكن نكشف شوي من الغموض اللي عندك يا رب مستعد مستعد"
+    },
+    {
+      "clip_id": "utrhqcji78-195",
+      "source_id": "utrhqcji78",
+      "duration": 28.081,
+      "finite": true,
+      "peak": 0.51202392578125,
+      "rms": 0.03756935496263209,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "69a326b86609fa6ce1304df5957263a5d9a4e9ba4666ac9ead383a026236bf6e",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 164193552,
+        "source_end_frame": 165541440,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "صفر اقل ما يمكن ان اوصفه صفر اوصفلي شعور رل خسر كل ما يملك صعب جدا شوف الصعود والنزول بالحياه لازم يكون متوقع للجميع لكنك تنزل لدرجه انك انت يعني انا انا اذكر بهديك الفتره اصغر واحد باخواني كنت اقوله معلش انا تقلت دمي عليك جيبلي كمان باكيت دخان انا بدخن وانا"
+    },
+    {
+      "clip_id": "utrhqcji78-389",
+      "source_id": "utrhqcji78",
+      "duration": 21.5,
+      "finite": true,
+      "peak": 0.844940185546875,
+      "rms": 0.07915519251554999,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "6ad2012885f4e1873d6e1db085229a2d9cdbeb872ba61097efb437b7eb86a9bd",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 335928000,
+        "source_end_frame": 336960000,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "وهيك بنكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا الى اللقاء"
+    },
+    {
+      "clip_id": "omovwbnxb9-1",
+      "source_id": "omovwbnxb9",
+      "duration": 11.401,
+      "finite": true,
+      "peak": 0.25537109375,
+      "rms": 0.0313043596348531,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "8b116ee71e5c4e6f63cc0356ab00763a12b9b9c9c763c2d40103c38be592c5b8",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 252432,
+        "source_end_frame": 799680,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط اليوم ضيفنا ماهر سلطانه جيمين مشهور في الاردن وعلى مستوى الوطن العربي وصاحب اللسان السليط"
+    },
+    {
+      "clip_id": "omovwbnxb9-215",
+      "source_id": "omovwbnxb9",
+      "duration": 7.62,
+      "finite": true,
+      "peak": 0.35650634765625,
+      "rms": 0.0385409826955812,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "e742cab7d3ca6cb1c3a4b6ab92f04eef2f3ffd6920290586001e86c0fddadf09",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 180651648,
+        "source_end_frame": 181017408,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مقارنه ب بشو بالاب العادي الحالي اللي بيطلع بدام ثمان ساعات تسع ساعات لا طبيعي جدا بالعكس يمكن انا احسن شوي لانه"
+    },
+    {
+      "clip_id": "omovwbnxb9-426",
+      "source_id": "omovwbnxb9",
+      "duration": 25.98,
+      "finite": true,
+      "peak": 0.10919189453125,
+      "rms": 0.025721814005879,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "c210b748d5a78edfd56470c11983f85e03d283346d41fb4d8c819cb6302e5c81",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 343970688,
+        "source_end_frame": 345217728,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "الى اللقاء"
+    },
+    {
+      "clip_id": "i2clnz70i8-1",
+      "source_id": "i2clnz70i8",
+      "duration": 8.4,
+      "finite": true,
+      "peak": 0.685333251953125,
+      "rms": 0.06250533349251639,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "e92334c31cef1c2d5c29276fd8324f75841c6da04f3ecf6822f420731ea1f2e3",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 247680,
+        "source_end_frame": 650880,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط اليوم ضيفنا معاذ العمري شخص بينتقد كثير ومنتقد كثير"
+    },
+    {
+      "clip_id": "i2clnz70i8-144",
+      "source_id": "i2clnz70i8",
+      "duration": 15.481020833333334,
+      "finite": true,
+      "peak": 0.3978271484375,
+      "rms": 0.027670595320095144,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "a109804b33a10e7d916083f044b39284dbf80a7deda45ad42929859f7165e22b",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 121944911,
+        "source_end_frame": 122688000,
+        "source_offset_samples": -1,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "الاولى بصفوها بصفوها بتجربه فاشله والثانيه تجربه ناجحه شو كان الفرق التجربتين مش موضوع تجربه فاشله وتجربه ناجحه الله يسهل عليها احسن مني"
+    },
+    {
+      "clip_id": "i2clnz70i8-286",
+      "source_id": "i2clnz70i8",
+      "duration": 16.801020833333332,
+      "finite": true,
+      "peak": 0.28839111328125,
+      "rms": 0.025531576378005974,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "b451b4d4094f2e9863e54d41472c8cf3ebdab61d9e11a5a4f8bdeaec20b4dc49",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 251481551,
+        "source_end_frame": 252288000,
+        "source_offset_samples": -1,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "دائرتك انت صاحب القرار من جواتك شو بدك تستقطب شو بدك الدنيا تعطيك ربنا رح يعطيك على اللي جواتك وهيك بكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا نشوفكم بحلقات ثانيه"
+    },
+    {
+      "clip_id": "xs9hy6dwtn-1",
+      "source_id": "xs9hy6dwtn",
+      "duration": 13.101,
+      "finite": true,
+      "peak": 0.46234130859375,
+      "rms": 0.05047266637162393,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "caff6b90a36b57e98575d1394d3857a8843cfee6add47c96b416645c44700ec2",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 256272,
+        "source_end_frame": 885120,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط ضيف اليوم كوميديان اردني كان من اكثر الضيوف المتردده ان يطلع في البرنامج كنت مستغرب ليش لكن لما بلشنا اعداد قدرت اعرف ليش"
+    },
+    {
+      "clip_id": "xs9hy6dwtn-114",
+      "source_id": "xs9hy6dwtn",
+      "duration": 7.02,
+      "finite": true,
+      "peak": 0.416351318359375,
+      "rms": 0.05058541869746966,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "87e589d9357fe7d854bf23f292f5925c147e4aeff77f7a9186d9bfc5ce66d24a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 91638720,
+        "source_end_frame": 91975680,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "شو كان السؤال هو حروح معك لمع او ضد يلا جاهز مجنون ونروح لمع او ضد مع عبد الله صبيح"
+    },
+    {
+      "clip_id": "xs9hy6dwtn-227",
+      "source_id": "xs9hy6dwtn",
+      "duration": 26.98,
+      "finite": true,
+      "peak": 0.12103271484375,
+      "rms": 0.025982496734944245,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "177288f4bc25dbfa540c3cb7288333f2cdcacc10803eb64dc6315452340c73e6",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 190409280,
+        "source_end_frame": 191704320,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "الى اللقاء شكرا موسيقى شكرا ان"
+    },
+    {
+      "clip_id": "vngwvadz85-1",
+      "source_id": "vngwvadz85",
+      "duration": 17.7,
+      "finite": true,
+      "peak": 0.45654296875,
+      "rms": 0.05188081193755209,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "08f69ed7d70981ef5a41ecded1089c446ed34a7c3617ba927f1c8f6292f183a4",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 189120,
+        "source_end_frame": 1038720,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "ليش حلقتي مع شيخ ممكن تجيب حوالين مواقع التواصل الاجتماعي كمجموع اكثر من مليار مشاهده هل لانه هذا الشيخ قدر باسلوبه الشبابي انه يوصل لقلوب الناس بطريقه سلسه وسهله او لانه الناس لازالت جاهله بالدين وبدها تسمع اجابات للتساؤلات موجوده براسها"
+    },
+    {
+      "clip_id": "vngwvadz85-230",
+      "source_id": "vngwvadz85",
+      "duration": 9.661,
+      "finite": true,
+      "peak": 0.34796142578125,
+      "rms": 0.027515297820067088,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "3acd58d876e95e33a98469507567f933e866704887c575c59d593ce80a2e97af",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 198665232,
+        "source_end_frame": 199128960,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "فيقول انس استحييت ان اجيبها فانها ابنه محمد ولكنني قلت في نفسي والله يا فاطمه ما طابت نفوسنا ولكننا"
+    },
+    {
+      "clip_id": "vngwvadz85-459",
+      "source_id": "vngwvadz85",
+      "duration": 21.66,
+      "finite": true,
+      "peak": 0.378936767578125,
+      "rms": 0.025997031210021317,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "8bde3486ce61227714a6fba768aad2f5fed73726067c353b97d84d2f2956d35f",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 406486991,
+        "source_end_frame": 407526671,
+        "source_offset_samples": -1,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "وهيك بكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا ما راح اقول استمتعتوا بدنا الفائده نشوفكم بحلقات ثانيه الى اللقاء"
+    },
+    {
+      "clip_id": "c5bcjps40r-1",
+      "source_id": "c5bcjps40r",
+      "duration": 14.46,
+      "finite": true,
+      "peak": 0.5350341796875,
+      "rms": 0.03780405230106381,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "ea2354e19d393e8a3172601b17699725f8fc41c4004fc27f3fc2ed49d44ffc1f",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 494400,
+        "source_end_frame": 1188480,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "شو الاخبار كيف الاستعداد قد شو اخبار هالكرافي مش عارف تلبسها لا يا صاحبي الموضوع بطل زي زمان الموضوع ابسط من هيك انا سمعت عن هيك شيء صراحه بس اول مره بشوف فرجينا خلص نحن هيك جاهين اوف"
+    },
+    {
+      "clip_id": "c5bcjps40r-168",
+      "source_id": "c5bcjps40r",
+      "duration": 15.201,
+      "finite": true,
+      "peak": 0.536285400390625,
+      "rms": 0.03344935101856144,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "3c182ed1aee43b143063683256ec573cbad563b8657d2d28397df6545c209026",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 148712688,
+        "source_end_frame": 149442336,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "تفع صراحه سببه مشنه كان الجمهور شوي يحاول كان في جمهور يحاول يعمل فتن لكن الله يوفقه في حياته يوفق الجميع يوفق الاخرس كمانسام كلهم حبايبي مين بادر بالصلح ما عندي مشاكل اعتقد انه"
+    },
+    {
+      "clip_id": "c5bcjps40r-335",
+      "source_id": "c5bcjps40r",
+      "duration": 19.26,
+      "finite": true,
+      "peak": 0.175537109375,
+      "rms": 0.024015211956918695,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "5e9cced314ed52e025f6b08051872ac90eeb4a345e9ac903a368949f83aa70e9",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 287483616,
+        "source_end_frame": 288408096,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "كل التوفيق وشكرا شكرا لك وسام وهيك بنكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا الى اللقاء"
+    },
+    {
+      "clip_id": "qc67lna1qb-1",
+      "source_id": "qc67lna1qb",
+      "duration": 8.54,
+      "finite": true,
+      "peak": 0.946075439453125,
+      "rms": 0.15536716513804916,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "ca11a0e4e75f06cf6e2e5fa0530e140e3324505990d6f45306f8015e3b93f504",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 435840,
+        "source_end_frame": 845760,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+    },
+    {
+      "clip_id": "qc67lna1qb-162",
+      "source_id": "qc67lna1qb",
+      "duration": 9.801,
+      "finite": true,
+      "peak": 0.9970703125,
+      "rms": 0.13217193907541253,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "56a9570816f170bae10da341e3def73ae3bf49f5b07130a65577951617a81d7c",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 137860752,
+        "source_end_frame": 138331200,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "انه احيانا بصير احك بصير احكي جواتي انه احترم الزعل شوي بس ما بقدر لانه هذا شغل الناس بتشوف انه حياه الكوميديان ورديه دائما بضحك امم"
+    },
+    {
+      "clip_id": "qc67lna1qb-323",
+      "source_id": "qc67lna1qb",
+      "duration": 24.44,
+      "finite": true,
+      "peak": 0.88385009765625,
+      "rms": 0.1277093024416079,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "9d08e14de1e42e1f2b5e97941c57160c13d9825c4e8fa83a571c1a9d38622e1e",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 279720960,
+        "source_end_frame": 280894080,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "ما بتمنى لك الا تكون بخير وسعيد ومبسوط والله يتمم لك امورك كلها على خير شكرا شكرا شكرا وهيك بنكون وصلنا لنهايه حلقتنا لليوم نشوفكم بحلقات موسيقى"
+    },
+    {
+      "clip_id": "690bdx2a7x-1",
+      "source_id": "690bdx2a7x",
+      "duration": 15.319,
+      "finite": true,
+      "peak": 0.96575927734375,
+      "rms": 0.09754119631966982,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "09a7478ff163ae04d765c68409b92367e34748e74ccf4e8d5f3c7ebf4a1be7ba",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 871680,
+        "source_end_frame": 1606992,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "بالعاده انا اللي بعرف عن الضيف ولكن اليوم حابب انه الضيف هو اللي يعرف عن نفسه بالطريقه اللي هو حاببها بعيدا عن صناعه المحتوى عندك تعريف دسم انا حابب انه الناس تسمع هذا التعريف اديب اهلا وسهلا فيك في برنامج تحت الضغط حبيبي يا اسام انا"
+    },
+    {
+      "clip_id": "690bdx2a7x-146",
+      "source_id": "690bdx2a7x",
+      "duration": 11.341,
+      "finite": true,
+      "peak": 0.89935302734375,
+      "rms": 0.1315206123307932,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "4eba7765dd55e6a0890e83df6d0fe2ef9589b67f2066dbfe85ed2bdcf137ac2a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 122954832,
+        "source_end_frame": 123499200,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "هذا شيء ممكن الناس تاخذ منه رساله حلوه ما هو انا انا يعني اللي كثير جد بحاول اعمله بحاول اشوف شو الشارع بيحكي شو القضايا بتهم الشباب ممكن اللي صار معي صار مع شباب"
+    },
+    {
+      "clip_id": "690bdx2a7x-291",
+      "source_id": "690bdx2a7x",
+      "duration": 18.039979166666665,
+      "finite": true,
+      "peak": 0.881011962890625,
+      "rms": 0.14085526774070128,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "b43ac0b3cd3c5e54c73cb5098683de0c36150abac0a0eee0ffc912496af5d8d8",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 248307792,
+        "source_end_frame": 249173711,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "ان شاء الله بنشوفكم بحلقات"
+    },
+    {
+      "clip_id": "0j515zfr5l-1",
+      "source_id": "0j515zfr5l",
+      "duration": 8.92,
+      "finite": true,
+      "peak": 0.95001220703125,
+      "rms": 0.16438625482538588,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "4c9ec2398c0283e8c3bc26b7907458dd59cacbaaafbbbef357616cfe6b5201dd",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 397392,
+        "source_end_frame": 825552,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+    },
+    {
+      "clip_id": "0j515zfr5l-146",
+      "source_id": "0j515zfr5l",
+      "duration": 5.681,
+      "finite": true,
+      "peak": 0.71160888671875,
+      "rms": 0.1604992790961443,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "e3545a098a6798e0890c7ae9c80ff58f90a034e17d19ffcc1626cd24b639520c",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 125358672,
+        "source_end_frame": 125631360,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "هل ديننا بطلب منك هيك هي واسطه هي وسيط بينك وبين ربك طيب شو فرقنا عن الجاهليه"
+    },
+    {
+      "clip_id": "0j515zfr5l-291",
+      "source_id": "0j515zfr5l",
+      "duration": 26.96,
+      "finite": true,
+      "peak": 0.720001220703125,
+      "rms": 0.1147151948321905,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "35a05fd2600427cb33c3b8c67452ad5dad0089cdf4b35bada8b4ee22666c5a38",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 251640000,
+        "source_end_frame": 252934080,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "فرقس تصفيق كنت اعمل فيك عمله ايش والله كنت اعمل فيك عمله مرتبه هيك كنت بتعمل تي بس قلت خلص مشى الحلقه يا ولد ليه كنت اقول لك انا لما تواصلت معك قلت لي كل شيء انا اظهرته احكي فيه كل شيء انا خبيته خلص لا تحكي فيه بس انا ما ما ابهرت اي ثواني انت حكيت عن علاقتك حكيت عنها فبما انه نحكي على علاطك فبقدر اقول لك انا هيك يا سيدي عندي اسئله بس انا خلص بكتفي لهون الله تكبر عقلك"
+    },
+    {
+      "clip_id": "nzc21rdbcn-1",
+      "source_id": "nzc21rdbcn",
+      "duration": 23.561,
+      "finite": true,
+      "peak": 0.965576171875,
+      "rms": 0.09797522894228301,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "edcae82b19dabad6ce2eafef6b4b921d11f843080f1fe033bbf729e716c7e87a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 1112592,
+        "source_end_frame": 2243520,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "تديه الطويل اهلا وسهلا فيك في برنامج تحت الضغط في العالم هيك لقبتك السيده الاولى لورا بوش من بنا منجع نساء العالمجع سيدات العالم شو بتحكي لي عن هذا اللقب وعن هذا التكريم ايش بيي لك اييه بيعني لي انه ايامها يعني وقتها انه السيده الاولى هي اللي اطلقت علي هذا اللقب بس بنفس الوقت في اجع مني ناس كثير بس يمكن انا لانه اي"
+    },
+    {
+      "clip_id": "nzc21rdbcn-205",
+      "source_id": "nzc21rdbcn",
+      "duration": 15.04,
+      "finite": true,
+      "peak": 0.7171630859375,
+      "rms": 0.07703697728109264,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "f337d8aa69bc50797c1c4367a85c12e58c3d79a286b39d2807ed4995e55d4b63",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 168849552,
+        "source_end_frame": 169571472,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "وراح يترك وراه يعني انا لو لا سمح الله اخذ وداعتي طيب وين محمد وديان وين بدهم يروحوا فانا بحمد الله اللي الله نجاني من هذاك الموقف من وين جبت ها المعلومه من العصفوره عصفوره"
+    },
+    {
+      "clip_id": "nzc21rdbcn-409",
+      "source_id": "nzc21rdbcn",
+      "duration": 16.461,
+      "finite": true,
+      "peak": 0.744049072265625,
+      "rms": 0.198790392126296,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "bf0117c1f6eeaf6458fe618246e6985c03977c42185732d1ab7073846d04cdd7",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 344953872,
+        "source_end_frame": 345744000,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "نشوفكم بحلقات انيه موسيقى"
+    },
+    {
+      "clip_id": "rikl276p9j-1",
+      "source_id": "rikl276p9j",
+      "duration": 14.68,
+      "finite": true,
+      "peak": 0.9915771484375,
+      "rms": 0.2034251562707705,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "b12c339016a7d49b58e24c8bac3b9c2f1fcbe57ac027163368f40040b179ee7c",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 61440,
+        "source_end_frame": 766080,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+    },
+    {
+      "clip_id": "rikl276p9j-263",
+      "source_id": "rikl276p9j",
+      "duration": 12.179,
+      "finite": true,
+      "peak": 0.96392822265625,
+      "rms": 0.07120997237885884,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "e6a562dd17251a6b4a9730a0cc145cc7d648d15bc691c281581a34ec34d8ed9e",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 214372800,
+        "source_end_frame": 214957392,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "فهم كلهم الى النار وكلهم كفار وكلهم غلط وانا سمعت ناس مباشره يعني انه نحن الصح نحن الدائره هي تبعتهم وغيرنا كله لجهنم وكله كافر وكله على باطل"
+    },
+    {
+      "clip_id": "rikl276p9j-525",
+      "source_id": "rikl276p9j",
+      "duration": 14.339,
+      "finite": true,
+      "peak": 0.96124267578125,
+      "rms": 0.10048137785052268,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "ffde3c2325d85f3438450d73f4c7e9671176908c9c353cebd0ce8f2f712be759",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 425045760,
+        "source_end_frame": 425734032,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "جدا ولا يمل ولو قعدنا عشرون ساعه انا كان قعدت خمسون ما عندي مشكلهبي ولنا لقاء اخر وما بتمنى لك الا الخير والتوفيق حبيبي وان شاء الله يعني تكون الناس استفادت انا بالاكثر وهيك بنكون وصلنا لنهايه حلقتنا لليوم"
+    },
+    {
+      "clip_id": "w5ri83j0ly-1",
+      "source_id": "w5ri83j0ly",
+      "duration": 9.64,
+      "finite": true,
+      "peak": 0.232147216796875,
+      "rms": 0.04349277832350224,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "8164f93523287868147aec29ea4163134d939fba5bc68eae48b6b420c8f1bae7",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 3840,
+        "source_end_frame": 466560,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "معكم مالك عمري سبعة عشر سنه اليوم رح نحكي في موضوع ادمان الاذيه ممكن يكون غريب لبعض الناس انه ايش هذا الموضوع بتمنى اي شيء بتسمعوه من"
+    },
+    {
+      "clip_id": "w5ri83j0ly-58",
+      "source_id": "w5ri83j0ly",
+      "duration": 17.62,
+      "finite": true,
+      "peak": 0.352081298828125,
+      "rms": 0.07253969434940076,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "f861525e74e18235c97178cc6a4af86af5b305983e6d096ae1d19d935517ff96",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 45611520,
+        "source_end_frame": 46457280,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "كنت كثير اكرهه بشكل مش طبيعي بس انا بالنهايه انا ايش قاعد بسوي انا واعي للشيء اللي قاعد بسويه فاني انت ليش قاعد ت ايش الشيء المستاهل واحد مش مستاهل بس الاثنين انه ما كنت واعي لطريقه ثانيه اني اريح فيها مخي انه من قله التفكير"
+    },
+    {
+      "clip_id": "w5ri83j0ly-115",
+      "source_id": "w5ri83j0ly",
+      "duration": 6.24,
+      "finite": true,
+      "peak": 0.449310302734375,
+      "rms": 0.04683660619498688,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "95f0ce767725ea2c92dc79bcdbba8c45847c7ec5b2035dcd47cb6b9d258b11c5",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 94741392,
+        "source_end_frame": 95040912,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "الى"
+    },
+    {
+      "clip_id": "8h7r4cs81s-1",
+      "source_id": "8h7r4cs81s",
+      "duration": 5.719,
+      "finite": true,
+      "peak": 1.0,
+      "rms": 0.2019495594499503,
+      "fullscale_fraction": 0.00020035554001282275,
+      "decoded_pcm_sha256": "f59493618c84347497dacedca5d87d0281ae4559ec38761b1bea8f88810e5e85",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 5760,
+        "source_end_frame": 280272,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مرحبا انا ايمن واليوم قررت اعطي حالي فرصه جديده عشان احكي وافضفض بلكي طلعت الشي اللي كان جواي"
+    },
+    {
+      "clip_id": "8h7r4cs81s-94",
+      "source_id": "8h7r4cs81s",
+      "duration": 19.34,
+      "finite": true,
+      "peak": 0.999969482421875,
+      "rms": 0.07160931174372602,
+      "fullscale_fraction": 1.4003791795932437e-05,
+      "decoded_pcm_sha256": "53b6f138bc3f92710c3cf996935a7f6b5d1249092593d84627d20c56e29567e9",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 81654720,
+        "source_end_frame": 82583040,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "الا ما بالاخر زي الكلب ارجع هذول اهلي فاهم على الاقل احس انه اهلي كان عندهم نظره انا ما كنت شايفها بس لا ما حد قال لي يعني حتى كان في استخاره من ال من الام وكان زي الخيار لا او انه حست انه لا بس ما رضيت تحكي لي عشان شافتني مدلوق يعني واقع وجهي"
+    },
+    {
+      "clip_id": "8h7r4cs81s-186",
+      "source_id": "8h7r4cs81s",
+      "duration": 5.18,
+      "finite": true,
+      "peak": 0.221832275390625,
+      "rms": 0.013977177661625083,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "f6977dff30cde5a2abf26988bab1abda15c1f2253aebf5bc4256c1edfd0a2645",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 158449872,
+        "source_end_frame": 158698512,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "نكته لا ضحك بفوت بمسح الاشياء بحضرها يعني مجرد"
+    },
+    {
+      "clip_id": "1zm10wn4u4-1",
+      "source_id": "1zm10wn4u4",
+      "duration": 16.859,
+      "finite": true,
+      "peak": 0.971954345703125,
+      "rms": 0.16275370791574253,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "cf5461c2ae9e3f75d871d8ab140612da5798072ad7933e235d84de3eb0a0a46a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 42240,
+        "source_end_frame": 851472,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مرحبا انا متعافي من ادمان العاده السريه وجيت اليوم احكي عن مساوئها ومخاطرها وشو عملت معي واوضح شو الاسباب اللي صارت معي حتى اني عملتها وان شاء الله مشاهده ممتعه"
+    },
+    {
+      "clip_id": "1zm10wn4u4-36",
+      "source_id": "1zm10wn4u4",
+      "duration": 6.04,
+      "finite": true,
+      "peak": 0.143341064453125,
+      "rms": 0.01741127450750212,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "2a10536f39d52dda064b116dc1cac1d14e2f8ab7c197b022e1287d4ad2aaa812",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 30402192,
+        "source_end_frame": 30692112,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "اروح انه اطلب مساعده من اي شخص او طبيب نفسي لحالي انا يعني انه بطلت او انشغلت بوقتي"
+    },
+    {
+      "clip_id": "1zm10wn4u4-70",
+      "source_id": "1zm10wn4u4",
+      "duration": 22.08,
+      "finite": true,
+      "peak": 0.999969482421875,
+      "rms": 0.058217878380814284,
+      "fullscale_fraction": 9.435386473429951e-07,
+      "decoded_pcm_sha256": "bb5104da51086fb313296b3716d4470639d4cf70d4334260fe70f45a3737daa1",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 59262720,
+        "source_end_frame": 60322560,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "استمتعتوا بشوفكم بحلقات ثانيه الى اللقاء"
+    },
+    {
+      "clip_id": "piekf44qr0-1",
+      "source_id": "piekf44qr0",
+      "duration": 16.959,
+      "finite": true,
+      "peak": 0.511932373046875,
+      "rms": 0.09653250839968124,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "5194280bc5fc0d8ce60409f976c21ce57797052892ead794cef686fc6ce77c1d",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 13440,
+        "source_end_frame": 827472,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "انا محمود متعافي من المخدرات رح نحكي اليوم عن السلبيات هذا الشيء والتداعيات تاعيته وتعافيت من هذا الشيء ورح نحكي لكم اليوم كيف طريقه التعافي وايش اللي ممكن انك تسويه عشان تتعافى احضرونا في الحلقه هذه الممتعه وكل عام وانتم بخير"
+    },
+    {
+      "clip_id": "piekf44qr0-76",
+      "source_id": "piekf44qr0",
+      "duration": 9.02,
+      "finite": true,
+      "peak": 0.5377197265625,
+      "rms": 0.03727368586006919,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "15d5214cba94ea80c0faf6cc962279cd1f5cde0c97c06fc4728396ea6f497317",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 63512640,
+        "source_end_frame": 63945600,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "من اخطر المناطق في الاردن منيح اصلا اني انا طلعت هيك طيب شو اللي شو اللي كنت تنحسد عليه يعني اه شو اللي كنت تنحسد عليه اييه"
+    },
+    {
+      "clip_id": "piekf44qr0-151",
+      "source_id": "piekf44qr0",
+      "duration": 25.359,
+      "finite": true,
+      "peak": 0.240997314453125,
+      "rms": 0.019698298791295723,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "a4843ea0f44119b4382830837caf0aaec2b4ed846af1c8a8d9c80c1ff5b15948",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 123782400,
+        "source_end_frame": 124999632,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "هي يعني رساله لكل واحد متعاطي اصحى حالك قبل ما تندم وساعهيتها ما رح ينفع الندم وشكرا شكرا لك محمود وكل ما ذكر في هذه الحلقه هو من باب التوعيه اوعك تقرب على هذا الطريق وهيك بنكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا خاصه بالمثال الحلو تبع السياره اللي ذكره اه وبنشوفكم"
+    },
+    {
+      "clip_id": "j27tmdq22g-1",
+      "source_id": "j27tmdq22g",
+      "duration": 7.019,
+      "finite": true,
+      "peak": 0.337158203125,
+      "rms": 0.07887959238637646,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "57f325751c90edfd1048e0a4dee4aee7f2b504b02e74f3fe9f32c85a2335c81c",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 25920,
+        "source_end_frame": 362832,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "في حلقه اليوم رح نحكي عن نوع خطير جدا من انواع الادمان وهو ادمان السترويدز او الهرمونات او المنشطات الذكوريه"
+    },
+    {
+      "clip_id": "j27tmdq22g-72",
+      "source_id": "j27tmdq22g",
+      "duration": 8.419,
+      "finite": true,
+      "peak": 0.560211181640625,
+      "rms": 0.07559583890972009,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "442d531993363928d8556d1d701736a558a3241a6888e51b652ea38feec3ccae",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 57560640,
+        "source_end_frame": 57964752,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "وبدور شهره وبدور سوشيال ميديا وبدور بنات وبدور فلوس كشغل يعني فهو ما بيكون مدرك انه رح توصل معه"
+    },
+    {
+      "clip_id": "j27tmdq22g-142",
+      "source_id": "j27tmdq22g",
+      "duration": 19.54,
+      "finite": true,
+      "peak": 0.467498779296875,
+      "rms": 0.03280281636759398,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "61cb7f16f61a57a01e088ebaa8e1bcffbee895085adbeb760b94ec6da899f0fb",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 116769552,
+        "source_end_frame": 117707472,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "خبره في هذا المجال لاكثر من خمسة و عشرون سنه اعطاك الصافي واعطاك هي الاضرار فقوتك الحقيقيه مش بجسمك بل بوعيك خليك واعي قبل ما تتخذ اي قرار وتخطي اي خطوه شاكر لك كابتن الله يحفظك يا رب وهيك بكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا"
+    },
+    {
+      "clip_id": "j3bw52pgye-1",
+      "source_id": "j3bw52pgye",
+      "duration": 9.859,
+      "finite": true,
+      "peak": 0.4295654296875,
+      "rms": 0.07630013689137992,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "0b663b4a276c7de5678f1fe008a953a91c68b2c1ef844c40c16abf0c8ca3edbb",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 19200,
+        "source_end_frame": 492432,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مرحبا انا احمد واليوم موجود مع وسام عشان يحكي عن ادمان الاضمار الالكتروني والمرهنات بشكل عام واثاره السلبيه وكيف ممكن تطلع منه كيف ممكن تدخل عليه اساسا ومشاهده مبدعه"
+    },
+    {
+      "clip_id": "j3bw52pgye-65",
+      "source_id": "j3bw52pgye",
+      "duration": 10.881,
+      "finite": true,
+      "peak": 0.466583251953125,
+      "rms": 0.0496044102273845,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "6e7050691d10c6de3d65086b75157d6084238b646695f908bd50e1c953f8ede1",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 50307792,
+        "source_end_frame": 50830080,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "لاني للاسف بوقتها كنت عارف كيف اصيد الموضوع انه خلص انا لما بدي افوت وانا محتاج انا فايت على المضمون لاعب بلعب على المضمون عمرك ادايت مصاري عشان اوه اوه"
+    },
+    {
+      "clip_id": "j3bw52pgye-128",
+      "source_id": "j3bw52pgye",
+      "duration": 24.079,
+      "finite": true,
+      "peak": 0.3380126953125,
+      "rms": 0.032194674188442664,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "8123fc3e9ba34a10d6dc7d7e9d959286a71dd72f210d2a124ab6ad50d1e9266e",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 98039040,
+        "source_end_frame": 99194832,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "فهم الموضوع هذا بوقت جدا متاخر بعد ما خسر كل ناسه ان شاء الله تكون هي الحلقه رساله لكل حدا موجود بهذا العالم وتاكد تماما انه ال ثلاثمائة دينار اللي بتطلعهم بعرق جبينك هم فيهم بركه واهم واجمل وطعمهم احلى من المليون دينار اللي بتطلعهم بالقمار وهيك بنكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا الى"
+    },
+    {
+      "clip_id": "zmjh0hwrup-1",
+      "source_id": "zmjh0hwrup",
+      "duration": 15.959,
+      "finite": true,
+      "peak": 0.871307373046875,
+      "rms": 0.18399104238791777,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "340fe27d915d907e1ea5c70b30f5db4b214b899fdca185d649cd904a96928db8",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 13440,
+        "source_end_frame": 779472,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مرحبا انا الدكتور احمد الساعد طبيب امراض نفسيه عقليه وعلاج ادمان اليوم مع وسام ان شاء الله رح نحكي عن الادمان بشكل عام عن الصحه العقليه بشكل عام وكيف انك ممكن تهتم بصحتك العقليه المهمه جدا في حياتك بتمنى لكم مشاهده ممتعه للجميع ان شاء"
+    },
+    {
+      "clip_id": "zmjh0hwrup-139",
+      "source_id": "zmjh0hwrup",
+      "duration": 16.86,
+      "finite": true,
+      "peak": 0.18603515625,
+      "rms": 0.019530927918555513,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "97f9154cc4332a5bb98c14722a84abf50eb26f5a52a4e70c99a8248bfb08bd09",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 110447040,
+        "source_end_frame": 111256320,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "ممكن يكون وراثه ممكن تكون شخصيه ابوه هيك فهو صار هيك ممكن تكون شخصيه خاله هيك فهو صار هيك فهي يتم تناقلها وراثيا الجينات فيها كل شيء يا جماعه والشيء الثاني اللي ممكن يوصلني لاضطرابات بشخصيتي هي ظروف حياتي اللي انا عشتها"
+    },
+    {
+      "clip_id": "zmjh0hwrup-276",
+      "source_id": "zmjh0hwrup",
+      "duration": 23.340020833333334,
+      "finite": true,
+      "peak": 0.2738037109375,
+      "rms": 0.024627961171150167,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "0820602886024af954cc2549ff7d4119050088dc8a87d9d312ad4eb2a7ed2fb3",
+      "source_interval_check": {
+        "source_rounding": "truncate",
+        "source_start_frame": 214427471,
+        "source_end_frame": 215547792,
+        "source_offset_samples": -1,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "حق جهده وتعبه ودراسته وعلمه ووقته بيكون هو سعره اللي بيستاهله فما تستبخل على حالك اي قرش بتدفعه على صحتك بشكرك كمان مره دكتور على وجودك معنا لليوم العفو وسام بالعكس الشكر لك على اهتمامك بهي المواضيع ابدعت شكرا وهيك بنكون وصلنا لنهايه حلقتنا لليوم ان شاء ان شاء الله انكم تكونوا استفدتوا او على الاقل استمتعتوا"
+    },
+    {
+      "clip_id": "zsbp3t7j3m-1",
+      "source_id": "zsbp3t7j3m",
+      "duration": 25.159,
+      "finite": true,
+      "peak": 0.737091064453125,
+      "rms": 0.05039109228843784,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "903eb3eb27ee5dfaf158ce31d614730b210a613187ccba4f8e47a170e0cf8f38",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 2880,
+        "source_end_frame": 1210512,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "مش جايين نحكي حلال او حرام ولا جايين نفتي غياث محمد نوح القضاه ما بتشوف انه من حق الاهل انه اذا كانوا عايشين بطبقه اجتماعيه معينه انه يطلبوا مهر معين او طريقه عيشه معينه لبنتهم من باب انه ما تنزل ليفل هي معته كان الموضوع بيع وشراء ماذا لو اراد الفقير ان يطرق باب الزواج انا مع انه نرفع موضوع الحب ونشوف موضوع المصلحه طيب ليش عننا نحن العرب دائما بنعلق فشلنا على الحسد هي شماعه ليش في ناس"
+    },
+    {
+      "clip_id": "zsbp3t7j3m-99",
+      "source_id": "zsbp3t7j3m",
+      "duration": 9.04,
+      "finite": true,
+      "peak": 0.6363525390625,
+      "rms": 0.06346536180521366,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "01d4862af7746f1beb60f53ecabc88a83d96dc4d313007a8c69df039b6be0ad0",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 84763200,
+        "source_end_frame": 85197120,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "فالسوشيال ميديا اليوم اللي قاعدين نحن بنشوفها ولس انت قاعد بتشوف ناس كبار قاعدين بيتضرروا من هذا الموضوع وقاعدين يعني بيعانوا من هذا الموضوع"
+    },
+    {
+      "clip_id": "zsbp3t7j3m-196",
+      "source_id": "zsbp3t7j3m",
+      "duration": 16.02,
+      "finite": true,
+      "peak": 0.2874755859375,
+      "rms": 0.022561995141479264,
+      "fullscale_fraction": 0.0,
+      "decoded_pcm_sha256": "de29c02e9273f6016f20cc33c385ab3d6b286a999cbc87dd1a0920f24ce66c9a",
+      "source_interval_check": {
+        "source_rounding": "nearest",
+        "source_start_frame": 161044752,
+        "source_end_frame": 161813712,
+        "source_offset_samples": 0,
+        "source_max_pcm_difference": 3.039836883544922e-05
+      },
+      "text": "وهيك بنكون وصلنا لنهايه حلقتنا لليوم ان شاء الله تكونوا استفدتوا او على الاقل استمتعتوا كل عام وانتم بخير الى اللقاء"
+    }
+  ],
+  "parquet": [
+    {
+      "path": "/opt/dlami/nvme/youtube-jordan-48khz/Jordan-youtube-train.parquet",
+      "rows": 43854,
+      "columns": [
+        "audio_name",
+        "audio_bytes",
+        "transcript"
+      ],
+      "bytes": 23530810963,
+      "source_counts": {
+        "talha-screenshot-2024": 13411,
+        "old_name - new_key": 6303,
+        "talha-screenshot-2025": 24140
+      },
+      "wesam_source_ids": [
+        "0j515zfr5l",
+        "1zm10wn4u4",
+        "2366wqj7sw",
+        "5flgspymra",
+        "690bdx2a7x",
+        "6n2esa018j",
+        "8h7r4cs81s",
+        "c5bcjps40r",
+        "epabqc9ast",
+        "i2clnz70i8",
+        "j27tmdq22g",
+        "j3bw52pgye",
+        "nzc21rdbcn",
+        "omovwbnxb9",
+        "piekf44qr0",
+        "qc67lna1qb",
+        "rikl276p9j",
+        "utrhqcji78",
+        "vngwvadz85",
+        "w5ri83j0ly",
+        "xs9hy6dwtn",
+        "zmjh0hwrup",
+        "zsbp3t7j3m"
+      ],
+      "wesam_unique_audio_names": 6303
+    },
+    {
+      "path": "/opt/dlami/nvme/youtube-jordan-48khz/Jordan-youtube-validation.parquet",
+      "rows": 442,
+      "columns": [
+        "audio_name",
+        "audio_bytes",
+        "transcript"
+      ],
+      "bytes": 249323423,
+      "source_counts": {
+        "talha-screenshot-2024": 136,
+        "old_name - new_key": 62,
+        "talha-screenshot-2025": 244
+      },
+      "wesam_source_ids": [
+        "0j515zfr5l",
+        "1zm10wn4u4",
+        "2366wqj7sw",
+        "5flgspymra",
+        "690bdx2a7x",
+        "6n2esa018j",
+        "8h7r4cs81s",
+        "c5bcjps40r",
+        "epabqc9ast",
+        "i2clnz70i8",
+        "j27tmdq22g",
+        "j3bw52pgye",
+        "nzc21rdbcn",
+        "omovwbnxb9",
+        "piekf44qr0",
+        "qc67lna1qb",
+        "rikl276p9j",
+        "utrhqcji78",
+        "vngwvadz85",
+        "w5ri83j0ly",
+        "zmjh0hwrup",
+        "zsbp3t7j3m"
+      ],
+      "wesam_unique_audio_names": 62
+    },
+    {
+      "path": "/opt/dlami/nvme/youtube-jordan-telephony/Jordan-youtube-telephony-train.parquet",
+      "rows": 43854,
+      "columns": [
+        "audio_name",
+        "audio_bytes",
+        "transcript",
+        "degradation_profile"
+      ],
+      "bytes": 8558658090,
+      "source_counts": {
+        "talha-screenshot-2024": 13411,
+        "old_name - new_key": 6303,
+        "talha-screenshot-2025": 24140
+      },
+      "wesam_source_ids": [
+        "0j515zfr5l",
+        "1zm10wn4u4",
+        "2366wqj7sw",
+        "5flgspymra",
+        "690bdx2a7x",
+        "6n2esa018j",
+        "8h7r4cs81s",
+        "c5bcjps40r",
+        "epabqc9ast",
+        "i2clnz70i8",
+        "j27tmdq22g",
+        "j3bw52pgye",
+        "nzc21rdbcn",
+        "omovwbnxb9",
+        "piekf44qr0",
+        "qc67lna1qb",
+        "rikl276p9j",
+        "utrhqcji78",
+        "vngwvadz85",
+        "w5ri83j0ly",
+        "xs9hy6dwtn",
+        "zmjh0hwrup",
+        "zsbp3t7j3m"
+      ],
+      "wesam_unique_audio_names": 6303
+    },
+    {
+      "path": "/opt/dlami/nvme/youtube-jordan-telephony/Jordan-youtube-telephony-validation.parquet",
+      "rows": 442,
+      "columns": [
+        "audio_name",
+        "audio_bytes",
+        "transcript",
+        "degradation_profile"
+      ],
+      "bytes": 90615037,
+      "source_counts": {
+        "talha-screenshot-2024": 136,
+        "old_name - new_key": 62,
+        "talha-screenshot-2025": 244
+      },
+      "wesam_source_ids": [
+        "0j515zfr5l",
+        "1zm10wn4u4",
+        "2366wqj7sw",
+        "5flgspymra",
+        "690bdx2a7x",
+        "6n2esa018j",
+        "8h7r4cs81s",
+        "c5bcjps40r",
+        "epabqc9ast",
+        "i2clnz70i8",
+        "j27tmdq22g",
+        "j3bw52pgye",
+        "nzc21rdbcn",
+        "omovwbnxb9",
+        "piekf44qr0",
+        "qc67lna1qb",
+        "rikl276p9j",
+        "utrhqcji78",
+        "vngwvadz85",
+        "w5ri83j0ly",
+        "zmjh0hwrup",
+        "zsbp3t7j3m"
+      ],
+      "wesam_unique_audio_names": 62
+    }
+  ],
+  "existing_rttm_files": [
+    "Splitter/output/pred_rttms/UAE_1_mono.rttm"
+  ],
+  "manual_review_shortlist": {
+    "low_transcript_rate": [
+      {
+        "clip_id": "6n2esa018j-187",
+        "words_per_second": 0.37453183520599254,
+        "duration": 5.34,
+        "text": "موسيقى موسيقى"
+      },
+      {
+        "clip_id": "5flgspymra-444",
+        "words_per_second": 0.08833922261484099,
+        "duration": 22.64,
+        "text": "ملك المشاعر"
+      },
+      {
+        "clip_id": "epabqc9ast-242",
+        "words_per_second": 0.45766590389016015,
+        "duration": 8.74,
+        "text": "والله يعني رسالتي ل"
+      },
+      {
+        "clip_id": "epabqc9ast-248",
+        "words_per_second": 0.6029404944112055,
+        "duration": 21.561,
+        "text": "يعني بل العسل موسيقى انه يعني انه يعني حاولي انك يعني تصنعي شيء"
+      },
+      {
+        "clip_id": "omovwbnxb9-426",
+        "words_per_second": 0.07698229407236336,
+        "duration": 25.98,
+        "text": "الى اللقاء"
+      },
+      {
+        "clip_id": "xs9hy6dwtn-227",
+        "words_per_second": 0.2223869532987398,
+        "duration": 26.98,
+        "text": "الى اللقاء شكرا موسيقى شكرا ان"
+      },
+      {
+        "clip_id": "690bdx2a7x-291",
+        "words_per_second": 0.27716218260599434,
+        "duration": 18.039979166666665,
+        "text": "ان شاء الله بنشوفكم بحلقات"
+      },
+      {
+        "clip_id": "nzc21rdbcn-409",
+        "words_per_second": 0.24299860275803417,
+        "duration": 16.461,
+        "text": "نشوفكم بحلقات انيه موسيقى"
+      },
+      {
+        "clip_id": "rikl276p9j-1",
+        "words_per_second": 0.6811989100817439,
+        "duration": 14.68,
+        "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+      },
+      {
+        "clip_id": "w5ri83j0ly-115",
+        "words_per_second": 0.16025641025641024,
+        "duration": 6.24,
+        "text": "الى"
+      },
+      {
+        "clip_id": "8h7r4cs81s-3",
+        "words_per_second": 0.4435483870967742,
+        "duration": 24.8,
+        "text": "كل عام وانتم بالف في حياتنا في كثير انواع من الادمان"
+      },
+      {
+        "clip_id": "8h7r4cs81s-182",
+        "words_per_second": 0.40387722132471726,
+        "duration": 12.38,
+        "text": "ضحك والله اقسم شوكت ضحك"
+      },
+      {
+        "clip_id": "1zm10wn4u4-70",
+        "words_per_second": 0.27173913043478265,
+        "duration": 22.08,
+        "text": "استمتعتوا بشوفكم بحلقات ثانيه الى اللقاء"
+      }
+    ],
+    "music_or_applause_text": [
+      {
+        "clip_id": "2366wqj7sw-101",
+        "text": "طبعا ها الدلع الدلع حنلعب لعبه بسيطه مع او ضد بجواب بسيط بتقوللي انا اللي راح احكي لك انت معه او ضده تمام وحاليا راح نكون بفقره مع او ضد مع جلال موسيقى"
+      },
+      {
+        "clip_id": "6n2esa018j-65",
+        "text": "ياي يا اخي انت اللي بتخاف علي يا اخي بعدك ما في ح موسيقى"
+      },
+      {
+        "clip_id": "6n2esa018j-66",
+        "text": "اسمع موسيقى المقطع بلايك"
+      },
+      {
+        "clip_id": "6n2esa018j-75",
+        "text": "وتشوفوا شو راح اعمل موسيقى انت هيك هس معصب لا لا طب يلا نستفيد منك وانت معصب لا عادي سؤال كان"
+      },
+      {
+        "clip_id": "6n2esa018j-101",
+        "text": "موسيقى تصفيق عيات تعمل فيديوهات او اجي ادفع لاحمد يجي يصورني يعملي فيديو احلى شوي غير الاقار بقوللك هاك هي الفكره نفسها روح اعلم مبيعات بيع شي"
+      },
+      {
+        "clip_id": "6n2esa018j-187",
+        "text": "موسيقى موسيقى"
+      },
+      {
+        "clip_id": "5flgspymra-60",
+        "text": "ضربت هي الموضوع اللي بتفتح النفس ضربت لانه انت فيها وكلماتك قويه واداك قوي ولا لانه اسمه ضرب جديد كانت طلعت الشامي انا لحقته بطلعته ما الي دخل بطلعته انا ما طلعت موسيقى حدا"
+      },
+      {
+        "clip_id": "5flgspymra-89",
+        "text": "موسيقى ولدت قدش صعب مش قديش صعب قديش صعب عليه هو يعني انت متوقعه يطلع بحب البلد وبحب الناس هون كيف بده يطلع هيك فاهم"
+      },
+      {
+        "clip_id": "5flgspymra-99",
+        "text": "السجن بعلم سجن بعلم شي ثاني يعني انا كل شيء تعلمته جوا تركته جوا حترجع له اذا انجبرت في يوم من الايام اه انا انحبست قبل هيك الحبسه ها انا نازل مش مش مفاجئ ومروح مش مبسوط يعني انا نزلت خلص شيء انت مجبور عليه نزلت دبرت اموري فضيت تخت رتبت اموري شريت اواعي جبت اواعي زبطت شنطتي وعشت الفتره تبعتي موسيقى غا"
+      },
+      {
+        "clip_id": "5flgspymra-209",
+        "text": "موسيقى بالكمبيوتر وحامل كاسه مشروب عشت طفوله زي ما بدي بقول لك مرفهه جدا اخي اهلي مشغولين وانا فالت"
+      },
+      {
+        "clip_id": "5flgspymra-334",
+        "text": "كارما حقيقيه اشرح لي ايش هدول هي التاتو اليوم هذا هي رولت هي ا احمر رولت اه اليوم قبل ما اجي هي رولت وهي نغمات موسيقى مايك نمر بومه فينفي دي فيتشي الافلاطون يعني اتيت رايت حكمت"
+      },
+      {
+        "clip_id": "5flgspymra-368",
+        "text": "كنت اهرب من وا المؤلم بالتعاطي ابدا ابدا ابدا كنت عايش واقعي وزياده كنا مكيفين اخي كافين كنا ما كناش نعمل مشاكل ولا غيره كافين ناس بتغني وناس تبعت موسيقى و"
+      },
+      {
+        "clip_id": "5flgspymra-416",
+        "text": "اكثر شيء مؤلم بالحب موسيقى ال بديش اقول لك الجفا الجفا من اسمه اخي ناشف الجفا سيء ياز"
+      },
+      {
+        "clip_id": "epabqc9ast-61",
+        "text": "وحتى قلت ل حتى هو من فتره كان بكي مع والدتي بيقول لها كان عم يحكوا بموضوع اخي الكبير عامل مشاكل ف عم يحكي مع امي عمق لها بترجعي لي وهيك موسيقى لليوم"
+      },
+      {
+        "clip_id": "epabqc9ast-125",
+        "text": "لما اجتك بنوته موسيقى عسل الاسم حلو بس غريب ليش سميت حسب والله اخترناه انا وامه والله اسم عسل سبحان الله شو غيرت فيك"
+      },
+      {
+        "clip_id": "epabqc9ast-244",
+        "text": "نفس الاجابه بقول له انه بتمنى لو موسيقى اني حسنت اج معكم كلكم ببيت واحد الكل"
+      },
+      {
+        "clip_id": "epabqc9ast-248",
+        "text": "يعني بل العسل موسيقى انه يعني انه يعني حاولي انك يعني تصنعي شيء"
+      },
+      {
+        "clip_id": "utrhqcji78-56",
+        "text": "نصلي ليله القدر سبعة و عشرونخمسة عشرون ألفا و مائة و خمسة ضربنا شخص من الخلف بسيارته كان معنا جيب شروكي ابوابه فتحه بالعكس قوس الجيب من محمد ضربه موسيقى رحنا على"
+      },
+      {
+        "clip_id": "omovwbnxb9-159",
+        "text": "زي المسبات شفت هذا الفيديو لما اشوفه بكره حالي لما اشوف مسبات سيم بتحس ربنا بيبارك بدعم مالي جاي لمحتوى في مسبات موسيقى ام"
+      },
+      {
+        "clip_id": "xs9hy6dwtn-160",
+        "text": "كان يعني من من طفولتي من شو اسمه وحن متربيين عليه القائد هذا ويعني انا بحبه فهمت علي فلما استشهد هيك حسيت انه اه فهمت الله يرحمه طبعا انت حتى وت بتحكي عنه تكركب موسيقى ام حدا حدا هيك منيح يعني ب انا ما المشكله اليوتيوب عنده سياسات موسيقى"
+      },
+      {
+        "clip_id": "xs9hy6dwtn-227",
+        "text": "الى اللقاء شكرا موسيقى شكرا ان"
+      },
+      {
+        "clip_id": "vngwvadz85-70",
+        "text": "اللي هو ان تذهب يعني قتله سيدنا حمزه بقتله لمسيلمه موسيقى لكن"
+      },
+      {
+        "clip_id": "vngwvadz85-176",
+        "text": "موسيقى يعني ماخذ كل الاحتياطات اخذ لي كرسي من الشركه من هون ومخدات وحرامات وفرشات ومش عارف ايش وسوينا صاجيه على الطريقه اللي بحبها قعدنا يمكن اربع خمس ساعات هناك"
+      },
+      {
+        "clip_id": "c5bcjps40r-122",
+        "text": "مستحيل سلاوي بلش ب ألفان و واحد و عشرون لما ما كان في مغني لما ما كانو يعرفوا انه في شيء اسمه موسيقى بديله في شباب عم تسعى وعم بتغني وعم بتحاول توصل"
+      },
+      {
+        "clip_id": "c5bcjps40r-136",
+        "text": "الموسيقى مساعده ممكن اصير كاتب ممكن اعتزل واصير اعمل كتب بفتره الناس حستك ميال الاعتزال شوي"
+      },
+      {
+        "clip_id": "c5bcjps40r-137",
+        "text": "فازال عن الفن غير عن الاعتزال عن الموسيقى الاعتزال عن الفن وارد اني اترك الشغل اكيد وببطل حدا يعرف عني شيء وببطل لازم اعمل شيء اما اترك الموسيقى او اترك الكتابهمعنى اهم لا مستحيل انا انا الكتابه هي دكتوري"
+      },
+      {
+        "clip_id": "c5bcjps40r-236",
+        "text": "في تاديتها يعني موسيقى ثانيه اسلوب ثاني فبايبولر هو عباره عن تعدد الشخصيات فكان الالبوم متعدد ال ال الاساليب في الفن شو اقرب اغنيه لقلبك فيه كلهم"
+      },
+      {
+        "clip_id": "c5bcjps40r-297",
+        "text": "شوف الموسيقى ما بتركها او الكتابه خلينا نحكي لانه انا الكتابه عندي اكثر من موسيقى صراحه انا بكتب كثير فالكتابه ما بتركها لكن مهنتي ممكن اتركها اذا اذا زعلت عيلتي"
+      },
+      {
+        "clip_id": "qc67lna1qb-1",
+        "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+      },
+      {
+        "clip_id": "qc67lna1qb-323",
+        "text": "ما بتمنى لك الا تكون بخير وسعيد ومبسوط والله يتمم لك امورك كلها على خير شكرا شكرا شكرا وهيك بنكون وصلنا لنهايه حلقتنا لليوم نشوفكم بحلقات موسيقى"
+      },
+      {
+        "clip_id": "690bdx2a7x-116",
+        "text": "بس ما بحط موسيقى حزينه هيك ابيض واسود صلاح جرحني عادي يعني اه كان صاحب هيك وراح الله سهل عليه"
+      },
+      {
+        "clip_id": "0j515zfr5l-1",
+        "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+      },
+      {
+        "clip_id": "0j515zfr5l-291",
+        "text": "فرقس تصفيق كنت اعمل فيك عمله ايش والله كنت اعمل فيك عمله مرتبه هيك كنت بتعمل تي بس قلت خلص مشى الحلقه يا ولد ليه كنت اقول لك انا لما تواصلت معك قلت لي كل شيء انا اظهرته احكي فيه كل شيء انا خبيته خلص لا تحكي فيه بس انا ما ما ابهرت اي ثواني انت حكيت عن علاقتك حكيت عنها فبما انه نحكي على علاطك فبقدر اقول لك انا هيك يا سيدي عندي اسئله بس انا خلص بكتفي لهون الله تكبر عقلك"
+      },
+      {
+        "clip_id": "nzc21rdbcn-409",
+        "text": "نشوفكم بحلقات انيه موسيقى"
+      },
+      {
+        "clip_id": "rikl276p9j-1",
+        "text": "موسيقى اهلا وسهلا فيكم بحلقه جديده من برنامج تحت الضغط"
+      }
+    ]
+  },
+  "limitations": [
+    "No diarization or speaker identity inference was performed.",
+    "SRT matches establish text/timing metadata consistency, not acoustic transcript correctness.",
+    "Structural candidates are not verified single-speaker TTS examples.",
+    "Acoustic statistics are sampled, not a corpus-wide audit."
+  ],
+  "existing_parquet_split_overlap": [
+    "0j515zfr5l",
+    "1zm10wn4u4",
+    "2366wqj7sw",
+    "5flgspymra",
+    "690bdx2a7x",
+    "6n2esa018j",
+    "8h7r4cs81s",
+    "c5bcjps40r",
+    "epabqc9ast",
+    "i2clnz70i8",
+    "j27tmdq22g",
+    "j3bw52pgye",
+    "nzc21rdbcn",
+    "omovwbnxb9",
+    "piekf44qr0",
+    "qc67lna1qb",
+    "rikl276p9j",
+    "utrhqcji78",
+    "vngwvadz85",
+    "w5ri83j0ly",
+    "zmjh0hwrup",
+    "zsbp3t7j3m"
+  ]
+}

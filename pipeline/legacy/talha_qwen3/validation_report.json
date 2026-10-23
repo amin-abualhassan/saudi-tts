@@ -1,0 +1,34 @@
+{
+  "runner": "/opt/dlami/nvme/training/talha_qwen3/run.py",
+  "runner_sha256": "03e532c70ac4fb1753204537fc0dd5ae68cd4ded497013a02829ec09367e7dc1",
+  "default_manifest": "/opt/dlami/nvme/training/talha_s2pro/cache/54f80bc308a0fefd781c55c1/prepared.jsonl",
+  "prepared_dataset": "/opt/dlami/nvme/training/talha_qwen3/cache/46d905ba71bec46da6ac4224",
+  "prepared_clips": 2754,
+  "splits": {
+    "train": {
+      "clips": 2482,
+      "hours": 9.005525447215923,
+      "source_videos": 245
+    },
+    "validation": {
+      "clips": 131,
+      "hours": 0.5050459750566892,
+      "source_videos": 14
+    },
+    "test": {
+      "clips": 141,
+      "hours": 0.5065344041320232,
+      "source_videos": 14
+    }
+  },
+  "regression_tests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "python_compile": "passed",
+  "dashboard_request_handlers": "passed in memory",
+  "dashboard_live_socket": "unavailable: sandbox denies socket creation",
+  "gpu_training": "not executed: NVIDIA driver unavailable, torch.cuda.is_available() false",
+  "upstream_install": "not executed: shell DNS cannot resolve github.com",
+  "audio_results": "24 kHz mono preparation completed; no trained speech generated"
+}

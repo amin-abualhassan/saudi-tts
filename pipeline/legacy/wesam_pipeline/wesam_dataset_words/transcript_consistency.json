@@ -1,0 +1,189 @@
+{
+  "note": "Token-count agreement checks deduplication consistency, not temporal accuracy or spoken transcript correctness. Music/applause tokens ignored.",
+  "episodes": [
+    {
+      "source_id": "0j515zfr5l",
+      "vtt_lexical_words": 11366,
+      "srt_lexical_words": 11907,
+      "multiset_agreement": 0.9711683066214067,
+      "vtt_only_words": 65,
+      "srt_only_words": 606
+    },
+    {
+      "source_id": "1zm10wn4u4",
+      "vtt_lexical_words": 2378,
+      "srt_lexical_words": 2445,
+      "multiset_agreement": 0.9815467551316608,
+      "vtt_only_words": 11,
+      "srt_only_words": 78
+    },
+    {
+      "source_id": "2366wqj7sw",
+      "vtt_lexical_words": 9584,
+      "srt_lexical_words": 9779,
+      "multiset_agreement": 0.9800134276713319,
+      "vtt_only_words": 96,
+      "srt_only_words": 291
+    },
+    {
+      "source_id": "5flgspymra",
+      "vtt_lexical_words": 16443,
+      "srt_lexical_words": 17498,
+      "multiset_agreement": 0.9632597743142512,
+      "vtt_only_words": 96,
+      "srt_only_words": 1151
+    },
+    {
+      "source_id": "690bdx2a7x",
+      "vtt_lexical_words": 11301,
+      "srt_lexical_words": 11726,
+      "multiset_agreement": 0.9765058409692969,
+      "vtt_only_words": 58,
+      "srt_only_words": 483
+    },
+    {
+      "source_id": "6n2esa018j",
+      "vtt_lexical_words": 6900,
+      "srt_lexical_words": 7145,
+      "multiset_agreement": 0.9740121039515842,
+      "vtt_only_words": 60,
+      "srt_only_words": 305
+    },
+    {
+      "source_id": "8h7r4cs81s",
+      "vtt_lexical_words": 7836,
+      "srt_lexical_words": 7991,
+      "multiset_agreement": 0.9883111139192519,
+      "vtt_only_words": 15,
+      "srt_only_words": 170
+    },
+    {
+      "source_id": "c5bcjps40r",
+      "vtt_lexical_words": 11591,
+      "srt_lexical_words": 12287,
+      "multiset_agreement": 0.9640673423234777,
+      "vtt_only_words": 81,
+      "srt_only_words": 777
+    },
+    {
+      "source_id": "epabqc9ast",
+      "vtt_lexical_words": 9625,
+      "srt_lexical_words": 9987,
+      "multiset_agreement": 0.9804201509280033,
+      "vtt_only_words": 11,
+      "srt_only_words": 373
+    },
+    {
+      "source_id": "i2clnz70i8",
+      "vtt_lexical_words": 9495,
+      "srt_lexical_words": 10007,
+      "multiset_agreement": 0.9682083888831915,
+      "vtt_only_words": 54,
+      "srt_only_words": 566
+    },
+    {
+      "source_id": "j27tmdq22g",
+      "vtt_lexical_words": 5829,
+      "srt_lexical_words": 5968,
+      "multiset_agreement": 0.9770280579808426,
+      "vtt_only_words": 66,
+      "srt_only_words": 205
+    },
+    {
+      "source_id": "j3bw52pgye",
+      "vtt_lexical_words": 4595,
+      "srt_lexical_words": 4722,
+      "multiset_agreement": 0.9717720296232693,
+      "vtt_only_words": 68,
+      "srt_only_words": 195
+    },
+    {
+      "source_id": "nzc21rdbcn",
+      "vtt_lexical_words": 14716,
+      "srt_lexical_words": 15176,
+      "multiset_agreement": 0.9809313528703332,
+      "vtt_only_words": 55,
+      "srt_only_words": 515
+    },
+    {
+      "source_id": "omovwbnxb9",
+      "vtt_lexical_words": 17027,
+      "srt_lexical_words": 17371,
+      "multiset_agreement": 0.9840106982964126,
+      "vtt_only_words": 103,
+      "srt_only_words": 447
+    },
+    {
+      "source_id": "piekf44qr0",
+      "vtt_lexical_words": 5030,
+      "srt_lexical_words": 5209,
+      "multiset_agreement": 0.972946576814142,
+      "vtt_only_words": 49,
+      "srt_only_words": 228
+    },
+    {
+      "source_id": "qc67lna1qb",
+      "vtt_lexical_words": 11741,
+      "srt_lexical_words": 12135,
+      "multiset_agreement": 0.9806500251298375,
+      "vtt_only_words": 34,
+      "srt_only_words": 428
+    },
+    {
+      "source_id": "rikl276p9j",
+      "vtt_lexical_words": 17472,
+      "srt_lexical_words": 17954,
+      "multiset_agreement": 0.9853215152712697,
+      "vtt_only_words": 19,
+      "srt_only_words": 501
+    },
+    {
+      "source_id": "utrhqcji78",
+      "vtt_lexical_words": 12390,
+      "srt_lexical_words": 13085,
+      "multiset_agreement": 0.9657311089303239,
+      "vtt_only_words": 89,
+      "srt_only_words": 784
+    },
+    {
+      "source_id": "vngwvadz85",
+      "vtt_lexical_words": 15586,
+      "srt_lexical_words": 16066,
+      "multiset_agreement": 0.9809174775685581,
+      "vtt_only_words": 62,
+      "srt_only_words": 542
+    },
+    {
+      "source_id": "w5ri83j0ly",
+      "vtt_lexical_words": 4060,
+      "srt_lexical_words": 4186,
+      "multiset_agreement": 0.9784137763764249,
+      "vtt_only_words": 26,
+      "srt_only_words": 152
+    },
+    {
+      "source_id": "xs9hy6dwtn",
+      "vtt_lexical_words": 8309,
+      "srt_lexical_words": 8547,
+      "multiset_agreement": 0.9833887043189369,
+      "vtt_only_words": 21,
+      "srt_only_words": 259
+    },
+    {
+      "source_id": "zmjh0hwrup",
+      "vtt_lexical_words": 9584,
+      "srt_lexical_words": 9754,
+      "multiset_agreement": 0.9850036198159065,
+      "vtt_only_words": 60,
+      "srt_only_words": 230
+    },
+    {
+      "source_id": "zsbp3t7j3m",
+      "vtt_lexical_words": 8060,
+      "srt_lexical_words": 8152,
+      "multiset_agreement": 0.9935849987663459,
+      "vtt_only_words": 6,
+      "srt_only_words": 98
+    }
+  ]
+}

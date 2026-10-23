@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="grid">
+<div class="card"><div class="k">Now</div><div class="v" style="font-size:15px">{{ now }}</div><div class="k">Deadline: {{ deadline }}</div></div>
+<div class="card"><div class="k">Agent auth / never-stall rung</div><div class="v">{{ auth_mode }}</div><div class="k">rung {{ rung }}</div></div>
+{% for g in gpus %}<div class="card"><div class="k">{{ g.name }}</div><div class="v">{{ g.util }}% · {{ (g.mem_used/1024)|round(1) }}/{{ (g.mem_total/1024)|round(0)|int }} GB</div><div class="k">{{ g.temp }}°C · {{ g.power }} W</div></div>{% endfor %}
+{% for d in disks %}<div class="card"><div class="k">disk {{ d.mount }}</div><div class="v">{{ d.pct }}%</div><div class="k">{{ d.used_gb }} / {{ d.total_gb }} GB</div></div>{% endfor %}
+<div class="card"><div class="k">ElevenLabs spend</div><div class="v">${{ '%.2f'|format(spend.get('spent_usd',0)) }} / ${{ '%.0f'|format(spend.get('cap_usd',0)) }}</div><div class="k">{{ spend.get('characters',0) }} chars</div></div>
+</div>
+<div class="card"><h2>Plan</h2>
+<table><tr><th>#</th><th>Stage</th><th>Day</th><th>Status</th><th>Evidence</th></tr>
+{% for r in plan %}<tr><td>{{ r.n }}</td><td title="{{ r.gate }}">{{ r.stage }}</td><td>{{ r.day }}</td><td class="{{ r.status }}">{{ r.status }}</td><td>{{ r.evidence }}</td></tr>{% endfor %}
+</table></div>
+<div class="card"><h2>Progress (last 40)</h2><div hx-get="/fragment/progress" hx-trigger="every 30s" hx-swap="innerHTML"><pre>{{ progress }}</pre></div></div>
+<div class="card"><h2>GPU processes</h2><pre>{{ gpu_procs or 'none' }}</pre></div>
+<div class="card"><h2>Watchdog log</h2><pre>{{ watchdog }}</pre></div>
+{% endblock %}

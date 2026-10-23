@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card" id="panel"><h2>Listening panel · blind pairs</h2>
+{% if pair %}
+<p class="k">{{ total - left }} / {{ total }} rated by {{ user }}</p>
+<p dir="rtl" style="font-size:18px">{{ pair.text }}</p>
+{% set L = 'b' if flip else 'a' %}{% set R = 'a' if flip else 'b' %}
+<div class="grid">
+<div><b>Left</b><br><audio controls preload="auto" src="/panel_audio/{{ pair.id }}/{{ L }}"></audio></div>
+<div><b>Right</b><br><audio controls preload="auto" src="/panel_audio/{{ pair.id }}/{{ R }}"></audio></div>
+</div>
+<form method="post" action="/vote">
+<input type="hidden" name="pair_id" value="{{ pair.id }}"><input type="hidden" name="flip" value="{{ 1 if flip else 0 }}">
+<p>Which sounds more natural?
+<select name="cmos">
+<option value="-3">Left much better (−3)</option><option value="-2">Left better (−2)</option><option value="-1">Left slightly better (−1)</option>
+<option value="0" selected>Same (0)</option>
+<option value="1">Right slightly better (+1)</option><option value="2">Right better (+2)</option><option value="3">Right much better (+3)</option>
+</select></p>
+<p>Preference: <label><input type="radio" name="choice" value="left" required> Left</label>
+<label><input type="radio" name="choice" value="tie"> No preference</label>
+<label><input type="radio" name="choice" value="right"> Right</label></p>
+<p>"This is Saudi (not MSA or another dialect)", 1–5:
+Left <select name="saudi_left">{% for i in range(1,6) %}<option {{ 'selected' if i==3 }}>{{ i }}</option>{% endfor %}</select>
+Right <select name="saudi_right">{% for i in range(1,6) %}<option {{ 'selected' if i==3 }}>{{ i }}</option>{% endfor %}</select></p>
+<p>Sounds like MSA / Fusha? <label><input type="radio" name="msa" value="" checked> neither</label>
+<label><input type="radio" name="msa" value="left"> left</label><label><input type="radio" name="msa" value="right"> right</label></p>
+<button>Submit &amp; next</button>
+</form>
+{% elif total %}<p>All {{ total }} pairs rated. Thank you!</p>
+{% else %}<p class="mut">No panel session is open right now.</p>{% endif %}
+</div>
+<div class="card"><h2>Try a model</h2>
+{% if backends %}
+<form hx-post="/tts" hx-target="#out" hx-indicator="#busy">
+<p><select name="backend">{% for b in backends %}<option>{{ b }}</option>{% endfor %}</select>
+<select name="voice"><option value="">default voice</option>{% for v in voices %}<option value="{{ v.name }}">{{ v.name }}</option>{% endfor %}</select></p>
+<p><textarea name="text" dir="rtl" rows="3" placeholder="اكتب جملة باللهجة السعودية"></textarea></p>
+<button>Speak</button> <span id="busy" class="htmx-indicator mut">rendering…</span>
+</form><div id="out"></div>
+{% else %}<p class="mut">No model is being served yet (bake-off winners appear here on day 1).</p>{% endif %}
+</div>
+{% endblock %}
