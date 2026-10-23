@@ -1,0 +1,1163 @@
+{
+  "hardware": "NVIDIA H100 80GB HBM3, 9.0",
+  "baseline_device_bytes": 56709087232,
+  "laptop_verified": false,
+  "image_id": "sha256:c7c9f24979a711b305a8b437d441deb1f502002c0c47b709170ed139dd9a0541",
+  "model_read_only": true,
+  "bf16_shards_mounted": false,
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "aljawab-nf4-restore-1792274778",
+    "--gpus",
+    "all",
+    "--read-only",
+    "--tmpfs",
+    "/tmp:rw,nosuid,size=512m",
+    "--shm-size=256m",
+    "--security-opt",
+    "no-new-privileges",
+    "--cap-drop",
+    "ALL",
+    "-p",
+    "127.0.0.1:3012:3012",
+    "--mount",
+    "type=bind,source=/opt/dlami/nvme/training/attention_mlp_r16_nf4_20261017/clean-restore-stage1,target=/data,readonly",
+    "--mount",
+    "type=bind,source=/opt/dlami/nvme/training/checkpoints/s2-pro/codec.pth,target=/original/codec.pth,readonly",
+    "--mount",
+    "type=bind,source=/opt/dlami/nvme/training/attention_mlp_r16_nf4_20261017/clean-restore-stage1/reference,target=/references,readonly",
+    "aljawab-fish-nf4:20261017"
+  ],
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/opt/dlami/nvme/training/attention_mlp_r16_nf4_20261017/clean-restore-stage1",
+      "Destination": "/data",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/opt/dlami/nvme/training/attention_mlp_r16_nf4_20261017/clean-restore-stage1/reference",
+      "Destination": "/references",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/opt/dlami/nvme/training/checkpoints/s2-pro/codec.pth",
+      "Destination": "/original/codec.pth",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  ],
+  "ports": {
+    "3012/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "3012"
+      }
+    ]
+  },
+  "health_at_ready": {
+    "ok": true,
+    "model": "attention_mlp_r16_early-nf4-bd78f331a5a1534c",
+    "runtime": "fish-speech-bnb-nf4",
+    "quantized_modules": 201,
+    "load_seconds": 5.067757740034722,
+    "cuda_allocated": 3135087616,
+    "cuda_reserved": 3208642560,
+    "cuda_peak_allocated": 3135087616,
+    "cuda_peak_reserved": 3208642560
+  },
+  "cold_launch_to_ready_seconds": 16.711007950012572,
+  "http": {
+    "health": {
+      "ok": true,
+      "model": "attention_mlp_r16_early-nf4-bd78f331a5a1534c",
+      "runtime": "fish-speech-bnb-nf4",
+      "quantized_modules": 201,
+      "load_seconds": 5.067757740034722,
+      "cuda_allocated": 3135087616,
+      "cuda_reserved": 3208642560,
+      "cuda_peak_allocated": 3135087616,
+      "cuda_peak_reserved": 3208642560
+    },
+    "wav_seconds": 16.506905026035383,
+    "wav_duration": 3.622312925170068,
+    "pcm_first_seconds": 3.1406250270083547,
+    "pcm_total_seconds": 10.350069591077045,
+    "pcm_duration": 3.622312925170068,
+    "pcm_arrivals": [
+      {
+        "at_seconds": 3.1406250270083547,
+        "bytes": 14473
+      },
+      {
+        "at_seconds": 3.1407260650303215,
+        "bytes": 51063
+      },
+      {
+        "at_seconds": 5.250936426105909,
+        "bytes": 65529
+      },
+      {
+        "at_seconds": 5.251011522021145,
+        "bytes": 7
+      },
+      {
+        "at_seconds": 7.33198928902857,
+        "bytes": 65529
+      },
+      {
+        "at_seconds": 7.332059624022804,
+        "bytes": 7
+      },
+      {
+        "at_seconds": 9.407255296013318,
+        "bytes": 65529
+      },
+      {
+        "at_seconds": 9.40753578802105,
+        "bytes": 7
+      },
+      {
+        "at_seconds": 10.349593833088875,
+        "bytes": 57344
+      }
+    ],
+    "pcm_matches_wav": true,
+    "first_pcm_before_response_completed": true,
+    "original_identity_rejected": true,
+    "outside_reference_root_rejected": true,
+    "health_after": {
+      "ok": true,
+      "model": "attention_mlp_r16_early-nf4-bd78f331a5a1534c",
+      "runtime": "fish-speech-bnb-nf4",
+      "quantized_modules": 201,
+      "load_seconds": 5.067757740034722,
+      "cuda_allocated": 4310843392,
+      "cuda_reserved": 4773117952,
+      "cuda_peak_allocated": 4527247872,
+      "cuda_peak_reserved": 4773117952
+    }
+  },
+  "success": true,
+  "telemetry": [
+    {
+      "at_seconds": 0.00017560296691954136,
+      "device_bytes": 56709087232,
+      "host_available": 238669180928
+    },
+    {
+      "at_seconds": 0.27223648503422737,
+      "device_bytes": 56709087232,
+      "host_available": 238649753600
+    },
+    {
+      "at_seconds": 0.5439551200252026,
+      "device_bytes": 56709087232,
+      "host_available": 238631419904
+    },
+    {
+      "at_seconds": 0.8155992090469226,
+      "device_bytes": 56709087232,
+      "host_available": 238614188032
+    },
+    {
+      "at_seconds": 1.087939023040235,
+      "device_bytes": 56709087232,
+      "host_available": 238612406272
+    },
+    {
+      "at_seconds": 1.3601195550290868,
+      "device_bytes": 56709087232,
+      "host_available": 238595833856
+    },
+    {
+      "at_seconds": 1.6322998639661819,
+      "device_bytes": 56709087232,
+      "host_available": 238586937344
+    },
+    {
+      "at_seconds": 1.904913795995526,
+      "device_bytes": 56709087232,
+      "host_available": 238600040448
+    },
+    {
+      "at_seconds": 2.1773001700639725,
+      "device_bytes": 56709087232,
+      "host_available": 238574170112,
+      "container_host_rss": 12468224
+    },
+    {
+      "at_seconds": 2.4493331069825217,
+      "device_bytes": 56709087232,
+      "host_available": 238569062400,
+      "container_host_rss": 27783168
+    },
+    {
+      "at_seconds": 2.722031755023636,
+      "device_bytes": 56709087232,
+      "host_available": 238401355776,
+      "container_host_rss": 388182016
+    },
+    {
+      "at_seconds": 2.9944576820125803,
+      "device_bytes": 56709087232,
+      "host_available": 238349266944,
+      "container_host_rss": 475443200
+    },
+    {
+      "at_seconds": 3.266741438070312,
+      "device_bytes": 56709087232,
+      "host_available": 238350327808,
+      "container_host_rss": 497549312
+    },
+    {
+      "at_seconds": 3.5391143510350958,
+      "device_bytes": 56709087232,
+      "host_available": 238334939136,
+      "container_host_rss": 509288448
+    },
+    {
+      "at_seconds": 3.8114473710302263,
+      "device_bytes": 56709087232,
+      "host_available": 238316908544,
+      "container_host_rss": 538038272
+    },
+    {
+      "at_seconds": 4.083718045963906,
+      "device_bytes": 56709087232,
+      "host_available": 238298898432,
+      "container_host_rss": 543375360
+    },
+    {
+      "at_seconds": 4.355644823983312,
+      "device_bytes": 56709087232,
+      "host_available": 238264107008,
+      "container_host_rss": 564682752
+    },
+    {
+      "at_seconds": 4.627828572061844,
+      "device_bytes": 56709087232,
+      "host_available": 238231027712,
+      "container_host_rss": 633905152
+    },
+    {
+      "at_seconds": 4.899169104988687,
+      "device_bytes": 56709087232,
+      "host_available": 238214733824,
+      "container_host_rss": 657129472
+    },
+    {
+      "at_seconds": 5.170578632038087,
+      "device_bytes": 56709087232,
+      "host_available": 238197972992,
+      "container_host_rss": 676360192
+    },
+    {
+      "at_seconds": 5.44229959405493,
+      "device_bytes": 56709087232,
+      "host_available": 238178897920,
+      "container_host_rss": 677879808
+    },
+    {
+      "at_seconds": 5.716136852046475,
+      "device_bytes": 56709087232,
+      "host_available": 238169075712,
+      "container_host_rss": 679620608
+    },
+    {
+      "at_seconds": 5.987669939058833,
+      "device_bytes": 56709087232,
+      "host_available": 238171643904,
+      "container_host_rss": 698773504
+    },
+    {
+      "at_seconds": 6.260093656019308,
+      "device_bytes": 56709087232,
+      "host_available": 238148689920,
+      "container_host_rss": 735838208
+    },
+    {
+      "at_seconds": 6.531808817060664,
+      "device_bytes": 56709087232,
+      "host_available": 238142570496,
+      "container_host_rss": 770236416
+    },
+    {
+      "at_seconds": 6.803626456996426,
+      "device_bytes": 56709087232,
+      "host_available": 238137761792,
+      "container_host_rss": 770236416
+    },
+    {
+      "at_seconds": 7.0753621000330895,
+      "device_bytes": 56709087232,
+      "host_available": 238112133120,
+      "container_host_rss": 770236416
+    },
+    {
+      "at_seconds": 7.3468662849627435,
+      "device_bytes": 56709087232,
+      "host_available": 238111129600,
+      "container_host_rss": 770236416
+    },
+    {
+      "at_seconds": 7.618491349043325,
+      "device_bytes": 56709087232,
+      "host_available": 238094217216,
+      "container_host_rss": 770236416
+    },
+    {
+      "at_seconds": 7.889998494996689,
+      "device_bytes": 56709087232,
+      "host_available": 238105341952,
+      "container_host_rss": 775364608
+    },
+    {
+      "at_seconds": 8.161904311040416,
+      "device_bytes": 56709087232,
+      "host_available": 238081675264,
+      "container_host_rss": 787759104
+    },
+    {
+      "at_seconds": 8.433620581985451,
+      "device_bytes": 56709087232,
+      "host_available": 238069256192,
+      "container_host_rss": 794890240
+    },
+    {
+      "at_seconds": 8.706101363990456,
+      "device_bytes": 56709087232,
+      "host_available": 237920100352,
+      "container_host_rss": 813498368
+    },
+    {
+      "at_seconds": 8.979244907037355,
+      "device_bytes": 56709087232,
+      "host_available": 237887758336,
+      "container_host_rss": 826236928
+    },
+    {
+      "at_seconds": 9.252385320025496,
+      "device_bytes": 56709087232,
+      "host_available": 237873291264,
+      "container_host_rss": 827719680
+    },
+    {
+      "at_seconds": 9.524457409977913,
+      "device_bytes": 56729010176,
+      "host_available": 237774143488,
+      "container_host_rss": 898355200
+    },
+    {
+      "at_seconds": 9.814735164982267,
+      "device_bytes": 57378078720,
+      "host_available": 237569716224,
+      "container_host_rss": 1104465920
+    },
+    {
+      "at_seconds": 10.08679300302174,
+      "device_bytes": 57378078720,
+      "host_available": 237544849408,
+      "container_host_rss": 1073442816
+    },
+    {
+      "at_seconds": 10.359104981995188,
+      "device_bytes": 57378078720,
+      "host_available": 237527273472,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 10.631266828044318,
+      "device_bytes": 57378078720,
+      "host_available": 237510590464,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 10.903346247971058,
+      "device_bytes": 57378078720,
+      "host_available": 237501792256,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 11.17560522200074,
+      "device_bytes": 57378078720,
+      "host_available": 237418233856,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 11.447387479012832,
+      "device_bytes": 57378078720,
+      "host_available": 237415968768,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 11.71958796796389,
+      "device_bytes": 57378078720,
+      "host_available": 237418987520,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 11.991236094967462,
+      "device_bytes": 57378078720,
+      "host_available": 237426589696,
+      "container_host_rss": 1087496192
+    },
+    {
+      "at_seconds": 12.263183295028284,
+      "device_bytes": 58615398400,
+      "host_available": 237425487872,
+      "container_host_rss": 2362662912
+    },
+    {
+      "at_seconds": 12.535600651055574,
+      "device_bytes": 60217622528,
+      "host_available": 237424111616,
+      "container_host_rss": 3885916160
+    },
+    {
+      "at_seconds": 12.808441080967896,
+      "device_bytes": 60563652608,
+      "host_available": 237415669760,
+      "container_host_rss": 1087602688
+    },
+    {
+      "at_seconds": 13.080635788966902,
+      "device_bytes": 60563652608,
+      "host_available": 237415669760,
+      "container_host_rss": 1087602688
+    },
+    {
+      "at_seconds": 13.352369982982054,
+      "device_bytes": 60563652608,
+      "host_available": 237404377088,
+      "container_host_rss": 1087602688
+    },
+    {
+      "at_seconds": 13.62436143506784,
+      "device_bytes": 60563652608,
+      "host_available": 237387603968,
+      "container_host_rss": 1087602688
+    },
+    {
+      "at_seconds": 13.89613648201339,
+      "device_bytes": 60563652608,
+      "host_available": 237390995456,
+      "container_host_rss": 1089277952
+    },
+    {
+      "at_seconds": 14.167625656002201,
+      "device_bytes": 60563652608,
+      "host_available": 237385900032,
+      "container_host_rss": 1094660096
+    },
+    {
+      "at_seconds": 14.438922194065526,
+      "device_bytes": 60563652608,
+      "host_available": 237375709184,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 14.710925268009305,
+      "device_bytes": 60563652608,
+      "host_available": 237382733824,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 14.983415500028059,
+      "device_bytes": 60563652608,
+      "host_available": 237380399104,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 15.255068266997114,
+      "device_bytes": 60563652608,
+      "host_available": 237358411776,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 15.526533609023318,
+      "device_bytes": 60563652608,
+      "host_available": 237350481920,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 15.799163072020747,
+      "device_bytes": 60563652608,
+      "host_available": 237348777984,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 16.07137231202796,
+      "device_bytes": 60563652608,
+      "host_available": 237366894592,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 16.343633436015807,
+      "device_bytes": 60563652608,
+      "host_available": 237380030464,
+      "container_host_rss": 1131941888
+    },
+    {
+      "at_seconds": 16.615772151038982,
+      "device_bytes": 60563652608,
+      "host_available": 237380116480,
+      "container_host_rss": 1131950080
+    },
+    {
+      "at_seconds": 16.888124102028087,
+      "device_bytes": 60563652608,
+      "host_available": 237164908544,
+      "container_host_rss": 1255772160
+    },
+    {
+      "at_seconds": 17.16214398399461,
+      "device_bytes": 60563652608,
+      "host_available": 236817330176,
+      "container_host_rss": 1694830592
+    },
+    {
+      "at_seconds": 17.434166979976,
+      "device_bytes": 60563652608,
+      "host_available": 236798926848,
+      "container_host_rss": 1500053504
+    },
+    {
+      "at_seconds": 17.71057334903162,
+      "device_bytes": 60563652608,
+      "host_available": 236681158656,
+      "container_host_rss": 1588121600
+    },
+    {
+      "at_seconds": 17.983491344959475,
+      "device_bytes": 60563652608,
+      "host_available": 236786544640,
+      "container_host_rss": 1509523456
+    },
+    {
+      "at_seconds": 18.258944979053922,
+      "device_bytes": 60563652608,
+      "host_available": 236628942848,
+      "container_host_rss": 1631215616
+    },
+    {
+      "at_seconds": 18.531815791036934,
+      "device_bytes": 60563652608,
+      "host_available": 236740583424,
+      "container_host_rss": 1574670336
+    },
+    {
+      "at_seconds": 18.810432843049057,
+      "device_bytes": 60563652608,
+      "host_available": 236599099392,
+      "container_host_rss": 1740083200
+    },
+    {
+      "at_seconds": 19.083854458061978,
+      "device_bytes": 60563652608,
+      "host_available": 236599713792,
+      "container_host_rss": 1692446720
+    },
+    {
+      "at_seconds": 19.362512763007544,
+      "device_bytes": 60563652608,
+      "host_available": 236452024320,
+      "container_host_rss": 1862676480
+    },
+    {
+      "at_seconds": 19.63601433497388,
+      "device_bytes": 60563652608,
+      "host_available": 236735758336,
+      "container_host_rss": 1514516480
+    },
+    {
+      "at_seconds": 19.912877868977375,
+      "device_bytes": 60563652608,
+      "host_available": 236509773824,
+      "container_host_rss": 1795993600
+    },
+    {
+      "at_seconds": 20.1852331609698,
+      "device_bytes": 60563652608,
+      "host_available": 236810391552,
+      "container_host_rss": 1565270016
+    },
+    {
+      "at_seconds": 20.458015996031463,
+      "device_bytes": 60563652608,
+      "host_available": 237062131712,
+      "container_host_rss": 1345069056
+    },
+    {
+      "at_seconds": 20.731273788027465,
+      "device_bytes": 60563652608,
+      "host_available": 236971229184,
+      "container_host_rss": 1464778752
+    },
+    {
+      "at_seconds": 21.011245717061684,
+      "device_bytes": 60563652608,
+      "host_available": 236873498624,
+      "container_host_rss": 1561497600
+    },
+    {
+      "at_seconds": 21.291046531056054,
+      "device_bytes": 60563652608,
+      "host_available": 236941422592,
+      "container_host_rss": 1487224832
+    },
+    {
+      "at_seconds": 21.568239692016505,
+      "device_bytes": 60563652608,
+      "host_available": 237032271872,
+      "container_host_rss": 1501978624
+    },
+    {
+      "at_seconds": 21.846167520037852,
+      "device_bytes": 60563652608,
+      "host_available": 237044039680,
+      "container_host_rss": 2197217280
+    },
+    {
+      "at_seconds": 22.12339844298549,
+      "device_bytes": 61165535232,
+      "host_available": 236729151488,
+      "container_host_rss": 3065835520
+    },
+    {
+      "at_seconds": 22.40232431003824,
+      "device_bytes": 61415096320,
+      "host_available": 236561899520,
+      "container_host_rss": 1814523904
+    },
+    {
+      "at_seconds": 22.673281681956723,
+      "device_bytes": 61937287168,
+      "host_available": 236472578048,
+      "container_host_rss": 2002661376
+    },
+    {
+      "at_seconds": 22.945304037071764,
+      "device_bytes": 61937287168,
+      "host_available": 236381970432,
+      "container_host_rss": 2107392000
+    },
+    {
+      "at_seconds": 23.21736707596574,
+      "device_bytes": 61937287168,
+      "host_available": 236364722176,
+      "container_host_rss": 2107392000
+    },
+    {
+      "at_seconds": 23.488864429993555,
+      "device_bytes": 61937287168,
+      "host_available": 236331048960,
+      "container_host_rss": 2107392000
+    },
+    {
+      "at_seconds": 23.760044599999674,
+      "device_bytes": 61937287168,
+      "host_available": 236345516032,
+      "container_host_rss": 2107392000
+    },
+    {
+      "at_seconds": 24.032289013033733,
+      "device_bytes": 61937287168,
+      "host_available": 236345012224,
+      "container_host_rss": 2107392000
+    },
+    {
+      "at_seconds": 24.303976132068783,
+      "device_bytes": 61937287168,
+      "host_available": 236344184832,
+      "container_host_rss": 2107392000
+    },
+    {
+      "at_seconds": 24.575484178029,
+      "device_bytes": 61937287168,
+      "host_available": 236347645952,
+      "container_host_rss": 2107396096
+    },
+    {
+      "at_seconds": 24.848197047016583,
+      "device_bytes": 61937287168,
+      "host_available": 236340457472,
+      "container_host_rss": 2107400192
+    },
+    {
+      "at_seconds": 25.120361273991875,
+      "device_bytes": 61937287168,
+      "host_available": 236323434496,
+      "container_host_rss": 2107400192
+    },
+    {
+      "at_seconds": 25.392021251027472,
+      "device_bytes": 61937287168,
+      "host_available": 236307406848,
+      "container_host_rss": 2107400192
+    },
+    {
+      "at_seconds": 25.66442242602352,
+      "device_bytes": 61937287168,
+      "host_available": 236306599936,
+      "container_host_rss": 2107404288
+    },
+    {
+      "at_seconds": 25.93657013203483,
+      "device_bytes": 61987618816,
+      "host_available": 236233744384,
+      "container_host_rss": 2268061696
+    },
+    {
+      "at_seconds": 26.208715026965365,
+      "device_bytes": 61987618816,
+      "host_available": 236142596096,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 26.480473182047717,
+      "device_bytes": 61987618816,
+      "host_available": 236125028352,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 26.75233475503046,
+      "device_bytes": 61987618816,
+      "host_available": 236123123712,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 27.024222749983892,
+      "device_bytes": 61987618816,
+      "host_available": 236141461504,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 27.29645651206374,
+      "device_bytes": 61987618816,
+      "host_available": 236154019840,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 27.568085905979387,
+      "device_bytes": 61987618816,
+      "host_available": 236119719936,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 27.839125814964063,
+      "device_bytes": 61987618816,
+      "host_available": 236132286464,
+      "container_host_rss": 2336325632
+    },
+    {
+      "at_seconds": 28.11098378803581,
+      "device_bytes": 61987618816,
+      "host_available": 236108496896,
+      "container_host_rss": 2356117504
+    },
+    {
+      "at_seconds": 28.382164467009716,
+      "device_bytes": 61987618816,
+      "host_available": 236107771904,
+      "container_host_rss": 2356191232
+    },
+    {
+      "at_seconds": 28.653726557036862,
+      "device_bytes": 61987618816,
+      "host_available": 236072980480,
+      "container_host_rss": 2356191232
+    },
+    {
+      "at_seconds": 28.92517795797903,
+      "device_bytes": 61987618816,
+      "host_available": 236060172288,
+      "container_host_rss": 2356191232
+    },
+    {
+      "at_seconds": 29.19710875605233,
+      "device_bytes": 61987618816,
+      "host_available": 236044472320,
+      "container_host_rss": 2356191232
+    },
+    {
+      "at_seconds": 29.469512121053413,
+      "device_bytes": 61987618816,
+      "host_available": 235762589696,
+      "container_host_rss": 2356191232
+    },
+    {
+      "at_seconds": 29.74153224704787,
+      "device_bytes": 61987618816,
+      "host_available": 235750727680,
+      "container_host_rss": 2356191232
+    },
+    {
+      "at_seconds": 30.0134140009759,
+      "device_bytes": 61987618816,
+      "host_available": 235733151744,
+      "container_host_rss": 2356195328
+    },
+    {
+      "at_seconds": 30.28460323100444,
+      "device_bytes": 62056824832,
+      "host_available": 235716026368,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 30.55666448001284,
+      "device_bytes": 62056824832,
+      "host_available": 235698368512,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 30.827839539037086,
+      "device_bytes": 62056824832,
+      "host_available": 235707293696,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 31.099791208980605,
+      "device_bytes": 62056824832,
+      "host_available": 235706707968,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 31.37145974696614,
+      "device_bytes": 62056824832,
+      "host_available": 235702509568,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 31.64336495299358,
+      "device_bytes": 62056824832,
+      "host_available": 235702476800,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 31.914746709051542,
+      "device_bytes": 62056824832,
+      "host_available": 235710296064,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 32.18620862998068,
+      "device_bytes": 62056824832,
+      "host_available": 235709411328,
+      "container_host_rss": 2360111104
+    },
+    {
+      "at_seconds": 32.45785678701941,
+      "device_bytes": 62147002368,
+      "host_available": 235717017600,
+      "container_host_rss": 2361896960
+    },
+    {
+      "at_seconds": 32.72950627305545,
+      "device_bytes": 62147002368,
+      "host_available": 235734970368,
+      "container_host_rss": 2361896960
+    },
+    {
+      "at_seconds": 33.00085680605844,
+      "device_bytes": 62147002368,
+      "host_available": 235750830080,
+      "container_host_rss": 2361896960
+    },
+    {
+      "at_seconds": 33.27290937397629,
+      "device_bytes": 62147002368,
+      "host_available": 235764985856,
+      "container_host_rss": 2364420096
+    },
+    {
+      "at_seconds": 33.54471338202711,
+      "device_bytes": 62209916928,
+      "host_available": 235744280576,
+      "container_host_rss": 2367221760
+    },
+    {
+      "at_seconds": 33.816625559004024,
+      "device_bytes": 62209916928,
+      "host_available": 235767058432,
+      "container_host_rss": 2367221760
+    },
+    {
+      "at_seconds": 34.08815686998423,
+      "device_bytes": 62209916928,
+      "host_available": 235767959552,
+      "container_host_rss": 2367225856
+    },
+    {
+      "at_seconds": 34.3607393320417,
+      "device_bytes": 62209916928,
+      "host_available": 235774574592,
+      "container_host_rss": 2367225856
+    },
+    {
+      "at_seconds": 34.63254283205606,
+      "device_bytes": 62209916928,
+      "host_available": 235740631040,
+      "container_host_rss": 2367225856
+    },
+    {
+      "at_seconds": 34.903960332041606,
+      "device_bytes": 62209916928,
+      "host_available": 235748720640,
+      "container_host_rss": 2367225856
+    },
+    {
+      "at_seconds": 35.1756981969811,
+      "device_bytes": 62209916928,
+      "host_available": 235748139008,
+      "container_host_rss": 2367225856
+    },
+    {
+      "at_seconds": 35.4472248860402,
+      "device_bytes": 62209916928,
+      "host_available": 235760201728,
+      "container_host_rss": 2367225856
+    },
+    {
+      "at_seconds": 35.71946522104554,
+      "device_bytes": 62209916928,
+      "host_available": 235773689856,
+      "container_host_rss": 2367229952
+    },
+    {
+      "at_seconds": 35.99084706802387,
+      "device_bytes": 62209916928,
+      "host_available": 235773046784,
+      "container_host_rss": 2367229952
+    },
+    {
+      "at_seconds": 36.26225529797375,
+      "device_bytes": 62209916928,
+      "host_available": 235755429888,
+      "container_host_rss": 2367229952
+    },
+    {
+      "at_seconds": 36.534057418000884,
+      "device_bytes": 62209916928,
+      "host_available": 235755429888,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 36.80523678904865,
+      "device_bytes": 62209916928,
+      "host_available": 235739709440,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 37.07705923100002,
+      "device_bytes": 62209916928,
+      "host_available": 235736711168,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 37.34911153104622,
+      "device_bytes": 62209916928,
+      "host_available": 235738673152,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 37.62098663696088,
+      "device_bytes": 62209916928,
+      "host_available": 235739996160,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 37.89343980897684,
+      "device_bytes": 62209916928,
+      "host_available": 235748798464,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 38.165329306037165,
+      "device_bytes": 62209916928,
+      "host_available": 235733884928,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 38.43741273798514,
+      "device_bytes": 62209916928,
+      "host_available": 235717042176,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 38.70881416706834,
+      "device_bytes": 62209916928,
+      "host_available": 235725238272,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 38.98078683100175,
+      "device_bytes": 62209916928,
+      "host_available": 235708342272,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 39.25242762896232,
+      "device_bytes": 62209916928,
+      "host_available": 235720712192,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 39.52421816799324,
+      "device_bytes": 62209916928,
+      "host_available": 235720118272,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 39.79599644604605,
+      "device_bytes": 62209916928,
+      "host_available": 235736645632,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 40.06756571796723,
+      "device_bytes": 62209916928,
+      "host_available": 235718283264,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 40.339312294032425,
+      "device_bytes": 62209916928,
+      "host_available": 235716935680,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 40.61058405297808,
+      "device_bytes": 62209916928,
+      "host_available": 235716935680,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 40.88192376703955,
+      "device_bytes": 62209916928,
+      "host_available": 235767795712,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 41.15378819196485,
+      "device_bytes": 62209916928,
+      "host_available": 235785367552,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 41.425918217981234,
+      "device_bytes": 62209916928,
+      "host_available": 235804082176,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 41.69811084901448,
+      "device_bytes": 62209916928,
+      "host_available": 235804082176,
+      "container_host_rss": 2367369216
+    },
+    {
+      "at_seconds": 41.96973527607042,
+      "device_bytes": 62209916928,
+      "host_available": 235835224064,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 42.24170574906748,
+      "device_bytes": 62209916928,
+      "host_available": 235832221696,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 42.51378059096169,
+      "device_bytes": 62209916928,
+      "host_available": 235830304768,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 42.78595598996617,
+      "device_bytes": 62209916928,
+      "host_available": 235861852160,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 43.05727440305054,
+      "device_bytes": 62209916928,
+      "host_available": 235881844736,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 43.32958401297219,
+      "device_bytes": 62209916928,
+      "host_available": 235865317376,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 43.6015338950092,
+      "device_bytes": 62209916928,
+      "host_available": 235847983104,
+      "container_host_rss": 2367373312
+    },
+    {
+      "at_seconds": 43.87339224899188,
+      "device_bytes": 62209916928,
+      "host_available": 235884609536,
+      "container_host_rss": 2367209472
+    },
+    {
+      "at_seconds": 44.14470488100778,
+      "device_bytes": 62209916928,
+      "host_available": 235885166592,
+      "container_host_rss": 2367168512
+    },
+    {
+      "at_seconds": 44.41615764400922,
+      "device_bytes": 62209916928,
+      "host_available": 235870674944,
+      "container_host_rss": 2367168512
+    },
+    {
+      "at_seconds": 44.68781802302692,
+      "device_bytes": 62209916928,
+      "host_available": 236200488960,
+      "container_host_rss": 2367176704
+    },
+    {
+      "at_seconds": 44.95988604496233,
+      "device_bytes": 62209916928,
+      "host_available": 236214439936,
+      "container_host_rss": 2367176704
+    },
+    {
+      "at_seconds": 45.23229713307228,
+      "device_bytes": 62209916928,
+      "host_available": 236217290752,
+      "container_host_rss": 2366357504
+    },
+    {
+      "at_seconds": 45.50540024496149,
+      "device_bytes": 62209916928,
+      "host_available": 236242161664,
+      "container_host_rss": 0
+    },
+    {
+      "at_seconds": 45.79964326706249,
+      "device_bytes": 56709087232,
+      "host_available": 238134947840
+    }
+  ],
+  "peak_device_bytes": 62209916928,
+  "peak_device_increment_bytes": 5500829696,
+  "peak_container_host_rss_bytes": 3885916160,
+  "device_bytes_after_stop": 56709087232
+}

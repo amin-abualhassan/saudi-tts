@@ -1,0 +1,3436 @@
+{
+  "runtime": "Fish Speech bitsandbytes fallback, not SGLang",
+  "hardware": "NVIDIA H100 80GB HBM3",
+  "compute_capability": [
+    9,
+    0
+  ],
+  "laptop_verified": false,
+  "baseline_device_bytes": 56709087232,
+  "samples": {
+    "en_greeting": {
+      "elapsed_seconds": 24.867482502944767,
+      "duration_seconds": 3.622312925170068,
+      "rtf": 6.865083999272988,
+      "first_frame_seconds": 6.264728426001966,
+      "first_pcm_seconds": 9.73350976605434,
+      "ar_done_seconds": 21.959713135031052,
+      "chunks": [
+        {
+          "at_seconds": 9.733511275961064,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 12.75277449702844,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 16.58323139103595,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 21.102136017056182,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 24.867215062025934,
+          "bytes": 57344,
+          "frames": 14
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 78,
+      "hit_token_limit": false,
+      "cuda_allocated": 3470795776,
+      "cuda_reserved": 3680501760,
+      "cuda_peak_allocated": 3558952448,
+      "cuda_peak_reserved": 3680501760,
+      "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+      "file": "samples/nf4-en_greeting-cpu-codec.wav"
+    }
+  },
+  "codec_device": "cpu",
+  "settings": {
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 0.7,
+    "top_k": 30,
+    "max_new_tokens": 768,
+    "context": 2048,
+    "compile": false,
+    "concurrency": 1
+  },
+  "load_seconds": 5.11580564500764,
+  "quantized_module_count": 201,
+  "quantized_modules": {
+    "layers.0.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_output": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        4096,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    }
+  },
+  "success": true,
+  "telemetry": [
+    {
+      "at": 0.00017224298790097237,
+      "device_bytes": 56709087232,
+      "host_rss": 818225152,
+      "host_available": 237155557376
+    },
+    {
+      "at": 0.5875872910255566,
+      "device_bytes": 57378078720,
+      "host_rss": 1047535616,
+      "host_available": 236845785088
+    },
+    {
+      "at": 1.1600565810222179,
+      "device_bytes": 57378078720,
+      "host_rss": 1075765248,
+      "host_available": 236830470144
+    },
+    {
+      "at": 1.6823043569456786,
+      "device_bytes": 57378078720,
+      "host_rss": 1075765248,
+      "host_available": 236773629952
+    },
+    {
+      "at": 2.2043223850196227,
+      "device_bytes": 57378078720,
+      "host_rss": 1075765248,
+      "host_available": 236774281216
+    },
+    {
+      "at": 2.7261893620016053,
+      "device_bytes": 57378078720,
+      "host_rss": 1075900416,
+      "host_available": 236764995584
+    },
+    {
+      "at": 3.248434877023101,
+      "device_bytes": 60563652608,
+      "host_rss": 1075843072,
+      "host_available": 236755066880
+    },
+    {
+      "at": 3.7710648329230025,
+      "device_bytes": 60563652608,
+      "host_rss": 1075843072,
+      "host_available": 236773498880
+    },
+    {
+      "at": 4.293579649995081,
+      "device_bytes": 60563652608,
+      "host_rss": 1075843072,
+      "host_available": 236774723584
+    },
+    {
+      "at": 4.816043013008311,
+      "device_bytes": 60563652608,
+      "host_rss": 1083027456,
+      "host_available": 236789923840
+    },
+    {
+      "at": 5.338916057953611,
+      "device_bytes": 60563652608,
+      "host_rss": 1639051264,
+      "host_available": 236186382336
+    },
+    {
+      "at": 5.861832365975715,
+      "device_bytes": 60563652608,
+      "host_rss": 1705418752,
+      "host_available": 236107563008
+    },
+    {
+      "at": 6.390552897937596,
+      "device_bytes": 60563652608,
+      "host_rss": 1723785216,
+      "host_available": 235892154368
+    },
+    {
+      "at": 6.9190742439823225,
+      "device_bytes": 60563652608,
+      "host_rss": 1699266560,
+      "host_available": 235959144448
+    },
+    {
+      "at": 7.445339284022339,
+      "device_bytes": 60563652608,
+      "host_rss": 1638891520,
+      "host_available": 235944099840
+    },
+    {
+      "at": 7.9727603839710355,
+      "device_bytes": 60563652608,
+      "host_rss": 1833435136,
+      "host_available": 235773902848
+    },
+    {
+      "at": 8.50087392097339,
+      "device_bytes": 60563652608,
+      "host_rss": 1714429952,
+      "host_available": 235503923200
+    },
+    {
+      "at": 9.025264131021686,
+      "device_bytes": 60563652608,
+      "host_rss": 1464836096,
+      "host_available": 235505336320
+    },
+    {
+      "at": 9.554543413920328,
+      "device_bytes": 60563652608,
+      "host_rss": 1422196736,
+      "host_available": 235593867264
+    },
+    {
+      "at": 10.080034030019306,
+      "device_bytes": 60563652608,
+      "host_rss": 1270263808,
+      "host_available": 235892391936
+    },
+    {
+      "at": 10.60964783898089,
+      "device_bytes": 60563652608,
+      "host_rss": 2448637952,
+      "host_available": 235904884736
+    },
+    {
+      "at": 11.133450713008642,
+      "device_bytes": 61035511808,
+      "host_rss": 2970324992,
+      "host_available": 235881697280
+    },
+    {
+      "at": 11.656291001942009,
+      "device_bytes": 61106814976,
+      "host_rss": 3174416384,
+      "host_available": 235829657600
+    },
+    {
+      "at": 12.178462188923731,
+      "device_bytes": 61106814976,
+      "host_rss": 3174424576,
+      "host_available": 235819745280
+    },
+    {
+      "at": 12.700999913970008,
+      "device_bytes": 61106814976,
+      "host_rss": 3174428672,
+      "host_available": 235849306112
+    },
+    {
+      "at": 13.224205481936224,
+      "device_bytes": 61106814976,
+      "host_rss": 3174436864,
+      "host_available": 235831742464
+    },
+    {
+      "at": 13.746653110953048,
+      "device_bytes": 61106814976,
+      "host_rss": 3174440960,
+      "host_available": 235845644288
+    },
+    {
+      "at": 14.268963697948493,
+      "device_bytes": 61106814976,
+      "host_rss": 3358642176,
+      "host_available": 235605622784
+    },
+    {
+      "at": 14.79582161095459,
+      "device_bytes": 61106814976,
+      "host_rss": 3690700800,
+      "host_available": 235342880768
+    },
+    {
+      "at": 15.322685485007241,
+      "device_bytes": 61106814976,
+      "host_rss": 3651829760,
+      "host_available": 235402248192
+    },
+    {
+      "at": 15.845569157972932,
+      "device_bytes": 61106814976,
+      "host_rss": 3651829760,
+      "host_available": 235415175168
+    },
+    {
+      "at": 16.36770822200924,
+      "device_bytes": 61106814976,
+      "host_rss": 3651829760,
+      "host_available": 235396403200
+    },
+    {
+      "at": 16.890131477965042,
+      "device_bytes": 61106814976,
+      "host_rss": 3651997696,
+      "host_available": 235404500992
+    },
+    {
+      "at": 17.414952391991392,
+      "device_bytes": 61106814976,
+      "host_rss": 3747995648,
+      "host_available": 235313639424
+    },
+    {
+      "at": 17.938802129938267,
+      "device_bytes": 61106814976,
+      "host_rss": 3750166528,
+      "host_available": 235369295872
+    },
+    {
+      "at": 18.461491907946765,
+      "device_bytes": 61106814976,
+      "host_rss": 3750166528,
+      "host_available": 235349286912
+    },
+    {
+      "at": 18.9837317999918,
+      "device_bytes": 61106814976,
+      "host_rss": 3750166528,
+      "host_available": 235364761600
+    },
+    {
+      "at": 19.505670259008184,
+      "device_bytes": 61106814976,
+      "host_rss": 3750166528,
+      "host_available": 235363614720
+    },
+    {
+      "at": 20.028277029981837,
+      "device_bytes": 61106814976,
+      "host_rss": 3750608896,
+      "host_available": 235365257216
+    },
+    {
+      "at": 20.56325037695933,
+      "device_bytes": 61106814976,
+      "host_rss": 3798863872,
+      "host_available": 235384635392
+    },
+    {
+      "at": 21.096257160999812,
+      "device_bytes": 61106814976,
+      "host_rss": 3973017600,
+      "host_available": 235231838208
+    },
+    {
+      "at": 21.622527847997844,
+      "device_bytes": 61106814976,
+      "host_rss": 3801276416,
+      "host_available": 235390701568
+    },
+    {
+      "at": 22.150030721910298,
+      "device_bytes": 61106814976,
+      "host_rss": 3752837120,
+      "host_available": 235507867648
+    },
+    {
+      "at": 22.672739119967446,
+      "device_bytes": 61106814976,
+      "host_rss": 3752837120,
+      "host_available": 235538771968
+    },
+    {
+      "at": 23.19520980096422,
+      "device_bytes": 61106814976,
+      "host_rss": 3752837120,
+      "host_available": 235535097856
+    },
+    {
+      "at": 23.71732653293293,
+      "device_bytes": 61106814976,
+      "host_rss": 3828543488,
+      "host_available": 235446984704
+    },
+    {
+      "at": 24.24548025801778,
+      "device_bytes": 61106814976,
+      "host_rss": 3808395264,
+      "host_available": 235486556160
+    },
+    {
+      "at": 24.770976133993827,
+      "device_bytes": 61106814976,
+      "host_rss": 3942916096,
+      "host_available": 235310379008
+    },
+    {
+      "at": 25.295624343911186,
+      "device_bytes": 61106814976,
+      "host_rss": 3931738112,
+      "host_available": 235305074688
+    },
+    {
+      "at": 25.821323236916214,
+      "device_bytes": 61106814976,
+      "host_rss": 3943002112,
+      "host_available": 235284754432
+    },
+    {
+      "at": 26.343900074949488,
+      "device_bytes": 61106814976,
+      "host_rss": 3756150784,
+      "host_available": 235445604352
+    },
+    {
+      "at": 26.86600689694751,
+      "device_bytes": 61106814976,
+      "host_rss": 3756150784,
+      "host_available": 235446198272
+    },
+    {
+      "at": 27.388673382927664,
+      "device_bytes": 61106814976,
+      "host_rss": 3756691456,
+      "host_available": 235435757568
+    },
+    {
+      "at": 27.918927921913564,
+      "device_bytes": 61106814976,
+      "host_rss": 3892396032,
+      "host_available": 234949459968
+    },
+    {
+      "at": 28.44341510895174,
+      "device_bytes": 61106814976,
+      "host_rss": 3912421376,
+      "host_available": 234352746496
+    },
+    {
+      "at": 28.967817081022076,
+      "device_bytes": 61106814976,
+      "host_rss": 3907842048,
+      "host_available": 234405326848
+    },
+    {
+      "at": 29.491167059983127,
+      "device_bytes": 61106814976,
+      "host_rss": 4075941888,
+      "host_available": 234274648064
+    }
+  ],
+  "peak_device_bytes": 61106814976,
+  "peak_device_increment_bytes": 4397727744,
+  "peak_host_rss_bytes": 4075941888,
+  "cuda_peak_allocated_bytes": 3558952448,
+  "cuda_peak_reserved_bytes": 3680501760
+}

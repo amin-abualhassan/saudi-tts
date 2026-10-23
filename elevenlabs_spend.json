@@ -1,1 +1,22 @@
-{"cap_usd": 50.0, "ceiling_under_discussion_usd": 120.0, "spent_usd": 0.0, "characters": 0, "batches": []}
+{
+    "plan": "creator",
+    "billing": "credits (no overage; allowed_to_extend_character_limit=false)",
+    "credit_limit": 147270,
+    "credits_used_before_project": 51851,
+    "credits_remaining_at_start": 95419,
+    "credit_reset_utc": "2026-11-16T09:21:18Z",
+    "credit_multiplier": {
+        "eleven_v4_turbo": 0.5,
+        "eleven_v4": 1.0
+    },
+    "cap_usd": 50.0,
+    "ceiling_under_discussion_usd": 120.0,
+    "spent_usd": 0.0,
+    "list_usd_per_1k_chars": {
+        "eleven_v4_turbo": 0.04,
+        "eleven_v4": 0.08
+    },
+    "characters": 0,
+    "credits_used": 0,
+    "batches": []
+}

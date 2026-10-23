@@ -1,0 +1,93 @@
+{
+  "method": "CPU int8 Whisper large-v3-turbo; automatic only",
+  "samples": {
+    "bf16-ar_greeting.wav": {
+      "text": "حيّاك الله، معك نورة، المساعدة الصوتية للجواب. وش أقدر أساعدك فيه؟",
+      "asr_transcript": "حياك الله، معك نورة، المساعدة الصوتية للجواب، وش أقدر أساعدك فيه؟",
+      "normalized_wer": 0.0,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 5.572789115646258,
+      "rms": 0.04044651985168457,
+      "peak": 0.460906982421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "bf16-ar_services.wav": {
+      "text": "أكيد، في الجواب نساعد الشركات في خدمة العملاء والرد على الاستفسارات وتنظيم المواعيد. نقدر نفهم احتياجك ونوضح لك الخيارات المناسبة، وإذا احتجت تفاصيل أكثر أحولك للفريق المختص. وش الخدمة اللي تهمك؟",
+      "asr_transcript": "أكيد، في الجواب نساعد الشركات في خدمة العملاء والرد على الاستفسارات وتنظيم المواعيد نقدر نفهم احتياجك ونوضح لك الخيارات المناسبة وإذا احتجت تفاصيل أكثر أحولك للفريق المختص وش الخدمة اللي تهمك؟",
+      "normalized_wer": 0.0,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 13.467573696145125,
+      "rms": 0.027493150904774666,
+      "peak": 0.322235107421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "bf16-en_greeting.wav": {
+      "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+      "asr_transcript": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+      "normalized_wer": 0.0,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 3.5294331065759637,
+      "rms": 0.048827603459358215,
+      "peak": 0.316375732421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "bf16-en_services.wav": {
+      "text": "At Aljawab, we help companies answer customer questions, organize appointments, and provide clear information about their services. Tell me what your company needs, and I can explain the available options or connect you with the right team. Which service would you like to discuss first?",
+      "asr_transcript": "At Aljawab, we help companies answer customer questions, organize appointments and provide clear information about their services. Tell me what your company needs and I can explain the available options or connect you with the right team. Which service would you like to discuss first?",
+      "normalized_wer": 0.0,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 13.931972789115646,
+      "rms": 0.030604325234889984,
+      "peak": 0.378875732421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "nf4-ar_greeting.wav": {
+      "text": "حيّاك الله، معك نورة، المساعدة الصوتية للجواب. وش أقدر أساعدك فيه؟",
+      "asr_transcript": "حياك الله، معك نورة، المساعدة الصوتية للجواب، وش أقدر أساعدك فيه؟",
+      "normalized_wer": 0.0,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 6.176507936507937,
+      "rms": 0.035639744251966476,
+      "peak": 0.433563232421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "nf4-ar_services.wav": {
+      "text": "أكيد، في الجواب نساعد الشركات في خدمة العملاء والرد على الاستفسارات وتنظيم المواعيد. نقدر نفهم احتياجك ونوضح لك الخيارات المناسبة، وإذا احتجت تفاصيل أكثر أحولك للفريق المختص. وش الخدمة اللي تهمك؟",
+      "asr_transcript": "أكيد في الجواب نساعد الشركات في خدمة العملاء والرد على الاستفسارات وتنظيم المواعيد نقدر نفهم احتياجك ونوضح لك الخيارات المناسبة وإذا احتجت تفاصيل أكثر أحولك للفريق المختص وش الخدمة اللي تهمت؟",
+      "normalized_wer": 0.03225806451612903,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 13.467573696145125,
+      "rms": 0.026119792833924294,
+      "peak": 0.341766357421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "nf4-en_greeting.wav": {
+      "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+      "asr_transcript": "Hello I'm Nora, Aljoab's voice assistant. How can I help you?",
+      "normalized_wer": 0.15384615384615385,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 3.622312925170068,
+      "rms": 0.043361846357584,
+      "peak": 0.339813232421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    },
+    "nf4-en_services.wav": {
+      "text": "At Aljawab, we help companies answer customer questions, organize appointments, and provide clear information about their services. Tell me what your company needs, and I can explain the available options or connect you with the right team. Which service would you like to discuss first?",
+      "asr_transcript": "At Aljawab, we help companies answer customer questions, organize appointments and provide clear information about their services. Tell me what your company needs and I can explain the available options or connect you with the right team. Which service would you like to discuss first?",
+      "normalized_wer": 0.0,
+      "adjacent_repeated_trigrams": 0,
+      "duration": 15.836009070294784,
+      "rms": 0.027318939566612244,
+      "peak": 0.371063232421875,
+      "clipped_fraction": 0.0,
+      "finite": true
+    }
+  }
+}

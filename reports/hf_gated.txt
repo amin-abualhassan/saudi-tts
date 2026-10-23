@@ -1,0 +1,3 @@
+pyannote/speaker-diarization-community-1
+CohereLabs/cohere-transcribe-arabic-07-2026
+neuphonic/neucodec

@@ -1,6 +1,6 @@
 """Read API keys from the secrets dir without ever printing them.
 
-Usage: from pipeline.secrets import get; key = get("ELEVENLABS_API_KEY")
+Usage: from pipeline.keys import get; key = get("ELEVENLABS_API_KEY")
 Accepts lines like KEY=value, export KEY=value, key: "value".
 """
 import os

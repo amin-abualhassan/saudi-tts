@@ -48,6 +48,12 @@ hf neuphonic/*
 
 # --- Hugging Face: datasets (ledger)
 hf facebook/omnilingual-asr-corpus
+hf khaledalganem/sada2022        # SADA: HF mirror of SDAIA's Kaggle release sdaiancai/sada2022 (same 4,563 WAVs + CSVs)
+hf SDAIANCAI/*                   # SDAIA official HF org (SCC22 CSV, SADA)
+hf MohamedRashad/SCC22           # SCC22 audio mirror (official release is links + timestamps only)
+hf Byne/MASC                     # MASC mirror with country/dialect columns
+hf SWivid/Habibi-TTS             # (covered by SWivid/* above; explicit for the record)
+host drive.google.com            # WavLM-SV checkpoint used by seed-tts-eval
 
 # --- Hugging Face: evaluation / pipeline tooling named in plan-v2 §6–§8
 hf facebook/*                   # Omnilingual ASR, MMS, w2v-bert, audiobox-aesthetics

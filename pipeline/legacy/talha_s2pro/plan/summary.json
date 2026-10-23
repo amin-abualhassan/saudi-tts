@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "target_total_hours": 10.0,
+  "splits": {
+    "test": {
+      "clips": 144,
+      "hours": 0.5025894328703702,
+      "source_videos": 14
+    },
+    "validation": {
+      "clips": 131,
+      "hours": 0.5050458159722221,
+      "source_videos": 14
+    },
+    "train": {
+      "clips": 2477,
+      "hours": 9.002505237268497,
+      "source_videos": 246
+    }
+  },
+  "eligible_clips": 24376,
+  "eligible_hours": 87.9526890567128,
+  "excluded": {
+    "duplicate_source_title": 13547,
+    "other_channel": 6365,
+    "implausible_text_rate": 8
+  },
+  "source_title_dedup_only": true,
+  "review_status": "proposal_only_not_approved_training_data"
+}

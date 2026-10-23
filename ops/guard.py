@@ -83,14 +83,16 @@ REPO = Path(os.path.expanduser("~/saudi-tts"))
 if re.search(r"(^|[\s/'\"=:])\.secrets\b", c) and re.search(
     r"\b(cat|head|tail|less|more|grep|egrep|rg|sed|awk|cut|strings|xxd|od|hexdump|base64|echo|printf|source|env|printenv|diff|cmp|tee|cp|mv|vim?|nano)\b|(^|[;&|]\s*)\.\s", c
 ):
-    block("~/.secrets is never read in a shell; Python code reads keys via pipeline/secrets.py without printing them")
+    block("~/.secrets is never read in a shell; Python code reads keys via pipeline/keys.py without printing them")
 
 # 7. ElevenLabs: only through pipeline/elevenlabs_client.py (it logs spend), and never past the cap.
 if re.search(r"elevenlabs\.io", c, re.I) and re.search(r"\b(curl|wget|http|httpie)\b", c):
     block("call ElevenLabs only through pipeline/elevenlabs_client.py (spend logging + cap)")
 try:
     spend = json.load(open(REPO / "elevenlabs_spend.json"))
-    over = float(spend.get("spent_usd", 0)) >= float(spend.get("cap_usd", 50))
+    over = float(spend.get("spent_usd", 0)) >= float(spend.get("cap_usd", 50)) or (
+        "credits_remaining_at_start" in spend
+        and float(spend.get("credits_used", 0)) >= float(spend["credits_remaining_at_start"]) - 500)
 except Exception:
     over = False
 if over and re.search(r"elevenlabs", c, re.I) and not re.search(r"--dry-run|--report-only", c):

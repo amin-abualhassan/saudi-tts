@@ -8,7 +8,7 @@ def fixture_config(tmp_path,monkeypatch,ip):
     monkeypatch.setattr(configure,'ROOT',tmp_path)
     monkeypatch.setenv('ALJAWAB_PUBLIC_IP',ip)
     (tmp_path/'deployment').mkdir()
-    (tmp_path/'.env').write_text('LIVEKIT_API_KEY=fixture\nLIVEKIT_API_SECRET=fixture-secret\n')
+    (tmp_path/'.env').write_text('LIVEKIT_API_KEY=REDACTED\nLIVEKIT_API_SECRET=REDACTED\n')
     path=tmp_path/'deployment/livekit.yaml'
     turn={'enabled':True,'domain':'192.0.2.1','tls_port':5349,'external_tls':True,
           'proxy_protocol':True,'proxy_protocol_trusted_cidrs':['127.0.0.1/32']}

@@ -31,7 +31,7 @@ from itsdangerous import BadSignature, URLSafeTimedSerializer
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
-from pipeline.secrets import get as get_secret  # noqa: E402
+from pipeline.keys import get as get_secret  # noqa: E402
 
 STATE = REPO / "dashboard" / "state"
 STATE.mkdir(mode=0o700, exist_ok=True)

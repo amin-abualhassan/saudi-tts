@@ -1,0 +1,11 @@
+{
+  "gateway_sse_passed": true,
+  "first_audio_seconds": 3.040598358027637,
+  "total_seconds": 4.096430844976567,
+  "audio_events": 3,
+  "pcm_bytes": 126976,
+  "derivative_job_identity_verified": true,
+  "original_manifest_unchanged": true,
+  "bf16_cached_clip_rejected": true,
+  "tampered_manifest_rejected": true
+}

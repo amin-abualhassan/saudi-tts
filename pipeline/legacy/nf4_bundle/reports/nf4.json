@@ -1,0 +1,4706 @@
+{
+  "runtime": "Fish Speech bitsandbytes fallback, not SGLang",
+  "hardware": "NVIDIA H100 80GB HBM3",
+  "compute_capability": [
+    9,
+    0
+  ],
+  "laptop_verified": false,
+  "baseline_device_bytes": 56709087232,
+  "samples": {
+    "ar_greeting": {
+      "elapsed_seconds": 22.793173308018595,
+      "duration_seconds": 6.176507936507937,
+      "rtf": 3.690300982743553,
+      "first_frame_seconds": 6.034733132924885,
+      "first_pcm_seconds": 9.112787024001591,
+      "ar_done_seconds": 22.714729854953475,
+      "chunks": [
+        {
+          "at_seconds": 9.112789534963667,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 11.146607853937894,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 13.168378153000958,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 15.143662489019334,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 17.091810232959688,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 19.060443857917562,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 21.006677752011456,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 22.792930549010634,
+          "bytes": 86016,
+          "frames": 21
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 133,
+      "hit_token_limit": false,
+      "cuda_allocated": 4310843392,
+      "cuda_reserved": 5142216704,
+      "cuda_peak_allocated": 4678302208,
+      "cuda_peak_reserved": 5142216704,
+      "text": "حيّاك الله، معك نورة، المساعدة الصوتية للجواب. وش أقدر أساعدك فيه؟",
+      "file": "samples/nf4-ar_greeting.wav"
+    },
+    "ar_services": {
+      "elapsed_seconds": 36.23824351199437,
+      "duration_seconds": 13.467573696145125,
+      "rtf": 2.6907774428861657,
+      "first_frame_seconds": 0.15283949894364923,
+      "first_pcm_seconds": 2.961762137012556,
+      "ar_done_seconds": 36.17391459294595,
+      "chunks": [
+        {
+          "at_seconds": 2.9617632469162345,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 4.903842260944657,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 6.838297195965424,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 8.78822105191648,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 10.73559973796364,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 12.682193072978407,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 14.715678580920212,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 16.8377777650021,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 18.873366736923344,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 20.857442162930965,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 22.886334248934872,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 24.875640698941424,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 26.87508007197175,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 28.893981506000273,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 30.89001506299246,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 32.854912464972585,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 34.85572537500411,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 36.23805245698895,
+          "bytes": 73728,
+          "frames": 18
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 290,
+      "hit_token_limit": false,
+      "cuda_allocated": 4310843392,
+      "cuda_reserved": 5372903424,
+      "cuda_peak_allocated": 4731457024,
+      "cuda_peak_reserved": 5372903424,
+      "text": "أكيد، في الجواب نساعد الشركات في خدمة العملاء والرد على الاستفسارات وتنظيم المواعيد. نقدر نفهم احتياجك ونوضح لك الخيارات المناسبة، وإذا احتجت تفاصيل أكثر أحولك للفريق المختص. وش الخدمة اللي تهمك؟",
+      "file": "samples/nf4-ar_services.wav"
+    },
+    "en_greeting": {
+      "elapsed_seconds": 9.72868502594065,
+      "duration_seconds": 3.622312925170068,
+      "rtf": 2.6857660359323834,
+      "first_frame_seconds": 0.15534080297220498,
+      "first_pcm_seconds": 2.957203818950802,
+      "ar_done_seconds": 9.659541190951131,
+      "chunks": [
+        {
+          "at_seconds": 2.957204778911546,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 4.836627815966494,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 6.776432654005475,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 8.771340269013308,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 9.728488640976138,
+          "bytes": 57344,
+          "frames": 14
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 78,
+      "hit_token_limit": false,
+      "cuda_allocated": 4310843392,
+      "cuda_reserved": 5372903424,
+      "cuda_peak_allocated": 4731457024,
+      "cuda_peak_reserved": 5372903424,
+      "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+      "file": "samples/nf4-en_greeting.wav"
+    },
+    "en_services": {
+      "elapsed_seconds": 43.46532579802442,
+      "duration_seconds": 15.836009070294784,
+      "rtf": 2.744714631387574,
+      "first_frame_seconds": 0.15849574992898852,
+      "first_pcm_seconds": 2.992220646003261,
+      "ar_done_seconds": 43.39039862295613,
+      "chunks": [
+        {
+          "at_seconds": 2.9922227460192516,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 4.988447814015672,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 6.959019572939724,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 8.937781019019894,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 10.934933132957667,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 12.957659065024927,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 15.02532577898819,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 17.343152734916657,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 19.679390558972955,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 21.708503089961596,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 23.661004316993058,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 25.624821953009814,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 27.644747765967622,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 29.641223414917476,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 31.625997878960334,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 33.65388878399972,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 35.64609231892973,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 37.61696979694534,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 39.63529452797957,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 41.63595916191116,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 43.46514937398024,
+          "bytes": 86016,
+          "frames": 21
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 341,
+      "hit_token_limit": false,
+      "cuda_allocated": 4310843392,
+      "cuda_reserved": 5372903424,
+      "cuda_peak_allocated": 4731478528,
+      "cuda_peak_reserved": 5372903424,
+      "text": "At Aljawab, we help companies answer customer questions, organize appointments, and provide clear information about their services. Tell me what your company needs, and I can explain the available options or connect you with the right team. Which service would you like to discuss first?",
+      "file": "samples/nf4-en_services.wav"
+    }
+  },
+  "codec_device": "cuda",
+  "settings": {
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 0.7,
+    "top_k": 30,
+    "max_new_tokens": 768,
+    "context": 2048,
+    "compile": false,
+    "concurrency": 1
+  },
+  "load_seconds": 3.159675913047977,
+  "quantized_module_count": 201,
+  "quantized_modules": {
+    "layers.0.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.0.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.1.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.2.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.3.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.4.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.5.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.6.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.7.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.8.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.9.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.10.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.11.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.12.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.13.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.14.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.15.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.16.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.17.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.18.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.19.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.20.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.21.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.22.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.23.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.24.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.25.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.26.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.27.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.28.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.29.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.30.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.31.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.32.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.33.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.34.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "layers.35.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.0.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.1.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.2.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.attention.wqkv": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        7864320,
+        1
+      ],
+      "original_shape": [
+        6144,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.attention.wo": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        2560,
+        4096
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.feed_forward.w1": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.feed_forward.w3": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        9728,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_layers.3.feed_forward.w2": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        12451840,
+        1
+      ],
+      "original_shape": [
+        2560,
+        9728
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    },
+    "fast_output": {
+      "type": "Linear4bit",
+      "weight_type": "Params4bit",
+      "dtype": "torch.uint8",
+      "packed_shape": [
+        5242880,
+        1
+      ],
+      "original_shape": [
+        4096,
+        2560
+      ],
+      "blocksize": 64,
+      "double_quantization": true
+    }
+  },
+  "success": true,
+  "telemetry": [
+    {
+      "at": 0.00017110398039221764,
+      "device_bytes": 56709087232,
+      "host_rss": 820969472,
+      "host_available": 237579943936
+    },
+    {
+      "at": 0.5936695470008999,
+      "device_bytes": 57378078720,
+      "host_rss": 1049972736,
+      "host_available": 237395234816
+    },
+    {
+      "at": 1.1655895840376616,
+      "device_bytes": 60286828544,
+      "host_rss": 3935289344,
+      "host_available": 237325791232
+    },
+    {
+      "at": 1.6883006419520825,
+      "device_bytes": 60563652608,
+      "host_rss": 1078579200,
+      "host_available": 237261090816
+    },
+    {
+      "at": 2.2097754640271887,
+      "device_bytes": 60563652608,
+      "host_rss": 1078579200,
+      "host_available": 237089034240
+    },
+    {
+      "at": 2.7319300189847127,
+      "device_bytes": 60563652608,
+      "host_rss": 1082757120,
+      "host_available": 237073678336
+    },
+    {
+      "at": 3.253667952027172,
+      "device_bytes": 60563652608,
+      "host_rss": 1410260992,
+      "host_available": 236826755072
+    },
+    {
+      "at": 3.7782052940456197,
+      "device_bytes": 60563652608,
+      "host_rss": 1499025408,
+      "host_available": 236893753344
+    },
+    {
+      "at": 4.302871776046231,
+      "device_bytes": 60563652608,
+      "host_rss": 1501220864,
+      "host_available": 236789485568
+    },
+    {
+      "at": 4.82764276501257,
+      "device_bytes": 60563652608,
+      "host_rss": 1586790400,
+      "host_available": 236741390336
+    },
+    {
+      "at": 5.352187757962383,
+      "device_bytes": 60563652608,
+      "host_rss": 1601314816,
+      "host_available": 236706123776
+    },
+    {
+      "at": 5.877788131940179,
+      "device_bytes": 60563652608,
+      "host_rss": 1582870528,
+      "host_available": 236547182592
+    },
+    {
+      "at": 6.4009173039812595,
+      "device_bytes": 60563652608,
+      "host_rss": 1595461632,
+      "host_available": 236650569728
+    },
+    {
+      "at": 6.924707066966221,
+      "device_bytes": 60563652608,
+      "host_rss": 1381580800,
+      "host_available": 236955156480
+    },
+    {
+      "at": 7.450522057944909,
+      "device_bytes": 60563652608,
+      "host_rss": 1472659456,
+      "host_available": 236854165504
+    },
+    {
+      "at": 7.976247943006456,
+      "device_bytes": 60563652608,
+      "host_rss": 1514205184,
+      "host_available": 237018415104
+    },
+    {
+      "at": 8.503692421945743,
+      "device_bytes": 61415096320,
+      "host_rss": 1259008000,
+      "host_available": 237031649280
+    },
+    {
+      "at": 9.223189536947757,
+      "device_bytes": 61937287168,
+      "host_rss": 1745989632,
+      "host_available": 236608503808
+    },
+    {
+      "at": 9.745403456036001,
+      "device_bytes": 61937287168,
+      "host_rss": 1788743680,
+      "host_available": 236604915712
+    },
+    {
+      "at": 10.268626305041835,
+      "device_bytes": 61937287168,
+      "host_rss": 1788751872,
+      "host_available": 236608643072
+    },
+    {
+      "at": 10.791999345994554,
+      "device_bytes": 61937287168,
+      "host_rss": 1788760064,
+      "host_available": 236611297280
+    },
+    {
+      "at": 11.315015477943234,
+      "device_bytes": 61937287168,
+      "host_rss": 1788768256,
+      "host_available": 236618100736
+    },
+    {
+      "at": 11.83869725302793,
+      "device_bytes": 61937287168,
+      "host_rss": 1788899328,
+      "host_available": 236624363520
+    },
+    {
+      "at": 12.361729016993195,
+      "device_bytes": 61987618816,
+      "host_rss": 2068512768,
+      "host_available": 236426305536
+    },
+    {
+      "at": 12.884607768966816,
+      "device_bytes": 61987618816,
+      "host_rss": 2068512768,
+      "host_available": 236409352192
+    },
+    {
+      "at": 13.407233451027423,
+      "device_bytes": 61987618816,
+      "host_rss": 2068512768,
+      "host_available": 236410060800
+    },
+    {
+      "at": 13.929882399970666,
+      "device_bytes": 61987618816,
+      "host_rss": 2068512768,
+      "host_available": 236399980544
+    },
+    {
+      "at": 14.451991918031126,
+      "device_bytes": 61987618816,
+      "host_rss": 2088779776,
+      "host_available": 236387753984
+    },
+    {
+      "at": 14.973947544000112,
+      "device_bytes": 61987618816,
+      "host_rss": 2088779776,
+      "host_available": 236403322880
+    },
+    {
+      "at": 15.496719534043223,
+      "device_bytes": 61987618816,
+      "host_rss": 2088779776,
+      "host_available": 236402503680
+    },
+    {
+      "at": 16.01992660795804,
+      "device_bytes": 61987618816,
+      "host_rss": 2088779776,
+      "host_available": 235851329536
+    },
+    {
+      "at": 16.543420283938758,
+      "device_bytes": 62056824832,
+      "host_rss": 2092593152,
+      "host_available": 235877089280
+    },
+    {
+      "at": 17.06685901596211,
+      "device_bytes": 62056824832,
+      "host_rss": 2092593152,
+      "host_available": 235870916608
+    },
+    {
+      "at": 17.589585990994237,
+      "device_bytes": 62056824832,
+      "host_rss": 2092593152,
+      "host_available": 236086353920
+    },
+    {
+      "at": 18.111868662992492,
+      "device_bytes": 62056824832,
+      "host_rss": 2092593152,
+      "host_available": 236061503488
+    },
+    {
+      "at": 18.635204266989604,
+      "device_bytes": 62147002368,
+      "host_rss": 2094350336,
+      "host_available": 236085329920
+    },
+    {
+      "at": 19.157030211994424,
+      "device_bytes": 62147002368,
+      "host_rss": 2094350336,
+      "host_available": 236057722880
+    },
+    {
+      "at": 19.679855535971,
+      "device_bytes": 62147002368,
+      "host_rss": 2094350336,
+      "host_available": 236025094144
+    },
+    {
+      "at": 20.202760195941664,
+      "device_bytes": 62147002368,
+      "host_rss": 2095300608,
+      "host_available": 236021665792
+    },
+    {
+      "at": 20.725422046962194,
+      "device_bytes": 62289608704,
+      "host_rss": 2095366144,
+      "host_available": 236012785664
+    },
+    {
+      "at": 21.247859020950273,
+      "device_bytes": 62289608704,
+      "host_rss": 2095366144,
+      "host_available": 235995484160
+    },
+    {
+      "at": 21.771105417981744,
+      "device_bytes": 62289608704,
+      "host_rss": 2095366144,
+      "host_available": 236007067648
+    },
+    {
+      "at": 22.294592623016797,
+      "device_bytes": 62375591936,
+      "host_rss": 2098266112,
+      "host_available": 235997380608
+    },
+    {
+      "at": 22.81855246599298,
+      "device_bytes": 62375591936,
+      "host_rss": 2098266112,
+      "host_available": 236035584000
+    },
+    {
+      "at": 23.340763531974517,
+      "device_bytes": 62375591936,
+      "host_rss": 2098266112,
+      "host_available": 236022382592
+    },
+    {
+      "at": 23.863326644990593,
+      "device_bytes": 62375591936,
+      "host_rss": 2098266112,
+      "host_available": 236038856704
+    },
+    {
+      "at": 24.38638788694516,
+      "device_bytes": 62474158080,
+      "host_rss": 2099519488,
+      "host_available": 236016689152
+    },
+    {
+      "at": 24.90911602298729,
+      "device_bytes": 62474158080,
+      "host_rss": 2099519488,
+      "host_available": 235998633984
+    },
+    {
+      "at": 25.432781532988884,
+      "device_bytes": 62474158080,
+      "host_rss": 2099519488,
+      "host_available": 235980959744
+    },
+    {
+      "at": 25.95622262498364,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236014833664
+    },
+    {
+      "at": 26.478485345025547,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236011585536
+    },
+    {
+      "at": 27.00175999396015,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236015161344
+    },
+    {
+      "at": 27.524421534966677,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236010860544
+    },
+    {
+      "at": 28.04748219694011,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236022689792
+    },
+    {
+      "at": 28.571023336960934,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236043169792
+    },
+    {
+      "at": 29.09385346097406,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236017352704
+    },
+    {
+      "at": 29.616499900002964,
+      "device_bytes": 62581112832,
+      "host_rss": 2106540032,
+      "host_available": 236057923584
+    },
+    {
+      "at": 30.14018089894671,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236079386624
+    },
+    {
+      "at": 30.664297512033954,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236120453120
+    },
+    {
+      "at": 31.18891355395317,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236084432896
+    },
+    {
+      "at": 31.712315169977956,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236093534208
+    },
+    {
+      "at": 32.236676711938344,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236066140160
+    },
+    {
+      "at": 32.76007743901573,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236123439104
+    },
+    {
+      "at": 33.28322714602109,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236095324160
+    },
+    {
+      "at": 33.806258684024215,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236138024960
+    },
+    {
+      "at": 34.33001356897876,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236152279040
+    },
+    {
+      "at": 34.85313445399515,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236187889664
+    },
+    {
+      "at": 35.37633536499925,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236198268928
+    },
+    {
+      "at": 35.8998862139415,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236196810752
+    },
+    {
+      "at": 36.42344093194697,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236186099712
+    },
+    {
+      "at": 36.947150373016484,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236206632960
+    },
+    {
+      "at": 37.470597543986514,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236205608960
+    },
+    {
+      "at": 37.99420583702158,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236226338816
+    },
+    {
+      "at": 38.51718459103722,
+      "device_bytes": 62581112832,
+      "host_rss": 2106544128,
+      "host_available": 236228489216
+    },
+    {
+      "at": 39.040290003991686,
+      "device_bytes": 62581112832,
+      "host_rss": 2106552320,
+      "host_available": 236221419520
+    },
+    {
+      "at": 39.563337594037876,
+      "device_bytes": 62581112832,
+      "host_rss": 2106552320,
+      "host_available": 236232720384
+    },
+    {
+      "at": 40.087107219034806,
+      "device_bytes": 62581112832,
+      "host_rss": 2106552320,
+      "host_available": 236222763008
+    },
+    {
+      "at": 40.610638516023755,
+      "device_bytes": 62581112832,
+      "host_rss": 2106552320,
+      "host_available": 236270923776
+    },
+    {
+      "at": 41.13481008296367,
+      "device_bytes": 62581112832,
+      "host_rss": 2106552320,
+      "host_available": 236268040192
+    },
+    {
+      "at": 41.65828521596268,
+      "device_bytes": 62581112832,
+      "host_rss": 2106552320,
+      "host_available": 236290109440
+    },
+    {
+      "at": 42.18193991295993,
+      "device_bytes": 62581112832,
+      "host_rss": 2080092160,
+      "host_available": 236247351296
+    },
+    {
+      "at": 42.704761093948036,
+      "device_bytes": 62581112832,
+      "host_rss": 2080460800,
+      "host_available": 236251561984
+    },
+    {
+      "at": 43.227989527978934,
+      "device_bytes": 62690164736,
+      "host_rss": 2081181696,
+      "host_available": 236224647168
+    },
+    {
+      "at": 43.75152337504551,
+      "device_bytes": 62690164736,
+      "host_rss": 2081181696,
+      "host_available": 236209963008
+    },
+    {
+      "at": 44.27488900895696,
+      "device_bytes": 62690164736,
+      "host_rss": 2081181696,
+      "host_available": 236223737856
+    },
+    {
+      "at": 44.79876776295714,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236230414336
+    },
+    {
+      "at": 45.32303363701794,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236210065408
+    },
+    {
+      "at": 45.847201396944,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236250595328
+    },
+    {
+      "at": 46.37128278694581,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236235440128
+    },
+    {
+      "at": 46.89569467201363,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236166094848
+    },
+    {
+      "at": 47.418861169950105,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236036304896
+    },
+    {
+      "at": 47.94261712394655,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236107628544
+    },
+    {
+      "at": 48.46510995004792,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236080545792
+    },
+    {
+      "at": 48.988573450944386,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235922395136
+    },
+    {
+      "at": 49.51135550905019,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235955277824
+    },
+    {
+      "at": 50.034663888043724,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235936575488
+    },
+    {
+      "at": 50.55745227704756,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235936845824
+    },
+    {
+      "at": 51.081087011960335,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235909578752
+    },
+    {
+      "at": 51.60419687500689,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235921723392
+    },
+    {
+      "at": 52.12788746401202,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235911700480
+    },
+    {
+      "at": 52.65110190596897,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235922624512
+    },
+    {
+      "at": 53.174245973001234,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235945947136
+    },
+    {
+      "at": 53.69863976701163,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235974770688
+    },
+    {
+      "at": 54.22175111004617,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235951697920
+    },
+    {
+      "at": 54.74533346097451,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 235986612224
+    },
+    {
+      "at": 55.26870542601682,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236007510016
+    },
+    {
+      "at": 55.79322966001928,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236035719168
+    },
+    {
+      "at": 56.317588030942716,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236015112192
+    },
+    {
+      "at": 56.8413485159399,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236059512832
+    },
+    {
+      "at": 57.36515154293738,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236060209152
+    },
+    {
+      "at": 57.887690061936155,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236059512832
+    },
+    {
+      "at": 58.41148738004267,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236073349120
+    },
+    {
+      "at": 58.93487810494844,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236055777280
+    },
+    {
+      "at": 59.45815364201553,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236060516352
+    },
+    {
+      "at": 59.98070173198357,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236066492416
+    },
+    {
+      "at": 60.50384249794297,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236064477184
+    },
+    {
+      "at": 61.02625567698851,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236071321600
+    },
+    {
+      "at": 61.548966769943945,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236084023296
+    },
+    {
+      "at": 62.07236443203874,
+      "device_bytes": 62811799552,
+      "host_rss": 2082676736,
+      "host_available": 236092547072
+    },
+    {
+      "at": 62.59611197398044,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236132614144
+    },
+    {
+      "at": 63.1197843500413,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236195684352
+    },
+    {
+      "at": 63.64347498794086,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236350402560
+    },
+    {
+      "at": 64.16726578399539,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236373581824
+    },
+    {
+      "at": 64.6901584189618,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236393095168
+    },
+    {
+      "at": 65.21314620203339,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236375900160
+    },
+    {
+      "at": 65.7364163659513,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236385849344
+    },
+    {
+      "at": 66.259648747975,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236392857600
+    },
+    {
+      "at": 66.78339424997102,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236445519872
+    },
+    {
+      "at": 67.30619266803842,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236453494784
+    },
+    {
+      "at": 67.82947966398206,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236453453824
+    },
+    {
+      "at": 68.35273684794083,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236444770304
+    },
+    {
+      "at": 68.87688723194879,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236459831296
+    },
+    {
+      "at": 69.40051629499067,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236466053120
+    },
+    {
+      "at": 69.92410947498865,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236500013056
+    },
+    {
+      "at": 70.44746274594218,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236499214336
+    },
+    {
+      "at": 70.97095117799472,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236490620928
+    },
+    {
+      "at": 71.49388303596061,
+      "device_bytes": 62811799552,
+      "host_rss": 2086854656,
+      "host_available": 236469653504
+    },
+    {
+      "at": 72.01723809796385,
+      "device_bytes": 62811799552,
+      "host_rss": 2088316928,
+      "host_available": 236505849856
+    },
+    {
+      "at": 72.54031043697614,
+      "device_bytes": 62811799552,
+      "host_rss": 2088316928,
+      "host_available": 236512129024
+    },
+    {
+      "at": 73.06338408694137,
+      "device_bytes": 62811799552,
+      "host_rss": 2088316928,
+      "host_available": 236525379584
+    },
+    {
+      "at": 73.58662382897455,
+      "device_bytes": 62811799552,
+      "host_rss": 2088316928,
+      "host_available": 236537417728
+    },
+    {
+      "at": 74.11093070497736,
+      "device_bytes": 62811799552,
+      "host_rss": 2088316928,
+      "host_available": 236563189760
+    },
+    {
+      "at": 74.63533349800855,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236752207872
+    },
+    {
+      "at": 75.15885212202556,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236755816448
+    },
+    {
+      "at": 75.68256439093966,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236738899968
+    },
+    {
+      "at": 76.20588796003722,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236760662016
+    },
+    {
+      "at": 76.72991485404782,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236760141824
+    },
+    {
+      "at": 77.2533174189739,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236759334912
+    },
+    {
+      "at": 77.77662888797931,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236753772544
+    },
+    {
+      "at": 78.30023244500626,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236754554880
+    },
+    {
+      "at": 78.82344804599416,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236756344832
+    },
+    {
+      "at": 79.346428268007,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236666892288
+    },
+    {
+      "at": 79.87126416596584,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236753154048
+    },
+    {
+      "at": 80.39450668904465,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236727091200
+    },
+    {
+      "at": 80.91841881501023,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236718043136
+    },
+    {
+      "at": 81.44187379395589,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236751302656
+    },
+    {
+      "at": 81.96531080198474,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236759646208
+    },
+    {
+      "at": 82.48853202397004,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236752306176
+    },
+    {
+      "at": 83.01165324694011,
+      "device_bytes": 62811799552,
+      "host_rss": 2088321024,
+      "host_available": 236739006464
+    },
+    {
+      "at": 83.53452808095608,
+      "device_bytes": 62811799552,
+      "host_rss": 2088325120,
+      "host_available": 236738052096
+    },
+    {
+      "at": 84.05875533097424,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236708622336
+    },
+    {
+      "at": 84.5835334439762,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236633190400
+    },
+    {
+      "at": 85.10788646398578,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236588949504
+    },
+    {
+      "at": 85.63173584500328,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236547641344
+    },
+    {
+      "at": 86.15459062694572,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236496371712
+    },
+    {
+      "at": 86.67824294301681,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236420100096
+    },
+    {
+      "at": 87.20148914598394,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236359913472
+    },
+    {
+      "at": 87.7265412400011,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236266672128
+    },
+    {
+      "at": 88.24901226302609,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236369276928
+    },
+    {
+      "at": 88.77223304403014,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236291674112
+    },
+    {
+      "at": 89.29601595900021,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236201021440
+    },
+    {
+      "at": 89.82084937696345,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236136873984
+    },
+    {
+      "at": 90.34391485597007,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236102553600
+    },
+    {
+      "at": 90.8701588830445,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236003729408
+    },
+    {
+      "at": 91.39285189297516,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236025651200
+    },
+    {
+      "at": 91.91569762595464,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236069191680
+    },
+    {
+      "at": 92.4403452379629,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236089692160
+    },
+    {
+      "at": 92.96313602593727,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236287549440
+    },
+    {
+      "at": 93.48596672702115,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236520628224
+    },
+    {
+      "at": 94.00877329602372,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236528107520
+    },
+    {
+      "at": 94.53278932301328,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236525572096
+    },
+    {
+      "at": 95.05600803904235,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236566257664
+    },
+    {
+      "at": 95.57956109102815,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236578885632
+    },
+    {
+      "at": 96.10210545395967,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236578930688
+    },
+    {
+      "at": 96.62627450400032,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236609966080
+    },
+    {
+      "at": 97.14944014593493,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236620890112
+    },
+    {
+      "at": 97.67294912494253,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236635402240
+    },
+    {
+      "at": 98.19677350798156,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236622217216
+    },
+    {
+      "at": 98.72128722502384,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236603281408
+    },
+    {
+      "at": 99.24368638696615,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236596699136
+    },
+    {
+      "at": 99.76651034201495,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236587118592
+    },
+    {
+      "at": 100.29010013700463,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236575236096
+    },
+    {
+      "at": 100.8135835940484,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236578754560
+    },
+    {
+      "at": 101.33729856798891,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236570988544
+    },
+    {
+      "at": 101.859923537937,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236571394048
+    },
+    {
+      "at": 102.38387577096,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236562747392
+    },
+    {
+      "at": 102.90715714194812,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236568539136
+    },
+    {
+      "at": 103.43112671701238,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236565602304
+    },
+    {
+      "at": 103.95405638997909,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236581445632
+    },
+    {
+      "at": 104.47736460296437,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236571824128
+    },
+    {
+      "at": 105.00075680296868,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236584235008
+    },
+    {
+      "at": 105.52407836704515,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236579254272
+    },
+    {
+      "at": 106.04838834796101,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236588838912
+    },
+    {
+      "at": 106.57191199797671,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236591349760
+    },
+    {
+      "at": 107.09600630204659,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236599136256
+    },
+    {
+      "at": 107.61963545996696,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236578557952
+    },
+    {
+      "at": 108.14394905196968,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236548562944
+    },
+    {
+      "at": 108.66668119002134,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236550393856
+    },
+    {
+      "at": 109.18976640503388,
+      "device_bytes": 62811799552,
+      "host_rss": 2088329216,
+      "host_available": 236529631232
+    },
+    {
+      "at": 109.71348412998486,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236520161280
+    },
+    {
+      "at": 110.23746065504383,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236534636544
+    },
+    {
+      "at": 110.76015966502018,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236537536512
+    },
+    {
+      "at": 111.28411680203862,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236528492544
+    },
+    {
+      "at": 111.80749655503314,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236535959552
+    },
+    {
+      "at": 112.33082557294983,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236540907520
+    },
+    {
+      "at": 112.85398585896473,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236541554688
+    },
+    {
+      "at": 113.37723680096678,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236520787968
+    },
+    {
+      "at": 113.90048004302662,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236502568960
+    },
+    {
+      "at": 114.42355386097915,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236522291200
+    },
+    {
+      "at": 114.94704180199187,
+      "device_bytes": 62811799552,
+      "host_rss": 2088333312,
+      "host_available": 236516675584
+    }
+  ],
+  "peak_device_bytes": 62811799552,
+  "peak_device_increment_bytes": 6102712320,
+  "peak_host_rss_bytes": 3935289344,
+  "cuda_peak_allocated_bytes": 4731478528,
+  "cuda_peak_reserved_bytes": 5372903424
+}

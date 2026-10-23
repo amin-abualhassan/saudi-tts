@@ -1,0 +1,1296 @@
+{
+  "runtime": "Fish Speech bitsandbytes fallback, not SGLang",
+  "hardware": "NVIDIA H100 80GB HBM3",
+  "compute_capability": [
+    9,
+    0
+  ],
+  "laptop_verified": false,
+  "baseline_device_bytes": 56709087232,
+  "samples": {
+    "ar_greeting": {
+      "elapsed_seconds": 22.05085938202683,
+      "duration_seconds": 5.572789115646258,
+      "rtf": 3.956880284616631,
+      "first_frame_seconds": 9.395046898978762,
+      "first_pcm_seconds": 11.944328770972788,
+      "ar_done_seconds": 22.022803438012488,
+      "chunks": [
+        {
+          "at_seconds": 11.944331540958956,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 13.690395282930695,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 15.566739058005624,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 17.38290268892888,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 19.089223113958724,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 20.6242047669366,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 21.943428964004852,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 22.049822150031105,
+          "bytes": 32768,
+          "frames": 8
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 120,
+      "hit_token_limit": false,
+      "cuda_allocated": 10365935104,
+      "cuda_reserved": 11131682816,
+      "cuda_peak_allocated": 10698116096,
+      "cuda_peak_reserved": 11131682816,
+      "text": "حيّاك الله، معك نورة، المساعدة الصوتية للجواب. وش أقدر أساعدك فيه؟",
+      "file": "samples/bf16-ar_greeting.wav"
+    },
+    "ar_services": {
+      "elapsed_seconds": 23.72904678201303,
+      "duration_seconds": 13.467573696145125,
+      "rtf": 1.7619392562748764,
+      "first_frame_seconds": 0.10430247301701456,
+      "first_pcm_seconds": 1.907554703997448,
+      "ar_done_seconds": 23.665207352954894,
+      "chunks": [
+        {
+          "at_seconds": 1.907555854995735,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 3.2120069470256567,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 4.507816964993253,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 5.84306479501538,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 7.1398730899672955,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 8.440935467951931,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 9.736914927023463,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 11.107080804998986,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 12.415968894027174,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 13.696927289944142,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 14.97637826798018,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 16.298832166939974,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 17.596439844928682,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 18.893697315012105,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 20.201453175977804,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 21.473033439018764,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 22.796305611962453,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 23.728876878973097,
+          "bytes": 73728,
+          "frames": 18
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 290,
+      "hit_token_limit": false,
+      "cuda_allocated": 10365935104,
+      "cuda_reserved": 11362369536,
+      "cuda_peak_allocated": 10787204096,
+      "cuda_peak_reserved": 11362369536,
+      "text": "أكيد، في الجواب نساعد الشركات في خدمة العملاء والرد على الاستفسارات وتنظيم المواعيد. نقدر نفهم احتياجك ونوضح لك الخيارات المناسبة، وإذا احتجت تفاصيل أكثر أحولك للفريق المختص. وش الخدمة اللي تهمك؟",
+      "file": "samples/bf16-ar_services.wav"
+    },
+    "en_greeting": {
+      "elapsed_seconds": 6.332410632981919,
+      "duration_seconds": 3.5294331065759637,
+      "rtf": 1.7941721635645984,
+      "first_frame_seconds": 0.0925699450308457,
+      "first_pcm_seconds": 1.971519159968011,
+      "ar_done_seconds": 6.267033881973475,
+      "chunks": [
+        {
+          "at_seconds": 1.9715205109678209,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 3.2538419420598075,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 4.541673033963889,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 5.851598622975871,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 6.332244100049138,
+          "bytes": 49152,
+          "frames": 12
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 76,
+      "hit_token_limit": false,
+      "cuda_allocated": 10365935104,
+      "cuda_reserved": 11362369536,
+      "cuda_peak_allocated": 10787204096,
+      "cuda_peak_reserved": 11362369536,
+      "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+      "file": "samples/bf16-en_greeting.wav"
+    },
+    "en_services": {
+      "elapsed_seconds": 25.102024095947854,
+      "duration_seconds": 13.931972789115646,
+      "rtf": 1.8017566123556321,
+      "first_frame_seconds": 0.0956938510062173,
+      "first_pcm_seconds": 1.9931183910230175,
+      "ar_done_seconds": 25.0343719269149,
+      "chunks": [
+        {
+          "at_seconds": 1.9931197019759566,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 3.3127492800122127,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 4.683213531970978,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 5.992805094923824,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 7.308049230952747,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 8.703062322922051,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 10.02645816502627,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 11.333342297002673,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 12.635775382979773,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 13.963994281017222,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 15.285989542026073,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 16.615928394021466,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 17.938938323990442,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 19.285386916948482,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 20.64644549100194,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 22.004310935968533,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 23.331643483950756,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 24.63120500196237,
+          "bytes": 65536,
+          "frames": 16
+        },
+        {
+          "at_seconds": 25.101864423020743,
+          "bytes": 49152,
+          "frames": 12
+        }
+      ],
+      "incremental_before_ar_done": true,
+      "frames": 300,
+      "hit_token_limit": false,
+      "cuda_allocated": 10365935104,
+      "cuda_reserved": 11362369536,
+      "cuda_peak_allocated": 10787209216,
+      "cuda_peak_reserved": 11362369536,
+      "text": "At Aljawab, we help companies answer customer questions, organize appointments, and provide clear information about their services. Tell me what your company needs, and I can explain the available options or connect you with the right team. Which service would you like to discuss first?",
+      "file": "samples/bf16-en_services.wav"
+    }
+  },
+  "codec_device": "cuda",
+  "settings": {
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 0.7,
+    "top_k": 30,
+    "max_new_tokens": 768,
+    "context": 2048,
+    "compile": false,
+    "concurrency": 1
+  },
+  "load_seconds": 5.016474572010338,
+  "quantized_module_count": 0,
+  "quantized_modules": {},
+  "success": true,
+  "telemetry": [
+    {
+      "at": 0.00023531797342002392,
+      "device_bytes": 56709087232,
+      "host_rss": 818241536,
+      "host_available": 236316975104
+    },
+    {
+      "at": 0.8853108769981191,
+      "device_bytes": 57378078720,
+      "host_rss": 1047064576,
+      "host_available": 236201889792
+    },
+    {
+      "at": 1.4556898570153862,
+      "device_bytes": 59649294336,
+      "host_rss": 1075957760,
+      "host_available": 236172763136
+    },
+    {
+      "at": 1.981648684013635,
+      "device_bytes": 62549655552,
+      "host_rss": 1109905408,
+      "host_available": 236160679936
+    },
+    {
+      "at": 2.5077810450457036,
+      "device_bytes": 65955430400,
+      "host_rss": 1080471552,
+      "host_available": 236207693824
+    },
+    {
+      "at": 3.0323546540457755,
+      "device_bytes": 66565701632,
+      "host_rss": 1075826688,
+      "host_available": 235607404544
+    },
+    {
+      "at": 3.5567265669815242,
+      "device_bytes": 66565701632,
+      "host_rss": 1075826688,
+      "host_available": 235656654848
+    },
+    {
+      "at": 4.084945671027526,
+      "device_bytes": 66565701632,
+      "host_rss": 1077714944,
+      "host_available": 235613384704
+    },
+    {
+      "at": 4.613765179994516,
+      "device_bytes": 66565701632,
+      "host_rss": 1083072512,
+      "host_available": 235353583616
+    },
+    {
+      "at": 5.1400594000006095,
+      "device_bytes": 66565701632,
+      "host_rss": 1356828672,
+      "host_available": 235305648128
+    },
+    {
+      "at": 5.673547481070273,
+      "device_bytes": 66565701632,
+      "host_rss": 1451544576,
+      "host_available": 235441422336
+    },
+    {
+      "at": 6.2073657780420035,
+      "device_bytes": 66565701632,
+      "host_rss": 1489833984,
+      "host_available": 235664838656
+    },
+    {
+      "at": 6.732962051988579,
+      "device_bytes": 66565701632,
+      "host_rss": 1791598592,
+      "host_available": 235413606400
+    },
+    {
+      "at": 7.256957972072996,
+      "device_bytes": 66565701632,
+      "host_rss": 1439444992,
+      "host_available": 235657736192
+    },
+    {
+      "at": 7.780973362969235,
+      "device_bytes": 66565701632,
+      "host_rss": 1605865472,
+      "host_available": 235470663680
+    },
+    {
+      "at": 8.313978906022385,
+      "device_bytes": 66565701632,
+      "host_rss": 1678577664,
+      "host_available": 235277594624
+    },
+    {
+      "at": 8.850639365031384,
+      "device_bytes": 66565701632,
+      "host_rss": 1510600704,
+      "host_available": 235714203648
+    },
+    {
+      "at": 9.373823450994678,
+      "device_bytes": 66565701632,
+      "host_rss": 1844117504,
+      "host_available": 235417030656
+    },
+    {
+      "at": 9.900844548013993,
+      "device_bytes": 66565701632,
+      "host_rss": 1770303488,
+      "host_available": 235470524416
+    },
+    {
+      "at": 10.431457814062014,
+      "device_bytes": 66565701632,
+      "host_rss": 1471856640,
+      "host_available": 235514261504
+    },
+    {
+      "at": 10.966630427050404,
+      "device_bytes": 66565701632,
+      "host_rss": 1527484416,
+      "host_available": 235450114048
+    },
+    {
+      "at": 11.51597487705294,
+      "device_bytes": 66565701632,
+      "host_rss": 1527566336,
+      "host_available": 235438157824
+    },
+    {
+      "at": 12.069727482041344,
+      "device_bytes": 66565701632,
+      "host_rss": 1448570880,
+      "host_available": 235434680320
+    },
+    {
+      "at": 12.62097127106972,
+      "device_bytes": 66565701632,
+      "host_rss": 1449852928,
+      "host_available": 235336851456
+    },
+    {
+      "at": 13.163581965025514,
+      "device_bytes": 66565701632,
+      "host_rss": 2106511360,
+      "host_available": 235457044480
+    },
+    {
+      "at": 13.922640884993598,
+      "device_bytes": 67712843776,
+      "host_rss": 1294680064,
+      "host_available": 235446505472
+    },
+    {
+      "at": 14.449416941031814,
+      "device_bytes": 67876421632,
+      "host_rss": 1776128000,
+      "host_available": 235548762112
+    },
+    {
+      "at": 14.972835846012458,
+      "device_bytes": 67876421632,
+      "host_rss": 1796509696,
+      "host_available": 235541975040
+    },
+    {
+      "at": 15.497382097993977,
+      "device_bytes": 67876421632,
+      "host_rss": 1796517888,
+      "host_available": 235458293760
+    },
+    {
+      "at": 16.026779290055856,
+      "device_bytes": 67876421632,
+      "host_rss": 1796530176,
+      "host_available": 235405717504
+    },
+    {
+      "at": 16.557238364010118,
+      "device_bytes": 67876421632,
+      "host_rss": 1796534272,
+      "host_available": 235361353728
+    },
+    {
+      "at": 17.08412006997969,
+      "device_bytes": 68012736512,
+      "host_rss": 2058350592,
+      "host_available": 235252404224
+    },
+    {
+      "at": 17.612164154998027,
+      "device_bytes": 68012736512,
+      "host_rss": 2058350592,
+      "host_available": 235122012160
+    },
+    {
+      "at": 18.143897999078035,
+      "device_bytes": 68012736512,
+      "host_rss": 2058350592,
+      "host_available": 235198971904
+    },
+    {
+      "at": 18.669496304006316,
+      "device_bytes": 68054679552,
+      "host_rss": 2078629888,
+      "host_available": 235347243008
+    },
+    {
+      "at": 19.19744440203067,
+      "device_bytes": 68054679552,
+      "host_rss": 2078629888,
+      "host_available": 235434532864
+    },
+    {
+      "at": 19.721658579073846,
+      "device_bytes": 68054679552,
+      "host_rss": 2078629888,
+      "host_available": 235465527296
+    },
+    {
+      "at": 20.247291996027343,
+      "device_bytes": 68054679552,
+      "host_rss": 2078629888,
+      "host_available": 235431493632
+    },
+    {
+      "at": 20.771288990974426,
+      "device_bytes": 68100816896,
+      "host_rss": 2082439168,
+      "host_available": 235503153152
+    },
+    {
+      "at": 21.29509715398308,
+      "device_bytes": 68100816896,
+      "host_rss": 2082439168,
+      "host_available": 235510210560
+    },
+    {
+      "at": 21.818947901017964,
+      "device_bytes": 68100816896,
+      "host_rss": 2082439168,
+      "host_available": 235428429824
+    },
+    {
+      "at": 22.345165673061274,
+      "device_bytes": 68102914048,
+      "host_rss": 2083885056,
+      "host_available": 235487289344
+    },
+    {
+      "at": 22.86894634505734,
+      "device_bytes": 68220354560,
+      "host_rss": 2084147200,
+      "host_available": 235352592384
+    },
+    {
+      "at": 23.395370013080537,
+      "device_bytes": 68220354560,
+      "host_rss": 2084147200,
+      "host_available": 235482734592
+    },
+    {
+      "at": 23.91978336405009,
+      "device_bytes": 68220354560,
+      "host_rss": 2084147200,
+      "host_available": 235521032192
+    },
+    {
+      "at": 24.447306678048335,
+      "device_bytes": 68291657728,
+      "host_rss": 2085224448,
+      "host_available": 235498434560
+    },
+    {
+      "at": 24.97711979097221,
+      "device_bytes": 68291657728,
+      "host_rss": 2085224448,
+      "host_available": 236214018048
+    },
+    {
+      "at": 25.499380633002147,
+      "device_bytes": 68291657728,
+      "host_rss": 2085224448,
+      "host_available": 236772753408
+    },
+    {
+      "at": 26.022749662050046,
+      "device_bytes": 68377640960,
+      "host_rss": 2088108032,
+      "host_available": 236706041856
+    },
+    {
+      "at": 26.546409545000643,
+      "device_bytes": 68377640960,
+      "host_rss": 2088108032,
+      "host_available": 236778590208
+    },
+    {
+      "at": 27.06993775605224,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236787044352
+    },
+    {
+      "at": 27.593349519069307,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236763521024
+    },
+    {
+      "at": 28.116760471020825,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236754386944
+    },
+    {
+      "at": 28.639069798053242,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236725391360
+    },
+    {
+      "at": 29.162160675041378,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236699381760
+    },
+    {
+      "at": 29.685148674994707,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236646072320
+    },
+    {
+      "at": 30.208656465052627,
+      "device_bytes": 68570578944,
+      "host_rss": 2089803776,
+      "host_available": 236608741376
+    },
+    {
+      "at": 30.730873564025387,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236603031552
+    },
+    {
+      "at": 31.253498285077512,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236577067008
+    },
+    {
+      "at": 31.776017058058642,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236570558464
+    },
+    {
+      "at": 32.298562332987785,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236542214144
+    },
+    {
+      "at": 32.820879969978705,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236523732992
+    },
+    {
+      "at": 33.34322554897517,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236513640448
+    },
+    {
+      "at": 33.865831369068474,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236532404224
+    },
+    {
+      "at": 34.38913295301609,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236497633280
+    },
+    {
+      "at": 34.911606812034734,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236472799232
+    },
+    {
+      "at": 35.434237824054435,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236465410048
+    },
+    {
+      "at": 35.95678136800416,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236470198272
+    },
+    {
+      "at": 36.47908023407217,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236474589184
+    },
+    {
+      "at": 37.002502284012735,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236484947968
+    },
+    {
+      "at": 37.52539992297534,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236475727872
+    },
+    {
+      "at": 38.04796629503835,
+      "device_bytes": 68570578944,
+      "host_rss": 2089807872,
+      "host_available": 236480667648
+    },
+    {
+      "at": 38.57078579708468,
+      "device_bytes": 68679630848,
+      "host_rss": 2091216896,
+      "host_available": 236487032832
+    },
+    {
+      "at": 39.093519252026454,
+      "device_bytes": 68679630848,
+      "host_rss": 2091216896,
+      "host_available": 236469514240
+    },
+    {
+      "at": 39.615711234975606,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236463239168
+    },
+    {
+      "at": 40.13804232899565,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236445388800
+    },
+    {
+      "at": 40.66087564197369,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236427862016
+    },
+    {
+      "at": 41.18344530498143,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236430577664
+    },
+    {
+      "at": 41.706068541971035,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236481400832
+    },
+    {
+      "at": 42.228836200083606,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236472598528
+    },
+    {
+      "at": 42.75256465305574,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236473929728
+    },
+    {
+      "at": 43.275336691061966,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236481957888
+    },
+    {
+      "at": 43.79803556401748,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236501708800
+    },
+    {
+      "at": 44.32126185798552,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236485115904
+    },
+    {
+      "at": 44.84439820505213,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236503277568
+    },
+    {
+      "at": 45.36783101502806,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236514025472
+    },
+    {
+      "at": 45.89092642907053,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236518621184
+    },
+    {
+      "at": 46.414228118024766,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236506284032
+    },
+    {
+      "at": 46.93775658600498,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236530098176
+    },
+    {
+      "at": 47.46086455998011,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236523401216
+    },
+    {
+      "at": 47.983699433971196,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236515741696
+    },
+    {
+      "at": 48.505972463055514,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236524711936
+    },
+    {
+      "at": 49.02959291799925,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236533911552
+    },
+    {
+      "at": 49.55250977806281,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236541554688
+    },
+    {
+      "at": 50.07612973207142,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236564738048
+    },
+    {
+      "at": 50.599574082996696,
+      "device_bytes": 68801265664,
+      "host_rss": 2092703744,
+      "host_available": 236541931520
+    },
+    {
+      "at": 51.12307951902039,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236525289472
+    },
+    {
+      "at": 51.64621852606069,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236519264256
+    },
+    {
+      "at": 52.168449501972646,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236526727168
+    },
+    {
+      "at": 52.69063480501063,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236529573888
+    },
+    {
+      "at": 53.213603821001016,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236526682112
+    },
+    {
+      "at": 53.73676907108165,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236541161472
+    },
+    {
+      "at": 54.25969137297943,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236523823104
+    },
+    {
+      "at": 54.78244660201017,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236541919232
+    },
+    {
+      "at": 55.30492888006847,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236524949504
+    },
+    {
+      "at": 55.82865035405848,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236524662784
+    },
+    {
+      "at": 56.35177275107708,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236529692672
+    },
+    {
+      "at": 56.875481605064124,
+      "device_bytes": 68801265664,
+      "host_rss": 2097205248,
+      "host_available": 236506574848
+    },
+    {
+      "at": 57.398242013994604,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236503322624
+    },
+    {
+      "at": 57.921255193068646,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236468461568
+    },
+    {
+      "at": 58.443926185020246,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236487274496
+    },
+    {
+      "at": 58.9670984960394,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236503019520
+    },
+    {
+      "at": 59.490480024018325,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236499959808
+    },
+    {
+      "at": 60.013995042070746,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236506394624
+    },
+    {
+      "at": 60.53695735801011,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236490231808
+    },
+    {
+      "at": 61.059806994046085,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236479008768
+    },
+    {
+      "at": 61.582745037041605,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236727853056
+    },
+    {
+      "at": 62.10587287507951,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236654604288
+    },
+    {
+      "at": 62.629040625994094,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236633907200
+    },
+    {
+      "at": 63.15211224905215,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236596494336
+    },
+    {
+      "at": 63.67442063300405,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236595429376
+    },
+    {
+      "at": 64.19773803604767,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236608090112
+    },
+    {
+      "at": 64.720661848085,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236593541120
+    },
+    {
+      "at": 65.24323937308509,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236582649856
+    },
+    {
+      "at": 65.76694233599119,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236573679616
+    },
+    {
+      "at": 66.2903516960796,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236566441984
+    },
+    {
+      "at": 66.81340977805667,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236586377216
+    },
+    {
+      "at": 67.3366930190241,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236565348352
+    },
+    {
+      "at": 67.85940594400745,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236537888768
+    },
+    {
+      "at": 68.38210978906136,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236537098240
+    },
+    {
+      "at": 68.90580342104658,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236538130432
+    },
+    {
+      "at": 69.42881142499391,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236515377152
+    },
+    {
+      "at": 69.95221865107305,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236522799104
+    },
+    {
+      "at": 70.475554189994,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236511612928
+    },
+    {
+      "at": 70.9992201650748,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236525731840
+    },
+    {
+      "at": 71.52239206107333,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236533788672
+    },
+    {
+      "at": 72.04554251604713,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236535603200
+    },
+    {
+      "at": 72.56886620505247,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236534132736
+    },
+    {
+      "at": 73.09193764405791,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236496420864
+    },
+    {
+      "at": 73.61552007205319,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236494024704
+    },
+    {
+      "at": 74.13852061599027,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236497326080
+    },
+    {
+      "at": 74.66105272201821,
+      "device_bytes": 68801265664,
+      "host_rss": 2098929664,
+      "host_available": 236508631040
+    },
+    {
+      "at": 75.18454365304206,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236515598336
+    },
+    {
+      "at": 75.70736352307722,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236527865856
+    },
+    {
+      "at": 76.23053692898247,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236514258944
+    },
+    {
+      "at": 76.75348455808125,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236518535168
+    },
+    {
+      "at": 77.27695261803456,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236540203008
+    },
+    {
+      "at": 77.80059471097775,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236552642560
+    },
+    {
+      "at": 78.3237633180106,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236537397248
+    },
+    {
+      "at": 78.84747754700948,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236554600448
+    },
+    {
+      "at": 79.37083493801765,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236521705472
+    },
+    {
+      "at": 79.8938204899896,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236513316864
+    },
+    {
+      "at": 80.41666826105211,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236516847616
+    },
+    {
+      "at": 80.93995357607491,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236533116928
+    },
+    {
+      "at": 81.46357851906214,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236538978304
+    },
+    {
+      "at": 81.98744540906046,
+      "device_bytes": 68801265664,
+      "host_rss": 2098933760,
+      "host_available": 236533608448
+    }
+  ],
+  "peak_device_bytes": 68801265664,
+  "peak_device_increment_bytes": 12092178432,
+  "peak_host_rss_bytes": 2106511360,
+  "cuda_peak_allocated_bytes": 10787209216,
+  "cuda_peak_reserved_bytes": 11362369536
+}

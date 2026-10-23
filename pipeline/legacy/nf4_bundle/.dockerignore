@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!requirements.lock
+!fish-source/**
+!runtime/**
+**/__pycache__
+**/*.pyc

@@ -1,0 +1,41 @@
+diff --git a/fish_speech/models/text2semantic/inference.py b/fish_speech/models/text2semantic/inference.py
+index 25c0e1d..f132daa 100644
+--- a/fish_speech/models/text2semantic/inference.py
++++ b/fish_speech/models/text2semantic/inference.py
+@@ -207,7 +207,7 @@ def decode_n_tokens(
+     im_end_id = model.tokenizer.get_token_id(IM_END_TOKEN)
+ 
+     for i in tqdm(range(num_new_tokens)):
+-        with sdpa_kernel(SDPBackend.MATH):
++        with sdpa_kernel([SDPBackend.FLASH_ATTENTION, SDPBackend.EFFICIENT_ATTENTION, SDPBackend.MATH]):
+             next_token = decode_one_token(
+                 model=model,
+                 x=cur_token,
+@@ -230,6 +230,9 @@ def decode_n_tokens(
+         ]
+         new_tokens.append(next_token)
+ 
++        if getattr(model, '_audio_frame_callback', None) is not None:
++            model._audio_frame_callback(next_token)
++
+         if cur_token[0, 0, -1] == im_end_id:
+             break
+ 
+@@ -333,6 +336,8 @@ def generate(
+         audio_parts,
+     )
+     seq[:, T : T + 1] = first_token
++    if getattr(model, '_audio_frame_callback', None) is not None:
++        model._audio_frame_callback(first_token)
+ 
+     # Recreate input_pos
+     input_pos = torch.tensor([T], device=device, dtype=torch.int)
+@@ -727,7 +732,7 @@ def generate_long(
+                     f"Audio masks non-zero count: {torch.count_nonzero(audio_masks)}"
+                 )
+ 
+-            if encoded.size(1) > max_length - 2048:
++            if encoded.size(1) + max_new_tokens > max_length:
+                 raise ValueError(
+                     f"Prompt is too long: {encoded.size(1)} > {max_length - 2048}"
+                 )

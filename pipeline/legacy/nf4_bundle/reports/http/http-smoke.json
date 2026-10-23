@@ -1,0 +1,71 @@
+{
+  "health": {
+    "ok": true,
+    "model": "attention_mlp_r16_early-nf4-bd78f331a5a1534c",
+    "runtime": "fish-speech-bnb-nf4",
+    "quantized_modules": 201,
+    "load_seconds": 5.101514297071844,
+    "cuda_allocated": 3135087616,
+    "cuda_reserved": 3208642560,
+    "cuda_peak_allocated": 3135087616,
+    "cuda_peak_reserved": 3208642560
+  },
+  "wav_seconds": 16.498010672978126,
+  "wav_duration": 3.622312925170068,
+  "pcm_first_seconds": 3.0730892630526796,
+  "pcm_total_seconds": 10.10882743098773,
+  "pcm_duration": 3.622312925170068,
+  "pcm_arrivals": [
+    {
+      "at_seconds": 3.0730892630526796,
+      "bytes": 65529
+    },
+    {
+      "at_seconds": 3.073172589065507,
+      "bytes": 7
+    },
+    {
+      "at_seconds": 5.106257044011727,
+      "bytes": 28953
+    },
+    {
+      "at_seconds": 5.1063890140503645,
+      "bytes": 36583
+    },
+    {
+      "at_seconds": 7.135939002037048,
+      "bytes": 65529
+    },
+    {
+      "at_seconds": 7.136010478017852,
+      "bytes": 7
+    },
+    {
+      "at_seconds": 9.18503083800897,
+      "bytes": 65529
+    },
+    {
+      "at_seconds": 9.18528774799779,
+      "bytes": 7
+    },
+    {
+      "at_seconds": 10.108434929978102,
+      "bytes": 57344
+    }
+  ],
+  "pcm_matches_wav": true,
+  "first_pcm_before_response_completed": true,
+  "original_identity_rejected": true,
+  "outside_reference_root_rejected": true,
+  "health_after": {
+    "ok": true,
+    "model": "attention_mlp_r16_early-nf4-bd78f331a5a1534c",
+    "runtime": "fish-speech-bnb-nf4",
+    "quantized_modules": 201,
+    "load_seconds": 5.101514297071844,
+    "cuda_allocated": 4310843392,
+    "cuda_reserved": 4773117952,
+    "cuda_peak_allocated": 4527247872,
+    "cuda_peak_reserved": 4773117952
+  }
+}

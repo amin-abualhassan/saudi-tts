@@ -8,3 +8,5 @@ dashboard/state/
 *.pt
 *.pth
 *.safetensors
+pipeline/legacy/wesam_pipeline/**/*.jsonl
+pipeline/legacy/speech-agent/

@@ -1,0 +1,22 @@
+{
+  "model": "pyannote/wespeaker-voxceleb-resnet34-LM",
+  "revision": "837717ddb9ff5507820346191109dc79c958d614",
+  "checkpoint_sha256": "366edf44f4c80889a3eb7a9d7bdf02c4aede3127f7dd15e274dcdb826b143c56",
+  "note": "Whole-clip cosine diagnostics; not human speaker-similarity judgments or calibrated acceptance thresholds",
+  "reference_cosines": {
+    "bf16-ar_greeting.wav": 0.6371127367019653,
+    "bf16-ar_services.wav": 0.6584683656692505,
+    "bf16-en_greeting.wav": 0.46614816784858704,
+    "bf16-en_services.wav": 0.5690405964851379,
+    "nf4-ar_greeting.wav": 0.6259241700172424,
+    "nf4-ar_services.wav": 0.715114951133728,
+    "nf4-en_greeting.wav": 0.6153643131256104,
+    "nf4-en_services.wav": 0.6709569692611694
+  },
+  "paired_cosines": {
+    "bf16-ar_greeting.wav": 0.7794201374053955,
+    "bf16-ar_services.wav": 0.8938115239143372,
+    "bf16-en_greeting.wav": 0.6941193342208862,
+    "bf16-en_services.wav": 0.8171274662017822
+  }
+}

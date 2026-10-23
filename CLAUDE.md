@@ -25,7 +25,7 @@ AWS terminates this instance from **Sun 1 Nov 11:00 UTC**. EBS root and NVMe are
 14. Write for the next reader: `DECISIONS.md` explains why; `MODEL_CARD.md` reports every gate including failures.
 
 ## Never
-Stop/reboot/resize either instance; delete source data or `saudi_eval_v1`; train on any eval sentence; spend beyond the ElevenLabs cap; use a non-allowed source; mark PASS without a verifier; run GPU training jobs with combined memory > 70 GB; measure latency while training runs; call a predicted MOS a human MOS; print, log, commit, sync or send anything from `~/.secrets/` (read keys only inside Python via `pipeline/secrets.py`); source `~/.secrets/fallback.env`.
+Stop/reboot/resize either instance; delete source data or `saudi_eval_v1`; train on any eval sentence; spend beyond the ElevenLabs cap; use a non-allowed source; mark PASS without a verifier; run GPU training jobs with combined memory > 70 GB; measure latency while training runs; call a predicted MOS a human MOS; print, log, commit, sync or send anything from `~/.secrets/` (read keys only inside Python via `pipeline/keys.py`); source `~/.secrets/fallback.env`.
 
 ## Network
 Every model server, Jupyter, TensorBoard, Gradio binds **127.0.0.1**. Only Caddy listens publicly (80/443) for `training.aljawab.ai`.

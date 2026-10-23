@@ -1,0 +1,9 @@
+{
+  "adapter_provenance_verified": true,
+  "merged_attention_and_mlp_weights": 200,
+  "all_merged_weights_directly_quantized": true,
+  "learned_tensors": 358,
+  "tied_text_embedding_output": true,
+  "missing_learned_tensors": [],
+  "unexpected_learned_tensors": []
+}
