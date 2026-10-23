@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-10",
+  "status": "Fast-only H100 pilots passed; attention checkpoint-gradient fix CPU verified; full training and synthesis remain pending verification",
+  "unit_tests": {
+    "passed": 17,
+    "command": "python -m unittest discover -s training/jordanian_s2pro/tests -v"
+  },
+  "python_compile": "passed",
+  "dashboard_javascript": {
+    "syntax": "passed",
+    "sample_card_DOM_stub": "passed",
+    "real_browser": "not run"
+  },
+  "plan": {
+    "dataset": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d",
+    "selected_hours": 10.246007250999936,
+    "splits": {
+      "talha": {
+        "train": {
+          "clips": 1343,
+          "hours": 4.799722800925926,
+          "available_hours": 70.5835523553238,
+          "speakers": {
+            "talha_ahmad": 1343
+          }
+        },
+        "validation": {
+          "clips": 161,
+          "hours": 0.5999991840277781,
+          "available_hours": 8.545629756944447,
+          "speakers": {
+            "talha_ahmad": 161
+          }
+        },
+        "test": {
+          "clips": 164,
+          "hours": 0.5987377893518517,
+          "available_hours": 8.823506944444427,
+          "speakers": {
+            "talha_ahmad": 164
+          }
+        }
+      },
+      "podcast": {
+        "train": {
+          "clips": 906,
+          "hours": 2.7576116666666652,
+          "available_hours": 14.92479194444447,
+          "speakers": {
+            "guest_0j515zfr5l_speaker_01": 23,
+            "guest_2366wqj7sw_speaker_01": 23,
+            "guest_690bdx2a7x_speaker_00": 3,
+            "guest_690bdx2a7x_speaker_02": 23,
+            "guest_6n2esa018j_speaker_01": 2,
+            "guest_6n2esa018j_speaker_02": 22,
+            "guest_c5bcjps40r_speaker_01": 23,
+            "guest_epabqc9ast_speaker_01": 22,
+            "guest_i2clnz70i8_speaker_01": 22,
+            "guest_j27tmdq22g_speaker_01": 22,
+            "guest_j3bw52pgye_speaker_02": 22,
+            "guest_nzc21rdbcn_speaker_01": 22,
+            "guest_piekf44qr0_speaker_01": 22,
+            "guest_qc67lna1qb_speaker_00": 22,
+            "guest_rikl276p9j_speaker_01": 22,
+            "guest_utrhqcji78_speaker_00": 22,
+            "guest_vngwvadz85_speaker_01": 22,
+            "guest_w5ri83j0ly_speaker_00": 22,
+            "guest_xs9hy6dwtn_speaker_01": 22,
+            "guest_zmjh0hwrup_speaker_02": 22,
+            "guest_zsbp3t7j3m_speaker_01": 22,
+            "wesam_ali": 479
+          }
+        },
+        "validation": {
+          "clips": 117,
+          "hours": 0.33486583333333353,
+          "available_hours": 1.431069444444444,
+          "speakers": {
+            "guest_5flgspymra_speaker_00": 33,
+            "guest_8h7r4cs81s_speaker_01": 31,
+            "wesam_ali": 53
+          }
+        },
+        "test": {
+          "clips": 110,
+          "hours": 0.3485486111111111,
+          "available_hours": 1.6008280555555552,
+          "speakers": {
+            "guest_1zm10wn4u4_speaker_02": 29,
+            "guest_omovwbnxb9_speaker_00": 30,
+            "wesam_ali": 51
+          }
+        }
+      },
+      "single": {
+        "train": {
+          "clips": 268,
+          "hours": 0.6144582766439912,
+          "available_hours": 0.6144582766439909,
+          "speakers": {
+            "single_speaker": 268
+          }
+        },
+        "validation": {
+          "clips": 44,
+          "hours": 0.09924998110355258,
+          "available_hours": 0.1247966868228773,
+          "speakers": {
+            "single_speaker": 44
+          }
+        },
+        "test": {
+          "clips": 40,
+          "hours": 0.0928131078357269,
+          "available_hours": 0.0928131078357269,
+          "speakers": {
+            "single_speaker": 40
+          }
+        }
+      }
+    }
+  },
+  "preview": {
+    "manifest": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/preview/prepared.jsonl",
+    "clips": 12,
+    "validated_pairs": {
+      "train": 4,
+      "validation": 4,
+      "test": 4
+    },
+    "families": [
+      "podcast",
+      "single",
+      "talha"
+    ],
+    "speakers": [
+      "guest_1zm10wn4u4_speaker_02",
+      "guest_8h7r4cs81s_speaker_01",
+      "guest_zsbp3t7j3m_speaker_01",
+      "single_speaker",
+      "talha_ahmad",
+      "wesam_ali"
+    ],
+    "rejections": [
+      {
+        "clip_id": "talha_xee1jilyjr-61",
+        "reason": "Input clipping exceeds 0.1%"
+      }
+    ]
+  },
+  "preflight": {
+    "GPU_available_here": false,
+    "failed_checks": [
+      "nvidia_driver",
+      "cuda_available",
+      "bf16_supported"
+    ],
+    "required_modules_detected": true
+  },
+  "not_run": [
+    "full audio preparation",
+    "successful GPU train/save/resume pilot (first attempts failed in loader setup)",
+    "full training",
+    "model synthesis",
+    "merge/export",
+    "live HTTP server"
+  ],
+  "base_checkpoint": "training/checkpoints/s2-pro",
+  "upstream_commit": "214da3cd841bda85da2496b96cd3c4d7edb1337e",
+  "intended_hardware": "Single BF16-capable CUDA GPU; H100 workspace target, per-experiment full-context pilot decides fit",
+  "dataloader_fix_report": "dataloader_fix.json",
+  "checkpointing_fix_report": "checkpointing_fix.json"
+}

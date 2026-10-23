@@ -1,0 +1,78 @@
+{
+  "pages": [
+    {
+      "url": "https://aljawab.ai/",
+      "title": "Aljawab · Voice AI for the Arabic-speaking enterprise",
+      "headings": [
+        "Arabic Voice Intelligence Platform for Enterprise Contact Centers",
+        "Real-time transcription, under 150 milliseconds.",
+        "Live, low-latency transcription",
+        "Voice activity detection",
+        "Speaker diarization with voiceprints",
+        "Sub-dialect accuracy",
+        "Products built on top of our voice models.",
+        "AliveArchive",
+        "Call Center Monitor",
+        "The call processing pipeline",
+        "Enterprise-grade security and infrastructure at scale",
+        "Enterprise-level data protection",
+        "Granular team permissions",
+        "Elevated support and custom deployments",
+        "Four technologies powering everything we ship",
+        "Frequently asked questions",
+        "Start transcribing today.",
+        "The technologies that make Aljawab possible",
+        "We know exactly where every word was spoken in the audio.",
+        "Find a person by voice across thousands of hours.",
+        "We mask sensitive content on the audio itself, live or batch.",
+        "We count the speakers, then separate them with the Fourier transform.",
+        "Start transcribing today."
+      ],
+      "language": "en",
+      "html_language": "en",
+      "text": "Arabic Voice Intelligence Platform for Enterprise Contact Centers\nTranscribe, analyze, monitor, and search Arabic conversations with AI built for enterprise contact centers and business operations.\nReal-time transcription, under 150 milliseconds.\nA streaming-first architecture that turns speech into text instantly, with sub-dialect accuracy, even in noisy real-world environments.\nLive, low-latency transcription\n140 ms average latency, full-duplex streaming, and partial-result updates as words arrive.\nVoice activity detection\nAutomatically detect when speech starts and stops, segmenting sessions for clean downstream processing.\nSpeaker diarization with voiceprints\nReal-time speaker labels powered by neural voiceprints. We re-identify the same speakers across calls, meetings, and multi-party conversations.\nSub-dialect accuracy\nTrained at the neighborhood, city, and generational level, not just 23 country dialects.\nProducts built on top of our voice models.\nAlongside our cloud ASR APIs, we ship ready-to-use products that solve specific enterprise needs.\nAliveArchive\nTurn your organization's audio and video archive into a searchable, indexed knowledge base. Calls, meetings, broadcasts, interviews.\n✓ Arabic semantic search\n✓ Auto-summaries per file\n✓ Speaker and event tagging\n✓ Shazam-like voiceprint search\nCall Center Monitor\nAutomatically monitor and score every single call against your QA criteria. No more random sampling.\n✓ 100% of calls evaluated\n✓ Customizable compliance rules\n✓ Customer and agent sentiment\n✓ Real-time alerts on rule failures\nThe call processing pipeline\nFive steps, from upload to team-level executive insights.\nEnterprise-grade security and infrastructure at scale\nSecurity at the level of the largest enterprises, on infrastructure built to scale.\nEnterprise-level data protection\nEncrypted in transit and at rest. SOC 2, HIPAA, and GDPR compliant. Gulf and Jordan data residency, zero-retention mode available.\nGranular team permissions\nFine-grained roles, shared glossaries across teams, SSO and SAML integration.\nElevated support and custom deployments\nAn engineering team in Amman ensures smooth launches, with cloud, on-prem, and hybrid deployment options.\nFour technologies powering everything we ship\nTake a closer look at the voice infrastructure behind our products: word alignment, voiceprints, audio-domain PII masking, and Fourier-based speaker separation.\nFrequently asked questions\nStart transcribing today.\nPick the service you're interested in and tell us about your needs. This will open your email client with a ready-to-send message.\nThe most accurate Arabic speech-to-text platform. Built in Amman to serve 400 million speakers.\nThe technologies that make Aljawab possible\nWe build Arabic voice models from scratch. Here's a closer look at four technologies we develop in-house, and how each one shows up in the product.\nWe know exactly where every word was spoken in the audio.\nEvery word in the transcript carries a precise (start, end) timestamp inside the audio clip. That unlocks interactive players, word-level archive search, and moment extraction.\n✓ Word-level timestamps at ~10 ms resolution.\n✓ Forced alignment for batch files as a fallback to the streaming model.\n✓ Monotonic alignment constraint prevents overlap or backtracking.\n✓ Per-word confidence scores flag transcripts that deserve review.\nFind a person by voice across thousands of hours.\nWe turn every voice into a numerical vector (a voiceprint) and search for the closest matches in your archive, with a similarity score that respects how voices change over time. Used primarily inside AliveArchive.\n✓ 256-dimensional embedding per speaker.\n✓ Cosine-similarity ranking over an HNSW vector index.\n✓ Time-decay re-weighting tolerates voice drift across years.\n✓ Auto-alerts on matches above a configurable similarity threshold.\nWe mask sensitive content on the audio itself, live or batch.\nNot only in the transcript. We detect sensitive entities (names, numbers, addresses, IDs) and mask them on the waveform directly, during live streaming or over whole files.\n✓ Entity detection runs directly on the streaming token graph.\n✓ Audio-domain masking via a spectral notch or constant-pitch beep overlay.\n✓ Per-entity-class redaction policies (PHI, PII, financial).\n✓ Live during call-center conversations and batch over archives.\nWe count the speakers, then separate them with the Fourier transform.\nWe use voiceprints to estimate how many speakers are in the audio, then split the signal into independent per-speaker channels via the Discrete Fourier Transform (DFT).\n✓ Voiceprint clustering auto-estimates the number of speakers N.\n✓ Frame-by-frame assignment to the closest speaker in voiceprint space.\n✓ DFT on overlapping frames separates concurrent speakers.\n✓ Clean per-speaker channel out, ready for transcription.\nWhat dialects does Aljawab support? +\nDoes Aljawab detect speakers automatically? + Yes. Speaker diarization is on by default and runs in real time for live calls, and in batch for meeting and interview files.\nDoes Aljawab handle Arabic-English code-switching? + Yes. The model handles code-switching between Arabic and English seamlessly, common in technical and business calls.\nHow does Aljawab secure my data? + All data is encrypted in transit and at rest. We're SOC 2, HIPAA, and GDPR compliant. Zero-retention mode is available for all customers, with data residency options in Jordan, UAE, or Saudi Arabia.",
+      "contact_links": [
+        "mailto:contact@aljawab.ai"
+      ],
+      "retrieved_at": "2026-10-17T10:52:48.313207+00:00",
+      "sha256": "0e31188c4940f3a6b86fce8e800b8f263baa3ddedd1790c83de5ce95c6b8f365"
+    },
+    {
+      "url": "https://aljawab.ai/#/technologies",
+      "title": "Aljawab · Voice AI for the Arabic-speaking enterprise",
+      "headings": [
+        "Arabic Voice Intelligence Platform for Enterprise Contact Centers",
+        "Real-time transcription, under 150 milliseconds.",
+        "Live, low-latency transcription",
+        "Voice activity detection",
+        "Speaker diarization with voiceprints",
+        "Sub-dialect accuracy",
+        "Products built on top of our voice models.",
+        "AliveArchive",
+        "Call Center Monitor",
+        "The call processing pipeline",
+        "Enterprise-grade security and infrastructure at scale",
+        "Enterprise-level data protection",
+        "Granular team permissions",
+        "Elevated support and custom deployments",
+        "Four technologies powering everything we ship",
+        "Frequently asked questions",
+        "Start transcribing today.",
+        "The technologies that make Aljawab possible",
+        "We know exactly where every word was spoken in the audio.",
+        "Find a person by voice across thousands of hours.",
+        "We mask sensitive content on the audio itself, live or batch.",
+        "We count the speakers, then separate them with the Fourier transform.",
+        "Start transcribing today."
+      ],
+      "language": "en",
+      "html_language": "en",
+      "text": "Arabic Voice Intelligence Platform for Enterprise Contact Centers\nTranscribe, analyze, monitor, and search Arabic conversations with AI built for enterprise contact centers and business operations.\nReal-time transcription, under 150 milliseconds.\nA streaming-first architecture that turns speech into text instantly, with sub-dialect accuracy, even in noisy real-world environments.\nLive, low-latency transcription\n140 ms average latency, full-duplex streaming, and partial-result updates as words arrive.\nVoice activity detection\nAutomatically detect when speech starts and stops, segmenting sessions for clean downstream processing.\nSpeaker diarization with voiceprints\nReal-time speaker labels powered by neural voiceprints. We re-identify the same speakers across calls, meetings, and multi-party conversations.\nSub-dialect accuracy\nTrained at the neighborhood, city, and generational level, not just 23 country dialects.\nProducts built on top of our voice models.\nAlongside our cloud ASR APIs, we ship ready-to-use products that solve specific enterprise needs.\nAliveArchive\nTurn your organization's audio and video archive into a searchable, indexed knowledge base. Calls, meetings, broadcasts, interviews.\n✓ Arabic semantic search\n✓ Auto-summaries per file\n✓ Speaker and event tagging\n✓ Shazam-like voiceprint search\nCall Center Monitor\nAutomatically monitor and score every single call against your QA criteria. No more random sampling.\n✓ 100% of calls evaluated\n✓ Customizable compliance rules\n✓ Customer and agent sentiment\n✓ Real-time alerts on rule failures\nThe call processing pipeline\nFive steps, from upload to team-level executive insights.\nEnterprise-grade security and infrastructure at scale\nSecurity at the level of the largest enterprises, on infrastructure built to scale.\nEnterprise-level data protection\nEncrypted in transit and at rest. SOC 2, HIPAA, and GDPR compliant. Gulf and Jordan data residency, zero-retention mode available.\nGranular team permissions\nFine-grained roles, shared glossaries across teams, SSO and SAML integration.\nElevated support and custom deployments\nAn engineering team in Amman ensures smooth launches, with cloud, on-prem, and hybrid deployment options.\nFour technologies powering everything we ship\nTake a closer look at the voice infrastructure behind our products: word alignment, voiceprints, audio-domain PII masking, and Fourier-based speaker separation.\nFrequently asked questions\nStart transcribing today.\nPick the service you're interested in and tell us about your needs. This will open your email client with a ready-to-send message.\nThe most accurate Arabic speech-to-text platform. Built in Amman to serve 400 million speakers.\nThe technologies that make Aljawab possible\nWe build Arabic voice models from scratch. Here's a closer look at four technologies we develop in-house, and how each one shows up in the product.\nWe know exactly where every word was spoken in the audio.\nEvery word in the transcript carries a precise (start, end) timestamp inside the audio clip. That unlocks interactive players, word-level archive search, and moment extraction.\n✓ Word-level timestamps at ~10 ms resolution.\n✓ Forced alignment for batch files as a fallback to the streaming model.\n✓ Monotonic alignment constraint prevents overlap or backtracking.\n✓ Per-word confidence scores flag transcripts that deserve review.\nFind a person by voice across thousands of hours.\nWe turn every voice into a numerical vector (a voiceprint) and search for the closest matches in your archive, with a similarity score that respects how voices change over time. Used primarily inside AliveArchive.\n✓ 256-dimensional embedding per speaker.\n✓ Cosine-similarity ranking over an HNSW vector index.\n✓ Time-decay re-weighting tolerates voice drift across years.\n✓ Auto-alerts on matches above a configurable similarity threshold.\nWe mask sensitive content on the audio itself, live or batch.\nNot only in the transcript. We detect sensitive entities (names, numbers, addresses, IDs) and mask them on the waveform directly, during live streaming or over whole files.\n✓ Entity detection runs directly on the streaming token graph.\n✓ Audio-domain masking via a spectral notch or constant-pitch beep overlay.\n✓ Per-entity-class redaction policies (PHI, PII, financial).\n✓ Live during call-center conversations and batch over archives.\nWe count the speakers, then separate them with the Fourier transform.\nWe use voiceprints to estimate how many speakers are in the audio, then split the signal into independent per-speaker channels via the Discrete Fourier Transform (DFT).\n✓ Voiceprint clustering auto-estimates the number of speakers N.\n✓ Frame-by-frame assignment to the closest speaker in voiceprint space.\n✓ DFT on overlapping frames separates concurrent speakers.\n✓ Clean per-speaker channel out, ready for transcription.",
+      "contact_links": [
+        "mailto:contact@aljawab.ai"
+      ],
+      "retrieved_at": "2026-10-17T10:52:53.352375+00:00",
+      "sha256": "0c2cba4c7280a63eaf8c1d035ad6f3e463eeece963fc6752babbfa971a816e72"
+    }
+  ]
+}

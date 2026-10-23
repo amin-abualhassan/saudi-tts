@@ -1,0 +1,15 @@
+{
+  "verified_at_utc": "2026-10-09T18:01:32Z",
+  "original_conflict": "TensorBoard 2.21.0 generated for Protobuf 6.31.1 versus runtime 5.29.6 forced by protobuf<6 override",
+  "tensorboard": "2.20.0",
+  "protobuf": "5.29.6",
+  "checks_passed": [
+    "TensorBoard SummaryWriter event write/read",
+    "Lightning TensorBoardLogger logging",
+    "Fish Speech protobuf serialize/parse",
+    "DAC import",
+    "TextToSemantic import"
+  ],
+  "unit_tests_passed": 30,
+  "training_started": false
+}

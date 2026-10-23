@@ -1,0 +1,33 @@
+{
+  "checked_at": 1791572444.716158,
+  "tests": {
+    "passed": 51,
+    "command": "python -m unittest discover -s training/talha_s2pro/tests -v"
+  },
+  "browser_validation": "Waiting/ready states, Arabic references, result rendering and audio playback stability passed in a simulated DOM",
+  "native_inference_imports": "passed",
+  "gpu_model_and_cuda_tests": "mocked; real synthesis awaits completed weights and server GPU",
+  "actual_run": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b",
+  "observed_training_step": 1221,
+  "reference_integrity_checks": [
+    {
+      "clip_id": "f0nxjpa0ii-85",
+      "duration": 10.0
+    },
+    {
+      "clip_id": "yeg286lbyr-414",
+      "duration": 10.019
+    },
+    {
+      "clip_id": "jtovl83pjy-37",
+      "duration": 9.98
+    }
+  ],
+  "background_launch": {
+    "attempted": true,
+    "running": false,
+    "error": "PermissionError: [Errno 1] Operation not permitted creating a listening socket in this sandbox"
+  },
+  "server_launch_command": "bash /opt/dlami/nvme/training/talha_s2pro/start_testing.sh",
+  "port": 8002
+}

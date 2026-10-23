@@ -1,0 +1,56 @@
+[
+  {
+    "clip_id": "nz7e0fvf1n-41",
+    "srt_cue_number": 63,
+    "start": 516.2,
+    "full_audio_exists": true,
+    "max_abs_difference": 3.039836883544922e-05,
+    "offset_samples": 0,
+    "exact_waveform_match": false
+  },
+  {
+    "clip_id": "4wg657w4za-38",
+    "srt_cue_number": 60,
+    "start": 646.12,
+    "full_audio_exists": true,
+    "max_abs_difference": 3.039836883544922e-05,
+    "offset_samples": 0,
+    "exact_waveform_match": false
+  },
+  {
+    "clip_id": "zm89y8vp53-37",
+    "srt_cue_number": 51,
+    "start": 610.72,
+    "full_audio_exists": true,
+    "max_abs_difference": 3.039836883544922e-05,
+    "offset_samples": 0,
+    "exact_waveform_match": false
+  },
+  {
+    "clip_id": "4udokjiydr-7",
+    "srt_cue_number": 10,
+    "start": 79.34,
+    "full_audio_exists": true,
+    "max_abs_difference": 3.039836883544922e-05,
+    "offset_samples": 0,
+    "exact_waveform_match": false
+  },
+  {
+    "clip_id": "4k5crzulqx-44",
+    "srt_cue_number": 76,
+    "start": 690.62,
+    "full_audio_exists": true,
+    "max_abs_difference": 3.039836883544922e-05,
+    "offset_samples": 0,
+    "exact_waveform_match": false
+  },
+  {
+    "clip_id": "znz1j64b1a-101",
+    "srt_cue_number": 154,
+    "start": 1614.559,
+    "full_audio_exists": true,
+    "max_abs_difference": 3.039836883544922e-05,
+    "offset_samples": 0,
+    "exact_waveform_match": false
+  }
+]

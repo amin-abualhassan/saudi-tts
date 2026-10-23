@@ -1,0 +1,79 @@
+{
+  "validated_at_utc": "2026-10-10T19:13:13.545910+00:00",
+  "launcher": "/opt/dlami/nvme/training/jordanian_s2pro/start_voice_server_fast.sh",
+  "port": 7860,
+  "models": {
+    "fast_r32_final": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b",
+    "attention_mlp_r16_early": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf"
+  },
+  "references": {
+    "talha_ahmad": "3915a0e0c9bf5b4ab731f56da0af8a33132777b23585da4d9ca705b4c54a7905",
+    "wesam_ali": "a632e21232ac969a623235dc602cf558afbc30e0f5a74b259b4afa8fd06b8e9d",
+    "single_speaker": "2303048022d710fd0f41e890227bb379487df48afb1a314a1ba5a8ad7eb2c897"
+  },
+  "torch_version": "2.8.0",
+  "recipe": {
+    "backend": "inductor",
+    "mode": "reduce-overhead",
+    "fullgraph": true,
+    "dynamic": false,
+    "compiled_token_kv_length": 4096,
+    "causal_mask": "Original upstream mask; future/stale positions excluded",
+    "prefill": "Original uncompiled decoder",
+    "resident_models_default": 2,
+    "startup_timeout_seconds": 3600,
+    "persistent_cache": "voice/torch-cache/",
+    "benchmark": {
+      "reference": "talha_ahmad",
+      "seed": 42,
+      "max_new_tokens": 32,
+      "eager_warmup_runs": 1,
+      "compiled_warmup_runs": 2,
+      "timed_runs_per_decoder": 2,
+      "metric": "Generated audio frames / synchronized wall seconds",
+      "compiled_selection_minimum_gain": 0.05
+    },
+    "fallback": "Original decoder on unsupported graph/compiler errors; whole-request seed replay on later compilation failure",
+    "oom": "Preserves existing worker error/retry handling; CUDA OOM is not hidden"
+  },
+  "checks": {
+    "regression_suite": {
+      "command": "/opt/dlami/nvme/miniconda3/envs/fish-speech/bin/python -m unittest discover -s training/jordanian_s2pro/tests -v",
+      "passed": 42,
+      "seconds": 6.243
+    },
+    "real_cpu_graphs": "Both LoRA target sets on actual 10-codebook DualAR models; exactly one full graph across positions 1,4,12 using CPU graph.forward backend",
+    "cache_mask": "Full-cache and active-prefix logits match even with random stale future cache values",
+    "sampling": "Tiny-model original/compiled CPU tokens match under the same seed",
+    "request_replay": "Partial compiled audio discarded; seed restored; original decoder selected; non-compiler errors not retried",
+    "warm_selection": "Slow/warmup results excluded; original retained for less than 5% gain; compiler failure fallback verified",
+    "server_restart": "Exact PID/script verification, active/queued request refusal and unrelated-process refusal tested with mocked process signals",
+    "reporting": "Worker option propagation, optimization report and result timing persistence verified",
+    "bash_syntax": "passed",
+    "launcher_check": "passed; exact listening-selected checkpoint/reference hashes unchanged"
+  },
+  "source_sha256": {
+    "fast_decode.py": "460c2b103fe2e5258a96decaa0cfb5aad0f301f9e07fbb979191700f4e6ac3ab",
+    "voice_worker.py": "107c2dcee8df99d8cb3392f27012fff046a35d08c460bd275f7e74e7a3586469",
+    "voice_server.py": "1f5f3a5360b9ed15903ad21c5492e70714dd70a0572ac9c459bb800df1296233",
+    "start_voice_server_fast.sh": "5a7a641f5e0ecb6c5e5a8f323073dd442a9cf5e82fcfbfcf3d5135b4a083b5ca"
+  },
+  "actual_cuda_compiled_speed": null,
+  "limitations": [
+    "Sandbox has no CUDA/driver access or socket creation; actual Inductor CUDA Graph execution and speed require host launch.",
+    "CPU graph backend checks tracing/correctness, not generated CUDA kernels or CUDA Graph capture.",
+    "The 32-token startup benchmark does not establish speed or listening quality for every request.",
+    "Compiled CUDA floating point/RNG may produce different audio at the same seed."
+  ],
+  "baseline_evidence": "reports/inference_speed_audit.json",
+  "host_outputs": [
+    "voice/optimization.json",
+    "voice/status.json",
+    "voice/server.log",
+    "voice/results/"
+  ],
+  "sources": [
+    "https://docs.pytorch.org/docs/2.8/generated/torch.compile.html",
+    "https://docs.pytorch.org/docs/2.8/torch.compiler_cudagraph_trees.html"
+  ]
+}

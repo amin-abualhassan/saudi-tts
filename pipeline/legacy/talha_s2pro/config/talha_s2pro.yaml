@@ -1,0 +1,62 @@
+# Draft only: train=false prevents this configuration from starting a fit.
+defaults:
+  - text2semantic_finetune
+  - _self_
+
+hydra:
+  searchpath:
+    - file:///opt/dlami/nvme/training/fish-speech-upstream/fish_speech/configs
+
+project: talha_s2pro_10h_pilot
+seed: 42
+train: false
+test: false
+pretrained_ckpt_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+max_length: 4096
+paths:
+  run_dir: /opt/dlami/nvme/training/results/${project}
+  ckpt_dir: ${paths.run_dir}/checkpoints
+tokenizer:
+  model_path: ${pretrained_ckpt_path}
+train_dataset:
+  proto_files:
+    - /opt/dlami/nvme/training/talha_s2pro/dataset/protos/train
+  num_codebooks: 10
+val_dataset:
+  proto_files:
+    - /opt/dlami/nvme/training/talha_s2pro/dataset/protos/validation
+  num_codebooks: 10
+data:
+  batch_size: 1
+  num_workers: 2
+trainer:
+  devices: 1
+  strategy: auto
+  precision: bf16-mixed
+  accumulate_grad_batches: 4
+  max_steps: 2000
+  val_check_interval: 100
+  limit_val_batches: 20
+  gradient_clip_val: 1.0
+model:
+  model:
+    lora_config:
+      _target_: fish_speech.models.text2semantic.lora.LoraConfig
+      r: 32
+      lora_alpha: 32
+      lora_dropout: 0.0
+      target_modules:
+        - fast_attention
+        - fast_mlp
+        - fast_embeddings
+        - fast_output
+  optimizer:
+    lr: 5.0e-5
+    weight_decay: 0.01
+    eps: 1.0e-8
+  lr_scheduler:
+    lr_lambda:
+      num_warmup_steps: 100
+callbacks:
+  model_checkpoint:
+    every_n_train_steps: ${trainer.val_check_interval}

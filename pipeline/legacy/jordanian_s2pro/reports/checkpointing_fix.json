@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-10",
+  "failure": "RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn",
+  "cause": "Pinned slow and fast transformers use reentrant activation checkpointing; frozen embedding outputs have no gradient, so attention/MLP-only LoRA is detached.",
+  "fix": "Worker-local checkpoint override sets use_reentrant=False; leaves upstream checkout intact and preserves base/embedding freeze and activation checkpointing.",
+  "guard": "Stop if any trainable adapter has no gradient or a nonfinite gradient.",
+  "official_documentation": "https://docs.pytorch.org/docs/2.8/checkpoint.html",
+  "CPU_verification": {
+    "tests_passed": 17,
+    "original_failure_reproduced": true,
+    "actual_tiny_DualARTransformer": true,
+    "two_optimizer_steps_for_each": [
+      "attention",
+      "attention + mlp"
+    ],
+    "all_trainable_adapter_tensors_updated": true,
+    "slow_and_fast_gradients_finite": true,
+    "forward_matches_without_checkpointing": true
+  },
+  "prior_H100_pilots_passed": [
+    {
+      "project": "jordanian_fast_r16",
+      "pilot": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data/gpu-pilots/8b55de607af2e8ee3f14",
+      "result": {
+        "step": 3,
+        "checkpoint_sha256": "1f15f03f5cc8f88e1f6d8374d32557cb21acb97baa8e8c3febee7b57310df766",
+        "updates": {
+          "changed_tensors": 44,
+          "trainable_tensors": 44,
+          "step": 3
+        }
+      }
+    },
+    {
+      "project": "jordanian_fast_r32",
+      "pilot": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data/gpu-pilots/abde6ac15928377f7961",
+      "result": {
+        "step": 3,
+        "checkpoint_sha256": "2737534d31d46e8c6afb58e8171ae57f37d0670a805e379ef0e17f3211bc7ce0",
+        "updates": {
+          "changed_tensors": 44,
+          "trainable_tensors": 44,
+          "step": 3
+        }
+      }
+    }
+  ],
+  "GPU_after_fix": "Not run; retry in user screen required",
+  "cached_data": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d",
+  "live_state_at_inspection": {
+    "status": "running",
+    "stage": "audio preparation",
+    "campaign": "/opt/dlami/nvme/training/jordanian_s2pro/suites/e4f0bb6c8eab373a611bc3be"
+  },
+  "additional_quality_audit": "Pinned BaseTransformer.embed omits the scale_codebook_embeddings normalization present in forward_generate. This numerical discrepancy is separate from this failure and unchanged by the checkpointing fix; audit before selecting a production checkpoint."
+}

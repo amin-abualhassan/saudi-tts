@@ -1,0 +1,3 @@
+# Match SGLang-Omni 0.1.3's [tool.uv].override-dependencies.
+# audiotools 0.7.2 inherited an obsolete TensorBoard protobuf upper bound.
+protobuf>=6.31.1,<7.0.0

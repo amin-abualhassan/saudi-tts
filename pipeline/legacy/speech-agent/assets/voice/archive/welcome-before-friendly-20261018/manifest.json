@@ -1,0 +1,221 @@
+{
+  "greeting_ar": {
+    "text": "حيّاك الله، معك نورة، المساعدة الصوتية للجواب. كيف أقدر أساعدك؟",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "حيّاك الله، معك نورة، المساعدة الصوتية للجواب. كيف أقدر أساعدك؟ [short breath]",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "255a5f099c9539e0c8de81c4703a4751f3dc7cdb966c30f40bf8fb504161b8eb",
+    "postprocess": {
+      "profile": "greeting-pauses-v1",
+      "threshold_dbfs": -50,
+      "minimum_gap_ms": 300,
+      "retained_gap_ms": 200,
+      "join_crossfade_ms": 5,
+      "source_samples": 215040,
+      "output_samples": 204456,
+      "removed_seconds": 0.24,
+      "gaps": [
+        {
+          "start_seconds": 1.64,
+          "end_seconds": 1.97,
+          "before_seconds": 0.33,
+          "after_seconds": 0.2
+        },
+        {
+          "start_seconds": 3.4,
+          "end_seconds": 3.71,
+          "before_seconds": 0.31,
+          "after_seconds": 0.2
+        }
+      ]
+    },
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 4.636190476190476,
+    "format": "wav_pcm_s16le"
+  },
+  "greeting_en": {
+    "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you?",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "Hello, I'm Noura, Aljawab's voice assistant. How can I help you? [short breath]",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "f037edaa39b6220818c300f4fc6d309ed21f71235d0f81f26d3c2b1d34c20cc0",
+    "postprocess": {
+      "profile": "greeting-pauses-v1",
+      "threshold_dbfs": -50,
+      "minimum_gap_ms": 300,
+      "retained_gap_ms": 200,
+      "join_crossfade_ms": 5,
+      "source_samples": 151552,
+      "output_samples": 151552,
+      "removed_seconds": 0.0,
+      "gaps": []
+    },
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 3.436553287981859,
+    "format": "wav_pcm_s16le"
+  },
+  "ack_ar_tamam": {
+    "text": "تمام.",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "تمام.",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "f4b60cde26d78e1d8c2370192e90b1bb3e58efd02db4b9c347030631c5e7b7e3",
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 0.23219954648526078,
+    "format": "wav_pcm_s16le"
+  },
+  "ack_ar_understood": {
+    "text": "فهمت عليك.",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "فهمت عليك.",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "4fd0caa8f3a8718055048c0efd5fb6871ca73a78cb318b611b7eb0f2970c32a8",
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 0.6501587301587302,
+    "format": "wav_pcm_s16le"
+  },
+  "ack_en_aha": {
+    "text": "Aha.",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "Aha.",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "b7dc54b30e7b154c4ec9b1678f3016bf98c09a934eeb50d1ca7b3bb71d6f8558",
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 0.23219954648526078,
+    "format": "wav_pcm_s16le"
+  },
+  "ack_en_understood": {
+    "text": "I see.",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "I see.",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "9921a9997f235ed7bd64bd3fe1989c22109674f0e04b2436a8d38caeb3a74618",
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 0.37151927437641724,
+    "format": "wav_pcm_s16le"
+  },
+  "retry_ar": {
+    "text": "ما سمعتك زين. ممكن تعيد سؤالك؟",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "ما سمعتك زين. ممكن تعيد سؤالك؟",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "193d57f2fd1b0f87b5208329eebd805706c2d80cb28eff67de63840f3855b440",
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 2.507755102040816,
+    "format": "wav_pcm_s16le"
+  },
+  "retry_en": {
+    "text": "I didn't catch that clearly. Could you repeat your question?",
+    "model": "attention_mlp_r16_early",
+    "reference": "upload_757c218095b14e2b88e3a7fc6d36694f",
+    "reference_sha256": "d3290b0274478217ddb09145e1e3c118b50eb23b76579d67ce093798bee4432f",
+    "voice_name": "Noura نورة",
+    "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+    "settings": {
+      "model": "attention_mlp_r16_early",
+      "reference_id": "upload_757c218095b14e2b88e3a7fc6d36694f",
+      "text": "I didn't catch that clearly. Could you repeat your question?",
+      "reference_text": "هذا هو السؤال، فأحنا عندنا أول نظام للشركات كان بعهد الملك فيصل عشان بس نحطه في سياق من خمسين سنة بعدين صدر نظام",
+      "seed": 42,
+      "max_new_tokens": 1024,
+      "temperature": 0.7,
+      "top_p": 0.7
+    },
+    "sha256": "26cf184919bbd7285819f1ad76f509b6870b2022543244f33da231bdda877098",
+    "sample_rate": 44100,
+    "channels": 1,
+    "duration": 2.6006349206349206,
+    "format": "wav_pcm_s16le"
+  }
+}

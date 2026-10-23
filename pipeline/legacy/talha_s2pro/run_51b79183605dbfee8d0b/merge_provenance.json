@@ -1,0 +1,17 @@
+{
+  "base": "/opt/dlami/nvme/training/checkpoints/s2-pro",
+  "checkpoint": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints/best_000002000.ckpt",
+  "experiment_config": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/config.yaml",
+  "lora": {
+    "r": 32,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "fast_attention",
+      "fast_mlp",
+      "fast_embeddings",
+      "fast_output"
+    ]
+  },
+  "codec": "/opt/dlami/nvme/training/checkpoints/s2-pro/codec.pth"
+}

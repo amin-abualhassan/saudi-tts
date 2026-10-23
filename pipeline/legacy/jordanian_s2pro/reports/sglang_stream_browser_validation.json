@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "browser": "153.0.8010.12",
+  "checked_at": "2026-10-11T23:51:55Z",
+  "first_audio_observation": {
+    "token": "92 ms",
+    "firstAudio": "945 ms",
+    "contextState": "running",
+    "sources": 12,
+    "complete": false,
+    "audioSeconds": 1.8459863945578234
+  },
+  "playback_completed": true,
+  "stop_playback": "Playback stopped. Generation may finish in the normal studio.",
+  "normal_ui_generation_id": "8369d64159c643cf91ddbe67e4c588af",
+  "ending_volume_default_on": true,
+  "page_errors": [],
+  "screenshot": "reports/sglang_stream_browser.png",
+  "note": "Headless audio output muted; AudioContext scheduling/playback lifecycle checked. Human listening quality remains pending."
+}

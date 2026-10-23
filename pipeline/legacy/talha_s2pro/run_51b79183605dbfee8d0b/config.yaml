@@ -1,0 +1,151 @@
+paths:
+  run_dir: /opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b
+  ckpt_dir: /opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints
+trainer:
+  _target_: lightning.pytorch.trainer.Trainer
+  default_root_dir: /opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b
+  accelerator: gpu
+  num_nodes: 1
+  devices: 1
+  strategy: auto
+  precision: bf16-mixed
+  check_val_every_n_epoch: null
+  val_check_interval: 400
+  max_steps: 2000
+  benchmark: true
+  accumulate_grad_batches: 4
+  gradient_clip_val: 1.0
+  gradient_clip_algorithm: norm
+  limit_val_batches: 1.0
+  log_every_n_steps: 1
+  enable_progress_bar: false
+  num_sanity_val_steps: 2
+callbacks:
+  model_checkpoint:
+    _target_: lightning.pytorch.callbacks.ModelCheckpoint
+    dirpath: /opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints
+    filename: step_{step:09d}
+    save_last: true
+    save_top_k: 5
+    monitor: step
+    mode: max
+    every_n_epochs: null
+    every_n_train_steps: 100
+    auto_insert_metric_name: false
+  model_summary:
+    _target_: lightning.pytorch.callbacks.ModelSummary
+    max_depth: 2
+  learning_rate_monitor:
+    _target_: lightning.pytorch.callbacks.LearningRateMonitor
+    logging_interval: step
+    log_momentum: false
+  grad_norm_monitor:
+    _target_: fish_speech.callbacks.GradNormMonitor
+    norm_type: 2
+    logging_interval: step
+logger:
+  tensorboard:
+    _target_: lightning.pytorch.loggers.tensorboard.TensorBoardLogger
+    save_dir: /opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/tensorboard/
+    name: null
+    log_graph: false
+    default_hp_metric: true
+    prefix: ''
+train: true
+test: false
+project: talha_s2pro_10h_pilot
+max_length: 2048
+pretrained_ckpt_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+tokenizer:
+  _target_: fish_speech.tokenizer.FishTokenizer
+  model_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+train_dataset:
+  _target_: fish_speech.datasets.semantic.AutoTextSemanticInstructionIterableDataset
+  proto_files:
+  - /opt/dlami/nvme/training/talha_s2pro/cache/54f80bc308a0fefd781c55c1/protos/train
+  tokenizer:
+    _target_: fish_speech.tokenizer.FishTokenizer
+    model_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+  causal: false
+  max_length: 2048
+  use_speaker: false
+  interactive_prob: 0.7
+  num_codebooks: 10
+val_dataset:
+  _target_: fish_speech.datasets.semantic.AutoTextSemanticInstructionIterableDataset
+  proto_files:
+  - /opt/dlami/nvme/training/talha_s2pro/cache/54f80bc308a0fefd781c55c1/protos/validation
+  tokenizer:
+    _target_: fish_speech.tokenizer.FishTokenizer
+    model_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+  causal: true
+  max_length: 2048
+  use_speaker: false
+  interactive_prob: 0.7
+  num_codebooks: 10
+data:
+  _target_: fish_speech.datasets.semantic.SemanticDataModule
+  train_dataset:
+    _target_: fish_speech.datasets.semantic.AutoTextSemanticInstructionIterableDataset
+    proto_files:
+    - /opt/dlami/nvme/training/talha_s2pro/cache/54f80bc308a0fefd781c55c1/protos/train
+    tokenizer:
+      _target_: fish_speech.tokenizer.FishTokenizer
+      model_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+    causal: false
+    max_length: 2048
+    use_speaker: false
+    interactive_prob: 0.7
+    num_codebooks: 10
+  val_dataset:
+    _target_: fish_speech.datasets.semantic.AutoTextSemanticInstructionIterableDataset
+    proto_files:
+    - /opt/dlami/nvme/training/talha_s2pro/cache/54f80bc308a0fefd781c55c1/protos/validation
+    tokenizer:
+      _target_: fish_speech.tokenizer.FishTokenizer
+      model_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+    causal: true
+    max_length: 2048
+    use_speaker: false
+    interactive_prob: 0.7
+    num_codebooks: 10
+  num_workers: 2
+  batch_size: 1
+  tokenizer:
+    _target_: fish_speech.tokenizer.FishTokenizer
+    model_path: /opt/dlami/nvme/training/checkpoints/s2-pro
+  max_length: 2048
+model:
+  _target_: fish_speech.models.text2semantic.lit_module.TextToSemantic
+  model:
+    _target_: fish_speech.models.text2semantic.llama.BaseTransformer.from_pretrained
+    path: /opt/dlami/nvme/training/checkpoints/s2-pro
+    load_weights: true
+    max_length: 2048
+    lora_config:
+      _target_: fish_speech.models.text2semantic.lora.LoraConfig
+      r: 32
+      lora_alpha: 32
+      lora_dropout: 0.0
+      target_modules:
+      - fast_attention
+      - fast_mlp
+      - fast_embeddings
+      - fast_output
+  optimizer:
+    _target_: torch.optim.AdamW
+    _partial_: true
+    lr: 5.0e-05
+    weight_decay: 0.01
+    betas:
+    - 0.9
+    - 0.95
+    eps: 1.0e-08
+  lr_scheduler:
+    _target_: torch.optim.lr_scheduler.LambdaLR
+    _partial_: true
+    lr_lambda:
+      _target_: fish_speech.scheduler.get_constant_schedule_with_warmup_lr_lambda
+      _partial_: true
+      num_warmup_steps: 100
+seed: 42

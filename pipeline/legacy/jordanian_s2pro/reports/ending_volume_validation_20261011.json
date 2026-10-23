@@ -1,0 +1,187 @@
+{
+  "status": "live_validated",
+  "profile": "ending-volume-v1",
+  "clips": [
+    {
+      "id": "853b9e55b5554897b22ffd2548ffc7f9",
+      "profile": "ending-volume-v1",
+      "applied": true,
+      "max_gain_db": 8.839197754935778,
+      "correction_start_seconds": 5.16,
+      "duration": 8.40562358276644,
+      "sample_rate": 44100,
+      "processing_seconds": 0.024792295007500798,
+      "prefix_exact": true,
+      "last_second_before_db": -56.40358742695969,
+      "last_second_after_db": -50.95968187614103,
+      "peak_before": 0.1640625,
+      "peak_after": 0.1640625,
+      "cache_wav": "training/jordanian_s2pro/voice/leveled/bb5c67c3ce40fb9da70c1606844f9811d860689146930894baf4e8482d113301.wav"
+    },
+    {
+      "id": "5976be815558470a95572318a879379b",
+      "profile": "ending-volume-v1",
+      "applied": true,
+      "max_gain_db": 8.83746933675376,
+      "correction_start_seconds": 4.72,
+      "duration": 7.848344671201814,
+      "sample_rate": 44100,
+      "processing_seconds": 0.02141396701335907,
+      "prefix_exact": true,
+      "last_second_before_db": -42.278405054692534,
+      "last_second_after_db": -38.8082837971266,
+      "peak_before": 0.1812744140625,
+      "peak_after": 0.1812744140625,
+      "cache_wav": "training/jordanian_s2pro/voice/leveled/2601d8279e9ed64f31bf3fbc52f58742972c2138dd867ab57496a2c22aeadf9b.wav"
+    },
+    {
+      "id": "450e393ce6ef4cf4a9b71fd415d151dc",
+      "profile": "ending-volume-v1",
+      "applied": true,
+      "max_gain_db": 8.83746933675376,
+      "correction_start_seconds": 4.72,
+      "duration": 7.848344671201814,
+      "sample_rate": 44100,
+      "processing_seconds": 0.02180534799117595,
+      "prefix_exact": true,
+      "last_second_before_db": -42.278405054692534,
+      "last_second_after_db": -38.8082837971266,
+      "peak_before": 0.1812744140625,
+      "peak_after": 0.1812744140625,
+      "cache_wav": "training/jordanian_s2pro/voice/leveled/2601d8279e9ed64f31bf3fbc52f58742972c2138dd867ab57496a2c22aeadf9b.wav"
+    },
+    {
+      "id": "09a102c7749046dfa33c8d2d54be58c5",
+      "profile": "ending-volume-v1",
+      "applied": true,
+      "max_gain_db": 6.784736133923797,
+      "correction_start_seconds": 5.08,
+      "duration": 8.17342403628118,
+      "sample_rate": 44100,
+      "processing_seconds": 0.02366298600099981,
+      "prefix_exact": true,
+      "last_second_before_db": -41.77567066157284,
+      "last_second_after_db": -38.090889755843385,
+      "peak_before": 0.146209716796875,
+      "peak_after": 0.146209716796875,
+      "cache_wav": "training/jordanian_s2pro/voice/leveled/9580534bd1904b72dde7ab8cecdfee942943ef0b27e1bc0246a1433e000c72fa.wav"
+    },
+    {
+      "id": "9060c64abc574a69a0bcc71614aa5b48",
+      "profile": "ending-volume-v1",
+      "applied": true,
+      "max_gain_db": 7.020377902779785,
+      "correction_start_seconds": 5.66,
+      "duration": 8.777142857142858,
+      "sample_rate": 44100,
+      "processing_seconds": 0.0248183980002068,
+      "prefix_exact": true,
+      "last_second_before_db": -37.88754251266611,
+      "last_second_after_db": -35.941525240500155,
+      "peak_before": 0.1519775390625,
+      "peak_after": 0.1519775390625,
+      "cache_wav": "training/jordanian_s2pro/voice/leveled/d4419336342c9286051c0c84f8d18d2cdc84ff9b9c4cb85449208bf620ad8c9f.wav"
+    }
+  ],
+  "note": "Measured amplitude correction only; user listening review required. Raw originals retained.",
+  "http_checks": [
+    {
+      "id": "853b9e55b5554897b22ffd2548ffc7f9",
+      "status": 200,
+      "original_unchanged": true,
+      "sample_rate": 44100,
+      "duration": 8.40562358276644,
+      "processed_download_seconds": 0.005336472007911652
+    },
+    {
+      "id": "5976be815558470a95572318a879379b",
+      "status": 200,
+      "original_unchanged": true,
+      "sample_rate": 44100,
+      "duration": 7.848344671201814,
+      "processed_download_seconds": 0.001845996011979878
+    },
+    {
+      "id": "450e393ce6ef4cf4a9b71fd415d151dc",
+      "status": 200,
+      "original_unchanged": true,
+      "sample_rate": 44100,
+      "duration": 7.848344671201814,
+      "processed_download_seconds": 0.0015315909986384213
+    },
+    {
+      "id": "09a102c7749046dfa33c8d2d54be58c5",
+      "status": 200,
+      "original_unchanged": true,
+      "sample_rate": 44100,
+      "duration": 8.17342403628118,
+      "processed_download_seconds": 0.0015894359967205673
+    },
+    {
+      "id": "9060c64abc574a69a0bcc71614aa5b48",
+      "status": 200,
+      "original_unchanged": true,
+      "sample_rate": 44100,
+      "duration": 8.777142857142858,
+      "processed_download_seconds": 0.001608997001312673
+    }
+  ],
+  "tests": {
+    "passed": 59,
+    "log": "reports/ending_volume_tests.log"
+  },
+  "ui": {
+    "default_on": true,
+    "original_download_link": true,
+    "checkbox_toggle_available": true,
+    "real_browser_listening": "pending"
+  },
+  "http_deployed_at": "2026-10-11T23:10:55Z",
+  "fresh_synthesis": [
+    {
+      "id": "865814a1e44f46e8a420169fdd8b2efb",
+      "model": "fast_r32_final",
+      "status": "complete",
+      "duration": 7.75546485260771,
+      "elapsed": 14.788192658976186,
+      "raw_audio_url": "/api/audio/865814a1e44f46e8a420169fdd8b2efb.wav",
+      "leveled_audio_url": "/api/leveled-audio/865814a1e44f46e8a420169fdd8b2efb.wav",
+      "last_second_before_db": -41.4363340038193,
+      "last_second_after_db": -37.366830510270596
+    },
+    {
+      "id": "4499aa2885c7456e9ec735850fb35c6d",
+      "model": "attention_mlp_r16_early",
+      "status": "complete",
+      "duration": 7.616145124716553,
+      "elapsed": 15.094225314998766,
+      "raw_audio_url": "/api/audio/4499aa2885c7456e9ec735850fb35c6d.wav",
+      "leveled_audio_url": "/api/leveled-audio/4499aa2885c7456e9ec735850fb35c6d.wav",
+      "last_second_before_db": -42.44930672885432,
+      "last_second_after_db": -37.96150017318843
+    }
+  ],
+  "server_status": "ready",
+  "loaded_models": [
+    "fast_r32_final",
+    "attention_mlp_r16_early"
+  ],
+  "javascript_syntax": "Rendered script passed QuickJS 1.19.4 parser in an isolated uv environment.",
+  "validated_at": "2026-10-11T23:14:17Z",
+  "assessment": {
+    "confirmed": "Recent raw WAVs from both selected models decline in amplitude toward the ending; browser playback is not the sole cause.",
+    "serving_path": "Installed non-streaming S2-Pro vocoder decodes the complete generated token sequence. Studio previously applied only a single whole-file peak scale, with no ending fade.",
+    "underlying_cause": "Not established: generation, conditioning and learned prosody may contribute. The deployed change compensates output amplitude only.",
+    "token_limit_check": {
+      "ids": [
+        "5976be815558470a95572318a879379b",
+        "450e393ce6ef4cf4a9b71fd415d151dc"
+      ],
+      "max_new_tokens": [
+        1024,
+        2048
+      ],
+      "raw_wav_identical": true
+    }
+  }
+}

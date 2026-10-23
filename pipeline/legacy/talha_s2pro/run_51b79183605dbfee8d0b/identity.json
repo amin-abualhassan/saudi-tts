@@ -1,0 +1,14 @@
+{
+  "dataset": "/opt/dlami/nvme/training/talha_s2pro/cache/54f80bc308a0fefd781c55c1",
+  "base": {
+    "config.json": "261b519a2a9576710fc8533a77297fae007f0e7b3aa28a217f8352b7f32fe993",
+    "model.safetensors.index.json": "c8cb9974d3d17663a95dba1d6c3ea531fc42d377c0dff946f3a01a0ec48d45a3",
+    "special_tokens_map.json": "c2ff18fde6e43b7408435bc8ed079af74531befba549358a97cbc59ce606bc6b",
+    "tokenizer.json": "f24e08099d45a8adf3f52f5f0b03276e433bb9d689bb15fcbcc48ce58744588b",
+    "tokenizer_config.json": "b8d149343ae425b0da67e6708686aceb51be7815d9792f265fc12ff04d5e9856",
+    "codec.pth": "74fc41c5a7151c6f350af8bd7e5d6e3accfcc7f3dfbfac23afd35af07052bb2f",
+    "model-00001-of-00002.safetensors": "c4218e8ac93be83b35eee30b4f94cb2e9b5ecff40f3e21611438d2f4f8804aad",
+    "model-00002-of-00002.safetensors": "76738d23465deaac431433232c0762908cc99a6eddc3d49f67307d92680827be"
+  },
+  "run_key": "51b79183605dbfee8d0b"
+}

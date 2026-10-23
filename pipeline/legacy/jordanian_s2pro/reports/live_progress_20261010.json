@@ -1,0 +1,84 @@
+{
+  "observed_at_utc": "2026-10-10T13:53:22.860702+00:00",
+  "campaign": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c",
+  "status": "running",
+  "stage": "comparison",
+  "experiment": "fast_r32_early",
+  "experiments": {
+    "fast_r16": {
+      "status": "trained",
+      "run_dir": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r16_4eb9bd2ae52e8b7a",
+      "step": 1500,
+      "final_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r16_4eb9bd2ae52e8b7a/checkpoints/final.ckpt",
+      "best_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r16_4eb9bd2ae52e8b7a/checkpoints/best_000001500.ckpt",
+      "periodic_best_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r16_4eb9bd2ae52e8b7a/checkpoints/best_000001500.ckpt",
+      "chosen_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r16_4eb9bd2ae52e8b7a/checkpoints/best_000001500.ckpt",
+      "final_validation_loss": 18.677587509155273
+    },
+    "fast_r32": {
+      "status": "trained",
+      "run_dir": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r32_d1eaf54e40cd7adf",
+      "step": 1500,
+      "final_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r32_d1eaf54e40cd7adf/checkpoints/final.ckpt",
+      "best_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r32_d1eaf54e40cd7adf/checkpoints/best_000001500.ckpt",
+      "periodic_best_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r32_d1eaf54e40cd7adf/checkpoints/best_000001500.ckpt",
+      "chosen_checkpoint": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c/runs/fast_r32_d1eaf54e40cd7adf/checkpoints/best_000001500.ckpt",
+      "final_validation_loss": 18.639738082885742
+    }
+  },
+  "pilots": {
+    "fast_r16": {
+      "passed_receipt": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data/gpu-pilots/3e2e77377ea454c3006d/passed.json",
+      "passed": true,
+      "adapter_updates": {
+        "changed_tensors": 44,
+        "trainable_tensors": 44,
+        "step": 3
+      },
+      "resumed_training_steps_per_second": 0.6039997059842399
+    },
+    "fast_r32": {
+      "passed_receipt": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data/gpu-pilots/1dc06e8ab3cf461198aa/passed.json",
+      "passed": true,
+      "adapter_updates": {
+        "changed_tensors": 44,
+        "trainable_tensors": 44,
+        "step": 3
+      },
+      "resumed_training_steps_per_second": 0.5411201293364768
+    },
+    "attention_r16": {
+      "passed_receipt": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data/gpu-pilots/ff059e9e24241803ee92/passed.json",
+      "passed": true,
+      "adapter_updates": {
+        "changed_tensors": 160,
+        "trainable_tensors": 160,
+        "step": 3
+      },
+      "resumed_training_steps_per_second": 0.32796755015425993
+    },
+    "attention_mlp_r16": {
+      "passed_receipt": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data/gpu-pilots/46b74a35c99c6e4b6751/passed.json",
+      "passed": true,
+      "adapter_updates": {
+        "changed_tensors": 400,
+        "trainable_tensors": 400,
+        "step": 3
+      },
+      "resumed_training_steps_per_second": 0.22055190423308904
+    }
+  },
+  "comparison_audio_counts": {
+    "fast_r16_early": 15,
+    "base": 15,
+    "fast_r32_early": 12,
+    "fast_r16_final": 15,
+    "fast_r16_val_best": 15
+  },
+  "estimated_remaining_hours": [
+    2.5,
+    3.5
+  ],
+  "estimate_method": "Two fast-only full runs achieved about 0.88 optimizer steps/sec (about 28 minutes for 1500 steps). Attention pilot relative speeds suggest about 45-60 minutes and 65-85 minutes for the remaining training trials; comparison generation and model loading add roughly 35-55 minutes. Pilot extrapolation is uncertain until full attention training starts.",
+  "quality_review": "Generated audio has not been assessed by listening; validation loss does not determine accent quality."
+}

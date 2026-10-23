@@ -1,0 +1,12 @@
+.env
+.venv/
+.acme-venv/
+bin/
+logs/
+web/node_modules/
+web/dist/
+deployment/livekit.yaml
+deployment/backups/
+__pycache__/
+.pytest_cache/
+tests/results/

@@ -1,0 +1,108 @@
+# Design-intent configuration, not a ready-to-run LiveKit or application config.
+# The implementation agent must map and validate these keys in the real app.
+# null means discover/resolve during implementation; fail clearly when required.
+app:
+  name: Aljawab Voice
+  mode: testing
+  port: 8002
+  max_active_sessions: 1
+  default_language: ar
+  supported_languages: [ar, en]
+  arabic_style: saudi
+  assistant_name: Noura نورة
+  speak_numbers_as_words: true
+  auto_greeting: true
+  show_developer_controls: false
+  transcript_toggle: true
+  persist_user_audio: false
+  persist_user_transcripts: false
+  transcript_content_in_logs: false
+
+openai:
+  api_key_environment_variable: OPENAI_API_KEY
+  stt_model: gpt-live-transcribe
+  llm_model: gpt-6-luna
+  llm_api: responses
+  llm_reasoning_effort: none
+  # Verify the current transcription API audio contract before use.
+  transcription_sample_rate_hz: 24000
+  transcription_server_vad: false
+
+livekit:
+  hosting: self_hosted
+  cloud_account_required: false
+  internal_url: null
+  public_signaling_url: null
+  public_instance_ip: null
+  api_key_environment_variable: LIVEKIT_API_KEY
+  api_secret_environment_variable: LIVEKIT_API_SECRET
+  # Candidate ports; confirm availability and real server config schema.
+  candidate_udp_mux_port: 7882
+  candidate_tcp_fallback_port: 7881
+
+exposure:
+  preferred_method: cloudflare_quick_tunnel
+  origin_port: 8002
+  public_https_url: null
+  # Media is configured separately from the web/signaling tunnel.
+  direct_media_connectivity_required: true
+
+tts:
+  provider: existing_local_sglang_service
+  model_family: fine_tuned_s2_pro
+  endpoint: http://127.0.0.1:3000
+  model: attention_mlp_r16_early
+  model_selection_field: model
+  streaming_path: /api/stream
+  non_streaming_path: /api/generate
+  voice_or_reference: owner_supplied_noura_upload
+  reference_audio: saudi_female_1minute-trimmed2.wav
+  request_schema: [model, reference_id, text, seed, max_new_tokens, temperature, top_p]
+  audio_encoding: pcm_s16le_base64_in_sse
+  sample_rate_hz: 44100
+  channels: 1
+  incremental_text_input_supported: false
+  server_cancellation_supported: false
+  allow_model_fallback: false
+  streaming_audio_required: true
+  preserve_punctuation: true
+  terminate_unpunctuated_declarative_phrases_with_period: true
+  cached_asset_directory: assets/voice
+
+knowledge:
+  source_url: https://aljawab.ai
+  allowed_hosts: [aljawab.ai, www.aljawab.ai]
+  website_only: true
+  preserve_source_metadata: true
+  refresh_during_live_turns: false
+  keep_last_good_snapshot: true
+
+turns:
+  detector: local_vad_with_livekit_endpointing
+  interruption_enabled: true
+  # Initial tuning values; map into supported installed SDK settings.
+  end_of_turn_silence_ms: 550
+  vad_activation_threshold: 0.7
+  minimum_speech_duration_ms: 220
+  discard_stale_generation_output: true
+
+acknowledgments:
+  enabled: true
+  play_only_after_completed_turn: true
+  initial_eligibility_delay_ms: 350
+  initial_cooldown_ms: 6000
+  max_per_turn: 1
+  skip_if_substantive_audio_ready: true
+  decisions:
+    enabled: true
+    optional: true
+    model: gpt-6-luna
+    initial_deadline_ms: 800
+    retries: 0
+    on_failure: silence
+    block_main_answer: false
+
+performance_targets:
+  # Aspirational initial targets, not measured promises.
+  confirmed_interruption_to_audio_stop_ms: 300
+  warm_speech_end_to_substantive_audio_ms: 1500

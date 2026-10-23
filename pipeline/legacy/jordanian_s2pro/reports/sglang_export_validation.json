@@ -1,0 +1,48 @@
+{
+  "device": "CPU",
+  "dtype": "bfloat16",
+  "models": {
+    "fast_r32_final": {
+      "export": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/models/fast_r32_final/61038f6dacbcd0802a74207237b2d0c4f1913906e83b0b195776a2153fd3d9bf",
+      "checkpoint_sha256": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b",
+      "global_step": 1500,
+      "adapter_tensors": 44,
+      "merged_weights": 22,
+      "verified_state_tensors": 358,
+      "weights_exact": true,
+      "slow_logits_exact": true,
+      "fast_logits_exact": true,
+      "sample_input": {
+        "seed": 42,
+        "shape": [
+          1,
+          11,
+          4
+        ],
+        "semantic_frames": 4
+      }
+    },
+    "attention_mlp_r16_early": {
+      "export": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/models/attention_mlp_r16_early/392cfb1cf6824476e616df3d0459986efdd268a13991737fdbb8260d200a5cd4",
+      "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+      "global_step": 200,
+      "adapter_tensors": 400,
+      "merged_weights": 200,
+      "verified_state_tensors": 358,
+      "weights_exact": true,
+      "slow_logits_exact": true,
+      "fast_logits_exact": true,
+      "sample_input": {
+        "seed": 42,
+        "shape": [
+          1,
+          11,
+          4
+        ],
+        "semantic_frames": 4
+      }
+    }
+  },
+  "sglang_gpu_tested": false,
+  "note": "Parity with native Fish model, not SGLang sampling"
+}

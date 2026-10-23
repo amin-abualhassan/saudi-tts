@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/fishaudio/fish-speech",
+  "commit": "214da3cd841bda85da2496b96cd3c4d7edb1337e",
+  "tree": "88f34d32eb4fdefe6b6a462e87141755228178b7",
+  "retrieved": "2026-10-09",
+  "method": "GitHub connector; all blobs, tree and signed commit hashes verified",
+  "checkout": "/opt/dlami/nvme/training/fish-speech-upstream",
+  "shallow": true
+}

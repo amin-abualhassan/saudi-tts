@@ -1,0 +1,382 @@
+[
+  {
+    "clip_id": "talha_1jnbnkei10-192",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_1jnbnkei10-244",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_1jnbnkei10-426",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_1zrcxiv7e8-125",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_285lmvr9nz-10",
+    "reason": "Clip does not match original SRT interval: talha_285lmvr9nz-10"
+  },
+  {
+    "clip_id": "talha_2hid2fueom-20",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_2hid2fueom-27",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_36ii4miiet-63",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_36ii4miiet-98",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_3i95frzu52-27",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_48hqfkqmw1-2",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_48hqfkqmw1-26",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_48hqfkqmw1-37",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_48hqfkqmw1-71",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_4epefcm6vh-22",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_4epefcm6vh-9",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_6r02qmjg6j-67",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_6rduk17p3k-62",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_6rduk17p3k-98",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_71mh1kh54f-42",
+    "reason": "Clip does not match original SRT interval: talha_71mh1kh54f-42"
+  },
+  {
+    "clip_id": "talha_7zhbhhovy9-30",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_7zhbhhovy9-39",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_abl9fqv4uu-77",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_abl9fqv4uu-98",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_apej50w4fp-30",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_b3a2jkox8y-11",
+    "reason": "Clip does not match original SRT interval: talha_b3a2jkox8y-11"
+  },
+  {
+    "clip_id": "talha_bdcbufypzo-51",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_bdcbufypzo-79",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_bwj121xi97-37",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_d1j3p6f4jh-4",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_em9qd34d7l-51",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_exia6togqv-57",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_frkwt0n0ur-46",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_geljd04k87-20",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_geljd04k87-31",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_geljd04k87-57",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_geljd04k87-61",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_geljd04k87-71",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_hkzic0qku3-33",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_hkzic0qku3-60",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_hkzic0qku3-8",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_jajp4nbhxd-6",
+    "reason": "Clip does not match original SRT interval: talha_jajp4nbhxd-6"
+  },
+  {
+    "clip_id": "talha_jogo1wwb10-84",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_jtovl83pjy-7",
+    "reason": "Clip does not match original SRT interval: talha_jtovl83pjy-7"
+  },
+  {
+    "clip_id": "talha_jtovl83pjy-98",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_kte7uiq6fm-7",
+    "reason": "Clip does not match original SRT interval: talha_kte7uiq6fm-7"
+  },
+  {
+    "clip_id": "talha_nl5o7yz949-33",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_nlnn8ukzsr-31",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_nlnn8ukzsr-61",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_nlnn8ukzsr-89",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_nlnn8ukzsr-91",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_oahc1atf17-18",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_oahc1atf17-29",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_oahc1atf17-42",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_oahc1atf17-79",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_oahc1atf17-80",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_pak8je3c2k-47",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_r4fly8hm6x-31",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_r4fly8hm6x-84",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_r4fly8hm6x-90",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_s6y765c17p-15",
+    "reason": "Clip does not match original SRT interval: talha_s6y765c17p-15"
+  },
+  {
+    "clip_id": "talha_srbnbddx2g-12",
+    "reason": "Clip does not match original SRT interval: talha_srbnbddx2g-12"
+  },
+  {
+    "clip_id": "talha_tt17q6eao4-29",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_tt17q6eao4-52",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_tt17q6eao4-99",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_ufi40sou9c-13",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_ufi40sou9c-18",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_ufi40sou9c-32",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_ufi40sou9c-51",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_ufi40sou9c-53",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_ufi40sou9c-9",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v0a82pu1xx-29",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v0a82pu1xx-32",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v0a82pu1xx-46",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v0a82pu1xx-51",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v3ro1yzuxk-17",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v3ro1yzuxk-3",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v3ro1yzuxk-61",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v3ro1yzuxk-65",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v9dwiyk47y-40",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v9dwiyk47y-61",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v9dwiyk47y-66",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v9dwiyk47y-67",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_v9dwiyk47y-85",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_viye82cozi-9",
+    "reason": "Clip does not match original SRT interval: talha_viye82cozi-9"
+  },
+  {
+    "clip_id": "talha_wq2h2oques-67",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_wq2h2oques-8",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_wq2h2oques-87",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_wq2h2oques-91",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_xee1jilyjr-61",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_xjf1ae1cji-50",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_xjf1ae1cji-61",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_xst4qkppzu-35",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_yeg286lbyr-291",
+    "reason": "Input clipping exceeds 0.1%"
+  },
+  {
+    "clip_id": "talha_yyvmn2tl6z-16",
+    "reason": "Input clipping exceeds 0.1%"
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "observed_at_utc": "2026-10-10T18:58:25.555920+00:00",
+  "audit_type": "read_only_performance_review",
+  "server_status": "ready",
+  "loaded_models": [
+    "fast_r32_final",
+    "attention_mlp_r16_early"
+  ],
+  "completed_live_requests": [
+    {
+      "id": "8cde70386382405990f9ea6846e17489",
+      "model": "fast_r32_final",
+      "duration_seconds": 3.250793650793651,
+      "elapsed_seconds": 7.03,
+      "real_time_factor": 2.1625488281250003,
+      "reference_id": "upload_fac242aea8584b0bb936fb1fc32c609e"
+    },
+    {
+      "id": "51d4ef3f15314b409a0c7c1ca9fbbc49",
+      "model": "fast_r32_final",
+      "duration_seconds": 8.266303854875284,
+      "elapsed_seconds": 15.14,
+      "real_time_factor": 1.8315319961376404,
+      "reference_id": "upload_fac242aea8584b0bb936fb1fc32c609e"
+    },
+    {
+      "id": "eda948b2c5194d399c3d30a1de4bee12",
+      "model": "fast_r32_final",
+      "duration_seconds": 9.05578231292517,
+      "elapsed_seconds": 16.69,
+      "real_time_factor": 1.8430213341346153,
+      "reference_id": "upload_fac242aea8584b0bb936fb1fc32c609e"
+    },
+    {
+      "id": "36795e5ac0e246238e1394ab81c94689",
+      "model": "attention_mlp_r16_early",
+      "duration_seconds": 8.730702947845804,
+      "elapsed_seconds": 16.05,
+      "real_time_factor": 1.8383399476396278,
+      "reference_id": "upload_fac242aea8584b0bb936fb1fc32c609e"
+    }
+  ],
+  "last_logged_decode_tokens_per_second": 11.83,
+  "implementation_findings": {
+    "worker_compilation": "Disabled; raw decode_one_token_ar callback and compile=False",
+    "slow_token_attention": "decode_n_tokens wraps each token in sdpa_kernel(SDPBackend.MATH)",
+    "fast_codebook_attention": "Fast layers use use_sdpa=False and manual matmul/softmax attention",
+    "already_enabled": [
+      "BF16",
+      "Persistent model residency",
+      "Reference-token caching",
+      "Active-prefix KV-cache attention"
+    ]
+  },
+  "recommended_order": [
+    "Benchmark compiled token decoding with stable/bucketed KV shapes, warm up both selected models and monitor recompilation",
+    "Benchmark compatible fused SDPA against the compiled math baseline; preserve attention masks and populated cache bounds",
+    "Add audio streaming to reduce time to first playback; measure throughput separately",
+    "Consider quantization only after profiling compiled BF16 and checking voice/accent quality"
+  ],
+  "benchmark_protocol": {
+    "models": [
+      "fast_r32_final",
+      "attention_mlp_r16_early"
+    ],
+    "inputs": "Same texts, speaker references and seeds as eager baseline; several prompt lengths",
+    "metrics": [
+      "Cold start/compilation time",
+      "Warm audio tokens/sec",
+      "Generation wall time",
+      "Real-time factor",
+      "GPU memory",
+      "Listening quality"
+    ]
+  },
+  "sources": [
+    "https://docs.pytorch.org/docs/2.8/generated/torch.compile.html",
+    "https://docs.pytorch.org/docs/2.8/generated/torch.nn.functional.scaled_dot_product_attention.html",
+    "https://pytorch.org/blog/flash-decoding/"
+  ],
+  "limitations": "Live serving is verified from persisted host results. No compiled/fused CUDA benchmark was run; this sandbox still cannot access CUDA."
+}

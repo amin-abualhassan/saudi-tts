@@ -1,0 +1,45 @@
+{
+  "upstream_pin": "214da3cd841bda85da2496b96cd3c4d7edb1337e",
+  "selected_clips": 2752,
+  "selected_duration_range": [
+    5.0,
+    29.86
+  ],
+  "stages": {
+    "existing_ctc_alignment": "documented in dataset README; original aligner export not found",
+    "source_filter_dedup_and_video_splits": "validated metadata proposal",
+    "audio_transcript_pairing": "all proposed clips checked against SRT text/duration/order",
+    "word_timing": "VTT caption timing exists; CTC word export unverified; not required by training format",
+    "preparation": "six real clips validated; full subset not prepared",
+    "codec_extraction_roundtrip": "implemented by pinned upstream; NOT RUN",
+    "token_validation": "implemented; malformed tensor tests pass; actual new tokens NOT GENERATED",
+    "protobuf_packing": "implemented by pinned upstream; new dataset NOT PACKED",
+    "protobuf_validation": "exact transcript/token/count validator implemented",
+    "training": "configuration composed; disabled; GPU/model batch NOT TESTED",
+    "adapter_merge": "experiment-config helper implemented; NOT RUN",
+    "held_out_inference": "matched base/adapter command generator implemented; NOT RUN"
+  },
+  "environment": {
+    "pinned_upstream": true,
+    "module_torch": false,
+    "module_torchaudio": false,
+    "module_lightning": false,
+    "module_hydra": true,
+    "module_datasets": false,
+    "module_transformers": false,
+    "base_files": true,
+    "base_shards": true,
+    "nvidia_driver": false
+  },
+  "ready_for_training": false,
+  "blockers": [
+    "module_torch",
+    "module_torchaudio",
+    "module_lightning",
+    "module_datasets",
+    "module_transformers",
+    "nvidia_driver"
+  ],
+  "quality_review": "speaker identity, first/last word boundaries and transcript correctness pending listening review",
+  "packed_validation_error": "[Errno 2] No such file or directory: '/opt/dlami/nvme/training/talha_s2pro/smoke_verified/audio/train/talha_ahmad/nz7e0fvf1n-41.npy'"
+}

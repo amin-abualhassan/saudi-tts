@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "hours": {"talha": 6.0, "podcast": 4.0, "single": 1.0},
+  "steps": 1500,
+  "max_length": 2048,
+  "validation_steps": 100,
+  "accumulation": 4,
+  "family_weights": {"talha": 0.40, "podcast": 0.45, "single": 0.15},
+  "experiments": [
+    {"name": "fast_r16", "r": 16, "alpha": 16, "lr": 0.00002, "targets": ["fast_attention", "fast_mlp", "fast_embeddings", "fast_output"]},
+    {"name": "fast_r32", "r": 32, "alpha": 32, "lr": 0.00002, "targets": ["fast_attention", "fast_mlp", "fast_embeddings", "fast_output"]},
+    {"name": "attention_r16", "r": 16, "alpha": 16, "lr": 0.00002, "targets": ["attention"]},
+    {"name": "attention_mlp_r16", "r": 16, "alpha": 16, "lr": 0.00002, "targets": ["attention", "mlp"]}
+  ],
+  "evaluation": {
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 0.7,
+    "max_new_tokens": 1024,
+    "prompts": [
+      "كيفك اليوم؟ شو رأيك نطلع نشرب قهوة بعد الشغل؟",
+      "بكرا موعدنا الساعة ثلاثة ونص، والحساب سبعة وعشرين دينار وخمسين قرش.",
+      "بعثتلك اللينك عالواتساب، افتحه وشوف إذا الأبديت اشتغل عندك.",
+      "اسمع، مبارح كنت رايح عالسوق وقلت أجيب كم شغلة للبيت. بالطريق اتصل فيي صاحبي وسألني إذا بقدر أمر عليه. قلتله أكيد، بس خليني أخلص أول. لما وصلت، لقينا المحل مسكر، فقررنا نروح نشرب قهوة ونحكي شوي عن الشغل وعن خططنا للأسبوع الجاي."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+Verifying/exporting the exact selected checkpoints on CPU
+{
+  "exports": {
+    "fast_r32_final": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/models/fast_r32_final/61038f6dacbcd0802a74207237b2d0c4f1913906e83b0b195776a2153fd3d9bf",
+    "attention_mlp_r16_early": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/models/attention_mlp_r16_early/392cfb1cf6824476e616df3d0459986efdd268a13991737fdbb8260d200a5cd4"
+  },
+  "gpu_tested": false
+}

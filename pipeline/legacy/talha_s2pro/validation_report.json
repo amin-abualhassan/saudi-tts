@@ -1,0 +1,88 @@
+{
+  "upstream_commit": "214da3cd841bda85da2496b96cd3c4d7edb1337e",
+  "unit_tests_passed": 16,
+  "hydra_config_composed": true,
+  "metadata_selection": {
+    "seed": 42,
+    "target_total_hours": 10.0,
+    "splits": {
+      "test": {
+        "clips": 144,
+        "hours": 0.5025894328703702,
+        "source_videos": 14
+      },
+      "validation": {
+        "clips": 131,
+        "hours": 0.5050458159722221,
+        "source_videos": 14
+      },
+      "train": {
+        "clips": 2477,
+        "hours": 9.002505237268497,
+        "source_videos": 246
+      }
+    },
+    "eligible_clips": 24376,
+    "eligible_hours": 87.9526890567128,
+    "excluded": {
+      "duplicate_source_title": 13547,
+      "other_channel": 6365,
+      "implausible_text_rate": 8
+    },
+    "source_title_dedup_only": true,
+    "review_status": "proposal_only_not_approved_training_data"
+  },
+  "smoke_unique_clips": 6,
+  "smoke_seconds": 55.84000000000001,
+  "source_slice_offsets_verified": true,
+  "readiness": {
+    "checks": {
+      "pinned_upstream": true,
+      "module_torch": false,
+      "module_torchaudio": false,
+      "module_lightning": false,
+      "module_hydra": true,
+      "module_datasets": false,
+      "module_transformers": false,
+      "base_files": true,
+      "base_shards": true,
+      "nvidia_driver": false
+    },
+    "ready_for_training": false
+  },
+  "not_executed": [
+    "bulk preparation",
+    "codec extraction",
+    "protobuf packing",
+    "model loading",
+    "training",
+    "model merging"
+  ],
+  "remaining_validation": [
+    "speaker and transcript listening review",
+    "cross-title acoustic duplication checks on full selection",
+    "actual codec round trip",
+    "protobuf counts and reading",
+    "tokenizer loading",
+    "GPU memory and one training batch",
+    "held-out base-versus-adapter evaluation"
+  ],
+  "pipeline_audit": "audit.json",
+  "prepared_manifest_structural_validation": {
+    "train": 2,
+    "validation": 2,
+    "test": 2
+  },
+  "existing_protobuf_schema_check": {
+    "groups": 1,
+    "sentences": 367
+  },
+  "added_checks": [
+    "prepared audio/label/duration integrity",
+    "codec frame length",
+    "packed transcript and token fingerprints/counts",
+    "experiment-specific LoRA merge settings",
+    "matched base/adapter inference commands"
+  ],
+  "ready_for_training": false
+}

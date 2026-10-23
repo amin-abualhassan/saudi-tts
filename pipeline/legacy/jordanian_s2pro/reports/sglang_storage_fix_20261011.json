@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-11",
+  "host_reported_progress": {
+    "source": "User-provided Docker build log",
+    "interpreter_pinned_versions_protobuf_codec_cpu_checks": "passed",
+    "dependency_installation_completed": true,
+    "image_export": "failed while extracting a flashinfer_cubin layer under /var/lib/containerd: no space left on device",
+    "image_export_manifest_list": "sha256:64f376e7f93eba09bba39feb34130b87108316c2e346058117fc9af1de1eb030",
+    "image_tag": "jordanian-s2pro-sglang:dbe786772b76cc48",
+    "gpu_engine_started": false
+  },
+  "local_storage_observation": {
+    "system_filesystem_total": "96G",
+    "system_filesystem_available_after_failed_export": "41G",
+    "nvme_filesystem_total": "3.5T",
+    "nvme_filesystem_available": "2.9T",
+    "plan": "sglang_storage_plan.json"
+  },
+  "fix": {
+    "command": "bash /opt/dlami/nvme/training/jordanian_s2pro/start_voice_server_sglang.sh --nvme-docker",
+    "privileged_helper": "../setup_sglang_docker_nvme.sh",
+    "docker_destination": "/opt/dlami/nvme/sglang_docker_storage/docker",
+    "containerd_destination": "/opt/dlami/nvme/sglang_docker_storage/containerd",
+    "requires_sudo": true,
+    "preserves_original_stores_and_cache": true,
+    "preserves_nvidia_and_other_daemon_configuration": true,
+    "refuses_active_containers_or_containerd_tasks": true,
+    "backs_up_configuration": true,
+    "restores_configuration_and_services_on_failure": true,
+    "requires_mounted_nvme_before_services_start": true,
+    "prunes_images_or_datasets": false,
+    "port": 3000
+  },
+  "verification": {
+    "regression_tests_passed": 53,
+    "log": "sglang_storage_fix_tests.log",
+    "real_rsync_cache_copy": "passed on fixture directories",
+    "copy_failure_recovery": "passed with daemon commands mocked",
+    "post_configuration_restart_failure_recovery": "passed with daemon commands mocked",
+    "nvidia_and_nested_containerd_configuration_preservation": "passed",
+    "active_workload_and_missing_mount_guards": "passed",
+    "python_bash_syntax": "passed",
+    "host_services_or_storage_changed": false,
+    "host_setup_attempt": "sglang_storage_launch_attempt.log",
+    "host_setup_blocker": "Sandbox sudo is blocked by the no-new-privileges flag"
+  },
+  "remaining_host_work": [
+    "Run the launcher with --nvme-docker on the host",
+    "Finish image extraction using NVMe storage",
+    "Validate CUDA and start both model engines",
+    "Collect speed, memory and audio-quality comparison results"
+  ],
+  "source_documentation": "https://docs.docker.com/engine/daemon/#configure-the-data-directory-location"
+}

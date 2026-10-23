@@ -1,0 +1,44 @@
+{
+  "verified_at_utc": "2026-10-09T17:53:41Z",
+  "launcher": "/opt/dlami/nvme/training/talha_s2pro/run.py",
+  "launcher_sha256": "58194ce69d26f8d599e8db6c319e2010bdb9927a2945d9aac9d3d1caf22a5e0e",
+  "upstream_commit": "214da3cd841bda85da2496b96cd3c4d7edb1337e",
+  "unit_tests": {
+    "passed": 29,
+    "command": "python -m unittest discover -s training/talha_s2pro/tests -q"
+  },
+  "real_cpu_preview": {
+    "passed": true,
+    "clips": 6,
+    "seconds": 55.84000000000001,
+    "reused_on_second_run": 6,
+    "format_and_labels": {
+      "train": 2,
+      "validation": 2,
+      "test": 2
+    },
+    "dataset": "/opt/dlami/nvme/training/talha_s2pro/cache/dfcb345eaed996d9762d75f1/preview"
+  },
+  "dashboard": {
+    "http_handlers": "passed in-memory regression tests",
+    "javascript_rendering": "passed with synthetic UI fixture",
+    "live_socket_on_7860": "not tested: sandbox denies socket bind"
+  },
+  "training_ready": false,
+  "readiness_checks": {
+    "pinned_upstream": true,
+    "module_torch": false,
+    "module_torchaudio": false,
+    "module_lightning": false,
+    "module_hydra": true,
+    "module_datasets": false,
+    "module_transformers": false,
+    "base_files": true,
+    "base_shards": true,
+    "nvidia_driver": false
+  },
+  "installation_attempt": "failed: package-server DNS unavailable",
+  "gpu_stages": "not executed: codec encode/decode, training/save/resume, merge",
+  "full_dataset": "not prepared; only six distinct real clips tested",
+  "runtime_gate": "full launch requires preflight and six-clip codec/training/checkpoint-resume pilot before bulk preparation"
+}

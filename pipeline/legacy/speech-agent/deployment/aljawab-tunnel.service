@@ -1,0 +1,15 @@
+[Unit]
+Description=Aljawab temporary HTTPS test tunnel
+After=network-online.target aljawab-app.service
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/dlami/nvme/speech-agent
+ExecStart=/opt/dlami/nvme/speech-agent/bin/cloudflared tunnel --url http://[::1]:8002 --no-autoupdate --protocol http2 --metrics 127.0.0.1:20242
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+UMask=0077
+StandardOutput=append:/opt/dlami/nvme/speech-agent/logs/tunnel.log
+StandardError=append:/opt/dlami/nvme/speech-agent/logs/tunnel.log
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,335 @@
+{
+  "validated_at": "2026-10-11T22:57:16Z",
+  "status": "ready",
+  "public_bind": "0.0.0.0:3000",
+  "screen_session": "jordanian-sglang",
+  "launcher": "start_voice_server_sglang.sh",
+  "launch_command": "bash /opt/dlami/nvme/training/jordanian_s2pro/start_voice_server_sglang.sh --nvme-docker",
+  "private_api_ports": [
+    3001,
+    3002
+  ],
+  "manifest": {
+    "image": "sha256:64f376e7f93eba09bba39feb34130b87108316c2e346058117fc9af1de1eb030",
+    "exports": {
+      "fast_r32_final": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/models/fast_r32_final/61038f6dacbcd0802a74207237b2d0c4f1913906e83b0b195776a2153fd3d9bf",
+      "attention_mlp_r16_early": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/models/attention_mlp_r16_early/392cfb1cf6824476e616df3d0459986efdd268a13991737fdbb8260d200a5cd4"
+    },
+    "ports": [
+      3001,
+      3002
+    ],
+    "config_dir": "/opt/dlami/nvme/training/jordanian_s2pro/sglang/preflight/10fd58febef6412088595067b640446f/config",
+    "checkpoint_hashes": {
+      "fast_r32_final": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b",
+      "attention_mlp_r16_early": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf"
+    },
+    "preflight": {
+      "versions": {
+        "sglang": "0.5.16",
+        "sglang-omni": "0.1.3",
+        "transformers": "5.12.1",
+        "flashinfer-python": "0.6.14"
+      },
+      "torch": "2.11.0+cu130",
+      "torchaudio": "2.11.0+cu130",
+      "cuda": "13.0",
+      "gpu": "NVIDIA H100 80GB HBM3",
+      "total_memory": 85019590656,
+      "settings": {
+        "dtype": "bfloat16",
+        "max_running_requests": 1,
+        "max_total_tokens": 8192,
+        "mem_fraction_static": 0.32,
+        "chunked_prefill_size": 2048,
+        "cuda_graph_bs_decode": [
+          1
+        ],
+        "cuda_graph_max_bs_decode": 1,
+        "disable_prefill_cuda_graph": true,
+        "torch_compile_max_bs": 1,
+        "enable_torch_compile": true,
+        "disable_cuda_graph": false,
+        "attention_backend": "fa3"
+      },
+      "speech_fields": [
+        "duration_tokens",
+        "initial_codec_chunk_frames",
+        "input",
+        "instructions",
+        "language",
+        "max_new_tokens",
+        "model",
+        "ref_audio",
+        "ref_text",
+        "references",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "speed",
+        "stage_params",
+        "stream",
+        "task_type",
+        "temperature",
+        "token_count",
+        "top_k",
+        "top_p",
+        "voice",
+        "x_vector_only_mode"
+      ]
+    }
+  },
+  "models": {
+    "fast_r32_final": {
+      "comparison_clips": 15,
+      "comparison_failures": 0,
+      "median_comparison_rtf": 0.2529836308520809,
+      "warm_wav_probes": [
+        {
+          "duration": 3.111473922902494,
+          "rms": 0.06275688856840134,
+          "peak": 0.4315185546875,
+          "quiet_fraction": 0.1858974358974359,
+          "trailing_quiet_seconds": 0.04,
+          "warning": null,
+          "sample_rate": 44100,
+          "elapsed": 0.8363985120085999,
+          "rtf": 0.26881103063476025,
+          "first_response_bytes_seconds": 0.8332378409977537,
+          "streamed_pcm": false,
+          "time_to_first_audio_seconds": null,
+          "seed_supported": true,
+          "wav_sha256": "3201c6b4fdea548d75a674e56a73fa6185d65462024e1ada3fd984cab1d0cff0",
+          "backend": "sglang-omni"
+        },
+        {
+          "duration": 3.111473922902494,
+          "rms": 0.06275688856840134,
+          "peak": 0.4315185546875,
+          "quiet_fraction": 0.1858974358974359,
+          "trailing_quiet_seconds": 0.04,
+          "warning": null,
+          "sample_rate": 44100,
+          "elapsed": 0.8246786629897542,
+          "rtf": 0.2650443755673403,
+          "first_response_bytes_seconds": 0.8217191580042709,
+          "streamed_pcm": false,
+          "time_to_first_audio_seconds": null,
+          "seed_supported": true,
+          "wav_sha256": "3201c6b4fdea548d75a674e56a73fa6185d65462024e1ada3fd984cab1d0cff0",
+          "backend": "sglang-omni"
+        }
+      ],
+      "streaming_probe": {
+        "duration": 3.0998639455782313,
+        "rms": 0.06227652728557587,
+        "peak": 0.431488037109375,
+        "quiet_fraction": 0.1870967741935484,
+        "trailing_quiet_seconds": 0.04,
+        "warning": null,
+        "sample_rate": 44100,
+        "elapsed": 0.8697896680096164,
+        "rtf": 0.2805896269255039,
+        "first_response_bytes_seconds": 0.8243029530276544,
+        "streamed_pcm": true,
+        "time_to_first_audio_seconds": 0.8243029530276544,
+        "seed_supported": true,
+        "wav_sha256": "2c551a8d51132b8bb2215e75de33a1ed27d0d9e5dabbdf571b9f80fb062d28fe",
+        "backend": "sglang-omni"
+      },
+      "repeat_wav_identical": true,
+      "uploaded_voice_check": {
+        "audio_id": "b63f6898007a43b8bfbe65945263fa4e",
+        "reference_sha256": "5d13ec721fd5d8f6c5a1d1a46fbb40107c592290c540dca58a639a3e749928fc",
+        "duration": 6.919546485260771,
+        "rms": 0.056704215705394745,
+        "peak": 0.454254150390625,
+        "quiet_fraction": 0.19653179190751446,
+        "trailing_quiet_seconds": 0.14,
+        "warning": null,
+        "sample_rate": 44100,
+        "elapsed": 18.111420802015346,
+        "rtf": 2.6174288792761535,
+        "first_response_bytes_seconds": 18.104876123019494,
+        "streamed_pcm": false,
+        "time_to_first_audio_seconds": null,
+        "seed_supported": true,
+        "wav_sha256": "26af9589de06bb915be73e97f373b666a24552dae70d907c30ed36702e66a29d",
+        "backend": "sglang-omni"
+      },
+      "checkpoint_sha256": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b"
+    },
+    "attention_mlp_r16_early": {
+      "comparison_clips": 15,
+      "comparison_failures": 0,
+      "median_comparison_rtf": 0.25625867469869945,
+      "warm_wav_probes": [
+        {
+          "duration": 2.647074829931973,
+          "rms": 0.047312065958976746,
+          "peak": 0.345733642578125,
+          "quiet_fraction": 0.15037593984962405,
+          "trailing_quiet_seconds": 0.0,
+          "warning": null,
+          "sample_rate": 44100,
+          "elapsed": 0.7270351490005851,
+          "rtf": 0.27465606214814453,
+          "first_response_bytes_seconds": 0.7240712640050333,
+          "streamed_pcm": false,
+          "time_to_first_audio_seconds": null,
+          "seed_supported": true,
+          "wav_sha256": "c73e97f719ac182a2e11b9d58f642f7a8fc112b5b60c8c4a49a4ffb165e0d11f",
+          "backend": "sglang-omni"
+        },
+        {
+          "duration": 2.647074829931973,
+          "rms": 0.047312065958976746,
+          "peak": 0.345733642578125,
+          "quiet_fraction": 0.15037593984962405,
+          "trailing_quiet_seconds": 0.0,
+          "warning": null,
+          "sample_rate": 44100,
+          "elapsed": 0.7159494200022891,
+          "rtf": 0.2704681454058812,
+          "first_response_bytes_seconds": 0.7130703319853637,
+          "streamed_pcm": false,
+          "time_to_first_audio_seconds": null,
+          "seed_supported": true,
+          "wav_sha256": "c73e97f719ac182a2e11b9d58f642f7a8fc112b5b60c8c4a49a4ffb165e0d11f",
+          "backend": "sglang-omni"
+        }
+      ],
+      "streaming_probe": {
+        "duration": 2.6354648526077096,
+        "rms": 0.04919571056962013,
+        "peak": 0.34576416015625,
+        "quiet_fraction": 0.15151515151515152,
+        "trailing_quiet_seconds": 0.0,
+        "warning": null,
+        "sample_rate": 44100,
+        "elapsed": 0.7811854270112235,
+        "rtf": 0.2964127661343179,
+        "first_response_bytes_seconds": 0.7361927730089519,
+        "streamed_pcm": true,
+        "time_to_first_audio_seconds": 0.7361927730089519,
+        "seed_supported": true,
+        "wav_sha256": "3a0080b9500d0a2aaca9a92a07682ef53911ac388fcade9c541a93d5da0d258a",
+        "backend": "sglang-omni"
+      },
+      "repeat_wav_identical": true,
+      "uploaded_voice_check": {
+        "audio_id": "74f9ed7cb6ce4481a7b3575af70d207e",
+        "reference_sha256": "5d13ec721fd5d8f6c5a1d1a46fbb40107c592290c540dca58a639a3e749928fc",
+        "duration": 8.40562358276644,
+        "rms": 0.04603460058569908,
+        "peak": 0.50115966796875,
+        "quiet_fraction": 0.27315914489311166,
+        "trailing_quiet_seconds": 0.2,
+        "warning": null,
+        "sample_rate": 44100,
+        "elapsed": 19.014084430993535,
+        "rtf": 2.2620670844667616,
+        "first_response_bytes_seconds": 19.006602977984585,
+        "streamed_pcm": false,
+        "time_to_first_audio_seconds": null,
+        "seed_supported": true,
+        "wav_sha256": "b404f787877aeb725db38344790bf9994848849c54054ec57fc01ab0a0a805de",
+        "backend": "sglang-omni"
+      },
+      "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf"
+    }
+  },
+  "gpu_memory": {
+    "current_mib": 54579,
+    "sampled_peak_mib": 54579,
+    "gpu": 0,
+    "sample_interval_seconds": 1,
+    "note": "Whole-device usage includes both SGLang engines and unrelated Talha testing_app.py (about 15,178 MiB).",
+    "updated_at": 1791759435.3193665
+  },
+  "storage": {
+    "sources": {
+      "docker_source": "/var/lib/docker",
+      "containerd_source": "/var/lib/containerd"
+    },
+    "status": "complete",
+    "backup": "/opt/dlami/nvme/sglang_docker_storage/backup-20261011-222913",
+    "docker_destination": "/opt/dlami/nvme/sglang_docker_storage/docker",
+    "containerd_destination": "/opt/dlami/nvme/sglang_docker_storage/containerd",
+    "original_stores_retained": true
+  },
+  "tests": {
+    "passed": 54,
+    "log": "reports/sglang_live_tests.log"
+  },
+  "http_validation": "reports/sglang_http_validation_20261011.json",
+  "studio_requests": [
+    {
+      "id": "705fc413d18244d1911c9953ba6afa9b",
+      "model": "fast_r32_final",
+      "status": "complete",
+      "elapsed": 0.8048315350024495,
+      "duration": 3.111473922902494,
+      "rtf": 0.2586656854419895,
+      "sample_rate": 44100,
+      "audio_url": "/api/audio/705fc413d18244d1911c9953ba6afa9b.wav"
+    },
+    {
+      "id": "ecf107e7de1341e48fe6f548789b1005",
+      "model": "attention_mlp_r16_early",
+      "status": "complete",
+      "elapsed": 0.7611622679978609,
+      "duration": 2.8792743764172335,
+      "rtf": 0.26435906012715527,
+      "sample_rate": 44100,
+      "audio_url": "/api/audio/ecf107e7de1341e48fe6f548789b1005.wav"
+    }
+  ],
+  "runtime_fixes": [
+    "Use SGLang 0.5.16 cuda_graph_bs_decode/cuda_graph_max_bs_decode instead of removed argument names.",
+    "Leave context_length with the S2 pipeline builder to avoid duplicate keyword argument; assert its 4096 limit during preflight.",
+    "Detect speech fields from the installed CreateSpeechRequest when raw FastAPI Request omits an OpenAPI requestBody."
+  ],
+  "observations": {
+    "steady_decode_tokens_per_second": "98–100 with FA3 and cuda graph True in both engine logs",
+    "historical_original_decoder_tokens_per_second": "about 12; historical log, not concurrent benchmark",
+    "new_reference_latency_seconds": "14–19 in first built-in/uploaded reference requests; repeated references reused",
+    "audio_validation": "44.1kHz mono, finite, non-silent WAV; no human quality claim",
+    "pending": [
+      "User listening review of accent, pronunciation and voice identity.",
+      "Real-browser microphone interaction."
+    ]
+  },
+  "evidence": [
+    "reports/sglang_live_launch.log",
+    "reports/sglang_live_config_validation.log",
+    "sglang/fast_r32_final.log",
+    "sglang/attention_mlp_r16_early.log",
+    "voice/sglang-benchmark.json",
+    "reports/sglang_export_validation.json"
+  ],
+  "new_http_upload_checks": [
+    {
+      "id": "a9c23046b67c4c6da948b23f2650f84d",
+      "status": "complete",
+      "elapsed": 0.9504723730206024,
+      "duration": 3.8080725623582765,
+      "rtf": 0.24959408137748051,
+      "sample_rate": 44100,
+      "audio_url": "/api/audio/a9c23046b67c4c6da948b23f2650f84d.wav",
+      "backend": "sglang-omni",
+      "model": "fast_r32_final"
+    },
+    {
+      "id": "f8e34860e7de40928da6e1591f34041e",
+      "status": "complete",
+      "elapsed": 1.1519064420135692,
+      "duration": 4.551111111111111,
+      "rtf": 0.25310444282524713,
+      "sample_rate": 44100,
+      "audio_url": "/api/audio/f8e34860e7de40928da6e1591f34041e.wav",
+      "backend": "sglang-omni",
+      "model": "attention_mlp_r16_early"
+    }
+  ]
+}

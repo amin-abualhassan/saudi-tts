@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11",
+  "reported_failure": "uv pip install --system rejected /usr Python as externally managed during Docker build",
+  "changed_file": "../sglang.Dockerfile",
+  "changes": [
+    "Copy pinned uv binary directly from its official container image instead of bootstrapping with system pip",
+    "Create /opt/sglang-venv with the image's Python and access to system site packages",
+    "Install dependencies with --python /opt/sglang-venv/bin/python; remove --system installation",
+    "Set VIRTUAL_ENV and prepend the environment's bin directory to PATH",
+    "Reinstall sglang-omni in the virtual environment to guarantee its entry point uses that interpreter",
+    "Add build assertions that python3 and sgl-omni resolve inside the virtual environment"
+  ],
+  "cache_behavior": "The existing launcher hashes the Dockerfile for its image tag; this change triggers a new image build automatically",
+  "verification": {
+    "regression_tests_passed": 43,
+    "regression_log": "sglang_venv_fix_tests.log",
+    "externally_managed_system_python_virtual_environment_smoke": "sglang_venv_runtime_smoke.json",
+    "launcher_bash_syntax": "passed",
+    "docker_build_tested": false,
+    "docker_access": "Sandbox cannot access /var/run/docker.sock"
+  },
+  "source_documentation": [
+    "https://docs.astral.sh/uv/guides/integration/docker/",
+    "https://docs.astral.sh/uv/pip/environments/",
+    "https://docs.astral.sh/uv/reference/cli/#uv-venv"
+  ],
+  "unchanged": ["Public port 3000", "Selected checkpoints and native exports", "Original Fish conda environment", "Current serving process"]
+}

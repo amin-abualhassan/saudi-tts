@@ -1,0 +1,68 @@
+# Download allowlist enforced by ops/guard.py (rule 8). Additions must match the
+# permissions ledger (plan-v2 §3 + kickoff §1) or be software/tooling. Log additions in DECISIONS.md.
+# Syntax:  host <domain>   (subdomains allowed)   |   hf <org>/<repo> or hf <org>/*
+
+# --- software / tooling hosts
+host pypi.org
+host files.pythonhosted.org
+host pypi.nvidia.com
+host download.pytorch.org
+host astral.sh
+host github.com
+host githubusercontent.com
+host codeload.github.com
+host caddyserver.com
+host cloudsmith.io
+host nodejs.org
+host developer.download.nvidia.com
+host flashinfer.ai
+host huggingface.co
+host hf.co
+host xethub.hf.co
+host amazonaws.com
+host ubuntu.com
+
+# --- data hosts in the ledger
+host ieee-dataport.org          # SADA, MASC (permitted)
+host kaggle.com                 # SADA official Kaggle release (permitted)
+host storage.googleapis.com     # Kaggle download backend
+host falak.ksaa.gov.sa          # Saudi ASWAT (permitted)
+host dl.fbaipublicfiles.com     # Meta Omnilingual models/corpus (permitted)
+host sdaia.gov.sa               # SCC22 / SADA (permitted)
+
+# --- Hugging Face: TTS base models (ledger)
+hf fishaudio/*
+hf bosonai/*
+hf mistralai/Voxtral-4B-TTS-2603
+hf k2-fsa/*
+hf SWivid/*
+hf Qwen/*
+hf OpenMOSS-Team/*
+hf OpenMOSS/*
+hf fnlp/*
+hf openbmb/*
+hf ResembleAI/*
+hf audarai/*
+hf neuphonic/*
+
+# --- Hugging Face: datasets (ledger)
+hf facebook/omnilingual-asr-corpus
+
+# --- Hugging Face: evaluation / pipeline tooling named in plan-v2 §6–§8
+hf facebook/*                   # Omnilingual ASR, MMS, w2v-bert, audiobox-aesthetics
+hf CohereLabs/*
+hf oddadmix/whisper-large-v3-arabic-dialectal-v2
+hf Elyadata/*
+hf pyannote/*
+hf jonatasgrosman/wav2vec2-large-xlsr-53-arabic
+hf microsoft/wavlm-large
+hf microsoft/wavlm-base-plus-sv
+hf speechbrain/*
+hf sarulab-speech/*
+hf balacoon/*
+hf openai/whisper-large-v3
+hf openai/whisper-large-v3-turbo
+hf nvidia/*
+hf Systran/*
+hf snakers4/*
+hf mesolitica/*

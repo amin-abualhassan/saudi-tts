@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints/best_000002000.ckpt",
+  "files": {
+    "model.pth": "de04ff7c516edc5de230551a29169074989580107da6ce228abd1b47cbeef4f0",
+    "config.json": "e21c808529c2934be09038ff66b6ceda125d22e403c2d8c6c2b7a1d63d6d8c5e",
+    "tokenizer.json": "f24e08099d45a8adf3f52f5f0b03276e433bb9d689bb15fcbcc48ce58744588b",
+    "merge_provenance.json": "1b35dc73d655ea1d0d57f80a523d4024e6a76c818419cd57aace132939556a3c"
+  }
+}

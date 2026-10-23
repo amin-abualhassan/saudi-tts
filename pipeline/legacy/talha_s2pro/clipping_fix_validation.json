@@ -1,0 +1,15 @@
+{
+  "verified_at_utc": "2026-10-09T18:14:03Z",
+  "clip_id": "7zhbhhovy9-19",
+  "fullscale_fraction": 0.0018702492734182874,
+  "threshold": 0.001,
+  "policy": "exclude unsuitable clips; refill within assigned source-video partitions",
+  "real_smoke_prepared": 6,
+  "real_smoke_rejected": [
+    "7zhbhhovy9-19"
+  ],
+  "real_smoke_output": "/opt/dlami/nvme/training/talha_s2pro/cache/483c5b9d281292b5c5a8b4db/qc-replacement-smoke-1791569435721604288",
+  "unit_tests_passed": 34,
+  "reserves_partition_validation": "passed on the real 10-hour plan",
+  "training_started": false
+}

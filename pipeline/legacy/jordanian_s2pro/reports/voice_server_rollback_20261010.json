@@ -1,0 +1,53 @@
+{
+  "recorded_at_utc": "2026-10-10T19:28:03.812439+00:00",
+  "action": "Roll back compiled serving at the user request",
+  "original_launcher": "/opt/dlami/nvme/training/jordanian_s2pro/start_voice_server.sh",
+  "changes": [
+    "Original direct decode_one_token_ar generation restored with compile=False",
+    "Compilation, benchmark, optimized decoder and optimization reporting removed from active serving",
+    "Fast launcher redirects to the original launcher with guarded idle replacement",
+    "Old optimization flags accepted and ignored for screen/worker restart compatibility",
+    "Experimental implementation archived under reports/withdrawn_fast_server_20261010/"
+  ],
+  "preserved": [
+    "Exact selected checkpoints",
+    "Original S2 Pro base and codec",
+    "Voice UI and port 7860",
+    "Speaker references",
+    "Uploaded voices/transcripts",
+    "Generated clips and comparison"
+  ],
+  "models": {
+    "fast_r32_final": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b",
+    "attention_mlp_r16_early": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf"
+  },
+  "checks": {
+    "regression_tests_passed": 33,
+    "test_seconds": 3.131,
+    "python_syntax": "passed",
+    "bash_syntax": "passed",
+    "selection_integrity": "passed"
+  },
+  "observed_host_state": {
+    "status": "ready",
+    "loaded_models": [
+      "fast_r32_final",
+      "attention_mlp_r16_early"
+    ],
+    "optimization_requested": "eager"
+  },
+  "latest_completed_host_request": {
+    "id": "8ea1fd6237e944aa8d92ce5ecb070c89",
+    "duration": 2.5541950113378684,
+    "elapsed": 5.45,
+    "decoder": "eager",
+    "finished_at": 1791660402.9072123
+  },
+  "host_evidence_limit": "Persisted status/logs verify an eager restart and successful host synthesis; sandbox cannot control host processes or run CUDA. Current host process may still have the earlier eager code loaded until its next restart.",
+  "source_sha256": {
+    "voice_server.py": "2ab8b3dcaeb0fb547060e0d8dbb8a68e0115de73a94aa244c3825464db8790fb",
+    "voice_worker.py": "12a92d4d0cec8819c2954f40dd72a6eeb03c4a74dc82aad6eadf3d4f7a4bcf3f",
+    "start_voice_server.sh": "ca4d8d0dbde7278e4852b6678d1afcdcfcdac3c704b8f3d620db1a0b4e8dbad1",
+    "start_voice_server_fast.sh": "0f5e6e4761f822a18400408996ac31dcc190d10e49ad6fb2b04bcbc0116cc567"
+  }
+}

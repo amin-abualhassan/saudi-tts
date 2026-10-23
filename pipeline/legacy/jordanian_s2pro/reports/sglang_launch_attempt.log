@@ -1,0 +1,3 @@
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+SGLang setup failed: Command '['docker', 'info']' returned non-zero exit status 1.
+Inspect the message above. The original launcher is start_voice_server.sh.

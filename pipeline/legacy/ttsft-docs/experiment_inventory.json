@@ -1,0 +1,299 @@
+{
+  "token_files": 367,
+  "token_shapes": {
+    "(10, 182)": 4,
+    "(10, 132)": 6,
+    "(10, 173)": 4,
+    "(10, 327)": 1,
+    "(10, 164)": 2,
+    "(10, 145)": 4,
+    "(10, 109)": 9,
+    "(10, 157)": 5,
+    "(10, 127)": 7,
+    "(10, 126)": 6,
+    "(10, 117)": 8,
+    "(10, 112)": 5,
+    "(10, 136)": 9,
+    "(10, 204)": 1,
+    "(10, 172)": 1,
+    "(10, 150)": 4,
+    "(10, 152)": 2,
+    "(10, 119)": 8,
+    "(10, 402)": 1,
+    "(10, 193)": 2,
+    "(10, 457)": 1,
+    "(10, 118)": 6,
+    "(10, 265)": 1,
+    "(10, 431)": 8,
+    "(10, 135)": 4,
+    "(10, 160)": 4,
+    "(10, 140)": 8,
+    "(10, 111)": 4,
+    "(10, 159)": 3,
+    "(10, 470)": 1,
+    "(10, 153)": 4,
+    "(10, 129)": 8,
+    "(10, 154)": 3,
+    "(10, 142)": 3,
+    "(10, 296)": 1,
+    "(10, 124)": 1,
+    "(10, 434)": 1,
+    "(10, 532)": 1,
+    "(10, 166)": 5,
+    "(10, 332)": 1,
+    "(10, 125)": 10,
+    "(10, 141)": 2,
+    "(10, 262)": 1,
+    "(10, 176)": 5,
+    "(10, 342)": 1,
+    "(10, 133)": 4,
+    "(10, 356)": 1,
+    "(10, 130)": 5,
+    "(10, 116)": 5,
+    "(10, 162)": 4,
+    "(10, 156)": 4,
+    "(10, 305)": 2,
+    "(10, 192)": 1,
+    "(10, 428)": 1,
+    "(10, 151)": 3,
+    "(10, 465)": 1,
+    "(10, 134)": 3,
+    "(10, 115)": 6,
+    "(10, 128)": 6,
+    "(10, 114)": 4,
+    "(10, 200)": 1,
+    "(10, 158)": 1,
+    "(10, 165)": 3,
+    "(10, 211)": 2,
+    "(10, 123)": 7,
+    "(10, 139)": 4,
+    "(10, 138)": 4,
+    "(10, 304)": 2,
+    "(10, 237)": 2,
+    "(10, 290)": 1,
+    "(10, 197)": 1,
+    "(10, 149)": 3,
+    "(10, 110)": 5,
+    "(10, 287)": 2,
+    "(10, 220)": 1,
+    "(10, 201)": 2,
+    "(10, 203)": 1,
+    "(10, 189)": 2,
+    "(10, 227)": 1,
+    "(10, 174)": 2,
+    "(10, 131)": 1,
+    "(10, 175)": 1,
+    "(10, 144)": 3,
+    "(10, 143)": 4,
+    "(10, 190)": 3,
+    "(10, 120)": 4,
+    "(10, 412)": 1,
+    "(10, 282)": 1,
+    "(10, 228)": 1,
+    "(10, 206)": 1,
+    "(10, 244)": 1,
+    "(10, 148)": 5,
+    "(10, 177)": 2,
+    "(10, 121)": 5,
+    "(10, 183)": 2,
+    "(10, 236)": 1,
+    "(10, 202)": 2,
+    "(10, 161)": 2,
+    "(10, 214)": 2,
+    "(10, 108)": 2,
+    "(10, 137)": 1,
+    "(10, 324)": 2,
+    "(10, 250)": 1,
+    "(10, 155)": 1,
+    "(10, 113)": 1,
+    "(10, 272)": 1,
+    "(10, 170)": 1,
+    "(10, 213)": 2,
+    "(10, 254)": 2,
+    "(10, 196)": 1,
+    "(10, 224)": 1,
+    "(10, 568)": 1,
+    "(10, 178)": 3,
+    "(10, 248)": 1,
+    "(10, 529)": 1,
+    "(10, 188)": 1,
+    "(10, 425)": 1,
+    "(10, 257)": 1,
+    "(10, 382)": 1,
+    "(10, 185)": 1,
+    "(10, 246)": 1,
+    "(10, 169)": 1,
+    "(10, 518)": 1,
+    "(10, 238)": 1,
+    "(10, 261)": 1,
+    "(10, 536)": 1,
+    "(10, 218)": 1,
+    "(10, 212)": 1,
+    "(10, 333)": 1,
+    "(10, 241)": 1,
+    "(10, 230)": 1,
+    "(10, 122)": 4,
+    "(10, 167)": 1,
+    "(10, 219)": 2,
+    "(10, 184)": 1,
+    "(10, 207)": 1,
+    "(10, 146)": 1,
+    "(10, 168)": 1,
+    "(10, 205)": 2,
+    "(10, 180)": 1
+  },
+  "token_dtypes": {
+    "int64": 367
+  },
+  "invalid_tokens": [],
+  "empty_tokens": [],
+  "empty_labels": [],
+  "saved_run_config": {
+    "paths": {
+      "run_dir": "results/${project}",
+      "ckpt_dir": "${paths.run_dir}/checkpoints"
+    },
+    "trainer": {
+      "_target_": "lightning.pytorch.trainer.Trainer",
+      "default_root_dir": "${paths.run_dir}",
+      "accelerator": "gpu",
+      "num_nodes": 1,
+      "devices": "auto",
+      "strategy": {
+        "_target_": "lightning.pytorch.strategies.DDPStrategy",
+        "process_group_backend": "nccl"
+      },
+      "precision": "bf16-mixed",
+      "check_val_every_n_epoch": null,
+      "val_check_interval": 100,
+      "max_steps": 3000,
+      "benchmark": true,
+      "accumulate_grad_batches": 1,
+      "gradient_clip_val": 1.0,
+      "gradient_clip_algorithm": "norm",
+      "limit_val_batches": 10
+    },
+    "callbacks": {
+      "model_checkpoint": {
+        "_target_": "lightning.pytorch.callbacks.ModelCheckpoint",
+        "dirpath": "${paths.ckpt_dir}",
+        "filename": "step_{step:09d}",
+        "save_last": false,
+        "save_top_k": 5,
+        "monitor": "step",
+        "mode": "max",
+        "every_n_epochs": null,
+        "every_n_train_steps": "${trainer.val_check_interval}",
+        "auto_insert_metric_name": false
+      },
+      "model_summary": {
+        "_target_": "lightning.pytorch.callbacks.ModelSummary",
+        "max_depth": 2
+      },
+      "learning_rate_monitor": {
+        "_target_": "lightning.pytorch.callbacks.LearningRateMonitor",
+        "logging_interval": "step",
+        "log_momentum": false
+      },
+      "grad_norm_monitor": {
+        "_target_": "fish_speech.callbacks.GradNormMonitor",
+        "norm_type": 2,
+        "logging_interval": "step"
+      },
+      "progress_bar": {
+        "_target_": "fish_speech.callbacks.GradAccumProgressBar"
+      }
+    },
+    "logger": {
+      "tensorboard": {
+        "_target_": "lightning.pytorch.loggers.tensorboard.TensorBoardLogger",
+        "save_dir": "${paths.run_dir}/tensorboard/",
+        "name": null,
+        "log_graph": false,
+        "default_hp_metric": true,
+        "prefix": ""
+      }
+    },
+    "train": true,
+    "test": false,
+    "project": "s2pro_speaker_lora_v2",
+    "max_length": 4096,
+    "pretrained_ckpt_path": "checkpoints/s2-pro",
+    "tokenizer": {
+      "_target_": "fish_speech.tokenizer.FishTokenizer",
+      "model_path": "${pretrained_ckpt_path}"
+    },
+    "train_dataset": {
+      "_target_": "fish_speech.datasets.semantic.AutoTextSemanticInstructionIterableDataset",
+      "proto_files": [
+        "data/protos"
+      ],
+      "tokenizer": "${tokenizer}",
+      "causal": true,
+      "max_length": "${max_length}",
+      "use_speaker": false,
+      "interactive_prob": 0.7
+    },
+    "val_dataset": {
+      "_target_": "fish_speech.datasets.semantic.AutoTextSemanticInstructionIterableDataset",
+      "proto_files": [
+        "data/protos"
+      ],
+      "tokenizer": "${tokenizer}",
+      "causal": true,
+      "max_length": "${max_length}",
+      "use_speaker": false,
+      "interactive_prob": 0.7
+    },
+    "data": {
+      "_target_": "fish_speech.datasets.semantic.SemanticDataModule",
+      "train_dataset": "${train_dataset}",
+      "val_dataset": "${val_dataset}",
+      "num_workers": 4,
+      "batch_size": 4,
+      "tokenizer": "${tokenizer}",
+      "max_length": "${max_length}"
+    },
+    "model": {
+      "_target_": "fish_speech.models.text2semantic.lit_module.TextToSemantic",
+      "model": {
+        "_target_": "fish_speech.models.text2semantic.llama.BaseTransformer.from_pretrained",
+        "path": "${pretrained_ckpt_path}",
+        "load_weights": true,
+        "max_length": "${max_length}",
+        "lora_config": {
+          "_target_": "fish_speech.models.text2semantic.lora.LoraConfig",
+          "r": 32,
+          "lora_alpha": 32,
+          "lora_dropout": 0,
+          "target_modules": [
+            "fast_attention",
+            "fast_mlp",
+            "fast_embeddings",
+            "fast_output"
+          ]
+        }
+      },
+      "optimizer": {
+        "_target_": "torch.optim.AdamW",
+        "_partial_": true,
+        "lr": 5e-05,
+        "weight_decay": 0.01,
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "eps": 1e-08
+      },
+      "lr_scheduler": {
+        "_target_": "torch.optim.lr_scheduler.LambdaLR",
+        "_partial_": true,
+        "lr_lambda": {
+          "_target_": "fish_speech.scheduler.get_constant_schedule_with_warmup_lr_lambda",
+          "_partial_": true,
+          "num_warmup_steps": 200
+        }
+      }
+    }
+  }
+}

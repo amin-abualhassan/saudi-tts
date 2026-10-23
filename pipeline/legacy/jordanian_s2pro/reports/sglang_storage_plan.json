@@ -1,0 +1,8 @@
+{
+  "docker_source": "/var/lib/docker",
+  "containerd_source": "/var/lib/containerd",
+  "docker_destination": "/opt/dlami/nvme/sglang_docker_storage/docker",
+  "containerd_destination": "/opt/dlami/nvme/sglang_docker_storage/containerd",
+  "nvme_free_bytes": 3147798528000,
+  "already_configured": false
+}

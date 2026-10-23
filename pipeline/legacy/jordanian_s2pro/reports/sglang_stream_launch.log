@@ -1,0 +1,155 @@
+Stopping idle voice server 443362 before restarting
+Jordanian voice server: http://<server-ip>:3000
+Stopping idle voice server 456420 before restarting
+Jordanian voice server: http://<server-ip>:3000
+----------------------------------------
+Exception occurred during processing of request from ('5.252.83.251', 39356)
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 425, in handle_one_request
+    method()
+  File "/opt/dlami/nvme/training/jordanian_s2pro/sglang_server.py", line 174, in do_GET
+    return self.send(200, html.encode(), "text/html; charset=utf-8")
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 383, in send
+    self.wfile.write(data)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('66.132.224.81', 18110)
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 405, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('82.147.85.62', 57092)
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 405, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('66.132.172.191', 33110)
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 405, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('212.34.16.24', 45900)
+----------------------------------------
+Exception occurred during processing of request from ('212.34.16.24', 45914)
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 425, in handle_one_request
+    method()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/training/jordanian_s2pro/sglang_server.py", line 199, in do_GET
+    return super().do_GET()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 425, in handle_one_request
+    method()
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 401, in do_GET
+    return self.send(200, lab.snapshot())
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 383, in send
+    self.wfile.write(data)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+  File "/opt/dlami/nvme/training/jordanian_s2pro/sglang_server.py", line 199, in do_GET
+    return super().do_GET()
+ConnectionResetError: [Errno 104] Connection reset by peer
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 401, in do_GET
+    return self.send(200, lab.snapshot())
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 383, in send
+    self.wfile.write(data)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('69.5.169.247', 65000)
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 437, in handle
+    self.handle_one_request()
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/http/server.py", line 425, in handle_one_request
+    method()
+  File "/opt/dlami/nvme/training/jordanian_s2pro/sglang_server.py", line 174, in do_GET
+    return self.send(200, html.encode(), "text/html; charset=utf-8")
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 383, in send
+    self.wfile.write(data)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+Traceback (most recent call last):
+  File "/opt/dlami/nvme/training/jordanian_s2pro/sglang_server.py", line 258, in <module>
+    raise SystemExit(main())
+  File "/opt/dlami/nvme/training/jordanian_s2pro/sglang_server.py", line 254, in main
+    return original.main()
+  File "/opt/dlami/nvme/training/jordanian_s2pro/voice_server.py", line 611, in main
+    thread.join(timeout=55)
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/threading.py", line 1100, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "/opt/dlami/nvme/miniconda3/envs/fish-speech/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+logs/*.log
+dashboard/state/
+*.wav
+*.flac
+*.pt
+*.pth
+*.safetensors

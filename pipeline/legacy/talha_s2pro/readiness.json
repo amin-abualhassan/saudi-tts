@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "pinned_upstream": true,
+    "module_torch": false,
+    "module_torchaudio": false,
+    "module_lightning": false,
+    "module_hydra": true,
+    "module_datasets": false,
+    "module_transformers": false,
+    "base_files": true,
+    "base_shards": true,
+    "nvidia_driver": false
+  },
+  "ready_for_training": false
+}

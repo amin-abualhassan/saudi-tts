@@ -1,0 +1,8 @@
+{
+  "prefix": "/tmp/sglang-venv-check-lad55080/venv",
+  "base_prefix": "/usr",
+  "python": "/tmp/sglang-venv-check-lad55080/venv/bin/python3",
+  "system_externally_managed": true,
+  "runtime_environment_selection": "passed",
+  "container_build_tested": false
+}

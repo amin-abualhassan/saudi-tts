@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-11",
+  "public_port": 3000,
+  "launcher": "/opt/dlami/nvme/training/jordanian_s2pro/start_voice_server_sglang.sh",
+  "models": ["fast_r32_final", "attention_mlp_r16_early"],
+  "implementation": {
+    "native_hf_exports_created": true,
+    "isolated_docker_runtime": true,
+    "declared_versions": {"sglang_omni": "0.1.3", "sglang": "0.5.16", "torch": "2.11.0", "torchaudio": "2.11.0", "transformers": "5.12.1"},
+    "attention_backend": "fa3",
+    "dtype": "bfloat16",
+    "resident_models": 2,
+    "max_running_requests_per_engine": 1,
+    "context_length": 4096,
+    "max_total_tokens_per_engine": 8192,
+    "mem_fraction_static_per_engine": 0.32,
+    "cuda_graph_batch_sizes": [1],
+    "private_api_ports": [3001, 3002],
+    "speaker_references_and_custom_uploads": true,
+    "startup_cloning_canaries": true,
+    "resumable_matched_comparison_cases": 30,
+    "fresh_warm_and_streaming_probes": true,
+    "sampled_whole_gpu_memory": true,
+    "scoped_container_cleanup": true,
+    "original_launcher_preserved": true
+  },
+  "verified": {
+    "regression_tests": {"passed": 43, "failed": 0, "log": "sglang_tests.log"},
+    "actual_export_weight_and_slow_fast_logit_parity": "sglang_export_validation.json",
+    "export_integrity_check": "sglang_check.log",
+    "python_and_bash_syntax": "passed",
+    "comparison_javascript_syntax_and_dom_smoke": "passed"
+  },
+  "launch_attempt": {
+    "attempted": true,
+    "exit_code": 1,
+    "failure": "Sandbox permission denied accessing Docker API at unix:///var/run/docker.sock",
+    "log": "sglang_launch_attempt.log",
+    "existing_server_stopped": false,
+    "docker_image_built": false,
+    "sglang_engines_started": false
+  },
+  "pending_host_validation": [
+    "Resolve/install the pinned container dependencies",
+    "Validate the installed S2 Pro configuration/API schema and CUDA driver",
+    "Run model loading, compilation, CUDA graphs and cloning canaries",
+    "Collect matched audio, warm/stream timings and GPU memory on H100",
+    "Review Jordanian accent, voice identity, pronunciation and stability",
+    "Test uploaded-voice cloning and real browser playback"
+  ],
+  "speedup_measured": false
+}

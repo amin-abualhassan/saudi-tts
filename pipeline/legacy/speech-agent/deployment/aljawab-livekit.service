@@ -1,0 +1,16 @@
+[Unit]
+Description=Aljawab dedicated self-hosted LiveKit
+After=network-online.target
+Wants=network-online.target
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/dlami/nvme/speech-agent
+ExecStart=/opt/dlami/nvme/speech-agent/bin/livekit-server --config /opt/dlami/nvme/speech-agent/deployment/livekit.yaml
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+UMask=0077
+StandardOutput=append:/opt/dlami/nvme/speech-agent/logs/livekit.log
+StandardError=append:/opt/dlami/nvme/speech-agent/logs/livekit.log
+[Install]
+WantedBy=multi-user.target

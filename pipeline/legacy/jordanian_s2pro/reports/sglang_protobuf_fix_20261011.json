@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-11",
+  "reported_failure": "descript-audiotools==0.7.2 requires protobuf>=3.9.2,<3.20, conflicting with the explicit protobuf>=6.31.1,<7.0.0 requirement",
+  "cause": "SGLang-Omni's project-level dependency override was incorrectly represented as an ordinary install requirement; packaged dependency projects do not propagate their uv project configuration",
+  "changes": [
+    "Added sglang-overrides.txt matching SGLang-Omni 0.1.3's protobuf override",
+    "Passed --override /opt/sglang-overrides.txt to uv pip install in the container virtual environment",
+    "Retained required Descript codec packages and dependency resolution",
+    "Added build-time checks for interpreter/CLI location and pinned package versions",
+    "Added codec utility/model/quantizer imports and a tiny CPU codec forward pass to the image build",
+    "Included all Docker build input files in the launcher image-tag identity"
+  ],
+  "verification": {
+    "regression_tests_passed": 45,
+    "regression_log": "sglang_protobuf_fix_tests.log",
+    "offline_protobuf_resolution_regression": {
+      "passed": true,
+      "uv_version": "0.12.24",
+      "scope": "Minimal wheel metadata reproducing the reported audiotools protobuf bound and modern protobuf requirement",
+      "without_override": "No solution",
+      "with_override": "protobuf==6.31.1 resolved successfully",
+      "network_used": false,
+      "packages_installed": false,
+      "full_sglang_dependency_graph_tested": false
+    },
+    "image_cache_invalidation_regression": "passed: override change triggers a new image build even when Dockerfile is unchanged",
+    "local_codec_cpu_forward": {
+      "passed": true,
+      "torch": "2.8.0",
+      "protobuf": "5.29.6",
+      "codec": "1.0.0",
+      "audiotools": "0.7.2",
+      "sample_rate": 44100,
+      "input_output_shape": [1, 1, 256],
+      "note": "Validates the smoke-check model/forward code in the existing environment; container protobuf 6 / Torch 2.11 execution remains untested"
+    },
+    "python_syntax": "passed",
+    "docker_build_tested": false,
+    "gpu_tested": false,
+    "limitation": "Sandbox cannot access the Docker socket; the updated build checks will run on the host retry"
+  },
+  "source_documentation": [
+    "https://github.com/sgl-project/sglang-omni/blob/v0.1.3/pyproject.toml#L117-L120",
+    "https://github.com/descriptinc/audiotools/blob/0.7.2/setup.py#L54-L57",
+    "https://docs.astral.sh/uv/pip/compile/#overriding-dependency-versions"
+  ],
+  "public_port": 3000,
+  "models_and_original_environment_unchanged": true
+}

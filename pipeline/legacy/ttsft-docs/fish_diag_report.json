@@ -1,0 +1,225 @@
+import os, re, json, glob, math, subprocess, traceback
+from pathlib import Path
+
+report = {
+    "cwd": os.getcwd(),
+    "repo": {},
+    "source_checks": {},
+    "train_cfg": {},
+    "log_checks": {},
+    "checkpoints": [],
+    "decision": [],
+}
+
+def sh(cmd):
+    p = subprocess.run(cmd, shell=True, text=True, capture_output=True)
+    return {"cmd": cmd, "code": p.returncode, "out": p.stdout[-4000:], "err": p.stderr[-4000:]}
+
+# 1) repo / code location
+report["repo"]["pwd_git"] = sh("git rev-parse --show-toplevel")
+report["repo"]["git_head"] = sh("git rev-parse HEAD")
+report["repo"]["git_log1"] = sh("git log -1 --oneline")
+
+# 2) inspect source code without loading the 4.6B model
+try:
+    import fish_speech
+    fish_root = Path(fish_speech.__file__).resolve().parent
+    llama_py = fish_root / "models" / "text2semantic" / "llama.py"
+    lora_py = fish_root / "models" / "text2semantic" / "lora.py"
+    report["repo"]["fish_speech_root"] = str(fish_root)
+    report["repo"]["llama_py"] = str(llama_py)
+    report["repo"]["lora_py"] = str(lora_py)
+
+    llama_src = llama_py.read_text(encoding="utf-8", errors="replace")
+    lora_src = lora_py.read_text(encoding="utf-8", errors="replace") if lora_py.exists() else ""
+
+    # crude but useful checks
+    from_pretrained_block = llama_src
+    idx_fp = llama_src.find("def from_pretrained")
+    if idx_fp != -1:
+        from_pretrained_block = llama_src[idx_fp: idx_fp + 5000]
+
+    pos_load = from_pretrained_block.find("load_state_dict")
+    pos_setup = from_pretrained_block.find("setup_lora")
+    report["source_checks"]["from_pretrained_has_load_state_dict"] = pos_load != -1
+    report["source_checks"]["from_pretrained_has_setup_lora"] = pos_setup != -1
+    report["source_checks"]["from_pretrained_pos_load_state_dict"] = pos_load
+    report["source_checks"]["from_pretrained_pos_setup_lora"] = pos_setup
+    report["source_checks"]["setup_after_load_state_dict"] = (
+        pos_load != -1 and pos_setup != -1 and pos_setup > pos_load
+    )
+
+    # look for preservation fix pattern in lora.py
+    preserve_markers = [
+        "old_weight = old_embed.weight.data.clone()",
+        "old_weight = old_linear.weight.data.clone()",
+        ".weight.data.copy_(old_weight)",
+    ]
+    report["source_checks"]["lora_preserve_fix_markers_found"] = {
+        m: (m in lora_src) for m in preserve_markers
+    }
+
+except Exception as e:
+    report["source_checks"]["error"] = repr(e)
+    traceback.print_exc()
+
+# 3) hparams / training config
+try:
+    import yaml
+    hp = Path("results/tensorboard/version_0/hparams.yaml")
+    report["train_cfg"]["hparams_path"] = str(hp)
+    report["train_cfg"]["hparams_exists"] = hp.exists()
+    if hp.exists():
+        data = yaml.safe_load(hp.read_text(encoding="utf-8", errors="replace"))
+        model = data.get("model", {})
+        data_cfg = data.get("data", {})
+        trainer = data.get("trainer", {})
+        report["train_cfg"]["base_path"] = model.get("model", {}).get("path")
+        report["train_cfg"]["lora_config"] = model.get("model", {}).get("lora_config")
+        report["train_cfg"]["lr"] = model.get("optimizer", {}).get("lr")
+        report["train_cfg"]["batch_size"] = data_cfg.get("batch_size")
+        report["train_cfg"]["accumulate_grad_batches"] = trainer.get("accumulate_grad_batches")
+        report["train_cfg"]["precision"] = trainer.get("precision")
+        report["train_cfg"]["max_steps"] = trainer.get("max_steps")
+except Exception as e:
+    report["train_cfg"]["error"] = repr(e)
+
+# 4) train.log checks
+try:
+    logp = Path("results/train.log")
+    report["log_checks"]["train_log_path"] = str(logp)
+    report["log_checks"]["train_log_exists"] = logp.exists()
+    if logp.exists():
+        txt = logp.read_text(encoding="utf-8", errors="replace")
+        low = txt.lower()
+        report["log_checks"]["contains_inf"] = "inf" in low
+        report["log_checks"]["contains_nan"] = "nan" in low
+        report["log_checks"]["contains_oom"] = "out of memory" in low
+        loss_vals = []
+        for m in re.finditer(r"(?:loss|train_loss)[^0-9\-+]*([0-9]+(?:\.[0-9]+)?)", txt, re.I):
+            try:
+                loss_vals.append(float(m.group(1)))
+            except:
+                pass
+        report["log_checks"]["first_losses"] = loss_vals[:10]
+        report["log_checks"]["last_losses"] = loss_vals[-10:]
+except Exception as e:
+    report["log_checks"]["error"] = repr(e)
+
+# 5) inspect checkpoints safely
+try:
+    import torch
+    from omegaconf.listconfig import ListConfig
+    from omegaconf.dictconfig import DictConfig
+    torch.serialization.add_safe_globals([ListConfig, DictConfig])
+
+    ckpts = sorted(glob.glob("results/checkpoints/step_*.ckpt"))
+    if not ckpts:
+        report["decision"].append("NO_CHECKPOINTS_FOUND")
+    for ck in ckpts:
+        item = {"path": ck}
+        try:
+            obj = torch.load(ck, map_location="cpu", weights_only=False)
+            sd = obj.get("state_dict", obj) if isinstance(obj, dict) else {}
+            if not isinstance(sd, dict):
+                item["error"] = "state_dict_not_dict"
+            else:
+                keys = list(sd.keys())
+                lora_keys = [k for k in keys if "lora_" in k.lower() or ".lora" in k.lower()]
+                item["num_tensors"] = len(keys)
+                item["num_lora_keys"] = len(lora_keys)
+                item["sample_lora_keys"] = lora_keys[:12]
+
+                finite_bad = 0
+                finite_total = 0
+                bad_names = []
+                for k in lora_keys[:500]:
+                    v = sd[k]
+                    if hasattr(v, "dtype") and hasattr(v, "float"):
+                        t = v.float()
+                        finite_total += 1
+                        if not torch.isfinite(t).all():
+                            finite_bad += 1
+                            bad_names.append(k)
+                item["checked_lora_tensors"] = finite_total
+                item["nonfinite_lora_tensors"] = finite_bad
+                item["nonfinite_lora_examples"] = bad_names[:10]
+
+                # get step from filename
+                m = re.search(r"step_(\d+)\.ckpt$", ck)
+                item["step"] = int(m.group(1)) if m else None
+
+        except Exception as e:
+            item["error"] = repr(e)
+        report["checkpoints"].append(item)
+
+except Exception as e:
+    report["checkpoints"].append({"error": repr(e)})
+
+# 6) decision logic
+setup_after = report.get("source_checks", {}).get("setup_after_load_state_dict")
+fix_markers = report.get("source_checks", {}).get("lora_preserve_fix_markers_found", {})
+fix_found = any(bool(v) for v in fix_markers.values())
+
+all_ckpts = report["checkpoints"]
+valid_ckpts = [x for x in all_ckpts if isinstance(x, dict) and "num_lora_keys" in x]
+
+if setup_after and not fix_found:
+    report["decision"].append("BUGGED_REPO_ORDER_DETECTED")
+
+if valid_ckpts and all(x.get("num_lora_keys", 0) == 0 for x in valid_ckpts):
+    report["decision"].append("NO_LORA_KEYS_IN_ANY_CHECKPOINT")
+
+bad_nonfinite = [x["path"] for x in valid_ckpts if x.get("nonfinite_lora_tensors", 0) > 0]
+if bad_nonfinite:
+    report["decision"].append("NONFINITE_LORA_TENSORS_PRESENT")
+
+if report.get("log_checks", {}).get("contains_inf"):
+    report["decision"].append("TRAIN_LOG_HAS_INF")
+if report.get("log_checks", {}).get("contains_nan"):
+    report["decision"].append("TRAIN_LOG_HAS_NAN")
+
+salvage = [x for x in valid_ckpts if x.get("num_lora_keys", 0) > 0 and x.get("nonfinite_lora_tensors", 0) == 0]
+salvage = sorted(salvage, key=lambda x: x.get("step") or 10**18)
+if salvage:
+    report["decision"].append(f"EARLIEST_POSSIBLY_SALVAGEABLE={salvage[0]['path']}")
+
+# 7) print compact summary
+print("=" * 88)
+print("FISH SPEECH ROOT CAUSE CHECK")
+print("=" * 88)
+print(json.dumps(report, indent=2, ensure_ascii=False))
+
+print("\n" + "=" * 88)
+print("ACTION")
+print("=" * 88)
+
+if "BUGGED_REPO_ORDER_DETECTED" in report["decision"]:
+    print("1) Your installed fish_speech code still has the LoRA load-order bug.")
+    print("   Fix/update the repo FIRST, then retrain from scratch. Old checkpoints are not trustworthy.")
+elif "NO_LORA_KEYS_IN_ANY_CHECKPOINT" in report["decision"]:
+    print("1) No LoRA keys found in checkpoints.")
+    print("   Retrain with explicit CLI override: +lora@model.model.lora_config=r_8_alpha_16")
+else:
+    print("1) LoRA keys exist, so adapters were probably attached.")
+
+if "TRAIN_LOG_HAS_INF" in report["decision"] or "TRAIN_LOG_HAS_NAN" in report["decision"] or "NONFINITE_LORA_TENSORS_PRESENT" in report["decision"]:
+    print("2) Training is numerically unstable.")
+    print("   Retrain with lower LR and more accumulation:")
+    print("   model.optimizer.lr=5e-5 trainer.accumulate_grad_batches=4 trainer.gradient_clip_val=0.5")
+    print("   If needed, also try trainer.precision=16-mixed")
+else:
+    print("2) No obvious non-finite adapter weights detected.")
+
+earliest = None
+for d in report["decision"]:
+    if d.startswith("EARLIEST_POSSIBLY_SALVAGEABLE="):
+        earliest = d.split("=", 1)[1]
+        break
+if earliest:
+    print(f"3) Before retraining, you can try merging the earliest sane checkpoint: {earliest}")
+    print("   Use the same s2-pro base for merge and inference.")
+else:
+    print("3) No checkpoint looks safely salvageable from this scan.")
+
+print("=" * 88)

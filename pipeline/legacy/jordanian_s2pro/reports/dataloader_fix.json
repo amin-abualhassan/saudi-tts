@@ -1,0 +1,72 @@
+{
+  "dataset": "/opt/dlami/nvme/training/jordanian_s2pro/cache/eef569b20c6e7d3f45ac876d/pilot-data",
+  "device": "CPU",
+  "num_workers": 0,
+  "batches": {
+    "train": {
+      "inputs": [
+        1,
+        11,
+        1604
+      ],
+      "labels": [
+        1,
+        11,
+        1604
+      ],
+      "persistent_workers": false
+    },
+    "validation": {
+      "inputs": [
+        1,
+        11,
+        816
+      ],
+      "labels": [
+        1,
+        11,
+        816
+      ],
+      "persistent_workers": false
+    }
+  },
+  "loaded_speaker_groups": [
+    "talha_ahmad",
+    "single_speaker",
+    "wesam_ali",
+    "guest_zsbp3t7j3m_speaker_01"
+  ],
+  "group_weights": [
+    0.4,
+    0.15,
+    0.225,
+    0.225
+  ],
+  "packed_validation": {
+    "train": {
+      "verified_sentences": 4,
+      "speakers": 4
+    },
+    "validation": {
+      "verified_sentences": 4,
+      "speakers": 4
+    },
+    "test": {
+      "verified_sentences": 4,
+      "speakers": 4
+    }
+  },
+  "codec_roundtrip": {
+    "sample_rate": 44100,
+    "duration": 29.860861678004536,
+    "reference_duration": 29.86,
+    "finite": true,
+    "rms": 0.07260668897984392
+  },
+  "tests_passed": 14,
+  "original_failure": "Upstream SemanticDataModule set persistent_workers=True with num_workers=0 for both loaders",
+  "fix": "Suite-local BalancedDataModule uses persistent_workers=(num_workers > 0); retains zero-worker sampling and dynamic pilot collator",
+  "GPU_training_after_fix": "Not run; user will restart launcher in screen",
+  "failed_campaign": "/opt/dlami/nvme/training/jordanian_s2pro/suites/b80efc05f68821d6bb68b5d4",
+  "original_run_gpu": "NVIDIA H100 80GB HBM3"
+}

@@ -1,0 +1,130 @@
+{
+  "validated_at": "2026-10-11T22:55:52Z",
+  "base_url": "http://127.0.0.1:3000",
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 14589
+    },
+    "/compare": {
+      "status": 200,
+      "bytes": 7706
+    },
+    "/sglang-compare": {
+      "status": 200,
+      "bytes": 3807
+    },
+    "/api/sglang-comparison": {
+      "status": 200,
+      "bytes": 45146
+    },
+    "/api/reference/talha_ahmad.wav": {
+      "status": 200,
+      "bytes": 1058444
+    },
+    "/api/reference/wesam_ali.wav": {
+      "status": 200,
+      "bytes": 1061090
+    },
+    "/api/reference/single_speaker.wav": {
+      "status": 200,
+      "bytes": 1049978
+    }
+  },
+  "loaded_models": [
+    "fast_r32_final",
+    "attention_mlp_r16_early"
+  ],
+  "studio_requests": [
+    {
+      "id": "705fc413d18244d1911c9953ba6afa9b",
+      "status": "complete",
+      "request": {
+        "model": "fast_r32_final",
+        "reference_id": "talha_ahmad",
+        "text": "كيفك اليوم؟ شو رأيك نطلع نشرب قهوة بعد الشغل؟",
+        "reference_text": "مش مؤثر عنده استحواذ عنده محاولات بس ما في نفس القوه المعتاده اللي اللي نحن بنعرفها عن مانشستر سيتي ما حسينا انه قادر يفرض نسقه المعتاد ولا انه قادر يداري او يجاري",
+        "seed": 42,
+        "max_new_tokens": 1024,
+        "temperature": 0.7,
+        "top_p": 0.7
+      },
+      "reference_name": "Talha Ahmad",
+      "created_at": 1791759349.9680576,
+      "checkpoint_sha256": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b",
+      "reference_sha256": "3915a0e0c9bf5b4ab731f56da0af8a33132777b23585da4d9ca705b4c54a7905",
+      "campaign": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c",
+      "started_at": 1791759350.455405,
+      "audio_url": "/api/audio/705fc413d18244d1911c9953ba6afa9b.wav",
+      "duration": 3.111473922902494,
+      "elapsed": 0.8048315350024495,
+      "sample_rate": 44100,
+      "warning": null,
+      "backend": "sglang-omni",
+      "rtf": 0.2586656854419895,
+      "seed_supported": true,
+      "first_response_bytes_seconds": 0.8018492689880077,
+      "finished_at": 1791759351.4584424,
+      "wav_bytes": 274476
+    },
+    {
+      "id": "ecf107e7de1341e48fe6f548789b1005",
+      "status": "complete",
+      "request": {
+        "model": "attention_mlp_r16_early",
+        "reference_id": "wesam_ali",
+        "text": "كيفك اليوم؟ شو رأيك نطلع نشرب قهوة بعد الشغل؟",
+        "reference_text": "هو احيانا اذاء النفس بصير لانه الجسم لما تاذي نفسك بيفرز مواد كيماويه بتعطيك شعور راحه مؤقت فقط اماكن الايذاء اللي كنت تاذي فيها حالك",
+        "seed": 42,
+        "max_new_tokens": 1024,
+        "temperature": 0.7,
+        "top_p": 0.7
+      },
+      "reference_name": "Wesam Ali",
+      "created_at": 1791759351.4835832,
+      "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf",
+      "reference_sha256": "a632e21232ac969a623235dc602cf558afbc30e0f5a74b259b4afa8fd06b8e9d",
+      "campaign": "/opt/dlami/nvme/training/jordanian_s2pro/suites/36aa33e6739594a4858d620c",
+      "started_at": 1791759351.960349,
+      "audio_url": "/api/audio/ecf107e7de1341e48fe6f548789b1005.wav",
+      "duration": 2.8792743764172335,
+      "elapsed": 0.7611622679978609,
+      "sample_rate": 44100,
+      "warning": null,
+      "backend": "sglang-omni",
+      "rtf": 0.26435906012715527,
+      "seed_supported": true,
+      "first_response_bytes_seconds": 0.7583351439971011,
+      "finished_at": 1791759352.963803,
+      "wav_bytes": 253996
+    }
+  ],
+  "note": "HTTP/audio integrity verified; human accent/voice-quality review remains pending.",
+  "new_upload_checks": {
+    "reference_id": "upload_0a8038a083ab40358130880d04a64cdf",
+    "jobs": [
+      {
+        "id": "a9c23046b67c4c6da948b23f2650f84d",
+        "status": "complete",
+        "elapsed": 0.9504723730206024,
+        "duration": 3.8080725623582765,
+        "rtf": 0.24959408137748051,
+        "sample_rate": 44100,
+        "audio_url": "/api/audio/a9c23046b67c4c6da948b23f2650f84d.wav",
+        "backend": "sglang-omni",
+        "model": "fast_r32_final"
+      },
+      {
+        "id": "f8e34860e7de40928da6e1591f34041e",
+        "status": "complete",
+        "elapsed": 1.1519064420135692,
+        "duration": 4.551111111111111,
+        "rtf": 0.25310444282524713,
+        "sample_rate": 44100,
+        "audio_url": "/api/audio/f8e34860e7de40928da6e1591f34041e.wav",
+        "backend": "sglang-omni",
+        "model": "attention_mlp_r16_early"
+      }
+    ]
+  }
+}

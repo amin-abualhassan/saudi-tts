@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SGLang listening comparison</title>
+<style>body{font:16px system-ui;background:#10151d;color:#eef2ff;margin:2rem auto;max-width:1050px;padding:0 1rem}a{color:#96c6ff}article{padding:1rem;margin:1rem 0;background:#1a2330;border-radius:12px}.players{display:flex;gap:2rem;flex-wrap:wrap}audio{max-width:100%}small{color:#b2bdd0}p[dir]{font-size:1.25rem}</style>
+<a href="/">← Voice studio</a><h1>SGLang listening comparison</h1>
+<p>Same checkpoints, text and speaker references. Listen for Jordanian accent, voice identity, clarity and missing or repeated words. Sampling differs between engines.</p>
+<p>Original timings were recorded earlier. RTF is generation time ÷ audio duration; lower is faster. These are full WAV requests, so first response bytes are not streaming time to first audio.</p>
+<p id="state">Loading comparison…</p><div id="metrics"></div><main id="rows"></main>
+<script>
+const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node};
+async function refresh() {
+  if ([...document.querySelectorAll('audio')].some(audio => !audio.paused)) return;
+  try {
+    const response = await fetch('/api/sglang-comparison');
+    if (!response.ok) throw new Error('Comparison is unavailable');
+    const data = await response.json();
+    const complete = data.rows.filter(row => !row.error).length;
+    document.querySelector('#state').textContent = `${complete}/30 matched samples available · ${data.rows.length - complete} failed`;
+    const metrics = document.querySelector('#metrics');
+    metrics.replaceChildren();
+    for (const [model, repeats] of Object.entries(data.warm_repeats || {})) {
+      const warm = repeats.filter(row => !row.error && !row.streamed_pcm);
+      const stream = repeats.find(row => !row.error && row.streamed_pcm);
+      const text = model + (warm.length ? ` · warm average RTF ${(warm.reduce((sum, row) => sum + row.rtf, 0) / warm.length).toFixed(2)}` : '') +
+        (stream ? ` · first streamed audio ${stream.time_to_first_audio_seconds.toFixed(2)} s` : '');
+      metrics.append(el('p', text));
+    }
+    if (data.gpu_memory?.sampled_peak_mib) metrics.append(el('p', `Observed GPU memory peak: ${(data.gpu_memory.sampled_peak_mib / 1024).toFixed(1)} GiB, including both models`));
+    const main = document.querySelector('#rows');
+    main.replaceChildren();
+    for (const row of data.rows) {
+      const card = el('article');
+      card.append(el('h3', row.model + ' · ' + row.speaker + ' · ' + row.case));
+      const text = el('p', row.text);
+      text.dir = 'auto';
+      card.append(text);
+      const players = el('div');
+      players.className = 'players';
+      for (const [label, url, elapsed, duration] of [
+        ['Original', row.baseline_wav ? '/audio?path=' + encodeURIComponent(row.baseline_wav) : null, row.baseline_elapsed, row.baseline_duration],
+        ['SGLang', '/api/sglang-audio/' + row.audio_id + '.wav', row.elapsed, row.duration]
+      ]) {
+        if (!url || !duration || !Number.isFinite(elapsed)) continue;
+        const part = el('div');
+        part.append(el('p', `${label} · ${elapsed.toFixed(2)} s · RTF ${(elapsed / duration).toFixed(2)}`));
+        const audio = el('audio');
+        audio.controls = true;
+        audio.preload = 'none';
+        audio.src = url;
+        part.append(audio);
+        players.append(part);
+      }
+      card.append(players);
+      if (row.warning || row.error) card.append(el('small', row.warning || row.error));
+      main.append(card);
+    }
+  } catch (error) {
+    document.querySelector('#state').textContent = error.message;
+  }
+}
+refresh();setInterval(refresh,30000);
+</script></html>
+

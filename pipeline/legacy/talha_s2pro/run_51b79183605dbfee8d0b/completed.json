@@ -1,0 +1,8 @@
+{
+  "step": 2000,
+  "final_checkpoint": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints/final.ckpt",
+  "best_checkpoint": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints/best_000002000.ckpt",
+  "periodic_best_checkpoint": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints/best_000002000.ckpt",
+  "chosen_checkpoint": "/opt/dlami/nvme/training/talha_s2pro/runs/51b79183605dbfee8d0b/checkpoints/best_000002000.ckpt",
+  "final_validation_loss": 18.467742919921875
+}

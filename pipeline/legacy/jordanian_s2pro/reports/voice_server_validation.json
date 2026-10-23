@@ -1,0 +1,121 @@
+{
+  "observed_at_utc": "2026-10-10 18:14:16 UTC",
+  "status": "implemented_and_verified_host_launch_pending",
+  "selected_models": [
+    "fast_r32_final",
+    "attention_mlp_r16_early"
+  ],
+  "listening_decision": "User preferred fast_r32_final over fast_r16_final and attention_mlp_r16_early over attention_r16_early; requested serving only these two checkpoints.",
+  "artifact_checks": {
+    "models": {
+      "fast_r32_final": {
+        "step": 1500,
+        "adapter_tensors": 44,
+        "adapter_parameters": 7110656,
+        "rank": 32,
+        "targets": [
+          "fast_attention",
+          "fast_mlp",
+          "fast_embeddings",
+          "fast_output"
+        ],
+        "checkpoint_sha256": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b"
+      },
+      "attention_mlp_r16_early": {
+        "step": 200,
+        "adapter_tensors": 400,
+        "adapter_parameters": 33423360,
+        "rank": 16,
+        "targets": [
+          "attention",
+          "mlp"
+        ],
+        "checkpoint_sha256": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf"
+      }
+    },
+    "references": {
+      "talha_ahmad": {
+        "duration": 12,
+        "token_shape": [
+          10,
+          259
+        ],
+        "verified": true
+      },
+      "wesam_ali": {
+        "duration": 12.03,
+        "token_shape": [
+          10,
+          260
+        ],
+        "verified": true
+      },
+      "single_speaker": {
+        "duration": 11.904013605442177,
+        "token_shape": [
+          10,
+          257
+        ],
+        "verified": true
+      }
+    }
+  },
+  "server": {
+    "port": 7860,
+    "start_command": "screen -S jordanian-voice bash /opt/dlami/nvme/training/jordanian_s2pro/start_voice_server.sh",
+    "generation_defaults": {
+      "seed": 42,
+      "temperature": 0.7,
+      "top_p": 0.7,
+      "max_new_tokens": 1024
+    },
+    "references": "Identical WAVs, transcripts and verified codec tokens from Listen and compare",
+    "voice_uploads": "3–30 seconds, at most 25 MB; transcript required",
+    "queue": "One serial persistent CUDA worker; eight queued requests; two models cached when memory allows",
+    "comparison_page": "/compare",
+    "outputs": "training/jordanian_s2pro/voice/results/",
+    "logs": "training/jordanian_s2pro/voice/server.log"
+  },
+  "verification": {
+    "suite_regression_tests": 32,
+    "result": "passed",
+    "command": "/opt/dlami/nvme/miniconda3/envs/fish-speech/bin/python -m unittest discover -s training/jordanian_s2pro/tests -v",
+    "elapsed_seconds": 3.111,
+    "server_tests": 11,
+    "worker_tests": 4,
+    "actual_upload_formats": [
+      "WAV",
+      "MP3",
+      "M4A",
+      "WebM",
+      "FLAC",
+      "OGG"
+    ],
+    "http_validation": "Actual handler request parsing and WAV delivery exercised via in-memory streams; socket connections unavailable",
+    "worker_loading": "Actual tiny DualAR models with real fast and attention+MLP LoRA checkpoint tensors loaded on CPU",
+    "ui": {
+      "javascript_syntax": "passed",
+      "dom_stub_checks": [
+        "Exactly two selected models",
+        "Three comparison references",
+        "Built-in generation enabled",
+        "Custom voice requires upload",
+        "New upload clears old transcript and requires a new one",
+        "Custom voice submits correct model, audio and transcript",
+        "Speaker audio preview switches",
+        "Generated playback and download render"
+      ],
+      "real_browser_test": false
+    },
+    "python_syntax": "passed",
+    "shell_syntax": "passed",
+    "selected_checkpoint_integrity": "passed"
+  },
+  "live_launch": {
+    "attempted": true,
+    "succeeded": false,
+    "error": "PermissionError: [Errno 1] Operation not permitted at socket.socket",
+    "cuda_available": false,
+    "required_next_step": "Launch the provided script on the H100 host inside screen. Live generation and real-browser recording/playback are not verified in this sandbox."
+  }
+}

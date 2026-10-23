@@ -1,0 +1,18 @@
+[Unit]
+Description=Aljawab bilingual voice application
+After=network-online.target aljawab-livekit.service
+Requires=aljawab-livekit.service
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/dlami/nvme/speech-agent
+ExecStart=/opt/dlami/nvme/speech-agent/.venv/bin/uvicorn app.server:app --host ::1 --port 8002 --no-access-log --no-server-header --log-level warning
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=20
+NoNewPrivileges=true
+UMask=0077
+StandardOutput=append:/opt/dlami/nvme/speech-agent/logs/app.log
+StandardError=append:/opt/dlami/nvme/speech-agent/logs/app.log
+[Install]
+WantedBy=multi-user.target

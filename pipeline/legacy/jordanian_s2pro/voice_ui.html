@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordanian Voice Studio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10151c;--card:#19212c;--border:#303c4c;--text:#edf2f7;--muted:#9daec1;--accent:#8ae3c1}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,sans-serif}
+    main{max-width:1160px;margin:auto;padding:32px 24px 60px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:24px}
+    h1{margin:0;font-size:28px;letter-spacing:-.7px}h2{margin:0 0 18px;font-size:19px}p{margin:8px 0}.muted{color:var(--muted);font-size:14px}
+    a{color:var(--accent)}.layout{display:grid;grid-template-columns:360px 1fr;gap:20px}.panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px}
+    label{display:block;font-weight:600;font-size:14px;margin:16px 0 6px}input,select,textarea,button{font:inherit}input,select,textarea{width:100%;border:1px solid var(--border);border-radius:9px;background:#111923;color:var(--text);padding:11px}
+    textarea{resize:vertical;font-size:18px;line-height:1.8}textarea.small{font-size:15px}button{cursor:pointer;border:1px solid var(--border);border-radius:9px;background:#253345;color:var(--text);padding:10px 16px}
+    button:disabled{opacity:.5;cursor:default}button.primary{background:var(--accent);color:#10251d;border:none;font-weight:700;padding:13px 24px}.tabs{display:flex;gap:8px}.tabs button{flex:1;padding:9px}.tabs button.active{border-color:var(--accent);color:var(--accent)}
+    audio{width:100%;margin-top:12px}.status{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;margin-bottom:24px}.dot{width:9px;height:9px;border-radius:50%;background:#e5bc72;flex-shrink:0}.dot.ready{background:var(--accent)}.dot.error{background:#ff9292}
+    .error{color:#ffabab;white-space:pre-wrap;margin-top:10px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.row label{flex:1;min-width:100px}.row input{margin-top:5px}details{margin:20px 0}summary{color:var(--muted);cursor:pointer;font-size:14px}.result{border-top:1px solid var(--border);padding:18px 0}.result:first-child{border-top:0;padding-top:0}.result-title{font-weight:600;font-size:14px;overflow-wrap:anywhere}.speech{white-space:pre-wrap;max-height:130px;overflow:auto}.badge{font-size:12px;background:#28384a;color:#c5d9ed;border-radius:20px;padding:3px 9px}.hidden,[hidden]{display:none!important}.hint{background:#111923;border-radius:8px;padding:12px;margin:12px 0}#upload-state{min-height:22px}#generate-feedback{margin-top:12px}.count{float:right;font-size:12px;font-weight:400;color:var(--muted)}
+    @media(max-width:800px){main{padding:22px 14px}.layout{grid-template-columns:1fr}.panel{padding:20px}header{align-items:flex-start}header a{font-size:13px}}
+  </style>
+</head>
+<body>
+<main>
+  <header><div><h1>Jordanian Voice Studio</h1><p class="muted">Your two selected models. A familiar voice, or your own.</p></div><a href="/compare" target="_blank" rel="noopener">Listen and compare ↗</a></header>
+  <div class="status" role="status" aria-live="polite"><span id="status-dot" class="dot"></span><span id="server-state">Connecting to the voice server…</span><button id="retry" hidden>Retry server</button></div>
+  <div class="layout">
+    <aside>
+      <section class="panel"><h2>1. Choose a model</h2><label for="model">Selected checkpoint</label><select id="model" disabled></select><p class="muted">Switch models to hear the same text in the same reference voice.</p></section>
+      <section class="panel"><h2>2. Choose a voice</h2>
+        <div class="tabs"><button id="sample-tab" class="active" aria-pressed="true">Speaker sample</button><button id="own-tab" aria-pressed="false">My voice</button></div>
+        <div id="sample-panel"><label for="speaker">Speaker</label><select id="speaker" disabled></select><audio id="sample-audio" controls preload="none"></audio><p id="sample-transcript" class="muted" dir="auto"></p></div>
+        <div id="own-panel" hidden>
+          <p class="muted">Use a clear, single-speaker clip of 3–30 seconds. About 10–15 seconds is a good starting point.</p>
+          <label for="voice-file">Upload a voice sample</label><input id="voice-file" type="file" accept="audio/*,.wav,.mp3,.flac,.m4a,.ogg,.webm">
+          <div class="row" style="margin-top:12px"><button id="record">Record microphone</button><span id="record-time" class="muted"></span></div>
+          <p id="microphone-hint" class="muted" hidden>Microphone recording needs HTTPS or localhost. You can upload an audio file here.</p>
+          <p id="upload-state" class="muted" role="status"></p><audio id="own-audio" controls preload="none" hidden></audio>
+          <label for="reference-text">What did you say in this clip?</label><textarea id="reference-text" class="small" rows="4" maxlength="1000" dir="auto" placeholder="Write the exact words spoken in your voice sample."></textarea>
+          <p class="muted">This transcript describes the reference clip. Enter the new words you want to generate in the speech box.</p>
+        </div>
+      </section>
+    </aside>
+    <div>
+      <section class="panel"><h2>3. Write your speech</h2><label for="speech">Text to generate <span id="character-count" class="count">0 / 1000</span></label>
+        <textarea id="speech" rows="7" maxlength="1000" dir="auto">كيفك اليوم؟ شو رأيك نطلع نشرب قهوة بعد الشغل؟</textarea>
+        <details><summary>Generation settings</summary><div class="row"><label>Temperature<input id="temperature" type="number" min="0.1" max="1" step="0.05" value="0.7"></label><label>Top P<input id="top-p" type="number" min="0.1" max="1" step="0.05" value="0.7"></label></div><div class="row"><label>Seed<input id="seed" type="number" min="0" max="4294967295" step="1" value="42"></label><label>Maximum audio tokens<select id="max-tokens"><option value="1024">1024 (default)</option><option value="2048">2048 (longer passages)</option><option value="512">512 (short passages)</option></select></label></div><p class="muted">The defaults match Listen and compare. Keep the same seed when comparing models.</p></details>
+        <button id="generate" class="primary" disabled>Generate speech</button><p id="generate-feedback" class="muted" role="status" aria-live="polite"></p><p id="error" class="error" role="alert"></p>
+      </section>
+      <section class="panel"><h2>Generated audio</h2><div id="results"><p class="muted">Your generated clips will appear here, with playback and WAV downloads.</p></div></section>
+    </div>
+  </div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let state = null, voiceMode = 'sample', uploaded = null, uploading = false, submitting = false;
+let recorder = null, recordStream = null, recordTimer = null, recordStarted = 0, resultsSignature = '';
+function element(tag, text, className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el}
+async function api(path, options){const response=await fetch(path,options);const value=await response.json();if(!response.ok)throw new Error(value.error||'The server could not complete the request');return value}
+function updateGenerate(){const connected=state&&state.status!=='error';const refOK=voiceMode==='sample'?!!$('speaker').value:!!uploaded&&!!$('reference-text').value.trim();$('generate').disabled=!connected||!$('model').value||!$('speech').value.trim()||!refOK||uploading||submitting||!!recorder}
+function setVoiceMode(mode){voiceMode=mode;$('sample-panel').hidden=mode!=='sample';$('own-panel').hidden=mode!=='own';for(const [id,name]of [['sample-tab','sample'],['own-tab','own']]){$(id).classList.toggle('active',mode===name);$(id).setAttribute('aria-pressed',String(mode===name))}updateGenerate()}
+function updateSample(){const ref=(state?.references||[]).find(r=>r.id===$('speaker').value);if(ref){$('sample-audio').src=ref.audio_url;$('sample-transcript').textContent=ref.text}updateGenerate()}
+function countText(){$('character-count').textContent=$('speech').value.length+' / 1000';updateGenerate()}
+async function uploadVoice(blob){uploading=true;uploaded=null;$('reference-text').value='';$('upload-state').textContent='Preparing your voice sample…';$('own-audio').hidden=true;$('error').textContent='';updateGenerate();try{uploaded=await api('/api/upload',{method:'POST',headers:{'Content-Type':'application/octet-stream'},body:blob});$('own-audio').src=uploaded.audio_url;$('own-audio').hidden=false;$('upload-state').textContent='Voice sample ready · '+uploaded.duration.toFixed(1)+' seconds'}catch(error){$('upload-state').textContent='';$('error').textContent=error.message}finally{uploading=false;updateGenerate()}}
+function renderResults(jobs){const signature=JSON.stringify(jobs);if(signature===resultsSignature)return;resultsSignature=signature;const container=$('results');container.replaceChildren();if(!jobs.length){container.append(element('p','Your generated clips will appear here, with playback and WAV downloads.','muted'));return}for(const job of [...jobs].reverse().slice(0,15)){const card=element('div',undefined,'result');const title=element('div',undefined,'row');title.append(element('span',job.request.model,'result-title'),element('span',job.status,'badge'));card.append(title,element('p',job.reference_name,'muted'));const text=element('p',job.request.text,'speech');text.dir='auto';card.append(text);if(job.audio_url){const audio=element('audio');audio.controls=true;audio.preload='none';audio.src=job.audio_url;card.append(audio);const row=element('div',undefined,'row');const link=element('a','Download WAV');link.href=job.audio_url;link.download=job.request.model+'_'+job.id+'.wav';row.append(link,element('span',job.duration.toFixed(1)+' s · generated in '+job.elapsed.toFixed(1)+' s','muted'));card.append(row)}if(job.error)card.append(element('p',job.error,'error'));if(job.warning)card.append(element('p',job.warning,'error'));if(job.status==='queued')card.append(element('p','Waiting for the model or an earlier request.','muted'));container.append(card)}}
+function populate(select, items){const signature=items.map(x=>x.id).join(',');if(select.dataset.signature===signature)return;const previous=select.value;select.replaceChildren();for(const item of items)select.add(new Option(item.name,item.id));if(items.some(item=>item.id===previous))select.value=previous;select.dataset.signature=signature;select.disabled=!items.length}
+async function refresh(){try{state=await api('/api/status');$('server-state').textContent=state.message||state.status;$('status-dot').className='dot '+(state.status==='ready'?'ready':state.status==='error'?'error':'');$('retry').hidden=state.status!=='error';populate($('model'),state.models||[]);const prior=$('speaker').value;populate($('speaker'),state.references||[]);if(prior!==$('speaker').value||!$('sample-audio').getAttribute('src'))updateSample();renderResults(state.jobs||[]);updateGenerate()}catch(error){state=null;$('server-state').textContent='Connection lost. Reconnecting…';$('generate').disabled=true}}
+$('sample-tab').onclick=()=>setVoiceMode('sample');$('own-tab').onclick=()=>setVoiceMode('own');$('speaker').onchange=updateSample;$('model').onchange=updateGenerate;$('speech').oninput=countText;$('reference-text').oninput=updateGenerate;
+$('voice-file').onchange=()=>{const file=$('voice-file').files[0];if(!file)return;if(uploading||recorder){$('error').textContent='Wait for the current recording or upload to finish.';return}if(file.size>25*1024*1024){$('error').textContent='Choose an audio file smaller than 25 MB';return}uploadVoice(file)};
+$('generate').onclick=async()=>{submitting=true;updateGenerate();$('error').textContent='';$('generate-feedback').textContent='Submitting…';try{const request={model:$('model').value,text:$('speech').value,reference_id:voiceMode==='sample'?$('speaker').value:uploaded.id,reference_text:$('reference-text').value,temperature:Number($('temperature').value),top_p:Number($('top-p').value),seed:Number($('seed').value),max_new_tokens:Number($('max-tokens').value)};await api('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request)});$('generate-feedback').textContent='Request queued. Your audio will appear below.';await refresh()}catch(error){$('error').textContent=error.message;$('generate-feedback').textContent=''}finally{submitting=false;updateGenerate()}};
+$('retry').onclick=async()=>{$('retry').disabled=true;try{await api('/api/retry',{method:'POST'});await refresh()}catch(error){$('error').textContent=error.message}finally{$('retry').disabled=false}};
+const microphoneAvailable=!!(navigator.mediaDevices?.getUserMedia&&window.MediaRecorder);$('record').disabled=!microphoneAvailable;$('microphone-hint').hidden=microphoneAvailable;
+$('record').onclick=async()=>{if(recorder){if(recorder.state==='recording'){recorder.stop();$('record').disabled=true}return}if(uploading)return;$('error').textContent='';$('record').disabled=true;try{recordStream=await navigator.mediaDevices.getUserMedia({audio:true});recorder=new MediaRecorder(recordStream);const chunks=[];recorder.ondataavailable=event=>{if(event.data.size)chunks.push(event.data)};recorder.onstop=()=>{const type=recorder.mimeType;clearInterval(recordTimer);recordStream.getTracks().forEach(track=>track.stop());recorder=null;recordStream=null;$('record').textContent='Record microphone';$('record').disabled=false;$('record-time').textContent='';uploadVoice(new Blob(chunks,{type:type||'audio/webm'}))};recorder.start();recordStarted=Date.now();$('record').textContent='Stop recording';recordTimer=setInterval(()=>{const seconds=Math.floor((Date.now()-recordStarted)/1000);$('record-time').textContent=seconds+' s / 30 s';if(seconds>=29&&recorder?.state==='recording')recorder.stop()},250)}catch(error){recordStream?.getTracks().forEach(track=>track.stop());recordStream=null;recorder=null;$('error').textContent='Microphone: '+error.message+'. You can upload an audio file instead.'}finally{$('record').disabled=false;updateGenerate()}};
+window.addEventListener('beforeunload',()=>recordStream?.getTracks().forEach(track=>track.stop()));
+countText();refresh();setInterval(refresh,2000);
+</script>
+</body>
+</html>

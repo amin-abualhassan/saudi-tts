@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+httpx
+aiohttp
+pyyaml
+pydantic-settings
+beautifulsoup4
+livekit-agents
+livekit-plugins-silero
+openai
+websockets
+pytest
+pytest-asyncio
+playwright

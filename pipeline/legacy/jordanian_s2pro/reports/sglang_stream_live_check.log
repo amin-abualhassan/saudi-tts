@@ -1,0 +1,8 @@
+Both engines ready for streaming audit
+fast_r32_final TTFT 0.11 first audio 0.915 complete 3.935 chunks 96
+attention_mlp_r16_early TTFT 0.109 first audio 0.938 complete 4.25 chunks 103
+fast_r32_final TTFT 12.983 first audio 13.872 complete 13.994 chunks 19
+fast_r32_final normal uploaded-voice generation retained
+attention_mlp_r16_early normal uploaded-voice generation retained
+Disconnected stream finished and saved its WAV; worker remains ready
+Live streaming report saved

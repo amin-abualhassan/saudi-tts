@@ -1,0 +1,256 @@
+{
+  "status": "live_validated",
+  "updated_at": "2026-10-11T23:35:35Z",
+  "public_port": 3000,
+  "page": "/stream",
+  "endpoint": "POST /api/stream",
+  "format": "SSE with base64 pcm_s16le mono 44100Hz",
+  "existing_flow": "Normal /, POST /api/generate, raw WAVs and ending-volume downloads retained.",
+  "tests": {
+    "passed": 70,
+    "log": "reports/sglang_stream_tests.log"
+  },
+  "javascript_syntax": "Passed QuickJS 1.19.4 parser in isolated uv environment.",
+  "preflight": {
+    "versions": {
+      "sglang": "0.5.16",
+      "sglang-omni": "0.1.3",
+      "transformers": "5.12.1",
+      "flashinfer-python": "0.6.14"
+    },
+    "torch": "2.11.0+cu130",
+    "token_timing": {
+      "factory": "sglang_telemetry.create_timed_tts_engine_executor",
+      "clock": "monotonic",
+      "tagged_streams_only": true
+    },
+    "speech_fields": [
+      "duration_tokens",
+      "initial_codec_chunk_frames",
+      "input",
+      "instructions",
+      "language",
+      "max_new_tokens",
+      "model",
+      "ref_audio",
+      "ref_text",
+      "references",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "speed",
+      "stage_params",
+      "stream",
+      "task_type",
+      "temperature",
+      "token_count",
+      "top_k",
+      "top_p",
+      "voice",
+      "x_vector_only_mode"
+    ],
+    "torchaudio": "2.11.0+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "total_memory": 85019590656,
+    "settings": {
+      "dtype": "bfloat16",
+      "max_running_requests": 1,
+      "max_total_tokens": 8192,
+      "mem_fraction_static": 0.32,
+      "chunked_prefill_size": 2048,
+      "cuda_graph_bs_decode": [
+        1
+      ],
+      "cuda_graph_max_bs_decode": 1,
+      "disable_prefill_cuda_graph": true,
+      "torch_compile_max_bs": 1,
+      "enable_torch_compile": true,
+      "disable_cuda_graph": false,
+      "attention_backend": "fa3"
+    }
+  },
+  "definitions": {
+    "time_to_first_token_seconds": "Engine HTTP request start to first actual generated audio frame collected after Slow-AR/Fast-AR; includes reference encoding, excludes studio queue.",
+    "engine_time_to_first_token_seconds": "Native TTS request builder to first generated audio frame; excludes reference preprocessing.",
+    "time_to_first_audio_seconds": "Engine HTTP request start to first PCM bytes received by worker.",
+    "browser_first_audio_seconds": "Browser fetch start to first received audio event, includes studio queue/network."
+  },
+  "artifacts": [
+    "reports/sglang_stream_launch.log",
+    "sglang_stream.html",
+    "sglang_stream.py",
+    "sglang_telemetry.py"
+  ],
+  "pending": [
+    "User listening review of streamed audio and voice quality."
+  ],
+  "validated_at": "2026-10-11T23:53:14Z",
+  "loaded_models": [
+    "fast_r32_final",
+    "attention_mlp_r16_early"
+  ],
+  "streams": [
+    {
+      "id": "24364c39862b4ad19941016456ab49c4",
+      "elapsed": 3.8610988490108866,
+      "duration": 16.35845804988662,
+      "rtf": 0.2360307332901494,
+      "time_to_first_token_seconds": 0.10993067102390341,
+      "engine_time_to_first_token_seconds": 0.05355929399956949,
+      "time_to_first_audio_seconds": 0.8494296120188665,
+      "audio_url": "/api/audio/24364c39862b4ad19941016456ab49c4.wav",
+      "leveled_audio_url": "/api/leveled-audio/24364c39862b4ad19941016456ab49c4.wav",
+      "model": "fast_r32_final",
+      "reference_id": "talha_ahmad",
+      "client_first_audio_seconds": 0.9148573069833219,
+      "client_complete_seconds": 3.93460217298707,
+      "audio_chunks": 96,
+      "sample_count": 721408,
+      "first_audio_before_completion": true,
+      "queue_seconds": 0.06255531311035156
+    },
+    {
+      "id": "b26c9ad37d1d4cd2987ce91392e135b2",
+      "elapsed": 4.158354145009071,
+      "duration": 17.554285714285715,
+      "rtf": 0.23688540865123286,
+      "time_to_first_token_seconds": 0.10893655300606042,
+      "engine_time_to_first_token_seconds": 0.05168480600696057,
+      "time_to_first_audio_seconds": 0.8540459880023263,
+      "audio_url": "/api/audio/b26c9ad37d1d4cd2987ce91392e135b2.wav",
+      "leveled_audio_url": "/api/leveled-audio/b26c9ad37d1d4cd2987ce91392e135b2.wav",
+      "model": "attention_mlp_r16_early",
+      "reference_id": "talha_ahmad",
+      "client_first_audio_seconds": 0.9375218530185521,
+      "client_complete_seconds": 4.25020456299535,
+      "audio_chunks": 103,
+      "sample_count": 774144,
+      "first_audio_before_completion": true,
+      "queue_seconds": 0.07998180389404297
+    },
+    {
+      "id": "5aa81582f9224aa6b657cc514e724d63",
+      "elapsed": 13.70599201801815,
+      "duration": 3.006984126984127,
+      "rtf": 4.558052666465073,
+      "time_to_first_token_seconds": 12.982704630005173,
+      "engine_time_to_first_token_seconds": 0.048038159002317116,
+      "time_to_first_audio_seconds": 13.584812600020086,
+      "audio_url": "/api/audio/5aa81582f9224aa6b657cc514e724d63.wav",
+      "leveled_audio_url": "/api/leveled-audio/5aa81582f9224aa6b657cc514e724d63.wav",
+      "model": "fast_r32_final",
+      "reference_id": "upload_af6884aba055424baedd2d714a1e7235",
+      "client_first_audio_seconds": 13.872087054012809,
+      "client_complete_seconds": 13.99448751899763,
+      "audio_chunks": 19,
+      "sample_count": 132608,
+      "first_audio_before_completion": true,
+      "queue_seconds": 0.2845799922943115
+    }
+  ],
+  "normal_requests": [
+    {
+      "id": "aca5e6d4140b44dbbb04a6448c49f379",
+      "elapsed": 0.7619473920203745,
+      "duration": 2.9257142857142857,
+      "audio_url": "/api/audio/aca5e6d4140b44dbbb04a6448c49f379.wav",
+      "model": "fast_r32_final"
+    },
+    {
+      "id": "abdb03acd5f2456f95ac17a59d34fb3b",
+      "elapsed": 13.724077358026989,
+      "duration": 2.9257142857142857,
+      "audio_url": "/api/audio/abdb03acd5f2456f95ac17a59d34fb3b.wav",
+      "model": "attention_mlp_r16_early"
+    }
+  ],
+  "disconnect_check": {
+    "id": "78ea8ba5984e4cd58d5a0b1e6df9e0fe",
+    "saved_wav": true,
+    "worker_ready": true
+  },
+  "runtime_fixes": [
+    "Wait for exact loopback API port release before engine startup; SGLANG_OMNI_STRICT_PORT=1 prevents silent port fallback."
+  ],
+  "deployment_status": "ready",
+  "implementation_sha256": {
+    "sglang_server.py": "052d5deff8d975a6793128c67d15458b976716627463ec696fe9a27f06d61692",
+    "sglang_worker.py": "60e994eb69463ae03240383b762476d5d629d23fdb26786167666825de468bdc",
+    "sglang_container.py": "912237b8ff5b1386fdb64efdf3a6e8ee2d686cf6ba5ac43317929352d76694a5",
+    "sglang_stream.py": "8401e1e277067a9f0970ccc972b9b50a974eb2ddb8ffa5f9224e4140e406b971",
+    "sglang_stream.html": "b5a70a02a82146292c91c7885a8e92e4251c8cff3367e278092cbe1408aa759c",
+    "sglang_telemetry.py": "db369f0b2217bb718fa5e11f66f9418fcc752d8ab38cadb88d51840a1b45a59b",
+    "voice_server.py": "1e771b775caedf9ba6a48542bc0e37744a196fa3986b84ad49a6ceb495ba8a94",
+    "audio_finish.py": "6298b8e569038a5df6cf21893cbc5d412c4baf694607b45a078fa74104c2b8ee"
+  },
+  "logging": "Audio events delivered over worker IPC/SSE, omitted from progress logs; token/completion timings retained.",
+  "post_reload_streams": [
+    {
+      "id": "510561685d7a4b6aa0d019acd1c36f17",
+      "elapsed": 4.298323410010198,
+      "duration": 17.46140589569161,
+      "rtf": 0.24616135926779856,
+      "time_to_first_token_seconds": 0.12437273800605908,
+      "engine_time_to_first_token_seconds": 0.05202717299107462,
+      "time_to_first_audio_seconds": 0.901463391026482,
+      "audio_url": "/api/audio/510561685d7a4b6aa0d019acd1c36f17.wav",
+      "leveled_audio_url": "/api/leveled-audio/510561685d7a4b6aa0d019acd1c36f17.wav",
+      "model": "fast_r32_final",
+      "reference_id": "talha_ahmad",
+      "client_first_audio_seconds": 1.0113494110119063,
+      "client_complete_seconds": 4.418370275001507,
+      "audio_chunks": 103,
+      "sample_count": 770048,
+      "first_audio_before_completion": true,
+      "queue_seconds": 0.10740852355957031
+    },
+    {
+      "id": "5d7236a8a5094ecb97de9d4b63c10ca5",
+      "elapsed": 4.136891624017153,
+      "duration": 17.368526077097506,
+      "rtf": 0.23818322900019379,
+      "time_to_first_token_seconds": 0.12068920599995181,
+      "engine_time_to_first_token_seconds": 0.056352056999458,
+      "time_to_first_audio_seconds": 0.8871188140183222,
+      "audio_url": "/api/audio/5d7236a8a5094ecb97de9d4b63c10ca5.wav",
+      "leveled_audio_url": "/api/leveled-audio/5d7236a8a5094ecb97de9d4b63c10ca5.wav",
+      "model": "attention_mlp_r16_early",
+      "reference_id": "talha_ahmad",
+      "client_first_audio_seconds": 1.0295148999721278,
+      "client_complete_seconds": 4.2882446499716025,
+      "audio_chunks": 102,
+      "sample_count": 765952,
+      "first_audio_before_completion": true,
+      "queue_seconds": 0.13975858688354492
+    }
+  ],
+  "pcm_log_filter_live_verified": true,
+  "server_status": "ready",
+  "browser_validation": {
+    "status": "passed",
+    "browser": "153.0.8010.12",
+    "checked_at": "2026-10-11T23:51:55Z",
+    "first_audio_observation": {
+      "token": "92 ms",
+      "firstAudio": "945 ms",
+      "contextState": "running",
+      "sources": 12,
+      "complete": false,
+      "audioSeconds": 1.8459863945578234
+    },
+    "playback_completed": true,
+    "stop_playback": "Playback stopped. Generation may finish in the normal studio.",
+    "normal_ui_generation_id": "8369d64159c643cf91ddbe67e4c588af",
+    "ending_volume_default_on": true,
+    "page_errors": [],
+    "screenshot": "reports/sglang_stream_browser.png",
+    "note": "Headless audio output muted; AudioContext scheduling/playback lifecycle checked. Human listening quality remains pending."
+  },
+  "browser_report": "reports/sglang_stream_browser_validation.json",
+  "image": "sha256:64f376e7f93eba09bba39feb34130b87108316c2e346058117fc9af1de1eb030",
+  "checkpoint_hashes": {
+    "fast_r32_final": "69b0d3b8e0a840393b2c2f16210f1f3baf42fa2ed07b24703c1877607f63385b",
+    "attention_mlp_r16_early": "9dbf9c8b6ee71dc5c737e6a76f2166539e833a6aa8ab274fb192553714a294cf"
+  }
+}
